@@ -1,0 +1,325 @@
+import { aircraft } from "./aircraft";
+export type Difficulty = "入门" | "进阶" | "专家";
+export interface Question {
+  id: string;
+  difficulty: Difficulty;
+  question: string;
+  options: string[];
+  answer: number;
+  explanation: string;
+  link: string;
+  source: string;
+}
+const facts: [Difficulty, string, string[], number, string, string][] = [
+  [
+    "入门",
+    "A320neo 中的 neo 代表什么？",
+    [
+      "New Engine Option",
+      "New Electric Operation",
+      "Next European Order",
+      "New Extended Ocean",
+    ],
+    0,
+    "neo 指 new engine option，即新发动机选项，也结合了翼梢等改进。",
+    "/atlas/a320neo",
+  ],
+  [
+    "入门",
+    "以下哪架飞机拥有全长双层客舱？",
+    ["Boeing 787-9", "Airbus A380-800", "Airbus A350-900", "COMAC C919"],
+    1,
+    "A380 拥有贯穿机身大部分长度的上下两层客舱。747 的上层客舱只在前段。",
+    "/atlas/a380-800",
+  ],
+  [
+    "入门",
+    "Boeing 747-8 有几台发动机？",
+    ["1 台", "2 台", "3 台", "4 台"],
+    3,
+    "747-8 是四发宽体飞机。发动机数量是远距离识别的重要线索。",
+    "/atlas/747-8",
+  ],
+  [
+    "入门",
+    "C919 的制造商是哪一家？",
+    ["Airbus", "Boeing", "COMAC", "Embraer"],
+    2,
+    "COMAC 即中国商用飞机有限责任公司，中国商飞。",
+    "/atlas/c919",
+  ],
+  [
+    "入门",
+    "E195-E2 典型客舱每排座位采用哪种排列？",
+    ["3-3", "2-2", "3-4-3", "2-4-2"],
+    1,
+    "E195-E2 典型布局为 2-2，每侧两座，没有中间座位。",
+    "/atlas/e195-e2",
+  ],
+  [
+    "入门",
+    "飞机的翼展指什么？",
+    ["机鼻到机尾的距离", "左右翼尖间的距离", "机身离地高度", "机翼前后缘距离"],
+    1,
+    "翼展是飞机两侧翼尖之间的横向距离。",
+    "/atlas",
+  ],
+  [
+    "入门",
+    "A350-900 的制造商是？",
+    ["Airbus", "Boeing", "COMAC", "Embraer"],
+    0,
+    "A350 是 Airbus 的新一代远程双发宽体客机家族。",
+    "/atlas/a350-900",
+  ],
+  [
+    "入门",
+    "飞机主要依靠哪个部件产生支撑重量的升力？",
+    ["机轮", "垂直尾翼", "机翼", "客舱舷窗"],
+    2,
+    "机翼是主要升力部件；平尾和机身也可能产生气动力。",
+    "/lab",
+  ],
+  [
+    "入门",
+    "以下哪架属于窄体单通道客机？",
+    ["A380-800", "777-300ER", "A320neo", "787-9"],
+    2,
+    "A320neo 是单通道窄体机，其余为双通道宽体机。",
+    "/atlas/a320neo",
+  ],
+  [
+    "入门",
+    "787 的英文昵称是？",
+    ["Dreamliner", "Jumbo Jet", "Concorde", "Beluga"],
+    0,
+    "Boeing 787 的官方品牌名是 Dreamliner，常译为梦想客机。",
+    "/atlas/787-9",
+  ],
+  [
+    "进阶",
+    "在密度、面积和升力系数不变时，速度变为两倍，理论升力变为？",
+    ["2 倍", "4 倍", "8 倍", "不变"],
+    1,
+    "L = ½ρv²SCL，速度项是平方关系。",
+    "/lab",
+  ],
+  [
+    "进阶",
+    "777-300ER 的 ER 指什么？",
+    [
+      "Engine Replacement",
+      "Extended Range",
+      "European Route",
+      "Extra Rotation",
+    ],
+    1,
+    "ER 是 Extended Range，即延程型。",
+    "/atlas/777-300er",
+  ],
+  [
+    "进阶",
+    "以下哪个型号的每侧主起落架通常为六轮？",
+    ["A350-900", "A320neo", "777-300ER", "787-9"],
+    2,
+    "777-300ER 每侧主起落架为三轴六轮，可辅助与四轮的 A350-900 区分。",
+    "/atlas/777-300er",
+  ],
+  [
+    "进阶",
+    "A330-900 使用哪一系列发动机？",
+    ["Trent 7000", "GE90", "LEAP-1B", "JT8D"],
+    0,
+    "A330neo 配备 Rolls-Royce Trent 7000 发动机。",
+    "/atlas/a330-900",
+  ],
+  [
+    "进阶",
+    "737 MAX 8 的发动机是？",
+    ["LEAP-1A", "LEAP-1B", "LEAP-1C", "Trent XWB"],
+    1,
+    "LEAP-1B 用于 737 MAX；-1A 用于 A320neo 家族，-1C 用于 C919。",
+    "/atlas/737-max-8",
+  ],
+  [
+    "进阶",
+    "A321XLR 的 XLR 表示什么？",
+    [
+      "Extra Long Range",
+      "Extra Lift Ratio",
+      "Experimental Light Rotor",
+      "Extended Landing Roll",
+    ],
+    0,
+    "XLR 表示 Extra Long Range，超远程。",
+    "/atlas/a321xlr",
+  ],
+  [
+    "进阶",
+    "787 发动机短舱尾缘的锯齿形结构叫什么？",
+    ["Chevrons", "Slats", "Spoilers", "Flaps"],
+    0,
+    "Chevrons 是短舱后缘的锯齿结构，用于改善混合、降低部分噪声。",
+    "/atlas/787-9",
+  ],
+  [
+    "进阶",
+    "马赫数描述的是？",
+    ["真空中的速度", "速度与当地音速之比", "每小时耗油量", "航程与重量之比"],
+    1,
+    "Mach 数是物体相对气流速度与当地音速的比值；音速受温度影响。",
+    "/lab",
+  ],
+  [
+    "进阶",
+    "767 典型经济舱布局是哪一种？",
+    ["2-3-2", "3-3-3", "3-4-3", "2-2"],
+    0,
+    "767 常采用 2-3-2 布局；实际取决于航司和客舱配置。",
+    "/atlas/767-300er",
+  ],
+  [
+    "进阶",
+    "升力公式中的 ρ 代表什么？",
+    ["空气密度", "机翼面积", "重力加速度", "飞机航程"],
+    0,
+    "ρ 是空气密度，国际单位为 kg/m³。",
+    "/lab",
+  ],
+  [
+    "专家",
+    "把升力系数 CL 直接等同于迎角是否正确？",
+    [
+      "总是正确",
+      "只在夜间正确",
+      "不正确，CL 还取决于翼型、流动和构型等",
+      "CL 就是角度单位",
+    ],
+    2,
+    "升力系数是无量纲参数。它与迎角有关，也受雷诺数、马赫数和机翼构型等影响。",
+    "/lab",
+  ],
+  [
+    "专家",
+    "A350-900 与 A350-900ULR 的最大航程可以直接混用吗？",
+    [
+      "可以，型号完全一致",
+      "不可以，需区分构型和子型号",
+      "只要客舱一样就可以",
+      "只看翼展即可",
+    ],
+    1,
+    "ULR 有专门的燃油与任务构型，百科比较需要明确子型号及参考条件。",
+    "/atlas/a350-900",
+  ],
+  [
+    "专家",
+    "747-8 客运型首次飞行发生在哪一年？",
+    ["1969", "2005", "2010", "2011"],
+    3,
+    "747-8 Intercontinental 于 2011 年首飞，货运型 747-8F 于 2010 年首飞。",
+    "/atlas/747-8",
+  ],
+  [
+    "专家",
+    "E195-E2 的 PW1900G 属于哪类动力？",
+    ["涡桨", "齿轮传动涡扇", "火箭", "冲压发动机"],
+    1,
+    "PW1900G 采用齿轮传动涡扇架构，使风扇与低压涡轮以不同转速运行。",
+    "/atlas/e195-e2",
+  ],
+  [
+    "专家",
+    "只看 A321neo 外观能可靠确认它是 XLR 吗？",
+    [
+      "完全可以",
+      "只看涂装就可以",
+      "通常不能，应查注册号和型号资料",
+      "看发动机数量即可",
+    ],
+    2,
+    "XLR 与其他 A321neo 外形非常接近，机型识别需要权威型号记录。",
+    "/atlas/a321xlr",
+  ],
+  [
+    "专家",
+    "升力国际单位 N（牛顿）等于？",
+    ["kg/m", "kg·m/s²", "m/s", "kg/m³"],
+    1,
+    "力的国际单位是牛顿，1 N = 1 kg·m/s²，不能将 kg 直接作为升力单位。",
+    "/lab",
+  ],
+  [
+    "专家",
+    "标准海平面空气密度通常近似取？",
+    ["0.1225 kg/m³", "1.225 kg/m³", "12.25 kg/m³", "1225 kg/m³"],
+    1,
+    "标准大气海平面密度约为 1.225 kg/m³；真实密度随温度、压力和湿度变化。",
+    "/lab",
+  ],
+  [
+    "专家",
+    "C919 的 LEAP 发动机对应哪一子系列？",
+    ["LEAP-1A", "LEAP-1B", "LEAP-1C", "LEAP-2A"],
+    2,
+    "C919 使用 CFM LEAP-1C 集成推进系统，与 A320neo 和 737 MAX 所用的 LEAP 子系列不同。",
+    "/atlas/c919",
+  ],
+  [
+    "专家",
+    "在其他变量固定时，机翼参考面积增加 20%，理论升力变化为？",
+    ["增加 20%", "增加 44%", "减少 20%", "增加 4%"],
+    0,
+    "公式中 S 为线性项，其他条件固定时升力与参考面积成正比。",
+    "/lab",
+  ],
+  [
+    "专家",
+    "制造商公布的最大航程是否等于每次商业航班可飞的距离？",
+    [
+      "完全相同",
+      "不一定，载荷、风、储备燃油等都会影响",
+      "只取决于机身长度",
+      "只取决于飞机年龄",
+    ],
+    1,
+    "公布航程具有参考条件，实际放行还需考虑载荷、气象、航路和储备燃油。",
+    "/atlas/compare",
+  ],
+];
+export const questions: Question[] = facts.map((f, i) => ({
+  id: `q-${i + 1}`,
+  difficulty: f[0],
+  question: f[1],
+  options: f[2],
+  answer: f[3],
+  explanation: f[4],
+  link: f[5],
+  source:
+    f[5] === "/lab"
+      ? "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/lift-equation/"
+      : (aircraft.find((a) => f[5] === `/atlas/${a.slug}`)?.sources.engine ??
+        "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"),
+}));
+export interface SpotterQuestion {
+  id: string;
+  aircraftSlug: string;
+  options: string[];
+  explanation: string;
+}
+export const spotterQuestions: SpotterQuestion[] = aircraft
+  .filter((a) => a.model !== "A321XLR")
+  .map((a, i) => ({
+    id: `spot-${i + 1}`,
+    aircraftSlug: a.slug,
+    options: [
+      a.model,
+      ...aircraft
+        .filter((b) => b.id !== a.id && b.model !== "A321XLR")
+        .slice(i % 3, (i % 3) + 3)
+        .map((b) => b.model),
+    ].sort((a, b) => a.localeCompare(b)),
+    explanation:
+      a.recognition.join("；") +
+      "。本题图片对应已核对的机型，现实识别需结合多项特征与注册资料。",
+  }));

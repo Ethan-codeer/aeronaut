@@ -1,0 +1,29 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+next-env.d.ts
+.vercel/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+
+# Credentials and local machine settings
+.npmrc
+.netrc
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Workspace files are not application source
+/.agents/
+/.aws/
+/.codex/
+/shared/
+/scratch/
+/library-files/
+/artifacts/
