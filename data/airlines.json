@@ -1,0 +1,915 @@
+[
+  {
+    "slug": "air-china",
+    "nameZh": "中国国际航空",
+    "nameEn": "Air China",
+    "country": "中国",
+    "headquarters": "北京",
+    "iata": "CA",
+    "icao": "CCA",
+    "foundedYear": 1988,
+    "foundedNote": "前身中国国际航空公司成立于1988年；现股份公司于2004年重组成立。",
+    "alliance": "星空联盟",
+    "history": "国航于1988年成立，总部位于北京，后来通过重组发展为今天的航空公司。",
+    "story": "国航是北京2008年奥运会与北京2022年冬奥会的航空客运服务合作伙伴。",
+    "liveryDescription": "红色凤凰尾标与白色机身、蓝色腰线。",
+    "fleet": [
+      {
+        "aircraftSlug": "a350-900",
+        "source": "https://m.airchina.com/ac/c/invoke/jxjsList%40pg",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Air%20China",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://webresource.airchina.com.cn/en-US/content/about_us/company/?hySource=airchina-pc",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.singaporeair.com/en_UK/mv/plan-travel/partner-airlines/star-alliance/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a350-900",
+        "url": "https://m.airchina.com/ac/c/invoke/jxjsList%40pg",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "成立与总部",
+        "url": "https://webresource.airchina.com.cn/airchinacms/3/upload/resources/file/910.pdf",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "china-eastern",
+    "nameZh": "中国东方航空",
+    "nameEn": "China Eastern Airlines",
+    "country": "中国",
+    "headquarters": "上海",
+    "iata": "MU",
+    "icao": "CES",
+    "foundedYear": 1988,
+    "foundedNote": "中国东方航空公司于1988年正式成立；历史源头为1957年民航上海飞行中队。",
+    "alliance": "天合联盟",
+    "history": "历史可追溯至1957年上海飞行中队，1988年正式成立中国东方航空公司，总部位于上海。",
+    "story": "东航是C919全球首发用户，并于2023年5月28日实现C919商业首航。",
+    "liveryDescription": "白色机身配红蓝燕形标志。",
+    "fleet": [
+      {
+        "aircraftSlug": "c919",
+        "source": "https://www.ceairgroup.com/ceairgroup/xwzx_158/dhxw_159/202601/t20260106_29495.html",
+        "asOf": "2026-01-06"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=China%20Eastern%20Airlines",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://job.ceair.com/about/groupIntroduction.html",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.delta.com/us/en/skymiles/medallion-program/international-partner-skyteam-benefits",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：c919",
+        "url": "https://www.ceairgroup.com/ceairgroup/xwzx_158/dhxw_159/202601/t20260106_29495.html",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-01-06"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": {
+      "file": "/images/airlines/china-eastern-livery.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:B-919A@PEK_(20221226151718).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "N509FZ",
+      "note": "历史摄影资料，不作为当前运营状态证据。"
+    },
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。"
+    ]
+  },
+  {
+    "slug": "china-southern",
+    "nameZh": "中国南方航空",
+    "nameEn": "China Southern Airlines",
+    "country": "中国",
+    "headquarters": "广州",
+    "iata": "CZ",
+    "icao": "CSN",
+    "foundedYear": 1995,
+    "foundedNote": "这里列股份公司成立年；南航品牌独立发展可追溯至1988年，集团前身于1991年成立。",
+    "alliance": "未加入三大全球航空联盟",
+    "history": "从民航广州管理局的航空业务发展而来，集团前身于1991年成立，股份公司于1995年成立。",
+    "story": "南航于2020年1月1日完成退出天合联盟；双边航司合作并不等同于加入联盟。",
+    "liveryDescription": "蓝色垂直尾翼上的红色木棉花。",
+    "fleet": [
+      {
+        "aircraftSlug": "a350-900",
+        "source": "https://www.planespotters.net/airline/China-Southern-Airlines",
+        "asOf": "2026-10-22",
+        "evidenceNote": "当前型号依据Planespotters航司机队列表（第二手资料），非照片推断；数量未列出。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=China%20Southern%20Airlines",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.csair.cn/sg/zh/about/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.csair.com/sg/en/about/news/news/2019/1dsrfdovckaid.shtml",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a350-900",
+        "url": "https://www.planespotters.net/airline/China-Southern-Airlines",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "股份公司1995年成立与集团沿革（发行人年报）",
+        "url": "https://www.sec.gov/Archives/edgar/data/1041668/000119312523119723/d449750d20f.htm",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "cathay-pacific",
+    "nameZh": "国泰航空",
+    "nameEn": "Cathay Pacific",
+    "country": "中国香港",
+    "headquarters": "香港国际机场国泰城",
+    "iata": "CX",
+    "icao": "CPA",
+    "foundedYear": 1946,
+    "foundedNote": "1946年9月在香港成立。",
+    "alliance": "寰宇一家",
+    "history": "1946年由Roy Farrell与Sydney de Kantzow在香港创办，后来发展客运与货运网络。",
+    "story": "国泰早期使用的DC-3名为Betsy；国泰城于1999年落成。",
+    "liveryDescription": "深绿色机尾配白色翘首振翅标志。",
+    "fleet": [
+      {
+        "aircraftSlug": "a350-900",
+        "source": "https://www.cathaypacific.com/cx/en_US/flying-with-us/aircraft-and-fleet/airbus-a350/900.html",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Cathay%20Pacific",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.cathaypacific.com/cx/en_HK/about-us/about-our-airline/history.html/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.oneworld.com/members",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a350-900",
+        "url": "https://www.cathaypacific.com/cx/en_US/flying-with-us/aircraft-and-fleet/airbus-a350/900.html",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "国泰城总部于1999年开幕",
+        "url": "https://news.cathaypacific.com/cathay-pacific-announces-1999-results",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "singapore-airlines",
+    "nameZh": "新加坡航空",
+    "nameEn": "Singapore Airlines",
+    "country": "新加坡",
+    "headquarters": "新加坡 Airline House",
+    "iata": "SQ",
+    "icao": "SIA",
+    "foundedYear": 1972,
+    "foundedNote": "现公司于1972年成立；历史传承可追溯至1947年的马来亚航空。",
+    "alliance": "星空联盟",
+    "history": "1972年马来西亚—新加坡航空拆分后，新加坡航空以独立身份发展国际航线。其航空业务传承始于1947年。",
+    "story": "新航于2007年成为A380的首家商业运营航司。",
+    "liveryDescription": "深蓝色尾翼配金色飞鸟，机身带深蓝和金色线条。",
+    "fleet": [
+      {
+        "aircraftSlug": "a350-900",
+        "source": "https://www.singaporeair.com/en_UK/us/flying-withus/our-story/our-fleet/airbus-a350-900/",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Singapore%20Airlines",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.singaporeair.com/en_UK/in/flying-withus/our-story/our-heritage/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.singaporeair.com/en_UK/mv/plan-travel/partner-airlines/star-alliance/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a350-900",
+        "url": "https://www.singaporeair.com/en_UK/us/flying-withus/our-story/our-fleet/airbus-a350-900/",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "现公司1972年注册与1947年传承",
+        "url": "https://links.sgx.com/1.0.0/corporate-information/2128",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "ana",
+    "nameZh": "全日空",
+    "nameEn": "All Nippon Airways",
+    "country": "日本",
+    "headquarters": "东京港区汐留",
+    "iata": "NH",
+    "icao": "ANA",
+    "foundedYear": 1952,
+    "foundedNote": "1952年创办前身日本直升机运输；现运营公司为2012年设立、2013年承接业务。",
+    "alliance": "星空联盟",
+    "history": "ANA集团的历史始于1952年的日本直升机运输，逐步由国内航线发展到国际网络。",
+    "story": "ANA是波音787的首发运营航司；787-9于2014年进入其机队。",
+    "liveryDescription": "蓝色尾翼配白色ANA字样。",
+    "fleet": [
+      {
+        "aircraftSlug": "787-9",
+        "source": "https://www.ana.co.jp/group/en/company/ana/scale/",
+        "asOf": "2026-03-31"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.ana.co.jp/group/en/company/ana/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.singaporeair.com/en_UK/mv/plan-travel/partner-airlines/star-alliance/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：787-9",
+        "url": "https://www.ana.co.jp/group/en/company/ana/scale/",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-03-31"
+      },
+      {
+        "label": "集团历史",
+        "url": "https://cad.www.ana.co.jp/group/en/about-us/anapace/",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": {
+      "file": "/images/challenges/a-94bc21.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:All_Nippon_Airways_Logo.svg",
+      "license": "Public domain (PD-textlogo), trademark restrictions apply",
+      "attribution": "All Nippon Airways Co., Ltd."
+    },
+    "livery": null,
+    "pending": [
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "japan-airlines",
+    "nameZh": "日本航空",
+    "nameEn": "Japan Airlines",
+    "country": "日本",
+    "headquarters": "东京品川区",
+    "iata": "JL",
+    "icao": "JAL",
+    "foundedYear": 1951,
+    "foundedNote": "1951年8月1日成立。",
+    "alliance": "寰宇一家",
+    "history": "1951年成立，是日本战后第一家航空公司；总部位于东京品川区。",
+    "story": "日航官方历史把1951年作为其诞生年份；其鹤丸标志是辨认航司的显著线索。",
+    "liveryDescription": "白色机身与红色鹤丸尾标。",
+    "fleet": [
+      {
+        "aircraftSlug": "787-9",
+        "source": "https://www.jal.co.jp/jp/en/aircraft/conf/789.html",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Japan%20Airlines",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.jal.com/en-jp/about/outline/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.oneworld.com/members",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：787-9",
+        "url": "https://www.jal.co.jp/jp/en/aircraft/conf/789.html",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": {
+      "file": "/images/787-9.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Japan_Airlines,_Boeing_787-9_JA861J_NRT_(19455285040).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Masakatsu Ukon",
+      "historical": true,
+      "note": "2015年照片；非当前机队运营关系证据。"
+    },
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。"
+    ]
+  },
+  {
+    "slug": "emirates",
+    "nameZh": "阿联酋航空",
+    "nameEn": "Emirates",
+    "country": "阿拉伯联合酋长国",
+    "headquarters": "迪拜",
+    "iata": "EK",
+    "icao": "UAE",
+    "foundedYear": 1985,
+    "foundedNote": "1985年成立，同年10月25日首航。",
+    "alliance": "未加入三大全球航空联盟",
+    "history": "1985年在迪拜成立，首航使用租赁飞机飞往卡拉奇和孟买，之后发展为以迪拜为枢纽的国际航司。",
+    "story": "初始首航机队从巴基斯坦国际航空湿租飞机；今天A380与777仍是其代表性机型。",
+    "liveryDescription": "机尾呈阿联酋国旗色，白色机身带金色字标。",
+    "fleet": [
+      {
+        "aircraftSlug": "a380-800",
+        "source": "https://www.emirates.com/english/experience/our-fleet/a380/",
+        "asOf": "2026-10-22"
+      },
+      {
+        "aircraftSlug": "777-300er",
+        "source": "https://www.emirates.com/english/experience/our-fleet/boeing-777/",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Emirates",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.emirates.com/us/english/about-us/timeline/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.emirates.com/is/english/images/The%20Emirates%20Group%20Environment%20Report_tcm327-701728.pdf",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a380-800",
+        "url": "https://www.emirates.com/english/experience/our-fleet/a380/",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "机队依据：777-300er",
+        "url": "https://www.emirates.com/english/experience/our-fleet/boeing-777/",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "总部与1985年成立",
+        "url": "https://www.emirates.com/de/english/information/terms-and-conditions/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "航空合作伙伴",
+        "url": "https://www.emirates.com/english/travel-partners/",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": {
+      "file": "/images/a380-800.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Emirates_Airbus_A380-861_A6-EER_MUC_2015_01.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Julian Herzog",
+      "historical": true,
+      "note": "2015年照片；非当前机队运营关系证据。"
+    },
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。"
+    ]
+  },
+  {
+    "slug": "qatar-airways",
+    "nameZh": "卡塔尔航空",
+    "nameEn": "Qatar Airways",
+    "country": "卡塔尔",
+    "headquarters": "多哈",
+    "iata": "QR",
+    "icao": "QTR",
+    "foundedYear": 1993,
+    "foundedNote": "1993年成立；1994年开始运营；1997年重新启动。",
+    "alliance": "寰宇一家",
+    "history": "1993年成立、1994年投入运营，以多哈为主要枢纽，2013年加入寰宇一家。",
+    "story": "2013年加入联盟时，一架披寰宇一家涂装的777成为率先在新哈马德机场亮相的飞机。",
+    "liveryDescription": "酒红色羚羊尾标与灰白色机身。",
+    "fleet": [
+      {
+        "aircraftSlug": "a350-900",
+        "source": "https://www.qatarairways.com/en-qa/fleet.html",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Qatar%20Airways",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://centreforaviation.com/data/profiles/airlines/qatar-airways-qr",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.oneworld.com/members",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a350-900",
+        "url": "https://www.qatarairways.com/en-qa/fleet.html",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": {
+      "file": "/images/challenges/p-4b7e18.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:A7-ALG_Qatar_Airways_Airbus_A350-941_MSN-13.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Md Shaifuzzaman Ayon",
+      "note": "历史摄影资料，不作为当前运营状态证据。"
+    },
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。"
+    ]
+  },
+  {
+    "slug": "lufthansa",
+    "nameZh": "汉莎航空",
+    "nameEn": "Lufthansa",
+    "country": "德国",
+    "headquarters": "科隆（公司注册地）；法兰克福（集团管理总部）",
+    "iata": "LH",
+    "icao": "DLH",
+    "foundedYear": 1953,
+    "foundedNote": "现代汉莎成立于1953年，1955年恢复飞行；1926年为旧汉莎前身，不能混同。",
+    "alliance": "星空联盟",
+    "history": "现代汉莎的法律基础始于1953年在科隆成立的Luftag，1954年更名，1955年恢复航班运营。",
+    "story": "汉莎是星空联盟创始成员；其747-8为客运型，不能与747-8F货机混淆。",
+    "liveryDescription": "深蓝色尾翼与圆形飞鹤标志；老涂装使用黄色圆底。",
+    "fleet": [
+      {
+        "aircraftSlug": "747-8",
+        "source": "https://www.lufthansagroup.com/en/company/fleet/lufthansa-and-regional-partners/boeing-747-8.html",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Lufthansa",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.lufthansagroup.com/en/chronicle",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.lufthansagroup.com/en/company/alliances/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：747-8",
+        "url": "https://www.lufthansagroup.com/en/company/fleet/lufthansa-and-regional-partners/boeing-747-8.html",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "总部与注册地",
+        "url": "https://www.lufthansagroup.com/en/service/imprint.html",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "现代汉莎1953年基础",
+        "url": "https://www.lufthansagroup.com/en/themes/100-years-of-lufthansa.html",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": {
+      "file": "/images/airlines/lufthansa-livery.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Deutsche_Lufthansa_Boeing_747-830_Intercontinental_D-ABYT_(Koln_-_retro_livery).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Adam Moreira (AEMoreira042281)",
+      "note": "历史摄影资料，不作为当前运营状态证据。"
+    },
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。"
+    ]
+  },
+  {
+    "slug": "british-airways",
+    "nameZh": "英国航空",
+    "nameEn": "British Airways",
+    "country": "英国",
+    "headquarters": "伦敦希思罗附近 Harmondsworth Waterside",
+    "iata": "BA",
+    "icao": "BAW",
+    "foundedYear": 1974,
+    "foundedNote": "1974年由BOAC和BEA合并形成；航空传承可追溯至1919年。",
+    "alliance": "寰宇一家",
+    "history": "1974年BOAC与BEA合并形成英国航空，主要基地位于伦敦希思罗机场。",
+    "story": "英航与法航共同运营过协和式超声速客机；不能将1919年前身起点与1974年合并混为一谈。",
+    "liveryDescription": "红蓝白配色与英国旗帜风格尾翼。",
+    "fleet": [
+      {
+        "aircraftSlug": "787-9",
+        "source": "https://mediacentre.britishairways.com/factsheet/details/86/22/5",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.britishairways.com/content/information/about-ba/history-and-heritage/explore-our-past",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.oneworld.com/members",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：787-9",
+        "url": "https://mediacentre.britishairways.com/factsheet/details/86/22/5",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "总部",
+        "url": "https://www.britishairways.com/content/information/about-ba/head-office",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "air-france",
+    "nameZh": "法国航空",
+    "nameEn": "Air France",
+    "country": "法国",
+    "headquarters": "巴黎戴高乐机场 Roissy（Tremblay-en-France）",
+    "iata": "AF",
+    "icao": "AFR",
+    "foundedYear": 1933,
+    "foundedNote": "1933年由五家法国航空企业合并成立。",
+    "alliance": "天合联盟",
+    "history": "1933年通过合并五家航空企业成立；1996年启用巴黎戴高乐枢纽，2004年与荷航组建航空集团。",
+    "story": "法航是曾商业运营协和式飞机的两家航司之一；其海马图案也承载着早期航空历史。",
+    "liveryDescription": "蓝白红三色斜条尾翼与白色机身。",
+    "fleet": [
+      {
+        "aircraftSlug": "777-300er",
+        "source": "https://www.airfranceklm.com/en/group/fleet",
+        "asOf": "2025-12-31"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Air%20France",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://corporate.airfrance.com/en/air-france-legend",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.delta.com/us/en/skymiles/medallion-program/international-partner-skyteam-benefits",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：777-300er",
+        "url": "https://www.airfranceklm.com/en/group/fleet",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2025-12-31"
+      },
+      {
+        "label": "法定总部",
+        "url": "https://recrutement.airfrance.com/mention-legale.aspx",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "枢纽与历史",
+        "url": "https://corporate.airfrance.com/en/historical-network",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": {
+      "file": "/images/challenges/a-e260f9.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Air_France_Logo.svg",
+      "license": "Public domain (PD-textlogo), trademark restrictions apply",
+      "attribution": "Air France"
+    },
+    "livery": null,
+    "pending": [
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "delta",
+    "nameZh": "达美航空",
+    "nameEn": "Delta Air Lines",
+    "country": "美国",
+    "headquarters": "亚特兰大",
+    "iata": "DL",
+    "icao": "DAL",
+    "foundedYear": 1925,
+    "foundedNote": "历史起点为1925年的Huff Daland Dusters；1928年更名Delta Air Service，1929年开办客运。",
+    "alliance": "天合联盟",
+    "history": "从1925年的农业喷洒公司Huff Daland Dusters发展而来，1929年开办客运，1941年将总部迁至亚特兰大。",
+    "story": "达美的起点与农用航空有关，说明一家航司的历史不一定从客运开始。",
+    "liveryDescription": "深蓝色尾翼配红色三角形Widget图案。",
+    "fleet": [
+      {
+        "aircraftSlug": "a350-900",
+        "source": "https://news.delta.com/mediakit/airbus-a350",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Delta%20Air%20Lines",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://news.delta.com/deltas-history-dusting-crops-connecting-world",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.delta.com/us/en/skymiles/medallion-program/international-partner-skyteam-benefits",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：a350-900",
+        "url": "https://news.delta.com/mediakit/airbus-a350",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": {
+      "file": "/images/challenges/a-3d178e.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Delta_logo.svg",
+      "license": "Public domain (PD-textlogo), trademark restrictions apply",
+      "attribution": "Delta Air Lines"
+    },
+    "livery": {
+      "file": "/images/challenges/a-1d7f40.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2_x_Delta_A330_tail_(4535564116).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Maarten Visser",
+      "historical": true,
+      "note": "2010年历史涂装照片；非当前机队运营关系证据。"
+    },
+    "pending": []
+  },
+  {
+    "slug": "united",
+    "nameZh": "美国联合航空",
+    "nameEn": "United Airlines",
+    "country": "美国",
+    "headquarters": "芝加哥",
+    "iata": "UA",
+    "icao": "UAL",
+    "foundedYear": 1926,
+    "foundedNote": "航空传承起于1926年Varney Air Lines的邮航；United品牌后来形成。",
+    "alliance": "星空联盟",
+    "history": "航空传承始于1926年Varney Air Lines的邮航业务，随后经多家航司整合发展为联合航空。",
+    "story": "1926年从Pasco出发的Swallow邮航飞机，被联合航空视为百年历史的重要起点。",
+    "liveryDescription": "蓝色尾翼配地球网格图案与白色机身。",
+    "fleet": [
+      {
+        "aircraftSlug": "787-9",
+        "source": "https://united.mediaroom.com/2026-03-19-Tickets-on-Sale-Today-for-Uniteds-First-Boeing-787-9-Dreamliner-with-Elevated-Interior-Flights",
+        "asOf": "2026-03-19"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=United%20Airlines",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://united.mediaroom.com/2016-04-06-From-Airmail-to-Biofuel-United-Airlines-Builds-on-90-Years-of-Aviation-Firsts",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.singaporeair.com/en_UK/mv/plan-travel/partner-airlines/star-alliance/",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：787-9",
+        "url": "https://united.mediaroom.com/2026-03-19-Tickets-on-Sale-Today-for-Uniteds-First-Boeing-787-9-Dreamliner-with-Elevated-Interior-Flights",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-03-19"
+      },
+      {
+        "label": "总部与公司",
+        "url": "https://archives.museumofflight.org/agents/corporate_entities/262",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ]
+  },
+  {
+    "slug": "qantas",
+    "nameZh": "澳洲航空",
+    "nameEn": "Qantas",
+    "country": "澳大利亚",
+    "headquarters": "悉尼 Mascot",
+    "iata": "QF",
+    "icao": "QFA",
+    "foundedYear": 1920,
+    "foundedNote": "1920年注册成立，最初在昆士兰内陆运营。",
+    "alliance": "寰宇一家",
+    "history": "1920年在昆士兰成立，从偏远地区的包机和短程服务逐步发展为国际航空公司。",
+    "story": "QANTAS来自Queensland and Northern Territory Aerial Services的首字母，而不是创始人姓名。",
+    "liveryDescription": "红色尾翼配白色飞袋鼠图案。",
+    "fleet": [
+      {
+        "aircraftSlug": "787-9",
+        "source": "https://www.qantas.com/content/dam/qantas/pdfs/qantas-experience/onboard/seatmaps/b789.pdf",
+        "asOf": "2026-10-22"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IATA 航司名录（代码与国家/地区）",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Qantas",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "公司简介与历史",
+        "url": "https://www.qantas.com/en-au/about-us/history",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "联盟与合作关系",
+        "url": "https://www.oneworld.com/members",
+        "checkedAt": "2026-10-22"
+      },
+      {
+        "label": "机队依据：787-9",
+        "url": "https://www.qantas.com/content/dam/qantas/pdfs/qantas-experience/onboard/seatmaps/b789.pdf",
+        "checkedAt": "2026-10-22",
+        "dataAsOf": "2026-10-22"
+      },
+      {
+        "label": "总部",
+        "url": "https://www.qantas.com/en-au/help/contact-us/qantas-corporate-contacts",
+        "checkedAt": "2026-10-22"
+      }
+    ],
+    "verifiedAt": "2026-10-22",
+    "logo": null,
+    "livery": null,
+    "pending": [
+      "公司标志：尚未完成可再利用素材的授权核查。",
+      "代表涂装实拍：尚未获得本次已核查的授权素材。"
+    ],
+    "sourceAccessNote": "官方页面已通过网页搜索索引核查；执行环境直连返回503，保留官方链接。"
+  }
+]

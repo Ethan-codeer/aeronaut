@@ -1,5 +1,8 @@
 import { PageHeading } from "@/components/ui";
 import photoCredits from "@/data/photo-credits.json";
+import { airlines } from "@/data/airlines";
+import { spotterQuestions } from "@/data/spotter";
+import { airlineQuestions } from "@/data/airline-questions";
 import { aircraft } from "@/data/aircraft";
 export const metadata = { title: "资料来源与图片署名" };
 export default function Credits() {
@@ -99,6 +102,84 @@ export default function Credits() {
           3.0。航空世界主视觉：Alex Cheban · Airbus A330neo first take-off
           (cropped) · CC BY-SA
           4.0。具体机型图片的源页面与授权条款也在百科中提供。
+        </p>
+      </section>
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow blue">V1.1 / RESEARCH & MEDIA</span>
+            <h2>航司资料与挑战素材</h2>
+            <p>
+              航司代码参考 IATA
+              名录；总部、历史、联盟及机队参考各航司和联盟的官方资料。每个航司档案列出具体来源及日期。南航机队另参考
+              Planespotters 二手资料；Qantas 部分官方链接在本执行环境返回
+              503，已在档案注明。
+            </p>
+          </div>
+        </div>
+        <div className="source-links">
+          {airlines.map((a) => (
+            <a key={a.slug} href={`/world/airlines/${a.slug}`}>
+              {a.nameZh} · 资料核对 {a.verifiedAt} ↗
+            </a>
+          ))}
+        </div>
+        <div className="table-wrap">
+          <table className="credits-table">
+            <thead>
+              <tr>
+                <th>素材</th>
+                <th>作者 / 权利人</th>
+                <th>许可</th>
+                <th>来源</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ...new Map(
+                  [
+                    ...spotterQuestions.map((q) => ({
+                      file: q.image!,
+                      source: q.imageSource,
+                      license: q.imageLicense,
+                      attribution: q.imageAttribution,
+                    })),
+                    ...airlineQuestions
+                      .filter((q) => q.image)
+                      .map((q) => ({
+                        file: q.image!,
+                        source: q.imageSource!,
+                        license: q.imageLicense!,
+                        attribution: q.imageAttribution!,
+                      })),
+                    ...airlines.flatMap((a) =>
+                      [a.logo, a.livery].filter((m) => m !== null),
+                    ),
+                  ].map((m) => [m.source, m]),
+                ).values(),
+              ].map((m) => (
+                <tr key={m.source}>
+                  <td>V1.1 摄影 / 标志</td>
+                  <td>{m.attribution}</td>
+                  <td>{m.license}</td>
+                  <td>
+                    <a
+                      className="inline-link"
+                      href={m.source}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      原作与许可 ↗
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="muted">
+          识别题采用中性文件名，答题前不显示机型标题或源文件链接。挑战 JPEG
+          副本仅清除可能泄题的描述元数据，未重绘、模糊或改变飞机结构；完整授权记录保留在题库和答后来源中。局部题仅改变显示窗口。图片审核为助手逐张视觉核对，未代替独立人工复核；不确定素材不出题。
         </p>
       </section>
       <div className="paper-panel">

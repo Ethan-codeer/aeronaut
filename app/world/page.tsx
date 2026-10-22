@@ -9,7 +9,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { PageHeading } from "@/components/ui";
-export const metadata = { title: "航空世界 · 机场与历史" };
+export const metadata = { title: "航空世界 · 航司、机场与历史" };
 const timeline = [
   [
     "1903",
@@ -76,6 +76,17 @@ export default function World() {
           © Alex Cheban · CC BY-SA 4.0
         </a>
       </div>
+      <section className="airline-atlas-banner">
+        <div>
+          <span className="eyebrow blue">GLOBAL AIRLINES / 全球航空公司</span>
+          <h2>每一种涂装，连接一个世界。</h2>
+          <p>探索 15 家航司的代码、历史、机队与品牌故事。</p>
+        </div>
+        <Link href="/world/airlines" className="button primary">
+          认识全球航司
+          <ArrowUpRight size={17} />
+        </Link>
+      </section>
       <section className="section" id="airports">
         <div className="section-heading">
           <div>

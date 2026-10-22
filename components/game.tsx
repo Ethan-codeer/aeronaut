@@ -9,66 +9,45 @@ import {
   Trophy,
   ExternalLink,
 } from "lucide-react";
-import { questions, spotterQuestions, Difficulty } from "@/data/questions";
-import { getAircraft } from "@/data/aircraft";
+import { questions, Difficulty } from "@/data/questions";
+import { playableSpotter, SpotterMode } from "@/data/spotter";
+import { airlineQuestions, AirlineMode } from "@/data/airline-questions";
+import { ChallengeQuestion, prepareRound } from "@/lib/challenge";
 import { scoreAnswers } from "@/lib/science";
 import { useProgress } from "./providers";
-import { SafeImage } from "./ui";
-interface GameQuestion {
-  id: string;
-  question: string;
-  options: string[];
-  answer: number;
-  explanation: string;
-  link: string;
-  source?: string;
-  image?: string;
-  clue?: string;
-  credit?: string;
-  imageSource?: string;
-}
-export function Game({
-  kind,
-  review = false,
-}: {
-  kind: "quiz" | "spotter";
-  review?: boolean;
-}) {
-  const { progress, update, ready } = useProgress();
+export function Game({ kind }: { kind: "quiz" | "spotter" | "airline" }) {
+  const { update, ready } = useProgress();
+  const [spotterMode, setSpotterMode] = useState<SpotterMode>("standard");
+  const [airlineMode, setAirlineMode] = useState<AirlineMode>("code");
+  const [logoVariant, setLogoVariant] = useState<"full" | "detail">("full");
+  const [imageReady, setImageReady] = useState(false);
+  const [imageFailed, setImageFailed] = useState(false);
   const [difficulty, setDifficulty] = useState<Difficulty>("入门");
   const [started, setStarted] = useState(false);
-  const [round, setRound] = useState<GameQuestion[]>([]);
+  const [round, setRound] = useState<ChallengeQuestion[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [answers, setAnswers] = useState<{ correct: boolean }[]>([]);
   const [done, setDone] = useState(false);
-  const available = useMemo<GameQuestion[]>(
+  const available = useMemo<ChallengeQuestion[]>(
     () =>
       kind === "quiz"
-        ? questions.filter((q) =>
-            review
-              ? progress.wrong.includes(q.id)
-              : q.difficulty === difficulty,
-          )
-        : spotterQuestions.map((q) => {
-            const a = getAircraft(q.aircraftSlug)!;
-            return {
-              id: q.id,
-              question: "这架飞机是哪一个型号？",
-              options: q.options,
-              answer: q.options.indexOf(a.model),
-              explanation: q.explanation,
-              link: `/atlas/${a.slug}`,
-              image: a.image,
-              credit: a.imageCredit,
-              imageSource: a.imageSource,
-              clue: a.recognition.slice(0, 2).join("；"),
-            };
-          }),
-    [kind, review, progress.wrong, difficulty],
+        ? questions.filter((q) => q.difficulty === difficulty)
+        : kind === "spotter"
+          ? playableSpotter(spotterMode)
+          : airlineQuestions.filter(
+              (q) =>
+                q.type === airlineMode &&
+                (q.type !== "logo" || q.visualVariant === logoVariant) &&
+                (!q.image ||
+                  (q.imageReviewed && q.imageAnswerLeakRisk === "low")),
+            ),
+    [kind, difficulty, spotterMode, airlineMode, logoVariant],
   );
   function start() {
-    setRound(available);
+    setRound(prepareRound(available));
+    setImageReady(false);
+    setImageFailed(false);
     setIndex(0);
     setSelected(null);
     setAnswers([]);
@@ -76,23 +55,26 @@ export function Game({
     setStarted(true);
   }
   function answer(choice: number) {
-    if (selected !== null) return;
+    if (
+      selected !== null ||
+      imageFailed ||
+      (!!round[index].image && !imageReady)
+    )
+      return;
     setSelected(choice);
-    const q = round[index];
-    if (kind === "quiz")
-      update((p) => ({
-        ...p,
-        wrong:
-          choice !== q.answer
-            ? [...new Set([...p.wrong, q.id])]
-            : p.wrong.filter((id) => id !== q.id),
-      }));
   }
-  function next() {
-    const all = [...answers, { correct: selected === round[index].answer }];
-    setAnswers(all);
-    if (index + 1 === round.length) {
-      const score = scoreAnswers(all);
+  function skipImage() {
+    const remaining = round.filter((_, i) => i !== index);
+    setImageReady(false);
+    setImageFailed(false);
+    setSelected(null);
+    if (index >= remaining.length) {
+      finish(answers);
+    } else setRound(remaining);
+  }
+  function finish(all: { correct: boolean }[]) {
+    const score = scoreAnswers(all);
+    if (score.total)
       update((p) => ({
         ...p,
         results: [
@@ -108,8 +90,17 @@ export function Game({
           ...p.results,
         ].slice(0, 1000),
       }));
-      setDone(true);
+    setDone(true);
+  }
+
+  function next() {
+    const all = [...answers, { correct: selected === round[index].answer }];
+    setAnswers(all);
+    if (index + 1 === round.length) {
+      finish(all);
     } else {
+      setImageReady(false);
+      setImageFailed(false);
       setIndex(index + 1);
       setSelected(null);
     }
@@ -132,7 +123,8 @@ export function Game({
           <small>%</small>
         </div>
         <p>
-          本轮答对 {score.correct} / {score.total} 题 · 成绩已记录到我的机库
+          本轮答对 {score.correct} / {score.total} 题
+          {score.total > 0 ? " · 成绩已记录到我的机库" : " · 本轮没有有效作答"}
         </p>
         <div className="button-row">
           <button
@@ -156,25 +148,100 @@ export function Game({
     return (
       <div className="game-panel game-start">
         <span className="eyebrow blue">
-          {review
-            ? "WRONG ANSWER REVIEW"
-            : kind === "quiz"
-              ? "READY FOR YOUR NEXT FLIGHT?"
-              : "TRAIN YOUR SPOTTER EYES"}
+          {kind === "quiz"
+            ? "READY FOR YOUR NEXT FLIGHT?"
+            : kind === "spotter"
+              ? "TRAIN YOUR SPOTTER EYES"
+              : "AIRLINE CHALLENGE"}
         </span>
         <h2>
-          {review
-            ? "把错过的知识，再认识一次。"
-            : kind === "quiz"
-              ? "选择你的飞行高度"
-              : "从一个轮廓，认出一个名字。"}
+          {kind === "quiz"
+            ? "选择你的飞行高度"
+            : kind === "spotter"
+              ? "从一个轮廓，认出一个名字。"
+              : "认识连接世界的名字。"}
         </h2>
         <p>
           {kind === "quiz"
-            ? "选择答案后查看解析，点击下一题继续。没有时间限制。"
-            : "本轮共 11 题。使用已核对型号的授权照片与外形线索；暂无照片的机型使用明确标注的原创示意图。"}
+            ? "选择答案后查看解析，没有时间限制。"
+            : kind === "spotter"
+              ? "仅使用通过视觉与授权检查的照片。按照片能支持的精度识别，不凭涂装猜子型号。"
+              : "从代码、地理、涂装与标志认识航司。每轮随机抽题，并打乱选项顺序。"}
         </p>
-        {kind === "quiz" && !review && (
+        {kind === "spotter" && (
+          <div className="mode-options" role="group" aria-label="识别模式">
+            {(
+              [
+                ["standard", "标准 · Standard"],
+                ["detail", "局部 · Detail"],
+                ["expert", "专家 · Expert"],
+              ] as const
+            ).map(([mode, label]) => (
+              <button
+                key={mode}
+                aria-pressed={spotterMode === mode}
+                disabled={!playableSpotter(mode).length}
+                onClick={() => setSpotterMode(mode)}
+              >
+                {label}
+                <small>
+                  {playableSpotter(mode).length
+                    ? `${playableSpotter(mode).length} 道已审核`
+                    : "素材审核中"}
+                </small>
+              </button>
+            ))}
+          </div>
+        )}
+        {kind === "spotter" && (
+          <p className="muted">
+            专家模式待补充可可靠区分细微特征的照片；不以模糊图片或无法区分的子型号凑题。
+          </p>
+        )}
+        {kind === "airline" && (
+          <div className="mode-options" role="group" aria-label="航司挑战模式">
+            {(
+              [
+                ["code", "代码 · Code"],
+                ["geography", "地理 · Geography"],
+                ["livery", "涂装 · Livery"],
+                ["logo", "标志 · Logo"],
+              ] as const
+            ).map(([mode, label]) => {
+              const count = airlineQuestions.filter(
+                (q) => q.type === mode,
+              ).length;
+              return (
+                <button
+                  key={mode}
+                  aria-pressed={airlineMode === mode}
+                  disabled={!count}
+                  onClick={() => setAirlineMode(mode)}
+                >
+                  {label}
+                  <small>{count ? `${count} 道题` : "授权素材审核中"}</small>
+                </button>
+              );
+            })}
+          </div>
+        )}
+        {kind === "airline" && airlineMode === "logo" && (
+          <div className="mode-options" role="group" aria-label="标志难度">
+            <button
+              aria-pressed={logoVariant === "full"}
+              onClick={() => setLogoVariant("full")}
+            >
+              完整 Logo<small>入门 · 保留真实字标</small>
+            </button>
+            <button
+              aria-pressed={logoVariant === "detail"}
+              onClick={() => setLogoVariant("detail")}
+            >
+              局部 Logo<small>进阶 · 观察图形</small>
+            </button>
+          </div>
+        )}
+        {kind === "quiz" && (
           <div
             className="difficulty-options"
             role="group"
@@ -193,23 +260,14 @@ export function Game({
             ))}
           </div>
         )}
-        {review && (
-          <p>本地待复习错题：{available.length} 道。答对后会移出错题本。</p>
-        )}
         <button
           className="button primary"
           onClick={start}
           disabled={!ready || available.length === 0}
         >
-          开始{review ? "复习" : "挑战"} · {available.length} 题
+          开始挑战 · {Math.min(10, available.length)} 题
           <ArrowRight size={17} />
         </button>
-        {review && available.length === 0 && (
-          <Link href="/academy/quiz" className="text-link">
-            去完成一次知识挑战
-            <ArrowRight size={16} />
-          </Link>
-        )}
       </div>
     );
   const q = round[index];
@@ -218,10 +276,10 @@ export function Game({
       <div className="question-top">
         <span>
           {kind === "quiz"
-            ? review
-              ? "错题复习"
-              : difficulty + "挑战"
-            : "看图识飞机"}
+            ? difficulty + "挑战"
+            : kind === "spotter"
+              ? "看图识飞机"
+              : "航司挑战"}
         </span>
         <span>
           QUESTION <b>{String(index + 1).padStart(2, "0")}</b> / {round.length}
@@ -232,18 +290,61 @@ export function Game({
       </div>
       {q.image && (
         <>
-          <div className="spotter-image">
-            <SafeImage
-              src={q.image}
-              alt="待识别飞机图像，请结合下方外形线索作答"
-            />
-            <span>
-              {q.imageSource
-                ? `© ${q.credit}`
-                : "ORIGINAL AIRCRAFT ILLUSTRATION"}
-            </span>
+          <div
+            className="spotter-image"
+            aria-busy={!imageReady && !imageFailed}
+          >
+            {q.imageView ? (
+              <svg
+                key={q.id}
+                role="img"
+                aria-label="待识别图像的局部"
+                viewBox={`${q.imageView.x} ${q.imageView.y} ${q.imageView.width} ${q.imageView.height}`}
+              >
+                <image
+                  href={q.image}
+                  width={q.imageView.sourceWidth}
+                  height={q.imageView.sourceHeight}
+                  onLoad={() => setImageReady(true)}
+                  onError={() => setImageFailed(true)}
+                />
+              </svg>
+            ) : (
+              <img
+                key={q.id}
+                src={q.image}
+                alt={
+                  kind === "spotter" ? "待识别飞机照片" : "待识别航空公司图像"
+                }
+                onLoad={() => setImageReady(true)}
+                onError={() => setImageFailed(true)}
+              />
+            )}
+
+            {!imageReady && !imageFailed && (
+              <span className="media-loading" role="status">
+                正在加载图像…
+              </span>
+            )}
           </div>
-          <p className="clue">观察线索：{q.clue}</p>
+          <p className="image-credit">
+            © {q.imageAttribution} ·{" "}
+            {q.imageLicenseUrl ? (
+              <a href={q.imageLicenseUrl} target="_blank" rel="noreferrer">
+                {q.imageLicense}
+              </a>
+            ) : (
+              q.imageLicense
+            )}
+          </p>
+          {imageFailed && (
+            <div className="notice" role="alert">
+              图片暂时无法加载，本题不计分。
+              <button className="button secondary" onClick={skipImage}>
+                跳过此题
+              </button>
+            </div>
+          )}
         </>
       )}
       <h2 className="question-title">{q.question}</h2>
@@ -251,7 +352,9 @@ export function Game({
         {q.options.map((option, i) => (
           <button
             key={option}
-            disabled={selected !== null}
+            disabled={
+              selected !== null || imageFailed || (!!q.image && !imageReady)
+            }
             onClick={() => answer(i)}
             className={
               selected !== null
@@ -276,11 +379,22 @@ export function Game({
           aria-live="polite"
         >
           <b>
-            {selected === q.answer
-              ? "回答正确，继续保持！"
-              : `正确答案：${q.options[q.answer]}`}
+            {selected === q.answer ? "回答正确！" : "这次没有选对。"} 正确答案：
+            {q.options[q.answer]}
           </b>
+          <p>
+            你的选择：{q.options[selected]} ·{" "}
+            {selected === q.answer ? "正确" : "错误"}
+          </p>
           <p>{q.explanation}</p>
+          {q.recognition && (
+            <ul>
+              {q.recognition.map((feature) => (
+                <li key={feature}>{feature}</li>
+              ))}
+            </ul>
+          )}
+          {q.confusion && <p>容易混淆：{q.confusion}</p>}
           {q.imageSource && (
             <a
               href={q.imageSource}
@@ -311,7 +425,27 @@ export function Game({
         </div>
       )}
       <div className="question-bottom">
-        <span>认真思考，比快速回答更重要。</span>
+        <span>
+          本轮{" "}
+          {
+            scoreAnswers([
+              ...answers,
+              ...(selected === null
+                ? []
+                : [{ correct: selected === q.answer }]),
+            ]).correct
+          }{" "}
+          题正确 · 正确率{" "}
+          {
+            scoreAnswers([
+              ...answers,
+              ...(selected === null
+                ? []
+                : [{ correct: selected === q.answer }]),
+            ]).accuracy
+          }
+          %
+        </span>
         <button
           className="button primary"
           disabled={selected === null}

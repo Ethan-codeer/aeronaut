@@ -1,101 +1,55 @@
-# AERONAUT V1.0
+# AERONAUT V1.1
 
-The World of Flight, at Your Fingertips.
+以简体中文为主的航空探索平台。沿用 V1 的 Next.js App Router、React、TypeScript、Tailwind CSS、Motion、Recharts 与 Lucide，发布于 **ChatGPT Sites**：
 
-以简体中文为主的航空探索平台，使用 Next.js App Router、React、TypeScript、Tailwind CSS 4、Motion、Recharts 和 Lucide。代码位于当前目录，不依赖数据库、账号或私有 API。
+https://aeronaut-v1.ycwang1110.chatgpt.site
 
-## 本地启动
+当前目录 `.openai/hosting.json` 绑定原 Sites 项目 `appgprj_6ada268b654c8191b201e4eb06f67da7`，静态目录为 `out`。不使用 Vercel，不需要数据库、账号、私有 API 或运行时 Node.js 服务器。
 
-使用 Node.js 22.x（至少 22.13）和 npm，与 Vercel 配置保持一致。
+## 开发与验证
+
+推荐 Node.js 22.x（至少22.13），使用锁文件安装。此次环境实际以 Node.js 24.19 完成构建。
 
 ```bash
 npm ci
 npm run dev
-```
-
-访问 http://localhost:3000 。生产启动：
-
-```bash
-npm run build
-npm start
-```
-
-本项目使用 Webpack 构建模式，避免部分容器环境中 Turbopack CSS 编译器的子进程端口限制。npm 锁文件固定了验证过的依赖版本。
-
-## 已完成功能
-
-- 首页、统一响应式导航/页脚、深浅主题、独立页面元信息、404 与错误恢复页。
-- 12 个准确区分子型号的机型档案，搜索、制造商/类别筛选、参数来源、识别特征、相关机型。
-- 任选两机型对比，交换机型、参数差值、指标选择、Recharts 柱图、详情跳转。
-- 30 道结构化航空知识题（入门/进阶/专家各 10 题），即时反馈、解析、来源、正确率、错题复习。
-- 11 道机型识别题，对应真实授权照片；照片失效时仍显示外形线索并允许作答。
-- 交互升力实验、速度曲线、气流概念动画、公式和模型边界说明。
-- localStorage 收藏、浏览记录、测验结果、错题、5 项自动成就；JSON 导出、校验导入与覆盖确认。
-- 存储被禁用/容量不足时保留内存进度并提示导出，支持同源浏览器标签页存储同步。
-- 机场知识、航空历史、未来航班地图介绍，不提供模拟实时航班。
-- 11 架真实机型的本地授权照片、12 个原创 SVG 示意图、完整图片来源和许可证清单。
-- 键盘焦点样式、跳过导航、图片替代文本、reduced-motion、手机/iPad/桌面断点。
-
-## 主要目录
-
-```text
-app/                    页面与路由、全局设计系统
-components/             交互、图表与公共界面
-data/aircraft.ts        类型明确的飞机数据库及参数来源
-data/questions.ts       问答与识别题库
-data/photo-credits.json  原始图片、作者、许可与源页面
-lib/                    升力/计分逻辑、备份格式和本地存储
-public/images/          本地照片与原创 SVG
-scripts/check-routes.mjs 生产路由与站内链接检查
-tests/                 核心逻辑、题库和本地存储测试
-```
-
-## 检查
-
-```bash
-npm run lint
 npm run typecheck
+npm run lint
 npm test
 npm run build
-# 在另一个终端运行 npm start 后：
-npm run test:routes
 ```
 
-自动检查覆盖升力单位/缩放/非法输入、计分、题库完整性、图片题型号对应、备份格式及存储异常。路由检查访问所有主路由与 12 个详情，检查页面引用的站内资源/链接并验证 404。
+`npm run build` 生成静态 `out/`，对比页在浏览器读取 `a` 参数，所有飞机与航司详情预生成。静态预览需将 `/atlas` 映射至 `atlas.html`，未知路径返回404；不应把全部未知路径转到首页。运行预览后可执行 `npm run test:routes`，或设置 `TEST_BASE_URL` 检查公开网站。经过 HTTP 代理访问时，Node24可使用 `NODE_USE_ENV_PROXY=1`。
 
-本次环境未提供可连接浏览器，因此没有声称完成真实 Windows/iPad/手机上的视觉验收、浏览器控制台或交互端到端测试；发布前建议补充这些检查。
+## V1.1 功能
 
-## 内容来源及缺口
+- 保留12个机型档案、搜索筛选、参数对比、30道知识题、升力实验、航空世界、收藏、浏览记录、总成绩、5项成就、主题、动画及导入导出。
+- 逐图检查原11张识别照片，新增一张无直接型号标识的授权A350照片。现可玩标准2题、局部2题，全部按家族级识别；专家模式暂不开放。高风险及不确定照片不出题，原飞机百科照片保留。
+- 识别图片使用中性路径、通用alt，不在答前显示型号标题、参数或源文件链接；答后显示正确答案、用户选择、外形依据、易混淆机型、百科与图片来源。
+- 全球航空公司：`/world/airlines` 及15个详情，名称/代码/国家地区/总部/联盟/成立沿革/历史故事/代表机型/资料日期，搜索和联盟筛选，与机型百科双向关联。
+- 航司挑战：`/academy/airlines`，53题（IATA/ICAO30、地理15、完整Logo3、局部Logo3、涂装2），每轮最多10题，题目与选项随机排列。四种模式均可使用；Logo提供完整与局部两档。
+- 不保存逐题错误信息。每题反馈、解析、本轮得分、正确率、结果页和总成绩日志继续保留。
 
-详细清单见 [SOURCES.md](SOURCES.md) 和网站 `/credits`。飞机资料来自 Airbus、Boeing、Embraer、COMAC 的公开型号资料及机场规划手册；升力来自 NASA Glenn；机场资料参考 FAA/IATA。数值是公开参考构型，不代表每架飞机或实际航班能力。
+## 本地数据兼容
 
-- C919 巡航马赫数、767-300ER 首飞日期尚待确认，明确标为“待核实”。
-- A321XLR 缺少本次已核实授权和子型号的照片，使用原创示意图，不加入识别题。
-- 部分来源是系列入口，尚无逐参数 PDF 修订版/页码快照。典型巡航马赫数为近似值；航程和参考座位随构型变化，应在专业应用前重新审校。
-- A350-900 航程不混用 ULR；747-8 参数对应客运型；C919 航程标明增程构型。
+继续使用 `aeronaut-progress-v1` 键，记录格式升级至version2。首次读取V1或导入V1备份时，仅保留收藏、浏览记录、实验状态及合法的总成绩字段，忽略并清除旧逐题列表。仅重写本项目的一个键，不调用localStorage.clear，不触碰其他键；写入被禁用时保留内存进度并提示导出。V2备份不包含逐题错误数据。旧查询参数不再启用复习，打开旧链接会显示普通知识测试。
 
-## 部署
+## 来源与素材审核
 
-GitHub 仓库授权、Vercel 设置、自动部署和设备验收步骤见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+具体来源及图片署名见 `/credits`、`data/airlines.json`、`data/spotter.ts`、`docs/v1.1-source-audit.json` 和 `docs/v1.1-image-audit.json`。
 
-### Vercel
+航司资料主要来自 IATA、航空公司及联盟官方资料；南航机队有一项使用 Planespotters 二手资料，Qantas 部分官方页面在执行环境返回503、使用官方搜索索引核对，页面已注明。机队关系为带日期的资料快照，不由照片推断。
 
-将当前目录推送至自己的 Git 仓库，在 Vercel 导入，框架选 Next.js，构建命令 `npm run build`。无需环境变量。保持 Node.js 22+。本次交付未向外部托管平台发布。
+Logo仅采用Commons明确标为PD-textlogo的ANA、法航及达美图形，商标权保留。照片采用CC BY/CC BY-SA或原项目已核实公有领域素材。未确认授权的12家Logo及9家涂装照片明确待补充，不伪造标志。挑战JPEG副本仅移除可能泄题的描述元数据，不重新编码像素、不修改结构、不做模糊；局部题仅改变显示窗口，保留原作与许可信息。
 
-### Node.js 服务器
+图片审核是助手逐张视觉检查及许可证核对，不是仅OCR，也不冒充独立人工验收。不确定素材（例如原E195-E2照片）需后续人工审核并暂不出题。新增图片须先完成审核字段、授权、像素可见文字、文件路径、alt与答前元数据检查，再进入可玩题池。
 
-在服务器运行 `npm ci && npm run build && npm start`，用反向代理提供 HTTPS，服务端口默认为 3000，可用 `PORT` 修改。
+## 当前边界
 
-如果需要 standalone 制品，可在 `next.config.ts` 中添加 `output: "standalone"`，并按 Next.js 的 standalone 部署说明复制静态资源；此时使用生成的 `server.js` 启动。默认配置使用标准 `npm start`。
+- 专家识别需更多可可靠判断细微结构的照片。标准与局部题数较少，优先公平而不凑题。
+- 12家航司Logo、9家航司涂装实拍尚待授权核实；已有文字档案正常浏览。
+- 保留原V1资料缺口：C919巡航马赫数、767-300ER精确首飞日期等，不自行补造。
+- 实时航班、登录和跨设备云同步仍未实现。
+- 桌面、手机和平板尺寸与触控检查采用Chromium模拟；没有真实iPad/Safari设备验收，也没有WebKit引擎验收。
 
-localStorage 按浏览器及站点源隔离；更换域名或设备前，在机库导出备份并在新站导入。
-
-### Sites 静态托管
-
-此部署副本以 GitHub 提交 `46c89de874359a9b8b9547750e5d02e486ed3ca2` 为基线，仅为 Sites 添加静态导出配置和 `.openai/hosting.json`。对比页的 `a` 参数与错题复习页的 `mode` 参数改由浏览器读取，保留现有内容、样式与功能。`npm run build` 生成 `out/`；静态托管须支持无扩展名 HTML 路由及 `404.html`。
-
-Sites 运行时无需 Node.js 服务器、环境变量或数据库。实时航班、登录与云同步仍属尚未实现的 V2 功能。
-
-## 尚未实现 / V2
-
-实时航班地图和追踪后端、注册登录、跨设备云同步未实现，均非 V1 必需项。V2 建议：参数编辑审校与资料版本管理、更多有授权的多视角照片、按标签组织的自适应题库、完善的浏览器 E2E/无障碍测试，以及接入获得授权且明确标注延迟的航班 API。
+发布流程见 [DEPLOYMENT.md](DEPLOYMENT.md)，本次变更与验收记录见 [docs/V1.1-DELIVERY.md](docs/V1.1-DELIVERY.md)。

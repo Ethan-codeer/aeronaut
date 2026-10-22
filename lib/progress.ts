@@ -1,34 +1,34 @@
 export interface Result {
   id: string;
-  kind: "quiz" | "spotter";
+  kind: "quiz" | "spotter" | "airline";
   date: string;
   correct: number;
   total: number;
 }
 export interface Progress {
-  version: 1;
+  version: 2;
   favorites: string[];
   visited: string[];
-  wrong: string[];
   results: Result[];
   labUsed: boolean;
 }
 export const emptyProgress: Progress = {
-  version: 1,
+  version: 2,
   favorites: [],
   visited: [],
-  wrong: [],
   results: [],
   labUsed: false,
 };
+// Keep the existing storage key to retain V1 favorites, visits and scores.
+// Parsing V1 emits only V2 fields; the retired per-question list is ignored.
 export const STORAGE_KEY = "aeronaut-progress-v1";
 export function parseProgress(raw: string): Progress {
   const p: unknown = JSON.parse(raw);
   if (!p || typeof p !== "object") throw Error("无效备份文件");
   const x = p as Record<string, unknown>;
   if (
-    x.version !== 1 ||
-    !["favorites", "visited", "wrong"].every(
+    ![1, 2].includes(x.version as number) ||
+    !["favorites", "visited"].every(
       (k) =>
         Array.isArray(x[k]) &&
         (x[k] as unknown[]).length <= 1000 &&
@@ -44,7 +44,7 @@ export function parseProgress(raw: string): Progress {
         r &&
         typeof r === "object" &&
         typeof r.id === "string" &&
-        ["quiz", "spotter"].includes(r.kind) &&
+        ["quiz", "spotter", "airline"].includes(r.kind) &&
         typeof r.date === "string" &&
         Number.isFinite(Date.parse(r.date)) &&
         Number.isInteger(r.correct) &&
@@ -54,13 +54,20 @@ export function parseProgress(raw: string): Progress {
         r.correct <= r.total,
     )
   )
-    throw Error("备份版本或内容不符合 AERONAUT V1 格式");
+    throw Error("备份版本或内容不符合 AERONAUT 进度格式");
   return {
-    version: 1,
+    version: 2,
     favorites: [...new Set(x.favorites as string[])],
     visited: [...new Set(x.visited as string[])],
-    wrong: [...new Set(x.wrong as string[])],
     labUsed: x.labUsed,
-    results: x.results as Result[],
+    results: (x.results as Result[]).map(
+      ({ id, kind, date, correct, total }) => ({
+        id,
+        kind,
+        date,
+        correct,
+        total,
+      }),
+    ),
   };
 }

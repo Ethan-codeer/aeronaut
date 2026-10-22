@@ -301,25 +301,3 @@ export const questions: Question[] = facts.map((f, i) => ({
       : (aircraft.find((a) => f[5] === `/atlas/${a.slug}`)?.sources.engine ??
         "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"),
 }));
-export interface SpotterQuestion {
-  id: string;
-  aircraftSlug: string;
-  options: string[];
-  explanation: string;
-}
-export const spotterQuestions: SpotterQuestion[] = aircraft
-  .filter((a) => a.model !== "A321XLR")
-  .map((a, i) => ({
-    id: `spot-${i + 1}`,
-    aircraftSlug: a.slug,
-    options: [
-      a.model,
-      ...aircraft
-        .filter((b) => b.id !== a.id && b.model !== "A321XLR")
-        .slice(i % 3, (i % 3) + 3)
-        .map((b) => b.model),
-    ].sort((a, b) => a.localeCompare(b)),
-    explanation:
-      a.recognition.join("；") +
-      "。本题图片对应已核对的机型，现实识别需结合多项特征与注册资料。",
-  }));

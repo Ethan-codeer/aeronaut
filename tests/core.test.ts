@@ -1,7 +1,12 @@
 import { describe, expect, it } from "vitest";
 import { calculateLift, scoreAnswers } from "../lib/science";
 import { aircraft } from "../data/aircraft";
-import { questions, spotterQuestions } from "../data/questions";
+import { questions } from "../data/questions";
+import {
+  spotterQuestions,
+  spotterImageAudit,
+  playableSpotter,
+} from "../data/spotter";
 import { emptyProgress, parseProgress } from "../lib/progress";
 describe("simplified lift equation", () => {
   it("calculates force in newtons and responds quadratically to speed", () => {
@@ -43,13 +48,32 @@ describe("quiz integrity", () => {
       expect(q.source).toMatch(/^https:/);
     }
   });
-  it("maps every image challenge to a real model and a valid answer", () => {
-    expect(spotterQuestions.length).toBeGreaterThanOrEqual(10);
+  it("serves only reviewed, licensed, low-risk images at defensible precision", () => {
+    expect(spotterImageAudit).toHaveLength(11);
+    expect(playableSpotter("standard").length).toBeGreaterThan(0);
+    expect(playableSpotter("detail").length).toBeGreaterThan(0);
     for (const q of spotterQuestions) {
-      const a = aircraft.find((a) => a.slug === q.aircraftSlug);
-      expect(a).toBeDefined();
-      expect(q.options).toContain(a!.model);
+      expect(q.imageReviewed).toBe(true);
+      expect(q.imageAnswerLeakRisk).toBe("low");
+      expect(q.imageLicense).toBeTruthy();
+      expect(q.imageSource).toMatch(/^https:/);
+      expect(q.image).toMatch(/^\/images\/challenges\/p-[a-f0-9]+\.jpg$/);
+      expect(aircraft.some((a) => a.slug === q.aircraftSlug)).toBe(true);
       expect(new Set(q.options).size).toBe(4);
+      expect(q.answer).toBeGreaterThanOrEqual(0);
+      expect(q.answerPrecision).toBe("family");
+      expect(q.recognition!.length).toBeGreaterThanOrEqual(2);
+      expect(q.confusion).toBeTruthy();
+    }
+    const rejected = spotterImageAudit.filter(
+      (a) => a.imageAnswerLeakRisk !== "low",
+    );
+    for (const q of spotterQuestions) {
+      // A350 uses a replacement rather than the rejected original image.
+      if (q.id !== "p-4b7e18")
+        expect(rejected.some((r) => r.aircraftSlug === q.aircraftSlug)).toBe(
+          false,
+        );
     }
   });
   it("scores a completed round and an empty round correctly", () => {

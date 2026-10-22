@@ -2101,18 +2101,6 @@ table {
   margin-left: 15px;
   color: var(--muted);
 }
-.wrong-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-.wrong-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 11px;
-  color: var(--muted);
-  line-height: 1.8;
-}
 .world-hero {
   height: 360px;
   border-radius: 6px;
@@ -3625,3 +3613,43 @@ table {
     display: none;
   }
 }
+
+/* V1.1 additions reuse the existing panels, type scale and theme tokens. */
+.mode-options { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+.mode-options button { flex: 1 1 135px; min-height: 64px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; touch-action: manipulation; }
+.mode-options button[aria-pressed="true"] { border-color: var(--blue); background: var(--surface-2); color: var(--blue); }
+.mode-options button small { display: block; margin-top: 7px; color: var(--muted); font-size: 10px; }
+.mode-options button:disabled { opacity: .5; cursor: default; }
+.spotter-image svg { width: 100%; height: 100%; background: #fff; }
+.image-credit { font-size: 10px; color: var(--muted); overflow-wrap: anywhere; line-height: 1.7; }
+.image-credit a { text-decoration: underline; }
+.airline-atlas-banner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 30px; margin: 30px 0; background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; }
+.airline-atlas-banner h2 { margin: 10px 0; font-size: clamp(19px, 2.4vw, 26px); }
+.airline-atlas-banner p { color: var(--muted); font-size: 12px; line-height: 1.8; }
+.airline-atlas-banner .button { flex-shrink: 0; }
+.airline-tools { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.airline-search { display: flex; flex: 1 1 260px; align-items: center; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; padding: 0 16px; }
+.airline-search input { width: 100%; min-width: 0; padding: 14px 0; background: transparent; border: 0; color: var(--text); font: inherit; font-size: 14px; }
+.airline-tools select { min-height: 48px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; color: var(--text); font: inherit; font-size: 14px; }
+.airline-card { display: block; transition: border-color .2s, transform .2s; min-width: 0; }
+.airline-card:hover { border-color: var(--blue); transform: translateY(-3px); }
+.airline-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; color: var(--blue); }
+.airline-code { font-size: 48px; color: var(--blue); font-weight: 600; letter-spacing: -.04em; }
+.airline-card h2 { font-size: 22px; }
+.airline-en { min-height: 24px; }
+.airline-brand-panel { display: flex; justify-content: space-between; gap: 25px; align-items: center; margin-bottom: 40px; padding: 24px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; }
+.airline-logo { margin: 0; min-width: 0; }
+.airline-logo img { display: block; width: 220px; max-width: 100%; height: 90px; object-fit: contain; padding: 10px; background: #fff; border-radius: 4px; }
+.airline-logo figcaption, .airline-livery figcaption, .fleet-source { font-size: 10px; color: var(--muted); line-height: 1.8; margin-top: 10px; overflow-wrap: anywhere; }
+.airline-livery { margin: 16px 0; }
+.airline-livery img { width: 100%; max-height: 410px; object-fit: contain; background: var(--surface-2); border-radius: 6px; }
+.source-links a { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .airline-atlas-banner { align-items: flex-start; flex-direction: column; padding: 22px; }
+  .airline-brand-panel { padding: 18px; gap: 15px; }
+  .airline-brand-panel .airline-code { font-size: 36px; }
+  .airline-tools label, .airline-tools select { width: 100%; }
+  .airline-tools input { font-size: 16px; }
+  .spotter-image { height: 220px; }
+}
+.spotter-image > .media-loading { inset: 0; display: grid; place-items: center; background: var(--surface-2); color: var(--muted); font-size: 12px; letter-spacing: 0; }

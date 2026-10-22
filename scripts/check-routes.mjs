@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 const base = process.env.TEST_BASE_URL ?? "http://localhost:3000";
 const models = [
   "a320neo",
@@ -20,8 +21,12 @@ const routes = [
   "/atlas/compare?a=c919",
   "/academy",
   "/academy/quiz",
-  "/academy/quiz?mode=wrong",
   "/academy/spotter",
+  "/academy/airlines",
+  "/world/airlines",
+  ...JSON.parse(
+    readFileSync(new URL("../data/airlines.json", import.meta.url), "utf8"),
+  ).map((a) => `/world/airlines/${a.slug}`),
   "/lab",
   "/world",
   "/hangar",
@@ -62,11 +67,15 @@ for (const route of routes) {
   console.log(`OK ${route}`);
 }
 for (const path of linked) await check(path);
-for (const path of ["/not-a-real-route", "/atlas/not-an-aircraft"]) {
+for (const path of [
+  "/not-a-real-route",
+  "/atlas/not-an-aircraft",
+  "/world/airlines/not-an-airline",
+]) {
   const res = await fetch(new URL(path, base));
   if (res.status !== 404)
     throw Error(`Expected 404 at ${path}, got ${res.status}`);
 }
 console.log(
-  `PASS: ${routes.length} application routes, ${linked.size} linked pages/assets, and 2 missing routes.`,
+  `PASS: ${routes.length} application routes, ${linked.size} linked pages/assets, and 3 missing routes.`,
 );

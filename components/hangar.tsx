@@ -14,7 +14,6 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { aircraft } from "@/data/aircraft";
-import { questions } from "@/data/questions";
 import { useProgress } from "./providers";
 import { AircraftCard } from "./ui";
 export function Hangar() {
@@ -23,7 +22,6 @@ export function Hangar() {
   const [message, setMessage] = useState("");
   const [pending, setPending] = useState<string | null>(null);
   const favorites = aircraft.filter((a) => progress.favorites.includes(a.slug));
-  const wrong = questions.filter((q) => progress.wrong.includes(q.id));
   const achievements = [
     {
       name: "初次相遇",
@@ -234,7 +232,7 @@ export function Hangar() {
           ))}
         </div>
       </section>
-      <div className="two-columns">
+      <div>
         <section className="paper-panel">
           <span className="eyebrow blue">FLIGHT LOG</span>
           <h2>挑战飞行日志</h2>
@@ -243,7 +241,13 @@ export function Hangar() {
               {progress.results.slice(0, 15).map((r) => (
                 <div key={r.id}>
                   <div>
-                    <b>{r.kind === "quiz" ? "航空知识问答" : "看图识飞机"}</b>
+                    <b>
+                      {r.kind === "quiz"
+                        ? "航空知识问答"
+                        : r.kind === "airline"
+                          ? "航司挑战"
+                          : "看图识飞机"}
+                    </b>
                     <span>
                       {new Date(r.date).toLocaleDateString("zh-CN", {
                         timeZone: "UTC",
@@ -266,35 +270,6 @@ export function Hangar() {
             前往挑战大厅
             <ArrowRight size={16} />
           </Link>
-        </section>
-        <section className="paper-panel">
-          <span className="eyebrow blue">LEARN FROM EVERY FLIGHT</span>
-          <h2>
-            错题复习本 <span className="count-badge">{wrong.length}</span>
-          </h2>
-          {wrong.length ? (
-            <>
-              <ul className="wrong-list">
-                {wrong.slice(0, 6).map((q) => (
-                  <li key={q.id}>{q.question}</li>
-                ))}
-              </ul>
-              <Link className="button primary" href="/academy/quiz?mode=wrong">
-                开始复习
-                <ArrowRight size={16} />
-              </Link>
-            </>
-          ) : (
-            <>
-              <p className="muted">
-                当前没有待复习错题。答错的题目会自动出现在这里，复习答对后移出。
-              </p>
-              <Link href="/academy/quiz" className="text-link">
-                挑战一下
-                <ArrowRight size={16} />
-              </Link>
-            </>
-          )}
         </section>
       </div>
     </>

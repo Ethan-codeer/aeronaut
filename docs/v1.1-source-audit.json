@@ -1,0 +1,354 @@
+[
+  {
+    "url": "https://careers.cathaypacific.com/who-we-are/cathay-pacific-story",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://centreforaviation.com/data/profiles/airlines/qatar-airways-qr",
+    "status": 200,
+    "bytes": 113634,
+    "title": "Qatar Airways Airline Profile | CAPA",
+    "snippet": " Qatar Airways Airline Profile | CAPA .root_button_O3e{background-color:#e61e26;border:0;color:#fff;cursor:pointer;display:inline-block;font-family:Roboto,sans-serif;font-weight:700;padding:16px;text-align:center;width:120px}.root_button_O3e:hover{ba"
+  },
+  {
+    "url": "https://corporate.airfrance.com/en/air-france-legend",
+    "status": 200,
+    "bytes": 201693,
+    "title": "Air France Legend",
+    "snippet": " Air France Legend // Apply dark mode based on local storage before other scripts load if (localStorage.getItem('dark-mode') === 'true') { document.documentElement.classList.add('tw-dark'); } 5) ? true : false; \" :class=\"{ 'tw-overflow-hidden': menuI"
+  },
+  {
+    "url": "https://job.ceair.com/about/groupIntroduction.html",
+    "status": 200,
+    "bytes": 6311,
+    "title": "中国东方航空集团公司简介",
+    "snippet": " 中国东方航空集团公司简介 中国东方航空集团有限公司简介 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国东方航空集团有限公司总部位于上海，是中国三大国有骨干航空运输集团之一。在建立起现代航空综合服务集成体系的基础上，中国东航集团着力构建全服务航空、创新经济型航空、航空物流三大主业和东航技术、东航食品、东航科创、东航资本、东航资产五大航空相关产业布局，加快发展新质生产力，推动高质量发展，加快世界一流企业建设，是首家实现航空客运和航空物流两项核心主业“双上市”的国有大型"
+  },
+  {
+    "url": "https://m.airchina.com/ac/c/invoke/jxjsList%40pg",
+    "status": 200,
+    "bytes": 38183,
+    "title": "机型介绍",
+    "snippet": " .greyClass { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); } *{ outline: none !important; } #full-page .popups{ max-width: 640px; left: 50%; transform"
+  },
+  {
+    "url": "https://mediacentre.britishairways.com/factsheet/details/86/22/5",
+    "status": 200,
+    "bytes": 53745,
+    "title": "British Airways | British Airways' 787 Dreamliner",
+    "snippet": " British Airways | British Airways' 787 Dreamliner window.jQuery || document.write(' \\x3C/script>') var segment1 = 'factsheet'; var siteUrl = 'https://mediacentre.britishairways.com/'; var info_error = false; var error_error = false; var warning_erro"
+  },
+  {
+    "url": "https://news.delta.com/deltas-history-dusting-crops-connecting-world",
+    "status": 200,
+    "bytes": 52148,
+    "title": "Delta&#039;s history: From dusting crops to connecting the world | Delta News Hub",
+    "snippet": " (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?i"
+  },
+  {
+    "url": "https://news.delta.com/mediakit/airbus-a350",
+    "status": 200,
+    "bytes": 56533,
+    "title": "Airbus A350 | Delta News Hub",
+    "snippet": " (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?i"
+  },
+  {
+    "url": "https://united.mediaroom.com/2016-04-06-From-Airmail-to-Biofuel-United-Airlines-Builds-on-90-Years-of-Aviation-Firsts",
+    "status": 200,
+    "bytes": 16850,
+    "title": "From Airmail to Biofuel - United Airlines Builds on 90 Years of Aviation Firsts - Apr 6, 2016",
+    "snippet": " webDriver.push_jQuery(); function view_printable() { var loc = window.location; var sep = (loc.search == \"\") ? \"?\" : \"&\"; var url = loc.protocol+\"//\"+loc.host+loc.pathname+loc.search+sep+\"printable\"+loc.hash; window.open(url, \"_blank\", \"\"); } (funct"
+  },
+  {
+    "url": "https://united.mediaroom.com/2026-03-19-Tickets-on-Sale-Today-for-Uniteds-First-Boeing-787-9-Dreamliner-with-Elevated-Interior-Flights",
+    "status": 200,
+    "bytes": 19062,
+    "title": "Tickets on Sale Today for United's First Boeing 787-9 Dreamliner with Elevated Interior Flights - Mar 19, 2026",
+    "snippet": " webDriver.push_jQuery(); function view_printable() { var loc = window.location; var sep = (loc.search == \"\") ? \"?\" : \"&\"; var url = loc.protocol+\"//\"+loc.host+loc.pathname+loc.search+sep+\"printable\"+loc.hash; window.open(url, \"_blank\", \"\"); } (funct"
+  },
+  {
+    "url": "https://webresource.airchina.com.cn/en-US/content/about_us/company/?hySource=airchina-pc",
+    "status": 200,
+    "bytes": 63552,
+    "title": "Welcome&#32;to&#32;Airchina!",
+    "snippet": " Welcome&#32;to&#32;Airchina! try { window.$hy.init({ key: '9c3d8602a6464dadba8dabf529dfb543', apn: 'airchina-pc', apv: '1.0.0', host: 'fireeye-data-server.airchina.com.cn', domain: '.airchina.com.cn', }); } catch (e) { console.error(e); } function g"
+  },
+  {
+    "url": "https://www.airfranceklm.com/en/group/fleet",
+    "status": 200,
+    "bytes": 247386,
+    "title": "Fleet | AIR FRANCE KLM",
+    "snippet": " window.cspNonce=\"b+uU6uVgtRO68qFSejUNsQ==\";window.dataLayer=window.dataLayer||[];window.dataLayer.push({\"cspNonce\":\"b+uU6uVgtRO68qFSejUNsQ==\"}); div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #f"
+  },
+  {
+    "url": "https://www.ana.co.jp/group/en/company/ana/",
+    "status": 200,
+    "bytes": 12254,
+    "title": "Corporate Profile (ALL NIPPON AIRWAYS CO., LTD.) | Group Companies | ANA Group Corp.'s Information",
+    "snippet": " Corporate Profile (ALL NIPPON AIRWAYS CO., LTD.) | Group Companies | ANA Group Corp.'s Information window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-32F297W9WL'); (functi"
+  },
+  {
+    "url": "https://www.ana.co.jp/group/en/company/ana/scale/",
+    "status": 200,
+    "bytes": 15713,
+    "title": "Business Statistics | Group Companies | ANA Group Corp.'s Information",
+    "snippet": " Business Statistics | Group Companies | ANA Group Corp.'s Information window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-32F297W9WL'); (function (d, s, id) { var js, fjs ="
+  },
+  {
+    "url": "https://www.britishairways.com/content/information/about-ba/history-and-heritage/explore-our-past",
+    "status": 200,
+    "bytes": 68005,
+    "title": "Explore our past | Information | British Airways",
+    "snippet": " Explore our past | Information | British Airways var fullPath = \"/content/britishairways-com-content/gb/en/information/about-ba/history-and-heritage/explore-our-past\"; var oldPageName = \"\"; // Setup SOLR vars var solrCountry = 'GB'; var solrLanguage"
+  },
+  {
+    "url": "https://www.cathaypacific.com/cx/en_US/flying-with-us/aircraft-and-fleet/airbus-a350/900.html",
+    "status": 200,
+    "bytes": 194813,
+    "title": "Airbus A350-900 | Flying with us | Cathay Pacific Airways",
+    "snippet": " (function () { var noJsClass = document.getElementsByTagName('html')[0].className; var hasJsClass = noJsClass.replace('no-js', 'has-js'); document.getElementsByTagName('html')[0].className = hasJsClass; }()); Airbus A350-900 | Flying with us | Catha"
+  },
+  {
+    "url": "https://www.ceairgroup.com/ceairgroup/xwzx_158/dhxw_159/202601/t20260106_29495.html",
+    "status": 200,
+    "bytes": 43623,
+    "title": "东航新闻 - China Eastern Airlines",
+    "snippet": " 东航新闻 - China Eastern Airlines --> 东航集团网站 /* Copyright 2014 Evernote Corporation. All rights reserved. */ html,body{ width: 100%; height: 100%; } .jt-body{ width: 100%; height: 100%; min-height: 100%; } .jt-menu{ width: 100%; position: relative; back"
+  },
+  {
+    "url": "https://www.csair.cn/sg/zh/about/",
+    "status": 200,
+    "bytes": 236,
+    "title": "",
+    "snippet": " "
+  },
+  {
+    "url": "https://www.csair.com/sg/en/about/news/news/2019/1dsrfdovckaid.shtml",
+    "status": 200,
+    "bytes": 10165,
+    "title": "Announcement-2019-China Southern Airlines Co. Ltd csair.com",
+    "snippet": " Announcement-2019-China Southern Airlines Co. Ltd csair.com --> { \"@context\": \"http://schema.org/\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [ { \"@type\": \"ListItem\", \"position\":\"1\",\"item\":{\"@id\":\"https://www.csair.com/sg/en/about/\",\"name\":\"Abou"
+  },
+  {
+    "url": "https://www.delta.com/us/en/skymiles/medallion-program/international-partner-skyteam-benefits",
+    "status": 200,
+    "bytes": 480601,
+    "title": "International Partner &amp; SkyTeam® Benefits | Delta Air Lines",
+    "snippet": " International Partner &amp; SkyTeam® Benefits | Delta Air Lines {\"@context\":\"https://schema.org/\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"English - Home\",\"item\":\"https//www.delta.com/us/en\"},{\"@type\":\"Lis"
+  },
+  {
+    "url": "https://www.emirates.com/english/about-us/our-communities/our-partners/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.emirates.com/english/experience/our-fleet/a380/",
+    "status": 200,
+    "bytes": 501792,
+    "title": "The Emirates A380 fleet | Our fleet | The Emirates Experience | Emirates",
+    "snippet": " The Emirates A380 fleet | Our fleet | The Emirates Experience | Emirates window.process = window.process || {}; window.process.env = window.process.env || {}; env = window.process.env; env[\"LAZY_IMAGE_COMPONENT_START_COUNT\"]= \"2\";env[\"NODE_ENV\"]= \"p"
+  },
+  {
+    "url": "https://www.emirates.com/english/experience/our-fleet/boeing-777/",
+    "status": 200,
+    "bytes": 520557,
+    "title": "The Emirates Boeing 777 fleet | Our fleet | The Emirates Experience | Emirates",
+    "snippet": " The Emirates Boeing 777 fleet | Our fleet | The Emirates Experience | Emirates window.process = window.process || {}; window.process.env = window.process.env || {}; env = window.process.env; env[\"LAZY_IMAGE_COMPONENT_START_COUNT\"]= \"2\";env[\"NODE_ENV"
+  },
+  {
+    "url": "https://www.emirates.com/us/english/about-us/timeline/",
+    "status": 200,
+    "bytes": 521295,
+    "title": "History Timeline | About us | Emirates",
+    "snippet": " History Timeline | About us | Emirates window.process = window.process || {}; window.process.env = window.process.env || {}; env = window.process.env; env[\"LAZY_IMAGE_COMPONENT_START_COUNT\"]= \"2\";env[\"NODE_ENV\"]= \"production\";env[\"NEXTJS_UI_ASSETS_U"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Air%20China",
+    "status": 200,
+    "bytes": 113882,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Air%20France",
+    "status": 200,
+    "bytes": 113871,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=All%20Nippon%20Airways",
+    "status": 200,
+    "bytes": 112050,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways",
+    "status": 200,
+    "bytes": 113900,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Cathay%20Pacific",
+    "status": 200,
+    "bytes": 113910,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=China%20Eastern%20Airlines",
+    "status": 200,
+    "bytes": 112058,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=China%20Southern%20Airlines",
+    "status": 200,
+    "bytes": 113936,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Delta%20Air%20Lines",
+    "status": 200,
+    "bytes": 113916,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Emirates",
+    "status": 200,
+    "bytes": 114834,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Japan%20Airlines",
+    "status": 200,
+    "bytes": 113904,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Lufthansa",
+    "status": 200,
+    "bytes": 114786,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Qantas",
+    "status": 200,
+    "bytes": 113877,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Qatar%20Airways",
+    "status": 200,
+    "bytes": 113933,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=Singapore%20Airlines",
+    "status": 200,
+    "bytes": 113925,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.iata.org/en/about/members/airline-list/?search=United%20Airlines",
+    "status": 200,
+    "bytes": 114301,
+    "title": "IATA - Current Airline Members",
+    "snippet": " function OptanonWrapper() { } // Define dataLayer and the gtag function. window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('set', 'developer_id.dYWJhMj', true); // Set default consent for GDPR gtag('consent'"
+  },
+  {
+    "url": "https://www.jal.co.jp/jp/en/aircraft/conf/789.html",
+    "status": 200,
+    "bytes": 150533,
+    "title": "Boeing787-9 (789) / Aircrafts and seats - JAL",
+    "snippet": " Boeing787-9 (789) / Aircrafts and seats - JAL !function(a){var e=\"https://s.go-mpulse.net/boomerang/\",t=\"addEventListener\";if(\"False\"==\"True\")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.Pa"
+  },
+  {
+    "url": "https://www.jal.com/en-jp/about/outline/",
+    "status": 200,
+    "bytes": 112055,
+    "title": "Company Profile | About Us | JAPAN AIRLINES Corporate Information",
+    "snippet": " Company Profile | About Us | JAPAN AIRLINES Corporate Information --> !function(a){var e=\"https://s.go-mpulse.net/boomerang/\",t=\"addEventListener\";if(\"False\"==\"True\")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PagePara"
+  },
+  {
+    "url": "https://www.lufthansagroup.com/en/chronicle",
+    "status": 200,
+    "bytes": 351507,
+    "title": "Chronicle - Lufthansa Group - Chronik",
+    "snippet": " Chronicle - Lufthansa Group - Chronik Skip to main navigation Skip to main content Skip to page end Deutsch English Main Menu First Level Home Main Menu Home Home Company Company Portrait Management Company Management Lufthansa Group Carsten Spohr D"
+  },
+  {
+    "url": "https://www.lufthansagroup.com/en/company/alliances/",
+    "status": 200,
+    "bytes": 62277,
+    "title": "Alliances - Lufthansa Group",
+    "snippet": " Alliances - Lufthansa Group Skip to main navigation Skip to main content Skip to page end Deutsch English Main Menu First Level Home Newsroom Company Responsibility Investor Relations Jobs &amp; Careers Main Menu Home Newsroom Company Company Portra"
+  },
+  {
+    "url": "https://www.lufthansagroup.com/en/company/fleet/lufthansa-and-regional-partners/boeing-747-8.html",
+    "status": 200,
+    "bytes": 61789,
+    "title": "Boeing 747-8 - Lufthansa Group",
+    "snippet": " Boeing 747-8 - Lufthansa Group Skip to main navigation Skip to main content Skip to page end Deutsch English Main Menu First Level Home Newsroom Company Responsibility Investor Relations Jobs &amp; Careers Main Menu Home Newsroom Company Company Por"
+  },
+  {
+    "url": "https://www.oneworld.com/members",
+    "status": 200,
+    "bytes": 82502,
+    "title": "oneworld Members: Airlines In The oneworld Alliance | oneworld",
+    "snippet": " oneworld Members: Airlines In The oneworld Alliance | oneworld (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "
+  },
+  {
+    "url": "https://www.planespotters.net/airline/China-Southern-Airlines",
+    "status": 200,
+    "bytes": 28146,
+    "title": "Security Verification | Planespotters.net",
+    "snippet": " Security Verification | Planespotters.net const html = document.querySelector('html'); const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: d"
+  },
+  {
+    "url": "https://www.qantas.com/content/dam/qantas/pdfs/qantas-experience/onboard/seatmaps/b789.pdf",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.qantas.com/en-au/about-us/history",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.qatarairways.com/en-qa/fleet.html",
+    "status": 200,
+    "bytes": 667501,
+    "title": "All you need to know about our aircraft | Qatar Airways",
+    "snippet": " .change-bg,.d-none{ display:none; } .fade{ opacity:0; } .hero-image-new{ background:#5c0931; } All you need to know about our aircraft | Qatar Airways --> // Wait for adobeclient-datalayer-utility.js to be loaded before running the ACDL logic functi"
+  },
+  {
+    "url": "https://www.singaporeair.com/en_UK/in/flying-withus/our-story/our-heritage/",
+    "status": 200,
+    "bytes": 79826,
+    "title": "Our Heritage | Singapore Airlines",
+    "snippet": " Our Heritage | Singapore Airlines @font-face { font-family: \"proxima-nova\"; src: url(\"/etc.clientlibs/sia/clientlibs/clientlib-site/resources/fonts/proximanova-regular-webfont.woff2\"); font-weight: 400; font-style: normal; font-display: block; } @fo"
+  },
+  {
+    "url": "https://www.singaporeair.com/en_UK/mv/plan-travel/partner-airlines/star-alliance/",
+    "status": 200,
+    "bytes": 65381,
+    "title": "Star Alliance | Singapore Airlines",
+    "snippet": " Star Alliance | Singapore Airlines @font-face { font-family: \"proxima-nova\"; src: url(\"/etc.clientlibs/sia/clientlibs/clientlib-site/resources/fonts/proximanova-regular-webfont.woff2\"); font-weight: 400; font-style: normal; font-display: block; } @f"
+  },
+  {
+    "url": "https://www.singaporeair.com/en_UK/us/flying-withus/our-story/our-fleet/airbus-a350-900/",
+    "status": 200,
+    "bytes": 2859674,
+    "title": "Airbus A350-900 | Singapore Airlines",
+    "snippet": " Airbus A350-900 | Singapore Airlines @font-face { font-family: \"proxima-nova\"; src: url(\"/etc.clientlibs/sia/clientlibs/clientlib-site/resources/fonts/proximanova-regular-webfont.woff2\"); font-weight: 400; font-style: normal; font-display: block; } "
+  }
+]

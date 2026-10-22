@@ -59,3 +59,36 @@ describe("browser storage resilience", () => {
     unsubscribe();
   });
 });
+
+describe("V1 migration storage scope", () => {
+  it("only rewrites its own record and does not bring back the retired list", async () => {
+    const old = {
+      ...emptyProgress,
+      version: 1,
+      wrong: ["q-2"],
+      favorites: ["c919"],
+      visited: ["c919"],
+      labUsed: true,
+    };
+    const values = new Map([
+      [STORAGE_KEY, JSON.stringify(old)],
+      ["unrelated", "retain me"],
+    ]);
+    const writes = vi.fn((key: string, value: string) =>
+      values.set(key, value),
+    );
+    vi.stubGlobal("localStorage", {
+      getItem: (key: string) => values.get(key) ?? null,
+      setItem: writes,
+    });
+    const store = await import("../lib/progress-store");
+    const stop = store.subscribeProgress(() => {});
+    expect(writes).toHaveBeenCalledTimes(1);
+    expect(writes.mock.calls[0][0]).toBe(STORAGE_KEY);
+    expect(values.get("unrelated")).toBe("retain me");
+    expect(JSON.parse(values.get(STORAGE_KEY)!)).not.toHaveProperty("wrong");
+    expect(store.getProgressSnapshot().progress.favorites).toEqual(["c919"]);
+    expect(store.getProgressSnapshot().progress.labUsed).toBe(true);
+    stop();
+  });
+});

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { airlinesForAircraft } from "@/data/airlines";
 import { notFound } from "next/navigation";
 import {
   ArrowLeft,
@@ -168,6 +169,52 @@ export default async function AircraftDetail({
           </p>
         </aside>
       </div>
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow blue">AROUND THE WORLD</span>
+            <h2>代表性运营航司</h2>
+            <p>以有来源的机队资料建立关联，不根据照片涂装判断当前运营状态。</p>
+          </div>
+        </div>
+        {airlinesForAircraft(slug).length ? (
+          <div className="two-columns">
+            {airlinesForAircraft(slug).map((airline) => {
+              const relation = airline.fleet.find(
+                (f) => f.aircraftSlug === slug,
+              )!;
+              return (
+                <article className="paper-panel" key={airline.slug}>
+                  <span className="eyebrow blue">
+                    {airline.iata} / {airline.country}
+                  </span>
+                  <h3>
+                    <Link href={`/world/airlines/${airline.slug}`}>
+                      {airline.nameZh} ↗
+                    </Link>
+                  </h3>
+                  <p>{airline.nameEn}</p>
+                  <a
+                    className="text-link"
+                    href={relation.source}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    机队依据 · {relation.asOf} ↗
+                  </a>
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="notice">
+            本站尚未加入经核实的代表航司关系，后续扩充。
+            <Link href="/world/airlines" className="inline-link">
+              浏览全球航司 ↗
+            </Link>
+          </div>
+        )}
+      </section>
       <section className="section">
         <div className="section-heading">
           <div>

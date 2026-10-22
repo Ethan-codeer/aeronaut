@@ -23,11 +23,16 @@ function emit() {
 function load() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    snapshot = {
-      progress: raw ? parseProgress(raw) : emptyProgress,
-      ready: true,
-      error: "",
-    };
+    const progress = raw ? parseProgress(raw) : emptyProgress;
+    snapshot = { progress, ready: true, error: "" };
+    // Migrate only our own record. No other localStorage keys are touched.
+    if (raw && JSON.stringify(progress) !== raw) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+      } catch {
+        snapshot.error = "旧进度已在内存迁移；浏览器无法保存，请导出备份。";
+      }
+    }
   } catch {
     snapshot = {
       ...snapshot,

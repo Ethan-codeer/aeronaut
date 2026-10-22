@@ -21,7 +21,7 @@ export default function Academy() {
         <div>
           <span className="eyebrow">CLEAR FOR TAKEOFF</span>
           <h2>今天，让你的知识再升一级。</h2>
-          <p>无需登录。成绩、错题和成就，都会留在你的个人机库。</p>
+          <p>无需登录。成绩和成就，都会留在你的个人机库。</p>
         </div>
         <Trophy size={86} strokeWidth={1} />
       </div>
@@ -52,14 +52,32 @@ export default function Academy() {
           <span className="eyebrow blue">AIRCRAFT SPOTTER</span>
           <h2>看图识飞机</h2>
           <p>
-            观察翼梢、发动机和机身轮廓，从授权照片、原创示意图与识别线索中找出飞机的真实身份。
+            观察翼梢、发动机和机身轮廓，从审核后的真实照片中找出飞机的身份；回答后再查看识别依据。
           </p>
           <div className="tag-row">
-            <span>11 个真实机型</span>
+            <span>标准 / 局部模式</span>
             <span>附外形辨认依据</span>
           </div>
           <Link href="/academy/spotter" className="button primary">
             开启识别挑战
+            <ArrowUpRight size={18} />
+          </Link>
+        </article>
+        <article className="paper-panel">
+          <div className="game-number">
+            03 <Target size={32} />
+          </div>
+          <span className="eyebrow blue">AIRLINE CHALLENGE</span>
+          <h2>航司挑战</h2>
+          <p>
+            看涂装、辨标志、猜代码、识地理。认识连接世界的航空公司与它们的故事。
+          </p>
+          <div className="tag-row">
+            <span>四种玩法</span>
+            <span>随机题目与选项</span>
+          </div>
+          <Link href="/academy/airlines" className="button primary">
+            开启航司挑战
             <ArrowUpRight size={18} />
           </Link>
         </article>
@@ -71,7 +89,7 @@ export default function Academy() {
         </span>
         <span>
           <Target />
-          错题自动加入复习记录
+          本轮得分与正确率即时反馈
         </span>
         <span>
           <Trophy />
