@@ -1,13 +1,8 @@
 import { Suspense } from "react";
-import { Comparison } from "@/components/comparison";
+import { ComparisonFromQuery } from "@/components/query-pages";
 import { PageHeading } from "@/components/ui";
 export const metadata = { title: "机型参数比较" };
-export default async function Compare({
-  searchParams,
-}: {
-  searchParams: Promise<{ a?: string }>;
-}) {
-  const p = await searchParams;
+export default function Compare() {
   return (
     <div className="container page-content">
       <PageHeading
@@ -16,7 +11,7 @@ export default async function Compare({
         description="选择任意两架飞机，用一致的单位比较它们的尺寸、能力与设计取向。"
       />
       <Suspense>
-        <Comparison initial={p.a} />
+        <ComparisonFromQuery />
       </Suspense>
     </div>
   );

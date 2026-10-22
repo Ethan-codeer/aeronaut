@@ -88,7 +88,13 @@ GitHub 仓库授权、Vercel 设置、自动部署和设备验收步骤见 [DEPL
 
 如果需要 standalone 制品，可在 `next.config.ts` 中添加 `output: "standalone"`，并按 Next.js 的 standalone 部署说明复制静态资源；此时使用生成的 `server.js` 启动。默认配置使用标准 `npm start`。
 
-localStorage 按浏览器及站点源隔离；更换域名或设备前，在机库导出备份并在新站导入。当前不支持静态导出，因为对比和错题复习页读取 URL 查询参数。
+localStorage 按浏览器及站点源隔离；更换域名或设备前，在机库导出备份并在新站导入。
+
+### Sites 静态托管
+
+此部署副本以 GitHub 提交 `46c89de874359a9b8b9547750e5d02e486ed3ca2` 为基线，仅为 Sites 添加静态导出配置和 `.openai/hosting.json`。对比页的 `a` 参数与错题复习页的 `mode` 参数改由浏览器读取，保留现有内容、样式与功能。`npm run build` 生成 `out/`；静态托管须支持无扩展名 HTML 路由及 `404.html`。
+
+Sites 运行时无需 Node.js 服务器、环境变量或数据库。实时航班、登录与云同步仍属尚未实现的 V2 功能。
 
 ## 尚未实现 / V2
 
