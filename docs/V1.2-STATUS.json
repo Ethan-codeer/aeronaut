@@ -36,7 +36,7 @@
     "productionStaticBuild": "passed; 188 generated pages including framework pages",
     "http": {
       "applicationRequests": 186,
-      "linkedPagesAndAssets": 227,
+      "linkedPagesAndAssets": 231,
       "missingPaths": 6,
       "result": "passed"
     },
