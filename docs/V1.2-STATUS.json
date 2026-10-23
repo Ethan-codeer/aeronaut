@@ -1,0 +1,63 @@
+{
+  "version": "1.2.0",
+  "checkedAt": "2026-10-23T16:27:48.272007+00:00",
+  "site": {
+    "projectId": "appgprj_6ada268b654c8191b201e4eb06f67da7",
+    "liveUrl": "https://aeronaut-v1.ycwang1110.chatgpt.site",
+    "access": "public",
+    "workflow": "save-only; deployment requires user confirmation",
+    "hostedPreviewUrl": null
+  },
+  "recovery": {
+    "baseCommit": "27963051d4514637d3ae65cbfb4d162fd12a5284",
+    "savedVersionNumber": 2,
+    "bundle": "/workspace/backups/aeronaut-before-v1.2.bundle",
+    "sourceArchive": "/workspace/backups/aeronaut-before-v1.2-source.tar.gz"
+  },
+  "counts": {
+    "dictionary": 69,
+    "anatomyParts": 8,
+    "liveries": 20,
+    "licensedLiveryPhotos": 20,
+    "newPhotos": 14,
+    "cockpitQuestions": 25,
+    "airports": 50,
+    "airportChallengeModes": 3,
+    "tailQuestionsReused": 2,
+    "newRoutes": 146
+  },
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "unitAndDomTests": {
+      "passed": 38,
+      "files": 6
+    },
+    "productionStaticBuild": "passed; 188 generated pages including framework pages",
+    "http": {
+      "applicationRequests": 186,
+      "linkedPagesAndAssets": 227,
+      "missingPaths": 6,
+      "result": "passed"
+    },
+    "browser": "unavailable; not performed",
+    "realIPadSafari": "not performed"
+  },
+  "preservation": {
+    "progressKey": "aeronaut-progress-v1",
+    "progressSchema": 2,
+    "changedStorageModules": false,
+    "wrongAnswerNotebook": false,
+    "originalAircraft": 12,
+    "originalAirlines": 15,
+    "originalKnowledgeQuestions": 30,
+    "originalAirlineQuestions": 53
+  },
+  "limits": [
+    "No real-device browser, layout or touch verification",
+    "No hosted Sites preview URL; local static HTTP and DOM checks only",
+    "Livery full usage periods and registrations not independently verified",
+    "Airport database is an open-data educational snapshot, not official AIP or real-time operations data",
+    "External official pages may block automated requests; airport website HEAD audit had no 404s but 10 responses were not 200"
+  ]
+}

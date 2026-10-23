@@ -20,3 +20,8 @@
 本地静态预览支持无扩展名HTML映射。部署后可设置 `TEST_BASE_URL=https://aeronaut-v1.ycwang1110.chatgpt.site` 运行现有路由检查。若环境使用HTTP代理，Node24可加 `NODE_USE_ENV_PROXY=1`。网站保持同源，本地收藏和成绩继续可用，存储格式迁移不删除其他个人数据。
 
 若未来会话缺少Sites工具：将代码和测试结果保留为可审核提交，在能访问该Sites项目的ChatGPT会话中按上述project_id打开原站、同步源码、保存新版本并发布。不要通过create_site建立另一个公开网站，也不要将GitHub或本地构建成功描述为Sites已更新。
+
+
+## V1.2 保存但不发布
+
+本轮按用户指示只调用 `save_site_version`，禁止在确认前调用部署工具。产物含原 `.openai/hosting.json` 与 `out/`。原公开网址与访问权限不变。环境没有独立Sites预览能力：每个deploy工具产生的网址都是生产地址，不能以部署代替预览。可在具备浏览器预览能力的环境克隆同一源码提交，执行 `npm ci`、`npm run build` 和 `node scripts/preview.mjs`，完成iPad Safari等设备检查。用户确认后，部署交付回执中的同一保存版本，再运行 `TEST_BASE_URL=https://aeronaut-v1.ycwang1110.chatgpt.site npm run test:routes`。

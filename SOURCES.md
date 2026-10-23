@@ -30,3 +30,12 @@
 首页：Don-vip 的 A350 首飞照片，CC BY-SA 3.0。航空世界：Alex Cheban 的 A330neo 首飞照片，CC BY-SA 4.0。请保留 `/credits` 署名页和详情页中的作者/来源/许可链接。
 
 A321XLR 使用 AERONAUT 原创示意图。其外形与其他 A321neo 相近，因此没有以无注册信息的照片推断 XLR，也没有将其纳入识别挑战。所有原创 SVG 仅作为教学示意，不能量取工程尺寸。
+
+
+## V1.2
+
+- 69个词典条目：FAA PHAK / AIM；ETOPS另参照14 CFR §121.161，IATA与ICAO代码入口见每条词典来源。
+- 50个机场：OurAirports公有领域数据，由datasets/airport-codes快照选择；精确来源、下载日期、SHA256见docs/v1.2-airport-audit.json。官网HTTP状态见docs/v1.2-airport-websites.json。
+- 新增14张涂装摄影全部来自Commons明确CC BY、CC BY-SA或CC0许可，作者、原作、条款及调整记录见docs/v1.2-livery-audit.json；另外6张沿用V1.1授权记录。全图等比缩小和WebP压缩，不删除水印。
+- Leaflet1.9.4为BSD-2-Clause；OSM标准瓦片按需加载、保留署名、遵守瓦片政策，不预取离线地图。
+- 结构图和仪表均为原创SVG教学示意，不作为工程、维修或认证训练资料。

@@ -27,6 +27,21 @@ const routes = [
   ...JSON.parse(
     readFileSync(new URL("../data/airlines.json", import.meta.url), "utf8"),
   ).map((a) => `/world/airlines/${a.slug}`),
+  "/dictionary",
+  "/lab/anatomy",
+  "/lab/instruments",
+  "/academy/cockpit",
+  "/academy/tails",
+  "/world/liveries",
+  "/world/airports",
+  ...["dictionary", "liveries", "airports"].flatMap((name) =>
+    JSON.parse(
+      readFileSync(new URL(`../data/${name}.json`, import.meta.url), "utf8"),
+    ).map(
+      (r) =>
+        `${name === "dictionary" ? "/dictionary" : `/world/${name}`}/${r.slug}`,
+    ),
+  ),
   "/lab",
   "/world",
   "/hangar",
@@ -71,11 +86,14 @@ for (const path of [
   "/not-a-real-route",
   "/atlas/not-an-aircraft",
   "/world/airlines/not-an-airline",
+  "/dictionary/not-a-term",
+  "/world/airports/not-an-airport",
+  "/world/liveries/not-a-livery",
 ]) {
   const res = await fetch(new URL(path, base));
   if (res.status !== 404)
     throw Error(`Expected 404 at ${path}, got ${res.status}`);
 }
 console.log(
-  `PASS: ${routes.length} application routes, ${linked.size} linked pages/assets, and 3 missing routes.`,
+  `PASS: ${routes.length} application routes, ${linked.size} linked pages/assets, and 6 missing routes.`,
 );

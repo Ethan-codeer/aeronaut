@@ -1,0 +1,10 @@
+{
+  "downloadedAt": "2026-10-23",
+  "source": "https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv",
+  "upstream": "https://ourairports.com/data/",
+  "license": "Public domain / CC0",
+  "sha256": "ddf39cc9a202a264b9d003197271967ba51f4bb9fb7a076a66e7d71a73551dc6",
+  "coordinateOrder": "source latitude, longitude; Leaflet latitude, longitude",
+  "records": 50,
+  "note": "Selected exact IATA rows, no geocoding or hand-created coordinates. Elevations in ft."
+}

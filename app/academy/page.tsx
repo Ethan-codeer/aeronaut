@@ -17,6 +17,11 @@ export default function Academy() {
         title="好奇心，是你的第一张登机牌。"
         description="把每一次探索变成一次进步。在挑战中认识飞机，让航空知识成为你的超能力。"
       />
+      <div className="module-links">
+        <Link href="/academy/cockpit">飞行仪表挑战 · 25题 ↗</Link>
+        <Link href="/academy/tails">看机尾猜航司 ↗</Link>
+        <Link href="/world/airports#challenge">机场地理挑战 ↗</Link>
+      </div>
       <div className="academy-banner">
         <div>
           <span className="eyebrow">CLEAR FOR TAKEOFF</span>

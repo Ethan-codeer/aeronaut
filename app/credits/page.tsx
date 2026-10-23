@@ -8,6 +8,26 @@ export const metadata = { title: "资料来源与图片署名" };
 export default function Credits() {
   return (
     <div className="container page-content">
+      <section className="paper-panel reading-panel">
+        <h2>V1.2 新增资料与授权</h2>
+        <p>
+          词典、结构及仪表教学参考 FAA PHAK / AIM；ETOPS另参照14 CFR
+          §121.161。机场坐标、代码及标高来自OurAirports公有领域数据；OpenStreetMap底图按需加载，保留署名，不预取或缓存离线瓦片。
+        </p>
+        <p>
+          新增照片采用Commons文件页明确的CC BY或CC
+          BY-SA许可。每件涂装档案列出作者、原作和条款。全图显示，未删除水印；优化版本只等比缩小与压缩。商标和角色权利仍归相应权利人。
+        </p>
+        <div className="related-links">
+          <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak">
+            FAA PHAK ↗
+          </a>
+          <a href="https://ourairports.com/data/">OurAirports与许可 ↗</a>
+          <a href="https://operations.osmfoundation.org/policies/tiles/">
+            OpenStreetMap瓦片政策 ↗
+          </a>
+        </div>
+      </section>
       <PageHeading
         eyebrow="SOURCES & CREDITS / 资料与署名"
         title="每一次探索，都有据可循。"

@@ -15,11 +15,20 @@ import { airlineQuestions, AirlineMode } from "@/data/airline-questions";
 import { ChallengeQuestion, prepareRound } from "@/lib/challenge";
 import { scoreAnswers } from "@/lib/science";
 import { useProgress } from "./providers";
-export function Game({ kind }: { kind: "quiz" | "spotter" | "airline" }) {
+export function Game({
+  kind,
+  liveryOnly = false,
+}: {
+  kind: "quiz" | "spotter" | "airline";
+  liveryOnly?: boolean;
+}) {
   const { update, ready } = useProgress();
   const [spotterMode, setSpotterMode] = useState<SpotterMode>("standard");
-  const [airlineMode, setAirlineMode] = useState<AirlineMode>("code");
+  const [airlineMode, setAirlineMode] = useState<AirlineMode>(
+    liveryOnly ? "livery" : "code",
+  );
   const [logoVariant, setLogoVariant] = useState<"full" | "detail">("full");
+  const [imageAttempt, setImageAttempt] = useState(0);
   const [imageReady, setImageReady] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
   const [difficulty, setDifficulty] = useState<Difficulty>("入门");
@@ -198,7 +207,7 @@ export function Game({ kind }: { kind: "quiz" | "spotter" | "airline" }) {
             专家模式待补充可可靠区分细微特征的照片；不以模糊图片或无法区分的子型号凑题。
           </p>
         )}
-        {kind === "airline" && (
+        {kind === "airline" && !liveryOnly && (
           <div className="mode-options" role="group" aria-label="航司挑战模式">
             {(
               [
@@ -296,7 +305,7 @@ export function Game({ kind }: { kind: "quiz" | "spotter" | "airline" }) {
           >
             {q.imageView ? (
               <svg
-                key={q.id}
+                key={`${q.id}-${imageAttempt}`}
                 role="img"
                 aria-label="待识别图像的局部"
                 viewBox={`${q.imageView.x} ${q.imageView.y} ${q.imageView.width} ${q.imageView.height}`}
@@ -311,7 +320,7 @@ export function Game({ kind }: { kind: "quiz" | "spotter" | "airline" }) {
               </svg>
             ) : (
               <img
-                key={q.id}
+                key={`${q.id}-${imageAttempt}`}
                 src={q.image}
                 alt={
                   kind === "spotter" ? "待识别飞机照片" : "待识别航空公司图像"
@@ -340,6 +349,16 @@ export function Game({ kind }: { kind: "quiz" | "spotter" | "airline" }) {
           {imageFailed && (
             <div className="notice" role="alert">
               图片暂时无法加载，本题不计分。
+              <button
+                className="button secondary"
+                onClick={() => {
+                  setImageReady(false);
+                  setImageFailed(false);
+                  setImageAttempt((a) => a + 1);
+                }}
+              >
+                重试图像
+              </button>
               <button className="button secondary" onClick={skipImage}>
                 跳过此题
               </button>

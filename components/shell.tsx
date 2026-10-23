@@ -20,6 +20,7 @@ const nav = [
   ["/academy", "航空挑战"],
   ["/lab", "飞行实验室"],
   ["/world", "航空世界"],
+  ["/dictionary", "术语词典"],
 ];
 export function Header() {
   const pathname = usePathname();
@@ -111,7 +112,7 @@ export function Footer() {
         </span>
         <span>
           <Globe2 size={13} /> 简体中文 / EN terminology{" "}
-          <span className="status-dot" /> V1.1
+          <span className="status-dot" /> V1.2
         </span>
       </div>
     </footer>

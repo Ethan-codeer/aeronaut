@@ -60,6 +60,10 @@ export default async function AircraftDetail({
           </Link>
         </div>
       </div>
+      <div className="module-links">
+        <Link href="/lab/anatomy">探索典型双发客机结构 ↗</Link>
+        <Link href="/dictionary/mtow">读懂机型参数术语 ↗</Link>
+      </div>
       <figure className="detail-figure">
         <SafeImage
           src={a.image}

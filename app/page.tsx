@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExplorationLinks } from "@/components/exploration-links";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -113,6 +114,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <ExplorationLinks />
       <section className="container section">
         <Reveal>
           <div className="section-heading">
@@ -228,7 +230,7 @@ export default function Home() {
           <p>走进机场，回望航空百年。让好奇心，带你去更远的地方。</p>
           <ArrowLink href="/world">发现航空世界</ArrowLink>
         </div>
-        <Link href="/world#airports" className="world-mini">
+        <Link href="/world/airports" className="world-mini">
           <Globe2 />
           <span>
             机场与航路<b>世界的连接点</b>

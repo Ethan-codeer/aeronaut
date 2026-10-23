@@ -76,6 +76,11 @@ export default function World() {
           © Alex Cheban · CC BY-SA 4.0
         </a>
       </div>
+      <div className="module-links">
+        <Link href="/world/airports">全球机场地图 · 50座 ↗</Link>
+        <Link href="/world/liveries">航司涂装博物馆 · 20件 ↗</Link>
+        <Link href="/world/airlines">全球航司百科 ↗</Link>
+      </div>
       <section className="airline-atlas-banner">
         <div>
           <span className="eyebrow blue">GLOBAL AIRLINES / 全球航空公司</span>

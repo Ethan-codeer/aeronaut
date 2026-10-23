@@ -1,0 +1,1550 @@
+[
+  {
+    "slug": "pek",
+    "nameZh": "北京首都国际机场",
+    "nameEn": "Beijing Capital International Airport",
+    "iata": "PEK",
+    "icao": "ZBAA",
+    "country": "中国",
+    "city": "北京",
+    "region": "亚洲",
+    "latitude": 40.077349,
+    "longitude": 116.596702,
+    "elevationFt": 116,
+    "overview": "以北京为中心连接国内与国际航线。",
+    "hubAirlineSlugs": [
+      "air-china"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "机场代码PEK源自北京旧式拼写Peking。",
+    "website": "https://www.bcia.com.cn",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/ZBAA/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.bcia.com.cn"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "pkx",
+    "nameZh": "北京大兴国际机场",
+    "nameEn": "Beijing Daxing International Airport",
+    "iata": "PKX",
+    "icao": "ZBAD",
+    "country": "中国",
+    "city": "北京",
+    "region": "亚洲",
+    "latitude": 39.501289,
+    "longitude": 116.413967,
+    "elevationFt": 98,
+    "overview": "北京的重要国际门户，与首都机场共同服务首都地区。",
+    "hubAirlineSlugs": [
+      "china-southern",
+      "china-eastern"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "大兴机场与首都机场使用不同IATA代码，订票时应核对。",
+    "website": "https://www.bdia.com.cn",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/ZBAD/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.bdia.com.cn"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "pvg",
+    "nameZh": "上海浦东国际机场",
+    "nameEn": "Shanghai Pudong International Airport",
+    "iata": "PVG",
+    "icao": "ZSPD",
+    "country": "中国",
+    "city": "上海",
+    "region": "亚洲",
+    "latitude": 31.1434,
+    "longitude": 121.805,
+    "elevationFt": 13,
+    "overview": "上海重要的国际航空与货运门户。",
+    "hubAirlineSlugs": [
+      "china-eastern"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "浦东PVG与虹桥SHA不是同一机场。",
+    "website": "https://www.shanghaiairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/ZSPD/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.shanghaiairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "can",
+    "nameZh": "广州白云国际机场",
+    "nameEn": "Guangzhou Baiyun International Airport",
+    "iata": "CAN",
+    "icao": "ZGGG",
+    "country": "中国",
+    "city": "广州",
+    "region": "亚洲",
+    "latitude": 23.392401,
+    "longitude": 113.299004,
+    "elevationFt": 50,
+    "overview": "华南地区的重要客货运枢纽。",
+    "hubAirlineSlugs": [
+      "china-southern"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "CAN代码沿用了广州的旧英文称呼Canton。",
+    "website": "https://www.baiyunairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/ZGGG/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.baiyunairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "hkg",
+    "nameZh": "香港国际机场",
+    "nameEn": "Hong Kong International Airport",
+    "iata": "HKG",
+    "icao": "VHHH",
+    "country": "中国香港",
+    "city": "香港",
+    "region": "亚洲",
+    "latitude": 22.31184,
+    "longitude": 113.914862,
+    "elevationFt": 28,
+    "overview": "连接亚洲与全球的国际客运及货运枢纽。",
+    "hubAirlineSlugs": [
+      "cathay-pacific"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "现机场位于赤鱲角，与旧启德机场位置不同。",
+    "website": "https://www.hongkongairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/VHHH/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.hongkongairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "tpe",
+    "nameZh": "台湾桃园国际机场",
+    "nameEn": "Taiwan Taoyuan International Airport",
+    "iata": "TPE",
+    "icao": "RCTP",
+    "country": "中国台湾",
+    "city": "桃园",
+    "region": "亚洲",
+    "latitude": 25.0777,
+    "longitude": 121.233002,
+    "elevationFt": 106,
+    "overview": "服务台北都会区的重要国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "TPE服务台北地区，但机场所在地是桃园。",
+    "website": "https://www.taoyuan-airport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/RCTP/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.taoyuan-airport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "nrt",
+    "nameZh": "成田国际机场",
+    "nameEn": "Narita International Airport",
+    "iata": "NRT",
+    "icao": "RJAA",
+    "country": "日本",
+    "city": "成田",
+    "region": "亚洲",
+    "latitude": 35.76858,
+    "longitude": 140.388714,
+    "elevationFt": 141,
+    "overview": "东京都会区的重要国际航空门户。",
+    "hubAirlineSlugs": [
+      "ana",
+      "japan-airlines"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "成田机场与羽田机场分处东京都会区不同方向。",
+    "website": "https://www.narita-airport.jp",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/RJAA/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.narita-airport.jp"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "hnd",
+    "nameZh": "东京国际机场（羽田）",
+    "nameEn": "Tokyo Haneda International Airport",
+    "iata": "HND",
+    "icao": "RJTT",
+    "country": "日本",
+    "city": "东京",
+    "region": "亚洲",
+    "latitude": 35.549678,
+    "longitude": 139.786958,
+    "elevationFt": 35,
+    "overview": "兼具国内与国际航线的东京航空枢纽。",
+    "hubAirlineSlugs": [
+      "ana",
+      "japan-airlines"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "HND常以羽田机场之名为旅客熟知。",
+    "website": "https://tokyo-haneda.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/RJTT/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://tokyo-haneda.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "icn",
+    "nameZh": "仁川国际机场",
+    "nameEn": "Incheon International Airport",
+    "iata": "ICN",
+    "icao": "RKSI",
+    "country": "韩国",
+    "city": "仁川",
+    "region": "亚洲",
+    "latitude": 37.469101,
+    "longitude": 126.450996,
+    "elevationFt": 23,
+    "overview": "服务首尔都会区的国际中转门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "服务城市与机场实际所在城市不一定相同。",
+    "website": "https://www.airport.kr",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/RKSI/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.airport.kr"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "sin",
+    "nameZh": "新加坡樟宜机场",
+    "nameEn": "Singapore Changi Airport",
+    "iata": "SIN",
+    "icao": "WSSS",
+    "country": "新加坡",
+    "city": "新加坡",
+    "region": "亚洲",
+    "latitude": 1.35019,
+    "longitude": 103.994003,
+    "elevationFt": 22,
+    "overview": "东南亚重要的国际航空中转枢纽。",
+    "hubAirlineSlugs": [
+      "singapore-airlines"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "樟宜机场的星耀樟宜是机场商业与景观设施。",
+    "website": "https://www.changiairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/WSSS/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.changiairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "bkk",
+    "nameZh": "素万那普机场",
+    "nameEn": "Suvarnabhumi Airport",
+    "iata": "BKK",
+    "icao": "VTBS",
+    "country": "泰国",
+    "city": "曼谷",
+    "region": "亚洲",
+    "latitude": 13.6811,
+    "longitude": 100.747002,
+    "elevationFt": 5,
+    "overview": "服务曼谷的主要国际门户之一。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "曼谷另有廊曼机场DMK，转机时应核对机场。",
+    "website": "https://suvarnabhumi.airportthai.co.th",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/VTBS/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://suvarnabhumi.airportthai.co.th"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "kul",
+    "nameZh": "吉隆坡国际机场",
+    "nameEn": "Kuala Lumpur International Airport",
+    "iata": "KUL",
+    "icao": "WMKK",
+    "country": "马来西亚",
+    "city": "雪邦",
+    "region": "亚洲",
+    "latitude": 2.74558,
+    "longitude": 101.709999,
+    "elevationFt": 69,
+    "overview": "服务吉隆坡及周边地区的国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场位于雪邦，而不是吉隆坡市中心。",
+    "website": "https://airports.malaysiaairports.com.my",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/WMKK/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://airports.malaysiaairports.com.my"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "del",
+    "nameZh": "英迪拉·甘地国际机场",
+    "nameEn": "Indira Gandhi International Airport",
+    "iata": "DEL",
+    "icao": "VIDP",
+    "country": "印度",
+    "city": "德里",
+    "region": "亚洲",
+    "latitude": 28.55563,
+    "longitude": 77.09519,
+    "elevationFt": 777,
+    "overview": "印度北部重要的航空枢纽。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场以印度前总理英迪拉·甘地命名。",
+    "website": "https://www.newdelhiairport.in",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/VIDP/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.newdelhiairport.in"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "bom",
+    "nameZh": "贾特拉帕蒂·希瓦吉国际机场",
+    "nameEn": "Chhatrapati Shivaji Maharaj International Airport",
+    "iata": "BOM",
+    "icao": "VABB",
+    "country": "印度",
+    "city": "孟买",
+    "region": "亚洲",
+    "latitude": 19.088699,
+    "longitude": 72.867897,
+    "elevationFt": 39,
+    "overview": "印度西部重要的国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "BOM代码保留了孟买旧英文名Bombay的痕迹。",
+    "website": "https://csmia.adaniairports.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/VABB/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://csmia.adaniairports.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "cgk",
+    "nameZh": "苏加诺－哈达国际机场",
+    "nameEn": "Soekarno-Hatta International Airport",
+    "iata": "CGK",
+    "icao": "WIII",
+    "country": "印度尼西亚",
+    "city": "雅加达地区",
+    "region": "亚洲",
+    "latitude": -6.12557,
+    "longitude": 106.655998,
+    "elevationFt": 34,
+    "overview": "服务雅加达都会区的主要国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "CGK来源于机场所在区域Cengkareng。",
+    "website": "https://soekarnohatta.injourneyairports.id",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/WIII/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://soekarnohatta.injourneyairports.id"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "lhr",
+    "nameZh": "伦敦希思罗机场",
+    "nameEn": "London Heathrow Airport",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "country": "英国",
+    "city": "伦敦",
+    "region": "欧洲",
+    "latitude": 51.470748,
+    "longitude": -0.459909,
+    "elevationFt": 83,
+    "overview": "英国重要的国际航空枢纽。",
+    "hubAirlineSlugs": [
+      "british-airways"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "伦敦拥有多座机场，LHR只代表希思罗。",
+    "website": "https://www.heathrow.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/EGLL/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.heathrow.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "cdg",
+    "nameZh": "巴黎戴高乐机场",
+    "nameEn": "Charles de Gaulle International Airport",
+    "iata": "CDG",
+    "icao": "LFPG",
+    "country": "法国",
+    "city": "巴黎地区",
+    "region": "欧洲",
+    "latitude": 49.00896,
+    "longitude": 2.554117,
+    "elevationFt": 392,
+    "overview": "连接法国与全球的主要航空枢纽。",
+    "hubAirlineSlugs": [
+      "air-france"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "机场以法国前总统夏尔·戴高乐命名。",
+    "website": "https://www.parisaeroport.fr",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/LFPG/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.parisaeroport.fr"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "fra",
+    "nameZh": "法兰克福机场",
+    "nameEn": "Frankfurt Main Airport",
+    "iata": "FRA",
+    "icao": "EDDF",
+    "country": "德国",
+    "city": "法兰克福",
+    "region": "欧洲",
+    "latitude": 50.026706,
+    "longitude": 8.55835,
+    "elevationFt": 364,
+    "overview": "欧洲重要的国际中转与货运枢纽。",
+    "hubAirlineSlugs": [
+      "lufthansa"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "FRA与法兰克福－哈恩HHN是不同机场。",
+    "website": "https://www.frankfurt-airport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/EDDF/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.frankfurt-airport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "ams",
+    "nameZh": "阿姆斯特丹史基浦机场",
+    "nameEn": "Amsterdam Airport Schiphol",
+    "iata": "AMS",
+    "icao": "EHAM",
+    "country": "荷兰",
+    "city": "阿姆斯特丹地区",
+    "region": "欧洲",
+    "latitude": 52.308601,
+    "longitude": 4.76389,
+    "elevationFt": -11,
+    "overview": "荷兰的重要国际航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场标高低于平均海平面，负标高并非数据错误。",
+    "website": "https://www.schiphol.nl",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/EHAM/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.schiphol.nl"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "mad",
+    "nameZh": "阿道弗·苏亚雷斯马德里－巴拉哈斯机场",
+    "nameEn": "Adolfo Suárez Madrid–Barajas Airport",
+    "iata": "MAD",
+    "icao": "LEMD",
+    "country": "西班牙",
+    "city": "马德里",
+    "region": "欧洲",
+    "latitude": 40.493407,
+    "longitude": -3.572249,
+    "elevationFt": 1998,
+    "overview": "连接西班牙、欧洲与拉丁美洲的重要门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "马德里的机场海拔明显高于沿海城市机场。",
+    "website": "https://www.aena.es/en/adolfo-suarez-madrid-barajas.html",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/LEMD/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas.html"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "fco",
+    "nameZh": "罗马菲乌米奇诺机场",
+    "nameEn": "Rome–Fiumicino Leonardo da Vinci International Airport",
+    "iata": "FCO",
+    "icao": "LIRF",
+    "country": "意大利",
+    "city": "菲乌米奇诺",
+    "region": "欧洲",
+    "latitude": 41.804532,
+    "longitude": 12.251998,
+    "elevationFt": 13,
+    "overview": "服务罗马都会区的主要国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场也称莱昂纳多·达·芬奇机场。",
+    "website": "https://www.adr.it",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/LIRF/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.adr.it"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "muc",
+    "nameZh": "慕尼黑机场",
+    "nameEn": "Munich Airport",
+    "iata": "MUC",
+    "icao": "EDDM",
+    "country": "德国",
+    "city": "慕尼黑地区",
+    "region": "欧洲",
+    "latitude": 48.353802,
+    "longitude": 11.7861,
+    "elevationFt": 1487,
+    "overview": "德国南部重要的国际中转枢纽。",
+    "hubAirlineSlugs": [
+      "lufthansa"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "现机场取代了原里姆机场承担慕尼黑主要航空服务。",
+    "website": "https://www.munich-airport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/EDDM/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.munich-airport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "zrh",
+    "nameZh": "苏黎世机场",
+    "nameEn": "Zürich Airport",
+    "iata": "ZRH",
+    "icao": "LSZH",
+    "country": "瑞士",
+    "city": "苏黎世地区",
+    "region": "欧洲",
+    "latitude": 47.458056,
+    "longitude": 8.548056,
+    "elevationFt": 1417,
+    "overview": "瑞士重要的国际航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场也常称为克洛滕机场。",
+    "website": "https://www.flughafen-zuerich.ch",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/LSZH/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.flughafen-zuerich.ch"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "ist",
+    "nameZh": "伊斯坦布尔机场",
+    "nameEn": "İstanbul Airport",
+    "iata": "IST",
+    "icao": "LTFM",
+    "country": "土耳其",
+    "city": "伊斯坦布尔",
+    "region": "欧洲",
+    "latitude": 41.274874,
+    "longitude": 28.732136,
+    "elevationFt": 325,
+    "overview": "连接欧亚非航线的重要国际枢纽。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "现IST位于城市欧洲一侧；旧阿塔图尔克机场不在此位置。",
+    "website": "https://www.istairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/LTFM/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.istairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "cph",
+    "nameZh": "哥本哈根机场",
+    "nameEn": "Copenhagen Kastrup Airport",
+    "iata": "CPH",
+    "icao": "EKCH",
+    "country": "丹麦",
+    "city": "卡斯特鲁普",
+    "region": "欧洲",
+    "latitude": 55.617900848389,
+    "longitude": 12.656000137329,
+    "elevationFt": 17,
+    "overview": "北欧地区的重要航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场位于阿迈厄岛，邻近厄勒海峡。",
+    "website": "https://www.cph.dk",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/EKCH/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.cph.dk"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "jfk",
+    "nameZh": "约翰·肯尼迪国际机场",
+    "nameEn": "John F. Kennedy International Airport",
+    "iata": "JFK",
+    "icao": "KJFK",
+    "country": "美国",
+    "city": "纽约",
+    "region": "北美",
+    "latitude": 40.639447,
+    "longitude": -73.779317,
+    "elevationFt": 13,
+    "overview": "纽约都会区的重要国际航空门户。",
+    "hubAirlineSlugs": [
+      "delta"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "纽约还有EWR和LGA，城市名称不能代替机场代码。",
+    "website": "https://www.jfkairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KJFK/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.jfkairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "lax",
+    "nameZh": "洛杉矶国际机场",
+    "nameEn": "Los Angeles International Airport",
+    "iata": "LAX",
+    "icao": "KLAX",
+    "country": "美国",
+    "city": "洛杉矶",
+    "region": "北美",
+    "latitude": 33.942501,
+    "longitude": -118.407997,
+    "elevationFt": 125,
+    "overview": "美国西海岸重要的跨太平洋门户。",
+    "hubAirlineSlugs": [
+      "delta",
+      "united"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "LAX中的X是代码的一部分，不是某个中文词的缩写。",
+    "website": "https://www.flylax.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KLAX/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.flylax.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "sfo",
+    "nameZh": "旧金山国际机场",
+    "nameEn": "San Francisco International Airport",
+    "iata": "SFO",
+    "icao": "KSFO",
+    "country": "美国",
+    "city": "旧金山湾区",
+    "region": "北美",
+    "latitude": 37.619806,
+    "longitude": -122.374821,
+    "elevationFt": 13,
+    "overview": "连接旧金山湾区与全球的国际枢纽。",
+    "hubAirlineSlugs": [
+      "united"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "海湾附近的地理位置使机场与海岸环境紧密相连。",
+    "website": "https://www.flysfo.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KSFO/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.flysfo.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "ord",
+    "nameZh": "芝加哥奥黑尔国际机场",
+    "nameEn": "Chicago O'Hare International Airport",
+    "iata": "ORD",
+    "icao": "KORD",
+    "country": "美国",
+    "city": "芝加哥",
+    "region": "北美",
+    "latitude": 41.9786,
+    "longitude": -87.9048,
+    "elevationFt": 680,
+    "overview": "美国中部重要的国内与国际航空枢纽。",
+    "hubAirlineSlugs": [
+      "united"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "ORD代码源于机场早期名称Orchard Field。",
+    "website": "https://www.flychicago.com/ohare",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KORD/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.flychicago.com/ohare"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "atl",
+    "nameZh": "哈茨菲尔德－杰克逊亚特兰大国际机场",
+    "nameEn": "Hartsfield Jackson Atlanta International Airport",
+    "iata": "ATL",
+    "icao": "KATL",
+    "country": "美国",
+    "city": "亚特兰大",
+    "region": "北美",
+    "latitude": 33.6367,
+    "longitude": -84.428101,
+    "elevationFt": 1026,
+    "overview": "美国东南部的重要中转枢纽。",
+    "hubAirlineSlugs": [
+      "delta"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "大型枢纽的客流既有本地旅客，也包含转机旅客。",
+    "website": "https://www.atl.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KATL/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.atl.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "dfw",
+    "nameZh": "达拉斯－沃思堡国际机场",
+    "nameEn": "Dallas Fort Worth International Airport",
+    "iata": "DFW",
+    "icao": "KDFW",
+    "country": "美国",
+    "city": "达拉斯－沃思堡",
+    "region": "北美",
+    "latitude": 32.896801,
+    "longitude": -97.038002,
+    "elevationFt": 607,
+    "overview": "服务得克萨斯北部都会区的大型航空枢纽。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场名称同时包含达拉斯和沃思堡两个城市。",
+    "website": "https://www.dfwairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KDFW/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.dfwairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "yyz",
+    "nameZh": "多伦多皮尔逊国际机场",
+    "nameEn": "Toronto Pearson International Airport",
+    "iata": "YYZ",
+    "icao": "CYYZ",
+    "country": "加拿大",
+    "city": "米西索加",
+    "region": "北美",
+    "latitude": 43.675935,
+    "longitude": -79.629421,
+    "elevationFt": 569,
+    "overview": "加拿大重要的国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "服务多伦多，但机场大部分位于米西索加市。",
+    "website": "https://www.torontopearson.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/CYYZ/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.torontopearson.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "yvr",
+    "nameZh": "温哥华国际机场",
+    "nameEn": "Vancouver International Airport",
+    "iata": "YVR",
+    "icao": "CYVR",
+    "country": "加拿大",
+    "city": "列治文",
+    "region": "北美",
+    "latitude": 49.193901,
+    "longitude": -123.183998,
+    "elevationFt": 14,
+    "overview": "加拿大西海岸的重要跨太平洋门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场位于弗雷泽河口的海岛上。",
+    "website": "https://www.yvr.ca",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/CYVR/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.yvr.ca"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "mex",
+    "nameZh": "墨西哥城国际机场",
+    "nameEn": "Mexico City Benito Juárez International Airport",
+    "iata": "MEX",
+    "icao": "MMMX",
+    "country": "墨西哥",
+    "city": "墨西哥城",
+    "region": "北美",
+    "latitude": 19.435822,
+    "longitude": -99.07033,
+    "elevationFt": 7316,
+    "overview": "墨西哥高原上的主要航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "较高机场标高会影响空气密度与飞机性能。",
+    "website": "https://www.aicm.com.mx",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/MMMX/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.aicm.com.mx"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "gru",
+    "nameZh": "圣保罗瓜鲁柳斯国际机场",
+    "nameEn": "São Paulo/Guarulhos–Governor André Franco Montoro International Airport",
+    "iata": "GRU",
+    "icao": "SBGR",
+    "country": "巴西",
+    "city": "瓜鲁柳斯",
+    "region": "南美",
+    "latitude": -23.431274,
+    "longitude": -46.469954,
+    "elevationFt": 2461,
+    "overview": "巴西重要的国际航空枢纽。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "圣保罗另有孔戈尼亚斯机场CGH，代码不可混用。",
+    "website": "https://www.gru.com.br",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/SBGR/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.gru.com.br"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "eze",
+    "nameZh": "埃塞萨国际机场",
+    "nameEn": "Ezeiza International Airport - Ministro Pistarini",
+    "iata": "EZE",
+    "icao": "SAEZ",
+    "country": "阿根廷",
+    "city": "埃塞萨",
+    "region": "南美",
+    "latitude": -34.8222,
+    "longitude": -58.5358,
+    "elevationFt": 67,
+    "overview": "服务布宜诺斯艾利斯的主要国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场正式名称包含皮斯塔里尼部长之名。",
+    "website": "https://www.aeropuertosargentina.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/SAEZ/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.aeropuertosargentina.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "scl",
+    "nameZh": "阿图罗·梅里诺·贝尼特斯国际机场",
+    "nameEn": "Comodoro Arturo Merino Benítez International Airport",
+    "iata": "SCL",
+    "icao": "SCEL",
+    "country": "智利",
+    "city": "圣地亚哥",
+    "region": "南美",
+    "latitude": -33.393001556396484,
+    "longitude": -70.78579711914062,
+    "elevationFt": 1555,
+    "overview": "智利的主要国际航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "安第斯山脉是圣地亚哥地区显著的地理背景。",
+    "website": "https://www.nuevopudahuel.cl",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/SCEL/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.nuevopudahuel.cl"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "bog",
+    "nameZh": "埃尔多拉多国际机场",
+    "nameEn": "El Dorado International Airport",
+    "iata": "BOG",
+    "icao": "SKBO",
+    "country": "哥伦比亚",
+    "city": "波哥大",
+    "region": "南美",
+    "latitude": 4.70159,
+    "longitude": -74.1469,
+    "elevationFt": 8361,
+    "overview": "安第斯高原上的重要客货运枢纽。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场海拔超过2500米，明显高于多数海滨枢纽。",
+    "website": "https://eldorado.aero",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/SKBO/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://eldorado.aero"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "jnb",
+    "nameZh": "奥利弗·坦博国际机场",
+    "nameEn": "O.R. Tambo International Airport",
+    "iata": "JNB",
+    "icao": "FAOR",
+    "country": "南非",
+    "city": "约翰内斯堡地区",
+    "region": "非洲",
+    "latitude": -26.140081,
+    "longitude": 28.246801,
+    "elevationFt": 5558,
+    "overview": "南部非洲的重要国际中转门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场并非位于海平面附近，而在南非高原上。",
+    "website": "https://www.airports.co.za/airports/or-tambo-international-airport",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/FAOR/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.airports.co.za/airports/or-tambo-international-airport"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "cpt",
+    "nameZh": "开普敦国际机场",
+    "nameEn": "Cape Town International Airport",
+    "iata": "CPT",
+    "icao": "FACT",
+    "country": "南非",
+    "city": "开普敦",
+    "region": "非洲",
+    "latitude": -33.97403,
+    "longitude": 18.604333,
+    "elevationFt": 151,
+    "overview": "服务南非西开普地区的国际门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "CPT与约翰内斯堡JNB位于南非不同区域。",
+    "website": "https://www.airports.co.za/airports/cape-town-international-airport",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/FACT/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.airports.co.za/airports/cape-town-international-airport"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "cai",
+    "nameZh": "开罗国际机场",
+    "nameEn": "Cairo International Airport",
+    "iata": "CAI",
+    "icao": "HECA",
+    "country": "埃及",
+    "city": "开罗",
+    "region": "非洲",
+    "latitude": 30.111534,
+    "longitude": 31.396694,
+    "elevationFt": 322,
+    "overview": "连接北非与中东、欧洲航线的重要门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场位于非洲东北部，地区筛选归入非洲。",
+    "website": "https://www.cairo-airport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/HECA/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.cairo-airport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "add",
+    "nameZh": "亚的斯亚贝巴博莱国际机场",
+    "nameEn": "Addis Ababa Bole International Airport",
+    "iata": "ADD",
+    "icao": "HAAB",
+    "country": "埃塞俄比亚",
+    "city": "亚的斯亚贝巴",
+    "region": "非洲",
+    "latitude": 8.97789,
+    "longitude": 38.799301,
+    "elevationFt": 7630,
+    "overview": "东非高原上的重要国际中转枢纽。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场标高较高，不能用接近海平面的性能假设代替。",
+    "website": "https://www.ethiopianairports.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/HAAB/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.ethiopianairports.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "dxb",
+    "nameZh": "迪拜国际机场",
+    "nameEn": "Dubai International Airport",
+    "iata": "DXB",
+    "icao": "OMDB",
+    "country": "阿拉伯联合酋长国",
+    "city": "迪拜",
+    "region": "中东",
+    "latitude": 25.24979,
+    "longitude": 55.370992,
+    "elevationFt": 62,
+    "overview": "连接欧洲、亚洲和非洲的国际航空枢纽。",
+    "hubAirlineSlugs": [
+      "emirates"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "DXB与迪拜另一机场DWC代码不同。",
+    "website": "https://www.dubaiairports.ae",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/OMDB/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.dubaiairports.ae"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "doh",
+    "nameZh": "哈马德国际机场",
+    "nameEn": "Hamad International Airport",
+    "iata": "DOH",
+    "icao": "OTHH",
+    "country": "卡塔尔",
+    "city": "多哈",
+    "region": "中东",
+    "latitude": 25.273056,
+    "longitude": 51.608056,
+    "elevationFt": 13,
+    "overview": "卡塔尔的主要国际航空枢纽。",
+    "hubAirlineSlugs": [
+      "qatar-airways"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "哈马德机场接替旧多哈国际机场的主要商业客运服务。",
+    "website": "https://dohahamadairport.com",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/OTHH/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://dohahamadairport.com"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "auh",
+    "nameZh": "扎耶德国际机场",
+    "nameEn": "Zayed International Airport",
+    "iata": "AUH",
+    "icao": "OMAA",
+    "country": "阿拉伯联合酋长国",
+    "city": "阿布扎比",
+    "region": "中东",
+    "latitude": 24.440966,
+    "longitude": 54.649237,
+    "elevationFt": 88,
+    "overview": "阿布扎比的主要国际航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场于2024年启用扎耶德国际机场名称。",
+    "website": "https://www.zayedinternationalairport.ae",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/OMAA/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.zayedinternationalairport.ae"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "syd",
+    "nameZh": "悉尼金斯福德·史密斯机场",
+    "nameEn": "Sydney Kingsford Smith International Airport",
+    "iata": "SYD",
+    "icao": "YSSY",
+    "country": "澳大利亚",
+    "city": "悉尼",
+    "region": "大洋洲",
+    "latitude": -33.946098,
+    "longitude": 151.177002,
+    "elevationFt": 21,
+    "overview": "澳大利亚重要的国际航空门户。",
+    "hubAirlineSlugs": [
+      "qantas"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "机场名称纪念澳大利亚航空先驱金斯福德·史密斯。",
+    "website": "https://www.sydneyairport.com.au",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/YSSY/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.sydneyairport.com.au"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "mel",
+    "nameZh": "墨尔本机场",
+    "nameEn": "Melbourne Airport",
+    "iata": "MEL",
+    "icao": "YMML",
+    "country": "澳大利亚",
+    "city": "图拉马林",
+    "region": "大洋洲",
+    "latitude": -37.670732,
+    "longitude": 144.837898,
+    "elevationFt": 434,
+    "overview": "澳大利亚东南部的重要国际门户。",
+    "hubAirlineSlugs": [
+      "qantas"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "MEL常称图拉马林机场，与阿瓦隆AVV不同。",
+    "website": "https://www.melbourneairport.com.au",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/YMML/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.melbourneairport.com.au"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "akl",
+    "nameZh": "奥克兰机场",
+    "nameEn": "Auckland International Airport",
+    "iata": "AKL",
+    "icao": "NZAA",
+    "country": "新西兰",
+    "city": "奥克兰",
+    "region": "大洋洲",
+    "latitude": -37.01199,
+    "longitude": 174.786331,
+    "elevationFt": 23,
+    "overview": "新西兰主要国际航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场位于奥克兰市区南方，邻近曼努考港。",
+    "website": "https://www.aucklandairport.co.nz",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/NZAA/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.aucklandairport.co.nz"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "hel",
+    "nameZh": "赫尔辛基机场",
+    "nameEn": "Helsinki Vantaa Airport",
+    "iata": "HEL",
+    "icao": "EFHK",
+    "country": "芬兰",
+    "city": "万塔",
+    "region": "欧洲",
+    "latitude": 60.318363,
+    "longitude": 24.963341,
+    "elevationFt": 179,
+    "overview": "芬兰主要的国际航空门户。",
+    "hubAirlineSlugs": [],
+    "hubNote": "地区客货运门户；本站暂未建立对应航司关系。",
+    "fact": "机场位于赫尔辛基北面的万塔市。",
+    "website": "https://www.finavia.fi/en/airports/helsinki-airport",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/EFHK/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.finavia.fi/en/airports/helsinki-airport"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  },
+  {
+    "slug": "sea",
+    "nameZh": "西雅图－塔科马国际机场",
+    "nameEn": "Seattle–Tacoma International Airport",
+    "iata": "SEA",
+    "icao": "KSEA",
+    "country": "美国",
+    "city": "西塔科",
+    "region": "北美",
+    "latitude": 47.447943,
+    "longitude": -122.310276,
+    "elevationFt": 433,
+    "overview": "美国太平洋西北地区的重要航空门户。",
+    "hubAirlineSlugs": [
+      "delta"
+    ],
+    "hubNote": "相关枢纽 / 运营基地航司（节选，非完整名单）",
+    "fact": "机场名称同时联系西雅图与塔科马两个城市。",
+    "website": "https://www.portseattle.org/sea-tac",
+    "sources": [
+      {
+        "label": "OurAirports 原始机场记录（CC0 / 公有领域）",
+        "url": "https://ourairports.com/airports/KSEA/"
+      },
+      {
+        "label": "机场官方网站",
+        "url": "https://www.portseattle.org/sea-tac"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "verificationNote": "代码、坐标、标高核对开放数据快照；不作为航行资料。简介为教育性摘要，未逐项核实所有官网页面或当前航线。"
+  }
+]

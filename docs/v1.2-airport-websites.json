@@ -1,0 +1,302 @@
+[
+  {
+    "iata": "PEK",
+    "url": "https://www.bcia.com.cn",
+    "status": 200,
+    "resolvedUrl": "https://www.bcia.com.cn"
+  },
+  {
+    "iata": "PKX",
+    "url": "https://www.bdia.com.cn",
+    "status": 405,
+    "error": "HTTP Error 405: Method Not Allowed"
+  },
+  {
+    "iata": "PVG",
+    "url": "https://www.shanghaiairport.com",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "iata": "CAN",
+    "url": "https://www.baiyunairport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.baiyunairport.com"
+  },
+  {
+    "iata": "HKG",
+    "url": "https://www.hongkongairport.com",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "iata": "TPE",
+    "url": "https://www.taoyuan-airport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.taoyuan-airport.com"
+  },
+  {
+    "iata": "NRT",
+    "url": "https://www.narita-airport.jp",
+    "status": 200,
+    "resolvedUrl": "https://www.narita-airport.jp/en/"
+  },
+  {
+    "iata": "HND",
+    "url": "https://tokyo-haneda.com",
+    "status": 200,
+    "resolvedUrl": "https://tokyo-haneda.com/index.html"
+  },
+  {
+    "iata": "ICN",
+    "url": "https://www.airport.kr",
+    "status": 302,
+    "error": "HTTP Error 302: Found"
+  },
+  {
+    "iata": "SIN",
+    "url": "https://www.changiairport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.changiairport.com"
+  },
+  {
+    "iata": "BKK",
+    "url": "https://suvarnabhumi.airportthai.co.th",
+    "status": 405,
+    "error": "HTTP Error 405: Method Not Allowed"
+  },
+  {
+    "iata": "KUL",
+    "url": "https://airports.malaysiaairports.com.my",
+    "status": 200,
+    "resolvedUrl": "https://airports.malaysiaairports.com.my/en/klia1"
+  },
+  {
+    "iata": "DEL",
+    "url": "https://www.newdelhiairport.in",
+    "status": 200,
+    "resolvedUrl": "https://www.newdelhiairport.in"
+  },
+  {
+    "iata": "BOM",
+    "url": "https://csmia.adaniairports.com",
+    "status": null,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "iata": "CGK",
+    "url": "https://soekarnohatta.injourneyairports.id",
+    "status": 200,
+    "resolvedUrl": "https://soekarnohatta.injourneyairports.id"
+  },
+  {
+    "iata": "LHR",
+    "url": "https://www.heathrow.com",
+    "status": 200,
+    "resolvedUrl": "https://www.heathrow.com"
+  },
+  {
+    "iata": "CDG",
+    "url": "https://www.parisaeroport.fr",
+    "status": 200,
+    "resolvedUrl": "https://www.parisaeroport.fr"
+  },
+  {
+    "iata": "FRA",
+    "url": "https://www.frankfurt-airport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.frankfurt-airport.com/de.html"
+  },
+  {
+    "iata": "AMS",
+    "url": "https://www.schiphol.nl",
+    "status": 200,
+    "resolvedUrl": "https://www.schiphol.nl/en/"
+  },
+  {
+    "iata": "MAD",
+    "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas.html",
+    "status": 200,
+    "resolvedUrl": "https://www.aena.es/en/adolfo-suarez-madrid-barajas.html"
+  },
+  {
+    "iata": "FCO",
+    "url": "https://www.adr.it",
+    "status": 202,
+    "resolvedUrl": "https://www.adr.it"
+  },
+  {
+    "iata": "MUC",
+    "url": "https://www.munich-airport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.munich-airport.com"
+  },
+  {
+    "iata": "ZRH",
+    "url": "https://www.flughafen-zuerich.ch",
+    "status": 200,
+    "resolvedUrl": "https://www.flughafen-zuerich.ch/en/passengers"
+  },
+  {
+    "iata": "IST",
+    "url": "https://www.istairport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.istairport.com"
+  },
+  {
+    "iata": "CPH",
+    "url": "https://www.cph.dk",
+    "status": 200,
+    "resolvedUrl": "https://www.cph.dk"
+  },
+  {
+    "iata": "JFK",
+    "url": "https://www.jfkairport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.jfkairport.com"
+  },
+  {
+    "iata": "LAX",
+    "url": "https://www.flylax.com",
+    "status": 200,
+    "resolvedUrl": "https://www.flylax.com"
+  },
+  {
+    "iata": "SFO",
+    "url": "https://www.flysfo.com",
+    "status": 200,
+    "resolvedUrl": "https://www.flysfo.com"
+  },
+  {
+    "iata": "ORD",
+    "url": "https://www.flychicago.com/ohare",
+    "status": 200,
+    "resolvedUrl": "https://www.flychicago.com/ohare/home/pages/default.aspx"
+  },
+  {
+    "iata": "ATL",
+    "url": "https://www.atl.com",
+    "status": 200,
+    "resolvedUrl": "https://www.atl.com"
+  },
+  {
+    "iata": "DFW",
+    "url": "https://www.dfwairport.com",
+    "status": 200,
+    "resolvedUrl": "https://www.dfwairport.com"
+  },
+  {
+    "iata": "YYZ",
+    "url": "https://www.torontopearson.com",
+    "status": 200,
+    "resolvedUrl": "https://www.torontopearson.com/en"
+  },
+  {
+    "iata": "YVR",
+    "url": "https://www.yvr.ca",
+    "status": 200,
+    "resolvedUrl": "https://www.yvr.ca/en/passengers"
+  },
+  {
+    "iata": "MEX",
+    "url": "https://www.aicm.com.mx",
+    "status": 200,
+    "resolvedUrl": "https://www.aicm.com.mx"
+  },
+  {
+    "iata": "GRU",
+    "url": "https://www.gru.com.br",
+    "status": 200,
+    "resolvedUrl": "https://www.gru.com.br/index.html"
+  },
+  {
+    "iata": "EZE",
+    "url": "https://www.aeropuertosargentina.com",
+    "status": 200,
+    "resolvedUrl": "https://www.aeropuertosargentina.com"
+  },
+  {
+    "iata": "SCL",
+    "url": "https://www.nuevopudahuel.cl",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "iata": "BOG",
+    "url": "https://eldorado.aero",
+    "status": 200,
+    "resolvedUrl": "https://eldorado.aero"
+  },
+  {
+    "iata": "JNB",
+    "url": "https://www.airports.co.za/airports/or-tambo-international-airport",
+    "status": 200,
+    "resolvedUrl": "https://www.airports.co.za/airports/or-tambo-international-airport"
+  },
+  {
+    "iata": "CPT",
+    "url": "https://www.airports.co.za/airports/cape-town-international-airport",
+    "status": 200,
+    "resolvedUrl": "https://www.airports.co.za/airports/cape-town-international-airport"
+  },
+  {
+    "iata": "CAI",
+    "url": "https://www.cairo-airport.com",
+    "status": 503,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "iata": "ADD",
+    "url": "https://www.ethiopianairports.com",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "iata": "DXB",
+    "url": "https://www.dubaiairports.ae",
+    "status": 200,
+    "resolvedUrl": "https://dubaiairports.ae/"
+  },
+  {
+    "iata": "DOH",
+    "url": "https://dohahamadairport.com",
+    "status": 200,
+    "resolvedUrl": "https://dohahamadairport.com"
+  },
+  {
+    "iata": "AUH",
+    "url": "https://www.zayedinternationalairport.ae",
+    "status": 200,
+    "resolvedUrl": "https://www.zayedinternationalairport.ae"
+  },
+  {
+    "iata": "SYD",
+    "url": "https://www.sydneyairport.com.au",
+    "status": 200,
+    "resolvedUrl": "https://www.sydneyairport.com.au"
+  },
+  {
+    "iata": "MEL",
+    "url": "https://www.melbourneairport.com.au",
+    "status": 200,
+    "resolvedUrl": "https://www.melbourneairport.com.au"
+  },
+  {
+    "iata": "AKL",
+    "url": "https://www.aucklandairport.co.nz",
+    "status": 200,
+    "resolvedUrl": "https://www.aucklandairport.co.nz"
+  },
+  {
+    "iata": "HEL",
+    "url": "https://www.finavia.fi/en/airports/helsinki-airport",
+    "status": 200,
+    "resolvedUrl": "https://www.finavia.fi/en/airports/helsinki-airport"
+  },
+  {
+    "iata": "SEA",
+    "url": "https://www.portseattle.org/sea-tac",
+    "status": 200,
+    "resolvedUrl": "https://www.portseattle.org/sea"
+  }
+]

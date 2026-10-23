@@ -1,0 +1,1877 @@
+[
+  {
+    "slug": "lift",
+    "nameEn": "Lift",
+    "nameZh": "升力",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "气动力中垂直于相对来流方向的分量。",
+    "explanation": "由机翼周围压力分布及表面剪切力合成；其大小受密度、空速、面积和升力系数影响。",
+    "scenario": "在升力实验中比较不同空速。",
+    "misconception": "升力并非永远竖直向上；转弯时升力会倾斜。",
+    "related": [
+      "angle-of-attack",
+      "drag"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "weight",
+    "nameEn": "Weight",
+    "nameZh": "重力",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "地球引力对飞机质量产生的力。",
+    "explanation": "重力约为质量乘以当地重力加速度，方向指向地心；质量和力的单位不同。",
+    "scenario": "计算平飞所需升力。",
+    "misconception": "千克表示质量，牛顿表示力。",
+    "related": [
+      "lift",
+      "mtow"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "drag",
+    "nameEn": "Drag",
+    "nameZh": "阻力",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "气动力中平行相对来流、阻碍相对运动的分量。",
+    "explanation": "包括寄生阻力和诱导阻力等；不能仅以迎风面积判断总阻力。",
+    "scenario": "分析巡航推力需求。",
+    "misconception": "速度越低不代表总阻力一定越低。",
+    "related": [
+      "lift",
+      "thrust"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "thrust",
+    "nameEn": "Thrust",
+    "nameZh": "推力",
+    "abbreviation": "",
+    "category": "航空动力",
+    "definition": "动力装置对飞机产生的推进力。",
+    "explanation": "发动机加速气流，飞机受到相反方向的作用力；进气速度与喷流速度均影响净推力。",
+    "scenario": "理解涡扇发动机如何推进。",
+    "misconception": "喷气发动机不需要推着外界空气中的固定物体。",
+    "related": [
+      "turbofan",
+      "drag"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "angle-of-attack",
+    "nameEn": "Angle of Attack",
+    "nameZh": "迎角",
+    "abbreviation": "AoA",
+    "category": "飞行原理",
+    "definition": "翼弦线与相对来流方向之间的夹角。",
+    "explanation": "迎角与机身相对地平线的俯仰姿态不同；超过临界迎角会发生失速。",
+    "scenario": "改变实验中的升力系数。",
+    "misconception": "机头仰角不是迎角。",
+    "related": [
+      "pitch",
+      "stall"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "stall",
+    "nameEn": "Stall",
+    "nameZh": "失速",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "超过临界迎角后，流动分离导致升力系数显著下降的状态。",
+    "explanation": "可能在不同速度、姿态和载荷下发生；失速速度取决于重量、构型及载荷因数等条件。",
+    "scenario": "理解急转弯中的失速风险。",
+    "misconception": "失速不是发动机停止。",
+    "related": [
+      "angle-of-attack",
+      "load-factor"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "mach",
+    "nameEn": "Mach Number",
+    "nameZh": "马赫数",
+    "abbreviation": "M",
+    "category": "飞行原理",
+    "definition": "真空速与当地声速的比值。",
+    "explanation": "当地声速主要随气温变化；同一马赫数在不同温度下不对应同一真空速。",
+    "scenario": "阅读喷气客机巡航参数。",
+    "misconception": "M0.85不是固定的每小时公里数。",
+    "related": [
+      "tas",
+      "ias"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/atlas"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "pitch",
+    "nameEn": "Pitch",
+    "nameZh": "俯仰",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "飞机绕横轴的姿态转动。",
+    "explanation": "俯仰角描述机体纵轴相对地平线的倾斜；爬升率描述高度随时间的变化。",
+    "scenario": "对照姿态仪与垂直速度表。",
+    "misconception": "机头上仰不等于一定爬升。",
+    "related": [
+      "attitude-indicator",
+      "vertical-speed"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "roll",
+    "nameEn": "Roll",
+    "nameZh": "横滚",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "飞机绕纵轴的转动。",
+    "explanation": "副翼通常通过左右机翼升力差产生滚转力矩；协调转弯还需要方向控制配合。",
+    "scenario": "辨认姿态仪上的左右坡度。",
+    "misconception": "横滚方向不是航向。",
+    "related": [
+      "ailerons",
+      "heading"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "yaw",
+    "nameEn": "Yaw",
+    "nameZh": "偏航",
+    "abbreviation": "",
+    "category": "飞行原理",
+    "definition": "飞机绕垂直轴的转动。",
+    "explanation": "方向舵用于偏航控制，常与横滚控制配合以减小侧滑。",
+    "scenario": "理解协调转弯。",
+    "misconception": "踩方向舵并不等同汽车方向盘转弯。",
+    "related": [
+      "rudder",
+      "roll"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "load-factor",
+    "nameEn": "Load Factor",
+    "nameZh": "载荷因数",
+    "abbreviation": "n",
+    "category": "飞行原理",
+    "definition": "气动载荷与飞机重量的比值，教学中常用升力与重量之比。",
+    "explanation": "协调水平转弯时，坡度增加会提高所需升力及载荷因数，并提高相应失速速度。",
+    "scenario": "比较平飞和盘旋。",
+    "misconception": "乘客感到的过载不直接等于爬升率。",
+    "related": [
+      "stall",
+      "lift"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "wing",
+    "nameEn": "Wing",
+    "nameZh": "机翼",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "飞机产生主要升力的翼面结构。",
+    "explanation": "由翼盒、蒙皮及操纵面等组成，承受弯矩和扭矩；常容纳燃油。",
+    "scenario": "在结构图上定位主翼。",
+    "misconception": "不是只有机翼才产生气动力。",
+    "related": [
+      "lift",
+      "flaps"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "flaps",
+    "nameEn": "Flaps",
+    "nameZh": "襟翼",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "通常位于机翼后缘、可改变弯度或面积的增升装置。",
+    "explanation": "放下襟翼通常提高最大升力系数，也增加阻力；不同位置有相应的速度限制。",
+    "scenario": "观察进近着陆构型。",
+    "misconception": "襟翼不是主要横滚操纵面。",
+    "related": [
+      "slats",
+      "ailerons"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "slats",
+    "nameEn": "Slats",
+    "nameZh": "缝翼",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "通常位于机翼前缘的可动增升装置。",
+    "explanation": "展开后形成缝隙，改善高迎角流动状态、延缓分离；具体效果随翼型及构型而变。",
+    "scenario": "认识低速起降时的机翼前缘。",
+    "misconception": "缝翼和后缘襟翼位置不同。",
+    "related": [
+      "flaps",
+      "stall"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "spoilers",
+    "nameEn": "Spoilers",
+    "nameZh": "扰流板",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "机翼上表面可升起以减小升力、增加阻力的装置。",
+    "explanation": "可用作减速板、着陆后的卸升装置，部分机型也辅助横滚控制。",
+    "scenario": "观察着陆接地后的翼面。",
+    "misconception": "扰流板不只在着陆时使用。",
+    "related": [
+      "ailerons",
+      "drag"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "ailerons",
+    "nameEn": "Ailerons",
+    "nameZh": "副翼",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "通常位于机翼外侧后缘、用于横滚控制的操纵面。",
+    "explanation": "左右副翼常差动偏转，改变两侧升力形成滚转力矩；还会伴随阻力变化。",
+    "scenario": "点击结构图中的外翼后缘。",
+    "misconception": "副翼不是控制偏航的方向舵。",
+    "related": [
+      "roll",
+      "rudder"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "rudder",
+    "nameEn": "Rudder",
+    "nameZh": "方向舵",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "垂直尾翼后缘用于偏航控制的操纵面。",
+    "explanation": "改变尾部侧向气动力，产生绕飞机垂直轴的力矩。",
+    "scenario": "协调转弯或处理不对称推力。",
+    "misconception": "方向舵不直接控制机头上下。",
+    "related": [
+      "yaw",
+      "vertical-stabilizer"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "elevator",
+    "nameEn": "Elevator",
+    "nameZh": "升降舵",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "常位于水平尾翼后缘的俯仰操纵面。",
+    "explanation": "通过改变尾部气动力产生俯仰力矩；具体方向受尾翼布局及飞行状态影响。",
+    "scenario": "理解俯仰控制。",
+    "misconception": "升降舵偏转不保证飞机立即改变高度。",
+    "related": [
+      "pitch",
+      "horizontal-stabilizer"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "horizontal-stabilizer",
+    "nameEn": "Horizontal Stabilizer",
+    "nameZh": "水平安定面",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "为飞机提供纵向稳定性及配平作用的水平尾翼部分。",
+    "explanation": "常与升降舵共同构成平尾；一些飞机采用可调安定面或全动平尾。",
+    "scenario": "观察典型客机尾部。",
+    "misconception": "所有飞机并非都采用同一种平尾布局。",
+    "related": [
+      "elevator",
+      "pitch"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "vertical-stabilizer",
+    "nameEn": "Vertical Stabilizer",
+    "nameZh": "垂直安定面",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "主要提供航向静稳定性的垂直尾翼部分。",
+    "explanation": "与方向舵共同构成垂尾，对侧滑产生恢复方向的气动力矩。",
+    "scenario": "理解尾翼的稳定作用。",
+    "misconception": "垂尾不是主要升力翼面。",
+    "related": [
+      "rudder",
+      "yaw"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "landing-gear",
+    "nameEn": "Landing Gear",
+    "nameZh": "起落架",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "飞机在地面支承、滑跑和吸收着陆冲击的系统。",
+    "explanation": "包括支柱、机轮及相关刹车和收放机构；布置由重量、结构与地面运行需求决定。",
+    "scenario": "观察前三点式起落架。",
+    "misconception": "机轮数量不能单独确定飞机型号。",
+    "related": [
+      "mlw",
+      "runway"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "fuselage",
+    "nameEn": "Fuselage",
+    "nameZh": "机身",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "连接机翼、尾翼并容纳载荷及人员的主体结构。",
+    "explanation": "增压客机的机身需承受气密载荷及各部件传来的结构载荷。",
+    "scenario": "观察客舱和驾驶舱所在位置。",
+    "misconception": "外形示意图不是维修结构图。",
+    "related": [
+      "wing",
+      "cockpit"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "cockpit",
+    "nameEn": "Cockpit",
+    "nameZh": "驾驶舱",
+    "abbreviation": "",
+    "category": "飞机结构",
+    "definition": "飞行机组操纵飞机、监控系统的工作空间。",
+    "explanation": "仪表及显示器将姿态、速度、导航和系统信息组织在一起；布局随型号变化。",
+    "scenario": "学习五种基本仪表。",
+    "misconception": "游戏中的简化仪表不是专业训练设备。",
+    "related": [
+      "attitude-indicator",
+      "altimeter"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "turbofan",
+    "nameEn": "Turbofan Engine",
+    "nameZh": "涡扇发动机",
+    "abbreviation": "",
+    "category": "航空动力",
+    "definition": "利用核心机带动风扇、以旁通和核心气流产生推力的燃气涡轮发动机。",
+    "explanation": "进气、压缩、燃烧、涡轮做功和排气连续进行；高涵道比发动机大量推力来自风扇气流。",
+    "scenario": "认识现代客机吊舱。",
+    "misconception": "并非全部进气都流经燃烧室。",
+    "related": [
+      "bypass-ratio",
+      "compressor"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "bypass-ratio",
+    "nameEn": "Bypass Ratio",
+    "nameZh": "涵道比",
+    "abbreviation": "BPR",
+    "category": "航空动力",
+    "definition": "旁通气流质量流量与核心气流质量流量之比。",
+    "explanation": "它描述发动机气流分配；较高涵道比常与亚声速客机的推进效率和噪声设计有关。",
+    "scenario": "比较客机发动机技术。",
+    "misconception": "涵道比不是几何直径之比。",
+    "related": [
+      "turbofan",
+      "thrust"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/atlas"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "compressor",
+    "nameEn": "Compressor",
+    "nameZh": "压气机",
+    "abbreviation": "",
+    "category": "航空动力",
+    "definition": "在发动机中对气流做功以提高压力的部件。",
+    "explanation": "多级转子与静子逐步压缩空气，所需机械功通常由涡轮经轴提供。",
+    "scenario": "沿发动机气流观察压缩阶段。",
+    "misconception": "压气机需要消耗轴功。",
+    "related": [
+      "turbine",
+      "combustor"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "combustor",
+    "nameEn": "Combustor",
+    "nameZh": "燃烧室",
+    "abbreviation": "",
+    "category": "航空动力",
+    "definition": "使燃料与压缩空气混合并燃烧、提高气流能量的部件。",
+    "explanation": "稳定燃烧在设计压力和流量范围内持续发生，产生高温燃气流向涡轮。",
+    "scenario": "理解燃气涡轮循环。",
+    "misconception": "常规涡扇发动机不是周期性爆炸驱动。",
+    "related": [
+      "compressor",
+      "turbine"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "turbine",
+    "nameEn": "Turbine",
+    "nameZh": "涡轮",
+    "abbreviation": "",
+    "category": "航空动力",
+    "definition": "从高能燃气中提取机械功的旋转部件。",
+    "explanation": "涡轮通过轴驱动压气机、风扇等；叶片需承受高温和较大机械载荷。",
+    "scenario": "观察发动机后部。",
+    "misconception": "涡轮与风扇承担不同工作。",
+    "related": [
+      "turbofan",
+      "compressor"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "apu",
+    "nameEn": "Auxiliary Power Unit",
+    "nameZh": "辅助动力装置",
+    "abbreviation": "APU",
+    "category": "航空动力",
+    "definition": "为飞机提供辅助电能或气源等的装置。",
+    "explanation": "常见客机的APU是一台小型燃气轮机；使用能力和限制依机型而定。",
+    "scenario": "地面发动机未启动时供应部分能源。",
+    "misconception": "APU通常不是飞机的主推进发动机。",
+    "related": [
+      "turbine",
+      "cockpit"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/anatomy"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "attitude-indicator",
+    "nameEn": "Attitude Indicator",
+    "nameZh": "姿态仪",
+    "abbreviation": "AI",
+    "category": "飞行仪表",
+    "definition": "显示飞机相对地平线俯仰和横滚姿态的仪表。",
+    "explanation": "传统陀螺仪或姿态航向基准系统提供姿态信息；蓝色通常表示天空，棕色表示地面。",
+    "scenario": "独立读取俯仰角和坡度。",
+    "misconception": "不能用姿态仪单独判断爬升率。",
+    "related": [
+      "pitch",
+      "roll"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "airspeed-indicator",
+    "nameEn": "Airspeed Indicator",
+    "nameZh": "空速表",
+    "abbreviation": "ASI",
+    "category": "飞行仪表",
+    "definition": "根据动压与静压关系指示空速的仪表。",
+    "explanation": "传统空速表使用皮托与静压系统，读数为指示空速；误差修正及空气密度影响需另行考虑。",
+    "scenario": "读取模拟表盘的节数。",
+    "misconception": "空速不等于地速。",
+    "related": [
+      "ias",
+      "tas"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "altimeter",
+    "nameEn": "Altimeter",
+    "nameZh": "高度表",
+    "abbreviation": "",
+    "category": "飞行仪表",
+    "definition": "通过大气静压变化及选定基准气压指示高度的仪表。",
+    "explanation": "气压式高度表按标准大气模型标定；正确设置基准并理解气温误差非常重要。",
+    "scenario": "比较气压高度与真实高度。",
+    "misconception": "气压高度表不直接测量距地面高度。",
+    "related": [
+      "qnh",
+      "flight-level"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "vertical-speed",
+    "nameEn": "Vertical Speed",
+    "nameZh": "垂直速度",
+    "abbreviation": "VS",
+    "category": "飞行仪表",
+    "definition": "高度随时间变化的速率。",
+    "explanation": "常以英尺每分钟表示，正值为爬升、负值为下降；气压式VSI可能有延迟。",
+    "scenario": "读出+500 ft/min的爬升率。",
+    "misconception": "垂直速度不是俯仰角。",
+    "related": [
+      "pitch",
+      "vsi"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "vsi",
+    "nameEn": "Vertical Speed Indicator",
+    "nameZh": "垂直速度表",
+    "abbreviation": "VSI",
+    "category": "飞行仪表",
+    "definition": "显示高度变化率的仪表。",
+    "explanation": "传统形式利用静压变化与校准漏孔的压差；瞬时型或电子型可采用不同补偿方式。",
+    "scenario": "区分平飞、爬升与下降趋势。",
+    "misconception": "零读数不说明机翼一定水平。",
+    "related": [
+      "vertical-speed",
+      "altimeter"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "heading-indicator",
+    "nameEn": "Heading Indicator",
+    "nameZh": "航向指示器",
+    "abbreviation": "HI",
+    "category": "飞行仪表",
+    "definition": "显示飞机纵轴指向相对某参考北方向的仪表。",
+    "explanation": "传统陀螺航向仪需校正漂移；现代系统可与磁传感器等组合。",
+    "scenario": "读取090°的东向航向。",
+    "misconception": "航向仪不直接显示地面航迹。",
+    "related": [
+      "heading",
+      "track"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "ias",
+    "nameEn": "Indicated Airspeed",
+    "nameZh": "指示空速",
+    "abbreviation": "IAS",
+    "category": "飞行仪表",
+    "definition": "空速表直接显示、尚未进行仪表及位置误差修正的速度。",
+    "explanation": "修正这些误差得到校准空速，再考虑压缩性与密度可得到其他空速形式。",
+    "scenario": "理解起降构型限制速度。",
+    "misconception": "同一IAS在高空往往对应更高TAS。",
+    "related": [
+      "tas",
+      "groundspeed"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "tas",
+    "nameEn": "True Airspeed",
+    "nameZh": "真空速",
+    "abbreviation": "TAS",
+    "category": "导航与通信",
+    "definition": "飞机相对未受扰动空气的实际速度。",
+    "explanation": "由经修正的空速及空气状态求得，与风速矢量合成得到地速。",
+    "scenario": "估算航段飞行时间。",
+    "misconception": "TAS不是GPS测得的地速。",
+    "related": [
+      "ias",
+      "groundspeed"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "groundspeed",
+    "nameEn": "Groundspeed",
+    "nameZh": "地速",
+    "abbreviation": "GS",
+    "category": "导航与通信",
+    "definition": "飞机相对地面的速度大小。",
+    "explanation": "由飞机对空气的速度与风速矢量合成；顺逆风会改变沿航迹的地速。",
+    "scenario": "计算到达时间。",
+    "misconception": "相同空速不保证相同地速。",
+    "related": [
+      "tas",
+      "track"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "heading",
+    "nameEn": "Heading",
+    "nameZh": "航向",
+    "abbreviation": "HDG",
+    "category": "导航与通信",
+    "definition": "飞机纵轴在水平面投影所指的方向。",
+    "explanation": "须说明参考真北、磁北或其他基准；有侧风时航向通常与地面航迹不同。",
+    "scenario": "观察航向指示器。",
+    "misconception": "机头朝向不一定是实际地面运动方向。",
+    "related": [
+      "track",
+      "heading-indicator"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "track",
+    "nameEn": "Track",
+    "nameZh": "航迹方向",
+    "abbreviation": "TRK",
+    "category": "导航与通信",
+    "definition": "飞机实际地面运动路径在水平面的方向。",
+    "explanation": "风会造成航迹与航向之间的偏流角；导航时应区分计划航线与实际航迹。",
+    "scenario": "理解侧风修正。",
+    "misconception": "航迹不是机体朝向。",
+    "related": [
+      "heading",
+      "groundspeed"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "ils",
+    "nameEn": "Instrument Landing System",
+    "nameZh": "仪表着陆系统",
+    "abbreviation": "ILS",
+    "category": "导航与通信",
+    "definition": "提供精密进近横向与垂直引导的地面无线电系统。",
+    "explanation": "航向道提供横向引导，下滑道提供垂直引导；使用需满足设备、程序及运行条件。",
+    "scenario": "了解低能见度进近。",
+    "misconception": "ILS不意味着任何飞机都能自动着陆。",
+    "related": [
+      "vor",
+      "ifr"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "vor",
+    "nameEn": "VHF Omnidirectional Range",
+    "nameZh": "甚高频全向信标",
+    "abbreviation": "VOR",
+    "category": "导航与通信",
+    "definition": "为航空器提供相对台站方位信息的无线电导航设施。",
+    "explanation": "径向线一般以磁北为参考，配合机载接收设备进行航路或进近导航。",
+    "scenario": "理解从台站向外的径向线。",
+    "misconception": "VOR本身不提供完整三维位置。",
+    "related": [
+      "dme",
+      "ils"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "dme",
+    "nameEn": "Distance Measuring Equipment",
+    "nameZh": "测距设备",
+    "abbreviation": "DME",
+    "category": "导航与通信",
+    "definition": "通过无线电询问与应答测量斜距的设备。",
+    "explanation": "显示飞机与台站间的直线距离，在台站上空且高度较大时与水平距离有明显差异。",
+    "scenario": "读取导航台距离。",
+    "misconception": "DME测得的是斜距而非始终为地面距离。",
+    "related": [
+      "vor",
+      "gnss"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "gnss",
+    "nameEn": "Global Navigation Satellite System",
+    "nameZh": "全球卫星导航系统",
+    "abbreviation": "GNSS",
+    "category": "导航与通信",
+    "definition": "使用卫星信号提供定位、导航和授时的系统总称。",
+    "explanation": "航空应用还需符合完整性、精度、连续性和可用性等要求；GPS是其中一个系统。",
+    "scenario": "理解区域导航。",
+    "misconception": "有卫星定位信号不等于具备所有进近资格。",
+    "related": [
+      "rnav",
+      "rnp"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "rnav",
+    "nameEn": "Area Navigation",
+    "nameZh": "区域导航",
+    "abbreviation": "RNAV",
+    "category": "导航与通信",
+    "definition": "允许飞机在适用导航能力范围内沿所需路径飞行的导航方式。",
+    "explanation": "可基于地面或空间导航设施、自主设备或其组合；具体运行依据导航规范。",
+    "scenario": "理解不必逐个飞越地面台站的航路。",
+    "misconception": "RNAV并不只等于GPS导航。",
+    "related": [
+      "rnp",
+      "gnss"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "rnp",
+    "nameEn": "Required Navigation Performance",
+    "nameZh": "所需导航性能",
+    "abbreviation": "RNP",
+    "category": "导航与通信",
+    "definition": "包含机载性能监视和告警要求的区域导航规范。",
+    "explanation": "与RNAV规范的关键区别在于监视和告警；具体数值和附加要求取决于运行类型。",
+    "scenario": "理解RNP进近资格。",
+    "misconception": "RNP不是单纯的某个定位设备型号。",
+    "related": [
+      "rnav",
+      "gnss"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "ads-b",
+    "nameEn": "Automatic Dependent Surveillance–Broadcast",
+    "nameZh": "广播式自动相关监视",
+    "abbreviation": "ADS-B",
+    "category": "空中交通管理",
+    "definition": "航空器自动广播自身位置等信息的监视技术。",
+    "explanation": "依赖机载定位来源；ADS-B Out发送信息，ADS-B In接收信息，两者能力不同。",
+    "scenario": "理解航班追踪的数据来源。",
+    "misconception": "公开追踪网页不一定实时或完整。",
+    "related": [
+      "tcas",
+      "transponder"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "tcas",
+    "nameEn": "Traffic Alert and Collision Avoidance System",
+    "nameZh": "空中交通警戒与防撞系统",
+    "abbreviation": "TCAS",
+    "category": "空中交通管理",
+    "definition": "利用应答机信息监视附近交通并发出警告的机载系统。",
+    "explanation": "TCAS II可提供决断咨询，TCAS I通常只提供交通咨询；适用程序要求受训机组执行。",
+    "scenario": "区分交通警告与决断咨询。",
+    "misconception": "TCAS不负责探测所有没有合适应答设备的目标。",
+    "related": [
+      "transponder",
+      "ads-b"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "transponder",
+    "nameEn": "Transponder",
+    "nameZh": "应答机",
+    "abbreviation": "",
+    "category": "空中交通管理",
+    "definition": "接收询问信号并按规定格式发出应答的设备。",
+    "explanation": "二次监视雷达及部分防撞功能依赖应答机；不同模式提供的信息不同。",
+    "scenario": "认识四位应答机编码。",
+    "misconception": "应答机与普通语音电台不是同一功能。",
+    "related": [
+      "tcas",
+      "atc"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "atc",
+    "nameEn": "Air Traffic Control",
+    "nameZh": "空中交通管制",
+    "abbreviation": "ATC",
+    "category": "空中交通管理",
+    "definition": "以防止碰撞并有序、迅速组织空中交通为目标的服务。",
+    "explanation": "由不同管制单位按职责提供许可和指令；具体服务与空域及运行规则相关。",
+    "scenario": "理解地面、塔台和进近管制。",
+    "misconception": "管制许可不免除飞行员全部安全职责。",
+    "related": [
+      "ifr",
+      "vfr"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "ifr",
+    "nameEn": "Instrument Flight Rules",
+    "nameZh": "仪表飞行规则",
+    "abbreviation": "IFR",
+    "category": "空中交通管理",
+    "definition": "规范仪表飞行的一组运行规则。",
+    "explanation": "包括计划、设备、机组资格、空域和程序要求；可在符合条件的好天气下进行IFR飞行。",
+    "scenario": "理解仪表进近。",
+    "misconception": "IFR不是只在云中才能使用的规则。",
+    "related": [
+      "vfr",
+      "ils"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/academy/cockpit"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "vfr",
+    "nameEn": "Visual Flight Rules",
+    "nameZh": "目视飞行规则",
+    "abbreviation": "VFR",
+    "category": "空中交通管理",
+    "definition": "以规定的目视条件等要求进行飞行的一组规则。",
+    "explanation": "能见度、距云距离及空域要求因法规和空域而异。",
+    "scenario": "理解目视飞行的运行限制。",
+    "misconception": "看到地面不自动意味着满足VFR条件。",
+    "related": [
+      "ifr",
+      "atc"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "runway",
+    "nameEn": "Runway",
+    "nameZh": "跑道",
+    "abbreviation": "",
+    "category": "机场运行",
+    "definition": "机场内为航空器起飞和着陆准备的规定长方形区域。",
+    "explanation": "标志、灯光、道面及可用距离支持运行；跑道编号通常近似磁方向的十分之一。",
+    "scenario": "识别09与27跑道的相反方向。",
+    "misconception": "跑道和滑行道不可混用。",
+    "related": [
+      "taxiway",
+      "icao"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "taxiway",
+    "nameEn": "Taxiway",
+    "nameZh": "滑行道",
+    "abbreviation": "",
+    "category": "机场运行",
+    "definition": "机场内供航空器滑行、连接各部分的规定通道。",
+    "explanation": "连接跑道、机坪等区域；进入或穿越跑道须符合管制及当地程序。",
+    "scenario": "理解着陆后脱离跑道。",
+    "misconception": "沿滑行道前进不等于已获起飞许可。",
+    "related": [
+      "runway",
+      "apron"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "apron",
+    "nameEn": "Apron",
+    "nameZh": "机坪",
+    "abbreviation": "",
+    "category": "机场运行",
+    "definition": "供航空器上下客、装卸、加油、停放或维修等使用的区域。",
+    "explanation": "机坪运行涉及车辆、人员和飞机混合活动，具体管理职责因机场而异。",
+    "scenario": "观察登机口附近运行。",
+    "misconception": "机坪不等同跑道。",
+    "related": [
+      "taxiway",
+      "hub"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "iata",
+    "nameEn": "IATA Airport Code",
+    "nameZh": "IATA机场代码",
+    "abbreviation": "IATA",
+    "category": "机场运行",
+    "definition": "IATA分配的三字符机场地点标识，广泛用于商业航空。",
+    "explanation": "旅客常在机票和行李标签上看到三字代码；并非每个机场都有IATA代码。",
+    "scenario": "搜索PEK或LHR。",
+    "misconception": "IATA机场代码与两字符航司代码不是同一字段。",
+    "related": [
+      "icao",
+      "hub"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      },
+      {
+        "label": "IATA codes",
+        "url": "https://www.iata.org/en/publications/directories/code-search/"
+      }
+    ]
+  },
+  {
+    "slug": "icao",
+    "nameEn": "ICAO Location Indicator",
+    "nameZh": "ICAO地点代码",
+    "abbreviation": "ICAO",
+    "category": "机场运行",
+    "definition": "按ICAO体系分配的四字母地点标识。",
+    "explanation": "用于航空运行资料和飞行计划等场景；与IATA三字代码有不同用途。",
+    "scenario": "查阅ZBAA机场资料。",
+    "misconception": "四字母地点代码不是四位数字应答机编码。",
+    "related": [
+      "iata",
+      "runway"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      },
+      {
+        "label": "ICAO Location Indicators (Doc 7910)",
+        "url": "https://www.icao.int/airnavigation/OPS/Pages/Location-Indicators.aspx"
+      }
+    ]
+  },
+  {
+    "slug": "qnh",
+    "nameEn": "QNH",
+    "nameZh": "海平面气压高度表设定",
+    "abbreviation": "QNH",
+    "category": "航空气象",
+    "definition": "使高度表在机场地面指示机场标高的气压设定。",
+    "explanation": "经规定方法折算至平均海平面；在适用区域使用QNH便于读取近似海拔高度。",
+    "scenario": "在进近前调整高度表基准。",
+    "misconception": "QNH并不保证所有非标准气温下的真实高度完全准确。",
+    "related": [
+      "altimeter",
+      "flight-level"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "flight-level",
+    "nameEn": "Flight Level",
+    "nameZh": "飞行高度层",
+    "abbreviation": "FL",
+    "category": "飞行仪表",
+    "definition": "相对1013.25 hPa标准气压面的一组等压面高度表示。",
+    "explanation": "例如FL350表示标准气压基准下的35000英尺；转换高度和转换层由地区规定。",
+    "scenario": "阅读高空巡航高度层。",
+    "misconception": "FL350不是所有气象条件下真实海拔35000英尺。",
+    "related": [
+      "qnh",
+      "altimeter"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/lab/instruments"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "metar",
+    "nameEn": "Aerodrome Routine Meteorological Report",
+    "nameZh": "机场例行天气报告",
+    "abbreviation": "METAR",
+    "category": "航空气象",
+    "definition": "按规定格式发布的机场例行天气观测报告。",
+    "explanation": "报告观测时刻附近的风、能见度、云、温度及气压等，格式可有地区差异。",
+    "scenario": "了解机场的已观测天气。",
+    "misconception": "METAR不是未来数小时的天气预报。",
+    "related": [
+      "taf",
+      "qnh"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "taf",
+    "nameEn": "Aerodrome Forecast",
+    "nameZh": "机场天气预报",
+    "abbreviation": "TAF",
+    "category": "航空气象",
+    "definition": "针对指定机场和有效期发布的天气预报。",
+    "explanation": "包含预期风、能见度、天气和云等，并可能使用变化组。",
+    "scenario": "了解目的地机场预期天气。",
+    "misconception": "TAF与METAR的性质和有效时段不同。",
+    "related": [
+      "metar",
+      "wind-shear"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "wind-shear",
+    "nameEn": "Wind Shear",
+    "nameZh": "风切变",
+    "abbreviation": "",
+    "category": "航空气象",
+    "definition": "风速或风向在空间中发生变化的现象。",
+    "explanation": "低空风切变可能迅速改变相对气流和飞行性能，微下击暴流是危险来源之一。",
+    "scenario": "理解起降阶段的气象风险。",
+    "misconception": "风切变不只是风速大。",
+    "related": [
+      "tas",
+      "metar"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Aeronautical Information Manual",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/"
+      }
+    ]
+  },
+  {
+    "slug": "mtow",
+    "nameEn": "Maximum Takeoff Weight",
+    "nameZh": "最大起飞重量",
+    "abbreviation": "MTOW",
+    "category": "民航运营",
+    "definition": "经批准的飞机起飞重量上限。",
+    "explanation": "实际允许起飞重量还受跑道、温度、高度、障碍物和航段等性能及运行限制，可能更低。",
+    "scenario": "阅读机型参数比较。",
+    "misconception": "MTOW不是每次飞行都能达到的实际起飞重量。",
+    "related": [
+      "mlw",
+      "payload"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/atlas/compare"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "mlw",
+    "nameEn": "Maximum Landing Weight",
+    "nameZh": "最大着陆重量",
+    "abbreviation": "MLW",
+    "category": "民航运营",
+    "definition": "经批准的正常运行最大着陆重量。",
+    "explanation": "与结构、性能等限制有关；超重着陆应按适用手册和检查程序处理。",
+    "scenario": "比较起飞和着陆重量限制。",
+    "misconception": "MLW与MTOW不一定相等。",
+    "related": [
+      "mtow",
+      "payload"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/atlas/compare"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "payload",
+    "nameEn": "Payload",
+    "nameZh": "商载",
+    "abbreviation": "",
+    "category": "民航运营",
+    "definition": "为运输任务装载的旅客、行李、货物及邮件等载荷。",
+    "explanation": "商载与燃油、空机重量共同影响起飞重量和航程能力；具体定义以运营文件为准。",
+    "scenario": "理解航程与载重的权衡。",
+    "misconception": "燃油通常不算商载。",
+    "related": [
+      "mtow",
+      "range"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/atlas/compare"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "range",
+    "nameEn": "Range",
+    "nameZh": "航程",
+    "abbreviation": "",
+    "category": "民航运营",
+    "definition": "在规定条件下飞机可飞行的距离。",
+    "explanation": "公布航程依赖载荷、燃油、备份燃油、风和飞行剖面等假设，不是所有航班保证值。",
+    "scenario": "比较不同机型任务能力。",
+    "misconception": "最大航程不等于任意满载情况下的航程。",
+    "related": [
+      "payload",
+      "groundspeed"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/atlas/compare"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "etops",
+    "nameEn": "Extended Operations",
+    "nameZh": "延程运行",
+    "abbreviation": "ETOPS",
+    "category": "民航运营",
+    "definition": "超过适用规定的距合适机场门槛时间的延程运行批准体系。",
+    "explanation": "FAA对双发飞机及部分载客多发飞机有相应适用范围；EASA等体系术语与适用条件有差异。需同时满足型号设计、运营人、航路、备降场和获批转降时间等要求，不能只看发动机数量。",
+    "scenario": "理解跨洋航路与备降机场规划。",
+    "misconception": "ETOPS不是允许单发飞行的固定距离，也不是只凭机型即可获得的航线许可。",
+    "related": [
+      "alternate",
+      "range"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      },
+      {
+        "label": "14 CFR §121.161 — ETOPS applicability",
+        "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-G/part-121/subpart-H/section-121.161"
+      }
+    ]
+  },
+  {
+    "slug": "alternate",
+    "nameEn": "Alternate Aerodrome",
+    "nameZh": "备降机场",
+    "abbreviation": "",
+    "category": "民航运营",
+    "definition": "在预定机场不能或不宜使用时可前往的合适机场。",
+    "explanation": "依运行情景可有起飞、航路、目的地备降机场；适用性需考虑天气、设施和飞机性能。",
+    "scenario": "理解航班的备份计划。",
+    "misconception": "距离最近的机场不一定是合适备降场。",
+    "related": [
+      "etops",
+      "taf"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  },
+  {
+    "slug": "hub",
+    "nameEn": "Hub Airport",
+    "nameZh": "枢纽机场",
+    "abbreviation": "",
+    "category": "民航运营",
+    "definition": "在航空网络中集中并分配客货流的机场。",
+    "explanation": "对某航空公司的枢纽关系与航班波、转机网络和运营安排相关，可随时间变化。",
+    "scenario": "从机场页面跳转相关航司。",
+    "misconception": "机场规模大不代表它是所有航司的枢纽。",
+    "related": [
+      "iata",
+      "alternate"
+    ],
+    "knowledgeLinks": [
+      {
+        "label": "继续交互探索",
+        "href": "/world/airports"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+        "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+      }
+    ]
+  }
+]

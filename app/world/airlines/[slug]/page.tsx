@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { airportsForAirline } from "@/data/airports";
+import { liveriesForAirline } from "@/data/liveries";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
 import { airlines, getAirline, AirlineMedia } from "@/data/airlines";
@@ -52,6 +54,27 @@ export default async function AirlineDetail({
         title={a.nameZh}
         description={a.nameEn}
       />
+      <section className="paper-panel reading-panel">
+        <h2>沿着航司，继续探索</h2>
+        <div className="related-links">
+          {liveriesForAirline(a.slug).map((l) => (
+            <Link href={`/world/liveries/${l.slug}`} key={l.slug}>
+              {l.name} ↗
+            </Link>
+          ))}
+          {!liveriesForAirline(a.slug).length && (
+            <Link href="/world/liveries">浏览涂装博物馆 ↗</Link>
+          )}
+          {airportsForAirline(a.slug).map((airport) => (
+            <Link href={`/world/airports/${airport.slug}`} key={airport.slug}>
+              {airport.iata} · {airport.nameZh} ↗
+            </Link>
+          ))}
+          {!airportsForAirline(a.slug).length && (
+            <Link href="/world/airports">浏览全球机场 ↗</Link>
+          )}
+        </div>
+      </section>
       <div className="detail-layout">
         <article>
           <div className="airline-brand-panel">

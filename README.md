@@ -1,3 +1,11 @@
+# AERONAUT V1.2
+
+在原V1.1上新增69词航空术语词典、8部件SVG结构图、20件涂装档案、五种互动仪表/25题仪表挑战、50机场地图与地理挑战。保持原Sites项目、网址及本地用户数据；没有错题本。详细实现、数据来源、测试边界和恢复方案见 [V1.2交付记录](docs/V1.2-DELIVERY.md)。本轮只保存草稿，不部署。
+
+静态产物生成后可用 `node scripts/preview.mjs` 预览，再运行 `npm run test:routes` 检查全部新旧路由。新增地图使用Leaflet1.9.4，免费OSM瓦片按需加载；无需密钥。测试使用Vitest和Testing Library的DOM模拟，不代表真实Safari触控验收。
+
+---
+
 # AERONAUT V1.1
 
 以简体中文为主的航空探索平台。沿用 V1 的 Next.js App Router、React、TypeScript、Tailwind CSS、Motion、Recharts 与 Lucide，发布于 **ChatGPT Sites**：

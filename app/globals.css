@@ -3615,41 +3615,871 @@ table {
 }
 
 /* V1.1 additions reuse the existing panels, type scale and theme tokens. */
-.mode-options { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
-.mode-options button { flex: 1 1 135px; min-height: 64px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; touch-action: manipulation; }
-.mode-options button[aria-pressed="true"] { border-color: var(--blue); background: var(--surface-2); color: var(--blue); }
-.mode-options button small { display: block; margin-top: 7px; color: var(--muted); font-size: 10px; }
-.mode-options button:disabled { opacity: .5; cursor: default; }
-.spotter-image svg { width: 100%; height: 100%; background: #fff; }
-.image-credit { font-size: 10px; color: var(--muted); overflow-wrap: anywhere; line-height: 1.7; }
-.image-credit a { text-decoration: underline; }
-.airline-atlas-banner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 30px; margin: 30px 0; background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; }
-.airline-atlas-banner h2 { margin: 10px 0; font-size: clamp(19px, 2.4vw, 26px); }
-.airline-atlas-banner p { color: var(--muted); font-size: 12px; line-height: 1.8; }
-.airline-atlas-banner .button { flex-shrink: 0; }
-.airline-tools { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
-.airline-search { display: flex; flex: 1 1 260px; align-items: center; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; padding: 0 16px; }
-.airline-search input { width: 100%; min-width: 0; padding: 14px 0; background: transparent; border: 0; color: var(--text); font: inherit; font-size: 14px; }
-.airline-tools select { min-height: 48px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; color: var(--text); font: inherit; font-size: 14px; }
-.airline-card { display: block; transition: border-color .2s, transform .2s; min-width: 0; }
-.airline-card:hover { border-color: var(--blue); transform: translateY(-3px); }
-.airline-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; color: var(--blue); }
-.airline-code { font-size: 48px; color: var(--blue); font-weight: 600; letter-spacing: -.04em; }
-.airline-card h2 { font-size: 22px; }
-.airline-en { min-height: 24px; }
-.airline-brand-panel { display: flex; justify-content: space-between; gap: 25px; align-items: center; margin-bottom: 40px; padding: 24px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; }
-.airline-logo { margin: 0; min-width: 0; }
-.airline-logo img { display: block; width: 220px; max-width: 100%; height: 90px; object-fit: contain; padding: 10px; background: #fff; border-radius: 4px; }
-.airline-logo figcaption, .airline-livery figcaption, .fleet-source { font-size: 10px; color: var(--muted); line-height: 1.8; margin-top: 10px; overflow-wrap: anywhere; }
-.airline-livery { margin: 16px 0; }
-.airline-livery img { width: 100%; max-height: 410px; object-fit: contain; background: var(--surface-2); border-radius: 6px; }
-.source-links a { overflow-wrap: anywhere; }
-@media (max-width: 600px) {
-  .airline-atlas-banner { align-items: flex-start; flex-direction: column; padding: 22px; }
-  .airline-brand-panel { padding: 18px; gap: 15px; }
-  .airline-brand-panel .airline-code { font-size: 36px; }
-  .airline-tools label, .airline-tools select { width: 100%; }
-  .airline-tools input { font-size: 16px; }
-  .spotter-image { height: 220px; }
+.mode-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
 }
-.spotter-image > .media-loading { inset: 0; display: grid; place-items: center; background: var(--surface-2); color: var(--muted); font-size: 12px; letter-spacing: 0; }
+.mode-options button {
+  flex: 1 1 135px;
+  min-height: 64px;
+  padding: 12px 15px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.mode-options button[aria-pressed="true"] {
+  border-color: var(--blue);
+  background: var(--surface-2);
+  color: var(--blue);
+}
+.mode-options button small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.mode-options button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.spotter-image svg {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.image-credit {
+  font-size: 10px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+.image-credit a {
+  text-decoration: underline;
+}
+.airline-atlas-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 30px;
+  margin: 30px 0;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.airline-atlas-banner h2 {
+  margin: 10px 0;
+  font-size: clamp(19px, 2.4vw, 26px);
+}
+.airline-atlas-banner p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.airline-atlas-banner .button {
+  flex-shrink: 0;
+}
+.airline-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+.airline-search {
+  display: flex;
+  flex: 1 1 260px;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 0 16px;
+}
+.airline-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 0;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+}
+.airline-tools select {
+  min-height: 48px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+}
+.airline-card {
+  display: block;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+  min-width: 0;
+}
+.airline-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-3px);
+}
+.airline-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  color: var(--blue);
+}
+.airline-code {
+  font-size: 48px;
+  color: var(--blue);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.airline-card h2 {
+  font-size: 22px;
+}
+.airline-en {
+  min-height: 24px;
+}
+.airline-brand-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 24px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.airline-logo {
+  margin: 0;
+  min-width: 0;
+}
+.airline-logo img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: 90px;
+  object-fit: contain;
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px;
+}
+.airline-logo figcaption,
+.airline-livery figcaption,
+.fleet-source {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+}
+.airline-livery {
+  margin: 16px 0;
+}
+.airline-livery img {
+  width: 100%;
+  max-height: 410px;
+  object-fit: contain;
+  background: var(--surface-2);
+  border-radius: 6px;
+}
+.source-links a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .airline-atlas-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+  }
+  .airline-brand-panel {
+    padding: 18px;
+    gap: 15px;
+  }
+  .airline-brand-panel .airline-code {
+    font-size: 36px;
+  }
+  .airline-tools label,
+  .airline-tools select {
+    width: 100%;
+  }
+  .airline-tools input {
+    font-size: 16px;
+  }
+  .spotter-image {
+    height: 220px;
+  }
+}
+.spotter-image > .media-loading {
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+/* V1.2 — exploration tools; inherit the established light/dark palette. */
+.explore-toolbar {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 24px 0 16px;
+}
+.explore-toolbar label,
+.controls-grid label,
+.reading-panel > label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.search-field {
+  flex: 1;
+  min-width: 240px;
+}
+.explore-toolbar input,
+.explore-toolbar select,
+.reading-panel select {
+  min-height: 46px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  width: 100%;
+}
+.letter-index {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  border-block: 1px solid var(--line);
+}
+.letter-index button {
+  min-height: 40px;
+  min-width: 32px;
+  padding: 7px;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 5px;
+}
+.letter-index button[aria-pressed="true"],
+.segmented button[aria-pressed="true"] {
+  background: var(--text);
+  color: var(--bg);
+}
+.result-count {
+  margin: 18px 0;
+  font-size: 12px;
+}
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.term-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s;
+  border: 1px solid var(--line);
+}
+.term-card:hover {
+  border-color: var(--blue);
+}
+.term-card h2,
+.airport-list h2 {
+  font-size: 21px;
+}
+.term-card h3 {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.term-card .text-link {
+  margin-top: auto;
+  padding-top: 10px;
+}
+.term-card p {
+  line-height: 1.8;
+}
+.reading-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+.reading-panel h2:not(:first-child) {
+  margin-top: 12px;
+}
+.reading-panel h2 {
+  font-size: 21px;
+}
+.reading-panel p {
+  line-height: 1.9;
+}
+.lead-copy {
+  font-size: 19px;
+  color: var(--text);
+}
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  color: var(--blue);
+}
+.reading-panel .related-links {
+  flex-direction: column;
+}
+.source-links a {
+  overflow-wrap: anywhere;
+}
+.anatomy-layout {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.anatomy-canvas {
+  padding: 18px;
+  overflow: hidden;
+}
+.airframe-svg {
+  width: 100%;
+  max-height: 650px;
+  display: block;
+}
+.instrument-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+}
+.anatomy-canvas > p {
+  font-size: 11px;
+  text-align: center;
+}
+.anatomy-part {
+  cursor: pointer;
+  fill: var(--surface-2);
+  stroke: #63869e;
+  stroke-width: 2;
+  transition: fill 0.2s;
+  outline: none;
+}
+.anatomy-part.selected {
+  fill: #50a8d9;
+  stroke: #145f8e;
+  stroke-width: 3;
+}
+.anatomy-part:focus-visible {
+  stroke: #e99d31;
+  stroke-width: 5;
+}
+.anatomy-part:hover {
+  fill: #a4d4ef;
+}
+.anatomy-info h2 {
+  margin-top: 12px;
+}
+.anatomy-info h3 {
+  margin: 20px 0 8px;
+  font-size: 15px;
+}
+.anatomy-info p {
+  line-height: 1.9;
+}
+.term-en {
+  font-size: 16px;
+}
+.small-copy {
+  font-size: 12px;
+}
+.anatomy-info .related-links {
+  margin-top: 24px;
+  flex-direction: column;
+}
+.concept-animation {
+  display: block;
+  width: 100%;
+  max-height: 140px;
+  margin: 18px 0;
+  border-radius: 8px;
+  background: var(--surface-2);
+  fill: var(--text);
+}
+.flow-dash {
+  animation: concept-flow 3s linear infinite;
+}
+@keyframes concept-flow {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+.part-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+.part-buttons button {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 10px;
+  min-height: 90px;
+}
+.part-buttons button.active {
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 1px var(--blue);
+}
+.part-buttons span {
+  color: var(--blue);
+  margin-right: 10px;
+}
+.part-buttons small {
+  display: block;
+  margin: 7px 0 0 28px;
+  color: var(--muted);
+}
+.instruments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+.instrument {
+  margin: 0;
+  min-width: 0;
+}
+.instrument svg {
+  width: 100%;
+  display: block;
+  max-width: 240px;
+  margin: auto;
+}
+.instrument figcaption {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px 0;
+  gap: 4px;
+}
+.instrument figcaption span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.instrument figcaption a {
+  font-size: 12px;
+  color: var(--blue);
+}
+.gauge-needle {
+  transition: transform 0.12s ease-out;
+}
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-bottom: 24px;
+}
+.controls-grid label {
+  position: relative;
+}
+.controls-grid output {
+  font-variant-numeric: tabular-nums;
+  color: var(--blue);
+}
+.controls-grid input {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--blue);
+  touch-action: pan-y;
+}
+.controls-grid .button {
+  align-self: center;
+}
+.cockpit-question h2 {
+  font-size: 23px;
+  margin: 24px 0;
+}
+.cockpit-question .instruments-grid {
+  max-width: 720px;
+  margin-inline: auto;
+}
+.altitude-window {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  font-size: 17px;
+  color: var(--text);
+}
+.segmented {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.segmented button {
+  padding: 12px 16px;
+  min-height: 46px;
+  background: var(--surface);
+  color: var(--text);
+}
+.map-shell {
+  position: relative;
+  margin-bottom: 24px;
+  isolation: isolate;
+}
+.airport-map {
+  height: 450px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #e0eaf0;
+  z-index: 0;
+  touch-action: none;
+}
+.map-help {
+  font-size: 11px;
+  padding: 10px 0;
+}
+.map-loading {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  background: var(--surface);
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 2;
+}
+.map-error {
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 12px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+.map-error button {
+  background: transparent;
+  color: var(--blue);
+  text-decoration: underline;
+  min-height: 44px;
+  padding: 0 12px;
+}
+.airport-marker,
+.airport-cluster {
+  background: none;
+  border: 0;
+}
+.airport-marker span,
+.airport-cluster span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #173d56;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #0003;
+}
+.airport-cluster span {
+  background: #2487c8;
+}
+.airport-marker.selected span {
+  background: #ad5a13;
+}
+.leaflet-container {
+  font-family: inherit;
+}
+.leaflet-control-attribution {
+  font-size: 10px !important;
+  color: #243d50 !important;
+}
+.leaflet-control-zoom a {
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+}
+.airport-code {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 650;
+  color: var(--blue);
+}
+.airport-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.airport-card-top > span:last-child {
+  font-size: 11px;
+  color: var(--muted);
+}
+.airport-list p {
+  margin: 8px 0;
+}
+.airport-list .button-row {
+  margin-top: 16px;
+}
+.airport-list .text-link {
+  font-size: 12px;
+}
+.selected-card {
+  outline: 2px solid var(--blue);
+}
+.airport-selected {
+  display: flex;
+  gap: 24px;
+  margin: 18px 0 24px;
+  align-items: start;
+}
+.airport-selected > div {
+  flex: 1;
+}
+.airport-selected h2 {
+  font-size: 23px;
+}
+.airport-selected p {
+  margin: 8px 0;
+}
+.airport-challenge > h2 {
+  margin-bottom: 18px;
+}
+.airport-challenge > .button {
+  margin-top: 20px;
+}
+.airport-challenge .map-shell {
+  margin-top: 24px;
+}
+.airport-challenge .airport-map {
+  height: 360px;
+}
+.livery-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.livery-card-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.livery-card h2 {
+  font-size: 21px;
+}
+.livery-card .text-link {
+  margin-top: auto;
+}
+.licensed-image {
+  margin: 0;
+}
+.licensed-image img {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  background: #c5d1d922;
+}
+.livery-card .licensed-image img {
+  height: 200px;
+  object-fit: contain;
+}
+.licensed-image figcaption {
+  padding: 8px 14px;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.licensed-image figcaption a {
+  color: var(--blue);
+}
+.photo-placeholder {
+  min-height: 180px;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  background: var(--surface-2);
+  text-align: center;
+  padding: 20px;
+}
+.photo-placeholder button {
+  background: transparent;
+  color: var(--blue);
+  padding: 10px;
+}
+.new-explorations {
+  margin-block: 46px;
+}
+.exploration-links {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+.exploration-links a {
+  padding: 22px 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.exploration-links b {
+  font-size: 17px;
+}
+.exploration-links span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.module-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.module-links a {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 13px 18px;
+  color: var(--blue);
+}
+@media (max-width: 1050px) {
+  .explore-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .exploration-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .controls-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .anatomy-layout {
+    grid-template-columns: 1.15fr 1fr;
+  }
+  .part-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .explore-grid,
+  .anatomy-layout {
+    grid-template-columns: 1fr;
+  }
+  .exploration-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .explore-toolbar {
+    gap: 14px;
+  }
+  .explore-toolbar label {
+    width: 100%;
+  }
+  .search-field {
+    min-width: 0;
+  }
+  .airport-map {
+    height: 350px;
+  }
+  .airport-selected {
+    gap: 12px;
+  }
+  .airport-selected h2 {
+    font-size: 19px;
+  }
+  .airport-code {
+    font-size: 23px;
+  }
+  .controls-grid {
+    grid-template-columns: 1fr;
+  }
+  .instruments-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .reading-panel {
+    gap: 16px;
+  }
+  .airport-challenge {
+    padding: 18px;
+  }
+  .letter-index button {
+    min-width: 36px;
+    min-height: 44px;
+  }
+  .part-buttons button {
+    padding: 12px;
+  }
+  .instrument-caption {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-dash {
+    animation: none;
+  }
+  .gauge-needle,
+  .anatomy-part,
+  .term-card {
+    transition: none;
+  }
+}
+.slider-field {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .desktop-nav {
+    gap: 12px;
+  }
+  .nav-wrap {
+    gap: 12px;
+  }
+  .desktop-nav a {
+    font-size: 11px;
+  }
+  .logo {
+    font-size: 19px;
+  }
+  .hangar-link {
+    font-size: 11px;
+  }
+}
+.instrument-intro {
+  font-size: 11px;
+  line-height: 1.7;
+  max-width: 240px;
+  margin: 4px auto;
+}

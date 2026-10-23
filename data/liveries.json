@@ -1,0 +1,671 @@
+[
+  {
+    "slug": "china-eastern-standard",
+    "airlineSlug": "china-eastern",
+    "name": "凌燕标准涂装",
+    "category": "经典涂装",
+    "aircraftModel": "COMAC C919",
+    "aircraftSlug": "c919",
+    "design": "白色机身搭配红蓝燕形标志。",
+    "story": "东方航空的燕形视觉标识将红蓝色组合于尾翼；这张C919照片也是国产干线客机投入航司运营的历史影像。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/airlines/china-eastern-livery.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:B-919A@PEK_(20221226151718).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "N509FZ",
+      "note": "历史摄影资料，不作为当前运营状态证据。"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:B-919A@PEK_(20221226151718).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=China%20Eastern%20Airlines"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "japan-airlines-tsurumaru",
+    "airlineSlug": "japan-airlines",
+    "name": "鹤丸标准涂装",
+    "category": "经典涂装",
+    "aircraftModel": "Boeing 787-9",
+    "aircraftSlug": "787-9",
+    "design": "白色机身与红色圆形鹤丸尾徽形成鲜明对比。",
+    "story": "鹤丸以展开翅膀的鹤构成圆形图案，是日本航空具有代表性的品牌符号；本站照片不是当前机队状态证明。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/787-9.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Japan_Airlines,_Boeing_787-9_JA861J_NRT_(19455285040).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Masakatsu Ukon",
+      "historical": true,
+      "note": "2015年照片；非当前机队运营关系证据。"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Japan_Airlines,_Boeing_787-9_JA861J_NRT_(19455285040).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Japan%20Airlines"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "emirates-standard",
+    "airlineSlug": "emirates",
+    "name": "阿联酋国旗色涂装",
+    "category": "经典涂装",
+    "aircraftModel": "Airbus A380-800",
+    "aircraftSlug": "a380-800",
+    "design": "尾翼以红、绿、白、黑的斜向色带呼应国旗。",
+    "story": "巨大的A380尾翼使这种国旗色图案具有很高辨识度。照片呈现的是2015年的涂装样本，不能据此推定今日设计细节。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/a380-800.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Emirates_Airbus_A380-861_A6-EER_MUC_2015_01.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Julian Herzog",
+      "historical": true,
+      "note": "2015年照片；非当前机队运营关系证据。"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Emirates_Airbus_A380-861_A6-EER_MUC_2015_01.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Emirates"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "qatar-standard",
+    "airlineSlug": "qatar-airways",
+    "name": "勃艮第红羚羊涂装",
+    "category": "经典涂装",
+    "aircraftModel": "Airbus A350-900",
+    "aircraftSlug": "a350-900",
+    "design": "浅灰机身、勃艮第红字样与羚羊尾徽。",
+    "story": "阿拉伯羚羊是卡塔尔航空标志的重要元素；尾翼图形与机身字标采用一致的色彩语言。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/challenges/p-4b7e18.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:A7-ALG_Qatar_Airways_Airbus_A350-941_MSN-13.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Md Shaifuzzaman Ayon",
+      "note": "历史摄影资料，不作为当前运营状态证据。"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:A7-ALG_Qatar_Airways_Airbus_A350-941_MSN-13.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Qatar%20Airways"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "lufthansa-retro",
+    "airlineSlug": "lufthansa",
+    "name": "汉莎复古涂装",
+    "category": "历史涂装",
+    "aircraftModel": "Boeing 747-8",
+    "aircraftSlug": "747-8",
+    "design": "复古蓝色窗带与黄色圆形鹤徽。",
+    "story": "照片中的复古747展示旧时代的视觉样式；它与现代汉莎机队常见的深蓝尾翼设计应分别理解。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/airlines/lufthansa-livery.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Deutsche_Lufthansa_Boeing_747-830_Intercontinental_D-ABYT_(Koln_-_retro_livery).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Adam Moreira (AEMoreira042281)",
+      "note": "历史摄影资料，不作为当前运营状态证据。"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Deutsche_Lufthansa_Boeing_747-830_Intercontinental_D-ABYT_(Koln_-_retro_livery).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Lufthansa"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "delta-widget",
+    "airlineSlug": "delta",
+    "name": "红蓝 Widget 涂装",
+    "category": "经典涂装",
+    "aircraftModel": "Airbus A330",
+    "aircraftSlug": null,
+    "design": "深蓝尾翼上的红色几何图形。",
+    "story": "Widget三角形视觉语言构成达美的品牌识别基础。照片中的两个机尾可以用于观察图形，但不提供精确子型号运营关系。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/challenges/a-1d7f40.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2_x_Delta_A330_tail_(4535564116).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Maarten Visser",
+      "historical": true,
+      "note": "2010年历史涂装照片；非当前机队运营关系证据。"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:2_x_Delta_A330_tail_(4535564116).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Delta%20Air%20Lines"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "ba-boac",
+    "airlineSlug": "british-airways",
+    "name": "BOAC 复古涂装",
+    "category": "历史涂装",
+    "aircraftModel": "Boeing 747-400",
+    "aircraftSlug": null,
+    "design": "深蓝下机身、金色飞鸟与BOAC字标。",
+    "story": "英国航空百年纪念活动以复古涂装回顾其前身航空公司历史；此图中的BOAC样式不代表BOAC仍作为独立航司运营。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2020-01-10 16:06",
+    "media": {
+      "file": "/images/liveries/ba-boac.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:British_Airways_(BOAC_Retro_Livery),_G-BYGC,_Boeing_747-436_(49597386297).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Anna Zvereva from Tallinn, Estonia"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:British_Airways_(BOAC_Retro_Livery),_G-BYGC,_Boeing_747-436_(49597386297).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "ba-negus",
+    "airlineSlug": "british-airways",
+    "name": "Negus 复古涂装",
+    "category": "历史涂装",
+    "aircraftModel": "Boeing 747-400",
+    "aircraftSlug": null,
+    "design": "白色机身、深蓝下部及红蓝白尾翼。",
+    "story": "Negus设计属于英国航空品牌历史中的一个阶段；复古飞机把旧设计带回较新的机体，涂装年代和飞机制造年代应分开。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2020-03-10 13:21:49",
+    "media": {
+      "file": "/images/liveries/ba-negus.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:British_Airways_(Negus_Retro_Livery),_G-CIVB,_Boeing_747-436.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Anna Zvereva"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:British_Airways_(Negus_Retro_Livery),_G-CIVB,_Boeing_747-436.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "ba-landor",
+    "airlineSlug": "british-airways",
+    "name": "Landor 复古涂装",
+    "category": "历史涂装",
+    "aircraftModel": "Boeing 747-400",
+    "aircraftSlug": null,
+    "design": "深蓝机腹、灰白上部与带徽章的尾翼。",
+    "story": "Landor样式延续了英国航空品牌演进的另一阶段。此处收录复古再现照片，不能据此推定整个样式的完整使用期。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2020-01-10 17:51",
+    "media": {
+      "file": "/images/liveries/ba-landor.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:British_Airways_(Landor_Retro_Livery),_G-BNLY,_Boeing_747-436_(49596637958).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Anna Zvereva from Tallinn, Estonia"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:British_Airways_(Landor_Retro_Livery),_G-BNLY,_Boeing_747-436_(49596637958).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "ana-r2d2",
+    "airlineSlug": "ana",
+    "name": "R2-D2 ANA JET",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 787-9",
+    "aircraftSlug": "787-9",
+    "design": "白色与蓝色机械图案呼应R2-D2角色。",
+    "story": "ANA的星球大战主题飞机把影视角色图形转译到机身和机鼻，保留真实航空摄影与角色品牌的区别。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2018-10-21 11:27",
+    "media": {
+      "file": "/images/liveries/ana-r2d2.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:ANA_R2-D2_(45251001834).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Benh LIEU SONG from Torcy, France"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:ANA_R2-D2_(45251001834).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "ana-bb8",
+    "airlineSlug": "ana",
+    "name": "BB-8 ANA JET",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 777-300ER",
+    "aircraftSlug": "777-300er",
+    "design": "橙色环形机械图案覆盖白色机身。",
+    "story": "BB-8主题与R2-D2主题采用不同配色和机型。本记录只确认照片所示777系列及设计，不推定完整服役时期。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2016-03-27 12:36",
+    "media": {
+      "file": "/images/liveries/ana-bb8.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:All_Nippon_Airways_(Star_Wars_-_BB-8_livery),_Boeing_777-381(ER),_JA789A_(25818321190).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "nimame"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:All_Nippon_Airways_(Star_Wars_-_BB-8_livery),_Boeing_777-381(ER),_JA789A_(25818321190).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "ana-a380",
+    "airlineSlug": "ana",
+    "name": "FLYING HONU 蓝色海龟",
+    "category": "特别涂装",
+    "aircraftModel": "Airbus A380-800",
+    "aircraftSlug": "a380-800",
+    "design": "蓝色海龟形象覆盖机身，机鼻绘有角色面孔。",
+    "story": "HONU是与夏威夷海龟相关的称呼；ANA以不同颜色的海龟主题A380形成有辨识度的机队视觉。此记录对应蓝色样本。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2019-08-10 15:59:03",
+    "media": {
+      "file": "/images/liveries/ana-a380.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:ANA_Airbus_A380_JA381A_in_Narita.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Kuroc622"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:ANA_Airbus_A380_JA381A_in_Narita.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "jal-disney",
+    "airlineSlug": "japan-airlines",
+    "name": "JAL DREAM EXPRESS 90",
+    "category": "纪念涂装",
+    "aircraftModel": "Boeing 767-300ER",
+    "aircraftSlug": "767-300er",
+    "design": "米老鼠图形与醒目的90标记。",
+    "story": "这张照片记录纪念米老鼠90周年的主题飞机，图像说明将该主题与2018年联系；完整撤除日期未核实。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "Taken on 19 November 2018, 07:56:30",
+    "media": {
+      "file": "/images/liveries/jal-disney.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Japan_Airlines_JA602J_Boeing_767-346ER_Dream_Express_90_(portside-tail).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Comyu"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Japan_Airlines_JA602J_Boeing_767-346ER_Dream_Express_90_(portside-tail).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Japan%20Airlines"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "emirates-expo",
+    "airlineSlug": "emirates",
+    "name": "迪拜 EXPO 主题 A380",
+    "category": "特别涂装",
+    "aircraftModel": "Airbus A380-800",
+    "aircraftSlug": "a380-800",
+    "design": "鲜艳的蓝色底色与多色大型字样。",
+    "story": "迪拜世博会主题让机身成为大型视觉画布。EXPO 2020是活动名称，不能只用名称推断照片拍摄于2020年。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2022-03-20 11:31",
+    "media": {
+      "file": "/images/liveries/emirates-expo.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:A6-EEU_Airbus_A380-800_Emirates_(Expo)_Gatwick_20.3.22_(51950936084).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Colin Cooke Photo"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:A6-EEU_Airbus_A380-800_Emirates_(Expo)_Gatwick_20.3.22_(51950936084).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Emirates"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "qatar-ow",
+    "airlineSlug": "qatar-airways",
+    "name": "oneworld 联盟涂装",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 777-300ER",
+    "aircraftSlug": "777-300er",
+    "design": "大型oneworld字样配合卡航羚羊尾翼。",
+    "story": "联盟涂装同时表达航司身份与联盟成员身份；oneworld不是运营这架飞机的另一家航空公司。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2022-02-05",
+    "media": {
+      "file": "/images/liveries/qatar-ow.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:A7-BAB_-_Boeing_777-3DZER_-_Qatar_Airways_(Oneworld_Livery)_-_36103_-_VGHS.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Md Shaifuzzaman Ayon"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:A7-BAB_-_Boeing_777-3DZER_-_Qatar_Airways_(Oneworld_Livery)_-_36103_-_VGHS.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Qatar%20Airways"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "cathay-spirit",
+    "airlineSlug": "cathay-pacific",
+    "name": "The Spirit of Hong Kong",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 777-300ER",
+    "aircraftSlug": "777-300er",
+    "design": "绿色机身与体现香港主题的装饰图形。",
+    "story": "国泰曾以不同设计演绎香港精神主题。本记录只描述照片中的这一个样式，不把同名的不同设计视为同一架飞机。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2014-01-25 11:16:54",
+    "media": {
+      "file": "/images/liveries/cathay-spirit.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:B-KPB_Boeing_773_Cathay_Pacific_In_The_Spirit_Of_Hong_Kong_Colours_(12255736396).jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Aeroprints.com"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:B-KPB_Boeing_773_Cathay_Pacific_In_The_Spirit_Of_Hong_Kong_Colours_(12255736396).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Cathay%20Pacific"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "qantas-wunala",
+    "airlineSlug": "qantas",
+    "name": "Wunala Dreaming",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 747-400",
+    "aircraftSlug": null,
+    "design": "以红色为底，搭配多彩有机图案。",
+    "story": "Wunala Dreaming属于澳航原住民艺术主题涂装系列；作品有明确文化与创作背景，不应把装饰图案当作无来源的通用素材。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2011-09-16 15:24:22",
+    "media": {
+      "file": "/images/liveries/qantas-wunala.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Qantas_Boeing_747-400_%22Wunala_Dreaming%22_touching_down_on_RWY_16R_at_Sydney_Airport.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Damien Aiello"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Qantas_Boeing_747-400_%22Wunala_Dreaming%22_touching_down_on_RWY_16R_at_Sydney_Airport.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Qantas"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "united-star",
+    "airlineSlug": "united",
+    "name": "Star Alliance 联盟涂装",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 777-200ER",
+    "aircraftSlug": null,
+    "design": "白色机身的大型联盟字样与黑色星形尾翼。",
+    "story": "联盟涂装有时以联盟图形取代常见航司尾徽，辨认时要综合机身小字及运营资料，而非只看颜色。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "4 January 2013",
+    "media": {
+      "file": "/images/liveries/united-star.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Boeing_777-224-ER,_Star_Alliance_(United_Airlines)_AN2218816.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Toshi Aoki - JP Spotters"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Boeing_777-224-ER,_Star_Alliance_(United_Airlines)_AN2218816.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=United%20Airlines"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "airchina-phoenix",
+    "airlineSlug": "air-china",
+    "name": "Smiling China 微笑中国",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 777-300ER",
+    "aircraftSlug": "777-300er",
+    "design": "白色机身配红色笑脸与Smiling China字样。",
+    "story": "主题图形与国航凤凰尾徽同时存在，说明特别涂装常在保留运营航司标识的同时加入活动图案。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "2013-09-08",
+    "media": {
+      "file": "/images/liveries/airchina-phoenix.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Air_China_Boeing_777-300ER_in_Smiling_China_Livery.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "AndyHe829"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Air_China_Boeing_777-300ER_in_Smiling_China_Livery.jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Air%20China"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  },
+  {
+    "slug": "singapore-50",
+    "airlineSlug": "singapore-airlines",
+    "name": "SG50 新加坡五十周年",
+    "category": "纪念涂装",
+    "aircraftModel": "Airbus A380-800",
+    "aircraftSlug": "a380-800",
+    "design": "大型新加坡国旗主题与SG50纪念图案。",
+    "story": "这款A380以新加坡五十周年为主题，纪念年份和完整涂装使用期是不同字段；本站未确认撤除日期。",
+    "period": null,
+    "periodNote": "完整使用时期未核实；不据照片推定起止年份。",
+    "registration": null,
+    "photoDate": "24 June 2015, 18:57:33",
+    "media": {
+      "file": "/images/liveries/singapore-50.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Singapore_Airlines_Airbus_A380-841_9V-SKI_(Singapore_50th_Birthday_livery).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Adam Moreira (AEMoreira042281)"
+    },
+    "mediaStatus": "verified",
+    "sources": [
+      {
+        "label": "照片说明、作者及再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Singapore_Airlines_Airbus_A380-841_9V-SKI_(Singapore_50th_Birthday_livery).jpg"
+      },
+      {
+        "label": "相关航司资料",
+        "url": "https://www.iata.org/en/about/members/airline-list/?search=Singapore%20Airlines"
+      }
+    ],
+    "verifiedAt": "2026-10-23"
+  }
+]
