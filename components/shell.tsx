@@ -102,6 +102,9 @@ export function Footer() {
           <Link href="/atlas">探索百科</Link>
           <Link href="/academy">开始挑战</Link>
           <Link href="/lab">飞行科学</Link>
+          <Link href="/lab/3d-explorer" prefetch={false}>
+            3D 飞机探索
+          </Link>
           <Link href="/hangar">我的机库</Link>
           <Link href="/credits">资料与署名</Link>
         </div>

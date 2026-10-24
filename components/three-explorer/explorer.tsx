@@ -70,7 +70,7 @@ export function ThreeExplorer() {
               2D PREVIEW / 同一GLB模型离线渲染
             </div>
             <div className={styles.activate}>
-              <span>INDEPENDENT TECHNOLOGY PROTOTYPE</span>
+              <span>EXPLORE THE AIRFRAME</span>
               <h2>换个角度，认识飞机。</h2>
               <p>
                 手动启用后才下载3D代码和模型。模型{" "}
@@ -138,8 +138,8 @@ export function ThreeExplorer() {
           <a href="/models/three-explorer/manifest.json">模型与预算清单 ↗</a>
         </div>
         <p className={styles.note}>
-          这是未发布的技术验证页面。真实iPad
-          Safari触控、帧率、加载耗时和资源占用尚需在设备上测量；下方诊断读数只在启用3D后由当前浏览器产生。
+          这是通用飞机外形展示。真实iPad
+          Safari触控、帧率、加载耗时和资源占用尚需在设备上测量；诊断读数只在启用3D后由当前浏览器产生。
         </p>
       </section>
     </div>

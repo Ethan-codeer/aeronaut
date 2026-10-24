@@ -29,6 +29,7 @@ const routes = [
   ).map((a) => `/world/airlines/${a.slug}`),
   "/dictionary",
   "/lab/anatomy",
+  "/lab/3d-explorer",
   "/lab/instruments",
   "/academy/cockpit",
   "/academy/tails",

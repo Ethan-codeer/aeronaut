@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
-    "test:routes": "node scripts/check-routes.mjs"
+    "test:routes": "node scripts/check-routes.mjs",
+    "preview:ipad": "node scripts/three-explorer/preview-server.mjs --root out --port 4173"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

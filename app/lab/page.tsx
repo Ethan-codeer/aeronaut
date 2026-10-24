@@ -11,6 +11,9 @@ export default function Lab() {
         description="动手改变气流、机翼和升力系数，探索支撑每一次飞行的基础科学。"
       />
       <div className="module-links">
+        <Link href="/lab/3d-explorer" prefetch={false}>
+          3D 飞机探索 ↗
+        </Link>
         <Link href="/lab/anatomy">互动飞机结构图 ↗</Link>
         <Link href="/lab/instruments">互动仪表实验室 ↗</Link>
         <Link href="/dictionary/lift">升力术语 ↗</Link>

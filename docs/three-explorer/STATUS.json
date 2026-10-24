@@ -1,19 +1,14 @@
 {
-  "checkedAt": "2026-10-24T03:34:36.753899+00:00",
+  "checkedAt": "2026-10-24T04:21:38.738589+00:00",
   "site": {
     "projectId": "appgprj_6ada268b654c8191b201e4eb06f67da7",
     "liveUrl": "https://aeronaut-v1.ycwang1110.chatgpt.site",
     "accessMode": "public",
-    "publishedVersionUnchanged": 4,
-    "workflow": "Local prototype complete. Sync to bound default source branch blocked by automatic approval review; no new Sites version saved and no deployment invoked.",
+    "workflow": "User authorized default-branch incremental source integration and then explicitly requested production publication for iPad testing. Exact save/deploy outcome is in release receipt.",
     "hostedPreviewUrl": null,
-    "saveStatus": "blocked",
-    "automaticApprovalRejection": {
-      "action": "Push prototype commit to Sites-bound default source branch",
-      "reason": "Default-branch source mutation may exceed the no-existing-project modification constraint",
-      "effect": "Would change the source baseline for subsequent edits",
-      "requiredApproval": "Explicit permission to write prototype source to original Sites default source branch and save draft, without deployment"
-    }
+    "saveStatus": "authorized; see release receipt",
+    "publishedBaselineVersion": 4,
+    "productionPublicationAuthorized": true
   },
   "source": {
     "baseCommit": "7607f66e72779410a5dacc8922bab1a22ac91a63",
@@ -89,10 +84,11 @@
     "typecheck": "passed",
     "lint": "passed",
     "tests": {
-      "passed": 61,
+      "passed": 66,
       "baseline": 38,
-      "new": 23,
-      "files": 10
+      "prototype": 23,
+      "integration": 5,
+      "files": 12
     },
     "staticProductionBuild": {
       "result": "passed",
@@ -124,15 +120,18 @@
       "gpuMemoryBytes": null
     },
     "sitesHostedPreviewGLB": "not tested; no non-production preview operation",
-    "sitesProductionGLB": "not tested; deployment is prohibited without confirmation"
+    "sitesProductionGLB": "Verify after authorized publication; see release receipt",
+    "applicationRoutes": 187,
+    "linkedPagesAndAssets": 236
   },
   "scope": {
-    "existingPagesModified": false,
-    "navigationModified": false,
+    "existingPagesModified": true,
+    "navigationModified": "Additive Aero Lab and footer entry only; six top-level items retained",
     "progressStorageModified": false,
     "modelIsOEMCad": false,
     "runtimeCDN": false,
-    "paidAPI": false
+    "paidAPI": false,
+    "allOriginalDataAndStorageByteIdentical": true
   },
   "next": {
     "clickableParts": "feasible through raycasting and semantic node groups",

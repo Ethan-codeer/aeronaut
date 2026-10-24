@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-24T03:40:48.798Z",
-  "base": "http://localhost:3001",
+  "checkedAt": "2026-10-24T04:20:45.509Z",
+  "base": "http://localhost:4173",
   "scope": "Local static HTTP and exported HTML/JS checks. Not a browser network trace or Sites-hosted model request.",
   "findings": [
     {
@@ -10,9 +10,9 @@
         "/_next/static/chunks/3794-ad2f807ca6f2d764.js",
         "/_next/static/chunks/main-app-118519172b8c64ec.js",
         "/_next/static/chunks/8500-63a4afbeacab3b52.js",
-        "/_next/static/chunks/app/layout-b12dcde5f7cac550.js",
+        "/_next/static/chunks/app/layout-da3e845e539aae4c.js",
         "/_next/static/chunks/2591-8346e949a776c22d.js",
-        "/_next/static/chunks/app/page-0a972e053d89e813.js",
+        "/_next/static/chunks/app/page-0c2e96fe545b12e4.js",
         "/_next/static/chunks/app/error-5df787fc4af6473f.js",
         "/_next/static/chunks/polyfills-42372ed130431b0a.js",
         "/_next/static/chunks/webpack-25ce0905239a758c.js"
@@ -26,14 +26,11 @@
         "/_next/static/chunks/3794-ad2f807ca6f2d764.js",
         "/_next/static/chunks/main-app-118519172b8c64ec.js",
         "/_next/static/chunks/8500-63a4afbeacab3b52.js",
-        "/_next/static/chunks/app/layout-b12dcde5f7cac550.js",
+        "/_next/static/chunks/app/layout-da3e845e539aae4c.js",
         "/_next/static/chunks/2591-8346e949a776c22d.js",
-        "/_next/static/chunks/app/page-0a972e053d89e813.js",
+        "/_next/static/chunks/app/page-0c2e96fe545b12e4.js",
         "/_next/static/chunks/app/error-5df787fc4af6473f.js",
-        "/_next/static/chunks/6434-855d62a290aeb531.js",
-        "/_next/static/chunks/2227-187c860e1d50daaf.js",
-        "/_next/static/chunks/app/lab/page-bf216b04ad5d5410.js",
-        "/_next/static/chunks/app/lab/3d-explorer/page-b09975fb737ccadb.js",
+        "/_next/static/chunks/app/lab/3d-explorer/page-12e80a5af568d57d.js",
         "/_next/static/chunks/polyfills-42372ed130431b0a.js",
         "/_next/static/chunks/webpack-25ce0905239a758c.js"
       ],
@@ -46,43 +43,43 @@
       "path": "/lab/3d-explorer",
       "status": 200,
       "mime": "text/html; charset=utf-8",
-      "bytes": 16453,
-      "environmentLocalFetchMs": 24.26503
+      "bytes": 16795,
+      "environmentLocalFetchMs": 29.517867000000003
     },
     {
       "path": "/models/three-explorer/generic-twinjet.glb",
       "status": 200,
-      "mime": "application/octet-stream",
+      "mime": "model/gltf-binary",
       "bytes": 269568,
-      "environmentLocalFetchMs": 3.0585060000000013
+      "environmentLocalFetchMs": 3.630242999999993
     },
     {
       "path": "/models/three-explorer/poster.webp",
       "status": 200,
       "mime": "image/webp",
       "bytes": 40094,
-      "environmentLocalFetchMs": 1.116858999999998
+      "environmentLocalFetchMs": 2.437274000000002
     },
     {
       "path": "/models/three-explorer/model-source.mjs",
       "status": 200,
-      "mime": "application/octet-stream",
+      "mime": "text/javascript; charset=utf-8",
       "bytes": 12618,
-      "environmentLocalFetchMs": 2.056843999999998
+      "environmentLocalFetchMs": 5.795943000000008
     },
     {
       "path": "/models/three-explorer/LICENSE.txt",
       "status": 200,
       "mime": "text/plain; charset=utf-8",
       "bytes": 1945,
-      "environmentLocalFetchMs": 1.9191789999999997
+      "environmentLocalFetchMs": 2.2833550000000002
     },
     {
       "path": "/models/three-explorer/manifest.json",
       "status": 200,
-      "mime": "application/json",
+      "mime": "application/json; charset=utf-8",
       "bytes": 2122,
-      "environmentLocalFetchMs": 2.296912000000006
+      "environmentLocalFetchMs": 2.214853000000005
     }
   ]
 }

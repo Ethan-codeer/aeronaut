@@ -1,0 +1,15 @@
+{
+  "baseCommit": "7607f66e72779410a5dacc8922bab1a22ac91a63",
+  "fetchedDefaultHead": "7607f66e72779410a5dacc8922bab1a22ac91a63",
+  "originalFilesChanged": [
+    "app/lab/page.tsx",
+    "components/shell.tsx",
+    "package-lock.json",
+    "package.json",
+    "scripts/check-routes.mjs"
+  ],
+  "originalFilesDeleted": [],
+  "allOtherOriginalFilesByteIdentical": true,
+  "defaultBranchConflict": false,
+  "authorization": "User explicitly approved default source synchronization, incremental navigation and source changes; subsequently approved production publication for iPad testing."
+}

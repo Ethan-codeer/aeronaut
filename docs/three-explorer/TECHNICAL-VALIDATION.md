@@ -1,12 +1,12 @@
-# AERONAUT 独立 3D Explorer 技术验证
+# AERONAUT 3D Explorer 集成与技术验证
 
 ## 结论与范围
 
-原项目支持客户端Three.js与GLB静态资源的构建、打包和本地HTTP加载。本次实现选择**直接Three.js + GLTFLoader + OrbitControls**，只新增独立路由 `/lab/3d-explorer`。原首页、导航、百科、其他交互组件、用户数据存储和Sites项目身份未修改。
+原项目支持客户端Three.js与GLB静态资源的构建、打包和本地HTTP加载。本次实现选择**直接Three.js + GLTFLoader + OrbitControls**，沿用独立路由 `/lab/3d-explorer`，在原飞行实验室和页脚新增入口，并与现有结构图及词典连接。六大主导航结构、百科数据、旧交互与用户存储保持不变。
 
 这是一份**有代码、有模型、有本地验证，但尚未完成真实设备与Sites托管运行验收的原型**。不得把下面的静态验证、CPU离线渲染、DOM模拟或本地HTTP结果写成真实iPad Safari/WebGL性能结果。
 
-原Sites：`appgprj_6ada268b654c8191b201e4eb06f67da7`；原正式网址：<https://aeronaut-v1.ycwang1110.chatgpt.site>。基线提交 `7607f66e72779410a5dacc8922bab1a22ac91a63`，正式发布仍为原V1.2保存版本4。隔离分支为 `prototype/3d-explorer`，工作目录 `/workspace/sites/aeronaut-3d-prototype`；修改前Git恢复包位于 `/workspace/backups/aeronaut-before-3d-prototype.bundle`。本次为本地草稿，禁止自动部署。向原Sites绑定的默认源码分支同步被自动审批拒绝，因此尚未生成新的Sites保存版本。
+原Sites：`appgprj_6ada268b654c8191b201e4eb06f67da7`；原正式网址：<https://aeronaut-v1.ycwang1110.chatgpt.site>。基线提交 `7607f66e72779410a5dacc8922bab1a22ac91a63`，此次集成的已发布基线为V1.2保存版本4；最终保存与部署结果由交付回执记录。隔离分支为 `prototype/3d-explorer`，工作目录 `/workspace/sites/aeronaut-3d-prototype`；修改前Git恢复包位于 `/workspace/backups/aeronaut-before-3d-prototype.bundle`。此前默认分支同步被自动审批拒绝；本轮用户明确授权必要的增量源码与默认分支写入，随后又明确要求直接发布正式站进行iPad测试。本次按该最新授权在检查通过后保存并发布，原Sites项目和访问权限保留。
 
 ## 技术环境与方案比较
 
@@ -65,9 +65,9 @@
 
 ## 本次实际执行的验证
 
-1. 原有38项测试和新增23项测试，共61项通过。新增项包括真实Three GLTFLoader解析、几何与坐标约定、资源预算、流式进度、错误/超时/取消、延迟启用、2D回退、重试及资源释放。UI与renderer生命周期采用DOM/模拟WebGL，不是假称真实GPU运行。
-2. TypeScript、ESLint及生产静态构建通过；原有186个请求路径、231个关联页面/素材、6个404检查通过。
-3. 新路由及GLB、WebP、源码、许可证和manifest共6项资源通过本地HTTP校验。GLB实际返回application/octet-stream，可被下载器识别，二进制SHA256与清单一致；不要求HTTP Range。
+1. 原有38项测试、23项原型测试及5项导航/预览服务器测试，共66项通过。新增项包括真实Three GLTFLoader解析、几何与坐标约定、资源预算、流式进度、错误/超时/取消、延迟启用、2D回退、重试及资源释放。UI与renderer生命周期采用DOM/模拟WebGL，不是假称真实GPU运行。
+2. TypeScript、ESLint及生产静态构建通过；集成后187个请求路径、236个关联页面/素材、6个404检查通过，涵盖所有原有路由。
+3. 新路由及GLB、WebP、源码、许可证和manifest共6项资源通过本地HTTP校验。当前只读本地预览服务器的GLB实际返回model/gltf-binary，下载器也兼容application/octet-stream，可被下载器识别，二进制SHA256与清单一致；不要求HTTP Range。
 4. 首页及原型初始脚本扫描未发现Three运行时代码，未发现GLB预加载标签。结果见static-export-check.json。
 5. Blender离线形状检查和Khronos验证见上文；不把渲染日志中的CPU内存/时间视为iPad/GPU指标。
 
@@ -75,17 +75,17 @@
 
 Sites当前静态配置仍为原project_id与out目录，新增GLB和依赖代码已包含在同一静态导出与待保存包中。保存到同一Sites项目只能证明草稿/产物接收，不能证明托管后MIME、CSP、缓存和Safari WebGL都正常。
 
-当前原生Sites工具没有独立非生产部署/预览操作，get_site的current_preview_url为null，所有deploy工具均会更新生产。也没有可调用的浏览器扩展/CUA工具。因此本次**不调用任何部署工具**，不为满足测试而更新正式地址或另建网站。
+当前原生Sites工具没有独立非生产部署/预览操作，get_site的current_preview_url为null，所有deploy工具均会更新生产。也没有可调用的浏览器扩展/CUA工具。用户在了解此限制后明确授权发布到原正式地址进行测试；不得另外创建无关网站或改用其他托管平台。
 
 - 本地静态GLB加载：已通过。
-- 同一Sites项目草稿保存：未完成。自动审批拒绝默认源码分支写入，理由是其可能超出“不改现有项目”的范围；重试前需用户明确授权。
+- 同一Sites项目保存与发布：本轮已获用户明确授权，实际结果以保存/部署回执为准。
 - Sites托管预览GLB加载：未验证，缺少非生产预览能力。
-- 正式环境新GLB的MIME/CSP/下载与WebGL：未验证，未经授权不得上线测试。
+- 正式环境新GLB、JS/CSS和路由：发布后按清单校验，结果另存交付回执。真实Safari WebGL交互仍需用户设备测试。
 - 当前正式V1.2地址、访问权限、用户存储：保持不变。
 
-同步草稿会改变后续编辑的源码基线，虽然该凭证未开启自动发布，也未调用任何部署操作，自动审批仍要求明确授权。原型源码、Git恢复包和静态部署包已在本地交付，可先审查。
+默认分支与开发分支差异已先检查：远端无基线之后的新提交，无冲突、无强制覆盖。增量只改动原飞行实验室入口、页脚入口、依赖配置和路由检查，其余原有文件逐字节保留；审计见integration-diff-audit.json。
 
-下一次具备原项目的非生产预览入口时，应检查GLB为200且Content-Type为model/gltf-binary或可用的application/octet-stream；核对269,568字节及SHA256；确认无意外登录页/跨域重定向、JS/CSS可加载、CSP允许同源资源和WebGL。若只能正式部署，必须先取得用户明确批准，再部署交付回执中的保存版本并重复验证，不能宣称本次已经通过。
+下一次具备原项目的非生产预览入口时，应检查GLB为200且Content-Type为model/gltf-binary或可用的application/octet-stream；核对269,568字节及SHA256；确认无意外登录页/跨域重定向、JS/CSS可加载、CSP允许同源资源和WebGL。此次用户已明确批准正式部署；发布后的HTTP与资源校验不能替代真实设备WebGL测试。
 
 ## iPad Safari待执行验收
 
@@ -99,7 +99,7 @@ Sites当前静态配置仍为原project_id与out目录，新增GLB和依赖代�
 4. 连续旋转、切换视角与画质、进出3D十次；Safari远程Web Inspector观察进程内存趋势、上下文数和退出后释放。诊断估算不得替代实际资源观察。
 5. 切后台/前台、滚出视口、低电量模式、模拟断网、上下文丢失与重试。关闭3D后确认不持续渲染或下载。
 
-本地重现：在本目录运行 `npm ci`、`npm run build`、`PORT=3001 node scripts/preview.mjs`，访问 `/lab/3d-explorer`。远程工作区的localhost不是iPad可访问地址；应使用受支持的预览转发或在同一局域网的开发机运行，不能假称该地址在用户设备上可用。
+本地重现：在本目录运行 `npm ci`、`npm run build`、`npm run preview:ipad`，访问 `/lab/3d-explorer`。远程工作区的localhost不是iPad可访问地址；应使用受支持的预览转发或在同一局域网的开发机运行，不能假称该地址在用户设备上可用。
 
 ## 下一步可行性
 
