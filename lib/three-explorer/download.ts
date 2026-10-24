@@ -6,6 +6,12 @@ export async function downloadModel(
   onProgress: (bytes: number, total: number) => void,
   fetcher: typeof fetch = fetch,
 ) {
+  if (
+    !Number.isSafeInteger(expectedBytes) ||
+    expectedBytes <= 0 ||
+    expectedBytes > MODEL_MAX_BYTES
+  )
+    throw Error("模型声明大小超出16 MiB资源预算。");
   const controller = new AbortController();
   const cancel = () => controller.abort();
   signal.addEventListener("abort", cancel, { once: true });
@@ -38,7 +44,7 @@ export async function downloadModel(
         bytes += value.byteLength;
         if (bytes > MODEL_MAX_BYTES) {
           await reader.cancel();
-          throw Error("模型超过 1 MiB 的原型资源预算。");
+          throw Error("模型超过 16 MiB 的资源预算。");
         }
         chunks.push(value);
         onProgress(bytes, expectedBytes);
@@ -55,6 +61,8 @@ export async function downloadModel(
       onProgress(result.byteLength, expectedBytes);
     }
     assertGlb(result);
+    if (result.byteLength !== expectedBytes)
+      throw Error("模型下载长度与清单不一致，请重试。");
     return { data: result, mime, bytes: result.byteLength };
   } catch (error) {
     if (timedOut)

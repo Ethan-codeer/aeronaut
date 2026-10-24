@@ -3,6 +3,9 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { MeshoptDecoder } from "meshoptimizer";
 import { downloadModel } from "../download";
+import { frameAirframe } from "../camera";
+import { releaseObject, assertModelTextures } from "../resources";
+import { boeing747Views } from "../boeing747";
 import { viewPresets, type ViewName } from "../policy";
 import {
   FrameWindow,
@@ -154,7 +157,7 @@ export function createPerformanceExplorer(o: Options): DebugHandle {
       profile: `调试手动 DPR ${requestedDpr.toFixed(2)}${hardwareCapped ? "（硬件/像素上限已限幅）" : ""}`,
       antialias: false,
       shadows: false,
-      texturesEnabled: false,
+      texturesEnabled: (currentVariant?.textures ?? 0) > 0,
       rendererRevision: THREE.REVISION,
       powerPreference: "high-performance",
     };
@@ -217,28 +220,32 @@ export function createPerformanceExplorer(o: Options): DebugHandle {
     raf = requestAnimationFrame(frame);
   }
   function applyView(name: ViewName) {
-    const p = viewPresets[name];
+    const p = (
+      currentVariant?.cameraProfile === "boeing747"
+        ? boeing747Views
+        : viewPresets
+    )[name];
     camera.up.set(0, 1, 0);
-    camera.position.fromArray(p.position).multiplyScalar(size);
+    const fit =
+      name === "overview" || name === "top"
+        ? Math.max(1, 1 / camera.aspect)
+        : 1;
+    camera.position.fromArray(p.position).multiplyScalar(size * fit);
     controls.target.fromArray(p.target).multiplyScalar(size);
+    if (
+      currentVariant?.cameraProfile === "boeing747" &&
+      currentModel &&
+      (name === "overview" || name === "top")
+    )
+      frameAirframe(
+        camera,
+        new THREE.Box3().setFromObject(currentModel),
+        controls.target,
+      );
     camera.lookAt(controls.target);
     controls.update();
   }
-  function release(root: THREE.Object3D) {
-    const gs = new Set<THREE.BufferGeometry>(),
-      ms = new Set<THREE.Material>();
-    root.traverse((node) => {
-      if (node instanceof THREE.Mesh || node instanceof THREE.LineSegments) {
-        gs.add(node.geometry);
-        for (const m of Array.isArray(node.material)
-          ? node.material
-          : [node.material])
-          ms.add(m);
-      }
-    });
-    for (const g of gs) g.dispose();
-    for (const m of ms) m.dispose();
-  }
+  const release = releaseObject;
   function finish(status: TestResult["status"], reason = "") {
     if (!run) return null;
     const active = run;
@@ -295,6 +302,14 @@ export function createPerformanceExplorer(o: Options): DebugHandle {
         (stats.fps ?? 0) >= 45 &&
         (stats.low1Fps ?? 0) >= 45 &&
         (late10.fps ?? 0) >= 45,
+      target55Met:
+        active.variant.cameraProfile === "boeing747" &&
+        status === "completed" &&
+        duration >= active.seconds * 1000 &&
+        stats.frames >= 100 &&
+        (stats.fps ?? 0) >= 55 &&
+        (stats.low1Fps ?? 0) >= 45 &&
+        (late10.fps ?? 0) >= 55,
       thermalConclusion:
         duration < 60000
           ? "短时测试；不足以判断热机稳定性"
@@ -472,6 +487,7 @@ export function createPerformanceExplorer(o: Options): DebugHandle {
         .parseAsync(result.data, "");
       parseMs = performance.now() - parseStart;
       model = gltf.scene;
+      assertModelTextures(model, variant.textures);
       if (
         disposed ||
         controller.signal.aborted ||
@@ -494,6 +510,10 @@ export function createPerformanceExplorer(o: Options): DebugHandle {
       size = Math.max(...bounds.getSize(new THREE.Vector3()).toArray());
       grid.position.y = bounds.min.y - center.y - 0.08;
       scene.add(currentModel);
+      controls.minDistance = size * 0.08;
+      controls.maxDistance = size * 7;
+      camera.far = size * 12;
+      camera.updateProjectionMatrix();
       loading = false;
       controls.enabled = true;
       applyView("overview");

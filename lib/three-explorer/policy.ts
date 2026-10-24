@@ -1,5 +1,5 @@
 export type ViewName = "overview" | "nose" | "wing" | "engine" | "top";
-export type Quality = "efficient" | "balanced";
+export type Quality = "efficient" | "balanced" | "high";
 export const viewLabels: Record<ViewName, string> = {
   overview: "整机",
   nose: "机头",
@@ -17,7 +17,7 @@ export const viewPresets: Record<
   engine: { position: [0.32, -0.06, 0.28], target: [0.16, -0.085, 0.06] },
   top: { position: [0, 1.9, 0.01], target: [0, 0, 0] },
 };
-export const MODEL_MAX_BYTES = 1024 * 1024;
+export const MODEL_MAX_BYTES = 16 * 1024 * 1024;
 export function renderingSize(
   width: number,
   height: number,
@@ -26,8 +26,9 @@ export function renderingSize(
 ) {
   const w = Math.max(1, Math.floor(width)),
     h = Math.max(1, Math.floor(height));
-  const maxDpr = quality === "efficient" ? 1 : 1.5;
-  const cap = quality === "efficient" ? 800000 : 1500000;
+  const maxDpr = quality === "efficient" ? 1 : quality === "high" ? 2 : 1.5;
+  const cap =
+    quality === "efficient" ? 800000 : quality === "high" ? 4000000 : 1500000;
   const dpr = Math.min(
     Number.isFinite(deviceDpr) && deviceDpr > 0 ? deviceDpr : 1,
     maxDpr,
@@ -43,7 +44,7 @@ export function renderingSize(
 }
 export function assertGlb(data: ArrayBuffer, maxBytes = MODEL_MAX_BYTES) {
   if (data.byteLength < 20 || data.byteLength > maxBytes)
-    throw Error("模型大小不符合原型预算。");
+    throw Error("模型大小超出允许的资源预算。");
   const v = new DataView(data);
   if (
     v.getUint32(0, true) !== 0x46546c67 ||

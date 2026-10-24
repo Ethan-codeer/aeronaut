@@ -1,6 +1,7 @@
 "use client";
+import Link from "next/link";
 import { useState, useRef, useEffect, type ComponentType } from "react";
-import manifest from "@/public/models/three-explorer/manifest.json";
+import manifest from "@/public/models/boeing747/manifest.json";
 import styles from "./explorer.module.css";
 type Viewer = ComponentType<{
   onClose: () => void;
@@ -86,7 +87,7 @@ export function ThreeExplorer() {
               src={manifest.posterUrl}
               width={1100}
               height={700}
-              alt="通用双发民航客机GLB的离线渲染图，展示低翼、两台翼下发动机及常规尾翼"
+              alt="Boeing 747-8洲际型GLB的离线渲染图，展示驼峰、四台发动机及后掠翼尖"
               fetchPriority="high"
             />
             <div className={styles.posterLabel}>
@@ -94,10 +95,9 @@ export function ThreeExplorer() {
             </div>
             <div className={styles.activate}>
               <span>EXPLORE THE AIRFRAME</span>
-              <h2>换个角度，认识飞机。</h2>
+              <h2>认识四发传奇，Boeing 747-8。</h2>
               <p>
-                手动启用后才下载3D代码和模型。模型{" "}
-                {Math.round(manifest.bytes / 1024)} KiB，不加载任何贴图。
+                手动启用后才下载3D代码和模型。默认轻量档，可切换约14.9万面高清档；两档均保留2048像素主纹理。
               </p>
               <button
                 className="button primary"
@@ -131,7 +131,7 @@ export function ThreeExplorer() {
             </div>
           )}
           <p className={styles.hint}>
-            2D图始终可浏览；无需WebGL。3D模型仅用于通用外形展示，不是某个型号的工程或维修资料。
+            2D图始终可浏览；无需WebGL。模型用于747-8外形科普，不是厂商工程或维修资料。
           </p>
         </>
       )}
@@ -157,7 +157,7 @@ export function ThreeExplorer() {
       </details>
       <div className={styles.facts}>
         <div>
-          <span>GLB</span>
+          <span>高清 GLB</span>
           <b>{Math.round(manifest.bytes / 1024)} KiB</b>
         </div>
         <div>
@@ -166,33 +166,36 @@ export function ThreeExplorer() {
         </div>
         <div>
           <span>贴图</span>
-          <b>0 张</b>
+          <b>{manifest.textures} 张图集</b>
         </div>
         <div>
           <span>模型许可</span>
-          <b>CC0 1.0</b>
+          <b>GPL 2.0</b>
         </div>
       </div>
       <section className={styles.source}>
-        <h2>模型来源与原型边界</h2>
+        <h2>模型来源、署名与展示范围</h2>
         <p>
-          本项目原创的通用双发民航客机外观模型，由可复现的参数化建模源码生成，OpenAI
-          Codex辅助制作。不使用第三方网格、厂商CAD、航空公司标志或图片贴图；不宣称特定型号的尺寸精度。
+          Boeing 747-8 Intercontinental 社区模型源自 FlightGear：John
+          Williams、Grupo FGBr（Aurino das Neves、Isaias Prestes、Rick
+          Britto、Wagner Silva），并基于 Gijs de Rooy
+          等作者的747-400资源。模型及本次修改按GPL 2.0提供。
         </p>
         <p>
-          机身、左右机翼、双发动机、常规尾翼与三组起落架分为独立节点；目前没有内部结构、骨骼或起落架动画。模型依据CC0允许复制、修改、再分发及商用，生成器另附MIT条款。
+          已转换与优化外观和起落架、细化曲面、合并六种材质并压缩网格。机身与机翼采用上游GPL纹理；发动机、起落架和轮胎纹理重新制作，未采用原发动机照片及标志。中性白色外观不代表真实航司涂装。
         </p>
         <div className={styles.sourceLinks}>
-          <a href={manifest.licenseFile}>授权说明 ↗</a>
-          <a href={manifest.licenseUrl} target="_blank" rel="noreferrer">
-            CC0条款 ↗
+          <a href={manifest.origin.url} target="_blank" rel="noreferrer">
+            原始模型与作者 ↗
           </a>
-          <a href={manifest.source}>建模源码 ↗</a>
-          <a href="/models/three-explorer/manifest.json">模型与预算清单 ↗</a>
+          <a href={manifest.licenseUrl}>GPL 2.0全文 ↗</a>
+          <a href={manifest.sourceBundleUrl}>对应源码与修改说明 ↗</a>
+          <a href="/models/boeing747/manifest.json">模型与纹理清单 ↗</a>
+          <Link href="/atlas/747-8">747-8百科 ↗</Link>
         </div>
         <p className={styles.note}>
-          这是通用飞机外形展示。真实iPad
-          Safari触控、帧率、加载耗时和资源占用尚需在设备上测量；诊断读数只在启用3D后由当前浏览器产生。
+          非波音、发动机厂商或航空公司官方产品，不表示相关品牌认可；品牌名称仅用于识别机型。社区模型存在简化，目前未实现内部剖视、结构拆解或起落架动画。真实A12X
+          iPad Safari触控、帧率和发热尚待设备实测，页面不预填性能结论。
         </p>
       </section>
     </div>

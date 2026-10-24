@@ -75,7 +75,7 @@ describe("original CC0 twinjet GLB", () => {
     ).toThrow();
     const corrupt = data.slice(0, 24);
     expect(() => assertGlb(corrupt)).toThrow();
-    expect(() => assertGlb(new ArrayBuffer(1048577))).toThrow();
+    expect(() => assertGlb(new ArrayBuffer(1048577), 1048576)).toThrow();
   });
   it("bounds physical pixels and DPR for iPad-sized and high-DPI layouts", () => {
     for (const q of ["efficient", "balanced"] as const) {

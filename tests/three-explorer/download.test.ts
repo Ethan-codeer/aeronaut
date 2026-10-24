@@ -15,13 +15,11 @@ describe("model transport and failure handling", () => {
         c.close();
       },
     });
-    const fetcher = vi
-      .fn()
-      .mockResolvedValue(
-        new Response(stream, {
-          headers: { "content-type": "application/octet-stream" },
-        }),
-      );
+    const fetcher = vi.fn().mockResolvedValue(
+      new Response(stream, {
+        headers: { "content-type": "application/octet-stream" },
+      }),
+    );
     const r = await downloadModel(
       "/model.glb",
       bytes.byteLength,
@@ -42,13 +40,11 @@ describe("model transport and failure handling", () => {
       bytes.byteLength,
       new AbortController().signal,
       () => {},
-      vi
-        .fn()
-        .mockResolvedValue(
-          new Response(bytes, {
-            headers: { "content-type": "model/gltf-binary" },
-          }),
-        ),
+      vi.fn().mockResolvedValue(
+        new Response(bytes, {
+          headers: { "content-type": "model/gltf-binary" },
+        }),
+      ),
     );
     expect(r.mime).toBe("model/gltf-binary");
   });
@@ -70,13 +66,11 @@ describe("model transport and failure handling", () => {
         100,
         new AbortController().signal,
         () => {},
-        vi
-          .fn()
-          .mockResolvedValue(
-            new Response("<html/>", {
-              headers: { "content-type": "text/html" },
-            }),
-          ),
+        vi.fn().mockResolvedValue(
+          new Response("<html/>", {
+            headers: { "content-type": "text/html" },
+          }),
+        ),
       ),
     ).rejects.toThrow("返回了网页");
   });
@@ -87,9 +81,11 @@ describe("model transport and failure handling", () => {
         100,
         new AbortController().signal,
         () => {},
-        vi.fn().mockResolvedValue(new Response(new Uint8Array(1048577))),
+        vi
+          .fn()
+          .mockResolvedValue(new Response(new Uint8Array(16 * 1048576 + 1))),
       ),
-    ).rejects.toThrow("1 MiB");
+    ).rejects.toThrow("16 MiB");
   });
   it("aborts a stalled request and provides a retryable timeout message", async () => {
     vi.useFakeTimers();

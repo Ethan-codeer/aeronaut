@@ -1,6 +1,10 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import manifest from "@/public/models/three-explorer/manifest.json";
+import {
+  boeing747 as manifest,
+  boeingVariant,
+  boeing747Views,
+} from "@/lib/three-explorer/boeing747";
 import {
   createExplorer,
   type ExplorerHandle,
@@ -30,7 +34,10 @@ export function ViewerClient({
     [metrics, setMetrics] = useState<ViewerMetrics | null>(null),
     [error, setError] = useState(""),
     [view, setView] = useState<ViewName>("overview"),
-    [quality, setQuality] = useState<Quality>("efficient");
+    [quality, setQuality] = useState<Quality>("balanced"),
+    [autoRotate, setAutoRotate] = useState(false);
+  const qualityRef = useRef<Quality>("balanced");
+  const variant = boeingVariant(quality);
   useEffect(() => {
     if (!container.current || !canvas.current) return;
     const controller = new AbortController();
@@ -39,9 +46,12 @@ export function ViewerClient({
       startedAt,
       canvas: canvas.current,
       container: container.current,
-      url: manifest.modelUrl,
-      expectedBytes: manifest.bytes,
-      expectedSha256: manifest.sha256,
+      url: variant.url,
+      expectedBytes: variant.bytes,
+      expectedSha256: variant.sha256,
+      expectedTextures: variant.textures,
+      initialQuality: qualityRef.current,
+      views: boeing747Views,
       signal: controller.signal,
       onProgress: (n, total) => {
         if (!closed) setProgress(Math.min(100, Math.round((n / total) * 100)));
@@ -80,7 +90,7 @@ export function ViewerClient({
       handle.current?.dispose();
       handle.current = null;
     };
-  }, [startedAt]);
+  }, [startedAt, variant]);
   const ready = !!metrics && !error;
   function changeView(value: ViewName) {
     handle.current?.view(value);
@@ -94,12 +104,13 @@ export function ViewerClient({
         aria-busy={!ready && !error}
       >
         <canvas
+          key={variant.id}
           ref={canvas}
           className={styles.canvas}
           style={{ visibility: error ? "hidden" : "visible" }}
           tabIndex={ready ? 0 : -1}
           role="img"
-          aria-label="可旋转的通用双发民航客机模型；左右方向键旋转，加减键缩放，Home重置"
+          aria-label="可旋转的Boeing 747-8洲际型四发客机模型；左右方向键旋转，加减键缩放，Home重置"
           onKeyDown={(e) => {
             if (!ready) return;
             if (
@@ -135,7 +146,7 @@ export function ViewerClient({
           <>
             <img
               src={manifest.posterUrl}
-              alt="同一GLB模型的离线渲染图，双发动机位于低翼下方，常规尾翼与前三点起落架"
+              alt="同一Boeing 747-8 GLB模型的离线渲染图，驼峰、四台翼下发动机及五组起落架"
               className={styles.poster}
             />
             <div className={styles.error} role="alert">
@@ -155,7 +166,9 @@ export function ViewerClient({
               ? "5秒测量中"
               : metrics.state === "paused"
                 ? "已暂停"
-                : "按需渲染"}
+                : autoRotate
+                  ? "自动旋转"
+                  : "按需渲染"}
           </div>
         )}
       </div>
@@ -212,14 +225,43 @@ export function ViewerClient({
                 disabled={!ready}
                 onChange={(e) => {
                   const value = e.target.value as Quality;
+                  qualityRef.current = value;
+                  if ((value === "high") !== (quality === "high")) {
+                    setMetrics(null);
+                    setProgress(0);
+                    setPhase("切换模型精度");
+                    setError("");
+                    setView("overview");
+                    setAutoRotate(false);
+                  } else handle.current?.quality(value);
                   setQuality(value);
-                  handle.current?.quality(value);
                 }}
               >
-                <option value="efficient">节能 · DPR ≤ 1</option>
-                <option value="balanced">平衡 · DPR ≤ 1.5</option>
+                <option value="efficient">
+                  节能{boeingVariant("efficient").triangles.toLocaleString()}面
+                  · DPR ≤ 1
+                </option>
+                <option value="balanced">
+                  轻量{boeingVariant("balanced").triangles.toLocaleString()}面 ·
+                  DPR ≤ 1.5
+                </option>
+                <option value="high">
+                  高清{boeingVariant("high").triangles.toLocaleString()}面 · DPR
+                  ≤ 2
+                </option>
               </select>
             </label>
+            <button
+              disabled={!ready}
+              aria-pressed={autoRotate}
+              onClick={() => {
+                const next = !autoRotate;
+                setAutoRotate(next);
+                handle.current?.autoRotate(next);
+              }}
+            >
+              {autoRotate ? "停止自动旋转" : "自动旋转"}
+            </button>
             <button onClick={onClose}>退出3D并释放资源</button>
           </div>
           <p className={styles.hint}>
@@ -228,6 +270,10 @@ export function ViewerClient({
           {metrics && (
             <details className={styles.diagnostics}>
               <summary>本次浏览器的实测读数与资源估算</summary>
+              <p>
+                {variant.label} ·
+                DPR按当前档位与像素预算限制。切换模型精度会释放上一档资源。
+              </p>
               <div className={styles.metrics}>
                 <div>
                   <span>模型下载</span>
@@ -252,6 +298,10 @@ export function ViewerClient({
                 <div>
                   <span>纹理对象</span>
                   <b>{metrics.textures}</b>
+                </div>
+                <div>
+                  <span>RGBA纹理含Mip估算</span>
+                  <b>{formatMiB(metrics.textureBytes)} MiB</b>
                 </div>
                 <div>
                   <span>几何缓冲估算</span>
@@ -289,7 +339,10 @@ export function ViewerClient({
                 disabled={
                   metrics.state === "benchmark" || metrics.state === "paused"
                 }
-                onClick={() => handle.current?.benchmark()}
+                onClick={() => {
+                  setAutoRotate(false);
+                  handle.current?.benchmark();
+                }}
               >
                 {metrics.state === "benchmark"
                   ? "正在测量，请保持页面可见…"
@@ -313,7 +366,7 @@ export function ViewerClient({
                             height: innerHeight,
                             dpr: devicePixelRatio,
                           },
-                          model: manifest.id,
+                          model: variant.id,
                           quality,
                           metrics,
                           scope:

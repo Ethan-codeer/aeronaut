@@ -12,6 +12,8 @@ const fake = vi.hoisted(() => ({
   meshes: [] as unknown[],
   lastRatio: 0,
   failRender: false,
+  abortOnParse: null as null | (() => void),
+  closeImage: vi.fn(),
 }));
 vi.mock("three", async (importOriginal) => {
   const real = await importOriginal<typeof import("three")>();
@@ -57,17 +59,27 @@ vi.mock("three/addons/controls/OrbitControls.js", async () => {
   };
 });
 vi.mock("three/addons/loaders/GLTFLoader.js", async () => {
-  const { Group, Mesh, BoxGeometry, MeshStandardMaterial } =
+  const { Group, Mesh, BoxGeometry, MeshStandardMaterial, Texture } =
     await import("three");
   return {
     GLTFLoader: class {
+      setMeshoptDecoder() {
+        return this;
+      }
       async parseAsync() {
         const scene = new Group();
         const mesh = new Mesh(
           new BoxGeometry(35, 10, 39),
-          new MeshStandardMaterial(),
+          new MeshStandardMaterial({
+            map: new Texture({
+              width: 2048,
+              height: 2048,
+              close: fake.closeImage,
+            } as never),
+          }),
         );
         fake.meshes.push(mesh);
+        fake.abortOnParse?.();
         scene.add(mesh);
         return { scene };
       }
@@ -117,6 +129,7 @@ afterEach(() => {
   vi.clearAllMocks();
   fake.meshes.length = 0;
   fake.failRender = false;
+  fake.abortOnParse = null;
 });
 function options() {
   const canvas = document.createElement("canvas"),
@@ -172,6 +185,22 @@ describe("renderer lifetime with a simulated WebGL renderer", () => {
     expect(fake.disposeRenderer).toHaveBeenCalledTimes(1);
     expect(fake.forceLoss).toHaveBeenCalledTimes(1);
     expect(o.onMetrics).toHaveBeenCalled();
+  });
+  it("closes decoded textures after cancellation during parsing and releases the partial context", async () => {
+    const controller = new AbortController();
+    fake.abortOnParse = () => controller.abort();
+    await expect(
+      createExplorer({ ...options(), signal: controller.signal }),
+    ).rejects.toMatchObject({ name: "AbortError" });
+    expect(fake.closeImage).toHaveBeenCalledTimes(1);
+    expect(fake.disposeRenderer).toHaveBeenCalledTimes(1);
+  });
+  it("rejects missing texture maps and releases the partial scene instead of silently showing an untextured 747", async () => {
+    await expect(
+      createExplorer({ ...options(), expectedTextures: 2 }),
+    ).rejects.toThrow("纹理未完整加载");
+    expect(fake.closeImage).toHaveBeenCalledTimes(1);
+    expect(fake.disposeRenderer).toHaveBeenCalledTimes(1);
   });
   it("does not download the model when WebGL2 is unavailable", async () => {
     vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue(null);

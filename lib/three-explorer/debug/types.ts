@@ -8,6 +8,8 @@ export const scenarios: Record<Scenario, string> = {
 };
 export interface Variant {
   id: string;
+  label?: string;
+  cameraProfile?: string;
   targetTriangles: number;
   triangles: number;
   bytes: number;
@@ -75,7 +77,7 @@ export interface TestResult {
     profile: string;
     antialias: false;
     shadows: false;
-    texturesEnabled: false;
+    texturesEnabled: boolean;
     rendererRevision?: string;
     powerPreference?: "high-performance";
   };
@@ -92,6 +94,7 @@ export interface TestResult {
   };
   fpsChangePercent: number | null;
   target45Met: boolean;
+  target55Met?: boolean;
   thermalConclusion: string;
   downloadMs: number;
   parseMs: number;

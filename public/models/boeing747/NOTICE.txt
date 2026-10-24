@@ -1,0 +1,29 @@
+Boeing 747-8 Intercontinental exterior model — GPL-2.0-only
+
+Original model: John Williams, Grupo FGBr (Aurino das Neves, Isaias Prestes,
+Rick Britto, Wagner Silva), Gijs de Rooy and contributors Ivan Ngeow, Jentron,
+Syd Adams, Torsten Dreyer and Markus Bulik. See AUTHORS.txt.
+Source: https://github.com/JMaverick16/747-8
+Pinned source revision: 0ed6056990828084bd51770e3ad73d0b61a1ad61
+Original license declaration: README (GPL 2.0), with full LICENSE.
+
+AERONAUT modifications, 2026-10-24:
+Converted native AC3D exterior and gear; excluded hidden cabin/interior/effects.
+Refined curvature with fixed boundaries; high LOD reduced with UV boundaries.
+Merged shared materials by aircraft component, retained four engines and gear.
+Created 2048x2048 and 512x512 texture atlases. Fuselage and wing artwork retain
+upstream GPL licensing. Engine/gear/tyre artwork is original replacement artwork:
+no original engine photographs, GE logo, airline paint or airline logo used.
+Compressed geometry using locally bundled Meshopt; textures are embedded PNG.
+Generated the 2D poster from the same converted exterior geometry and textures.
+
+All modified model data, replacement texture artwork and the derivative poster
+are distributed under GPL version 2. Corresponding editable model source,
+texture-generation/conversion scripts and modification notices are provided at
+/models/boeing747/corresponding-source.zip, alongside the full license.
+The independent website/Three.js viewer remains separate from this asset work.
+
+No manufacturer, engine vendor, airline affiliation, endorsement or trademark
+license is claimed. Boeing and 747 are used to identify the depicted aircraft.
+This community model has simplifications; it is not CAD, engineering, maintenance
+or certified flight-training material. No interior or gear animation is included.

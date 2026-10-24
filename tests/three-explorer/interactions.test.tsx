@@ -17,6 +17,7 @@ const fake = vi.hoisted(() => ({
   rotate: vi.fn(),
   quality: vi.fn(),
   benchmark: vi.fn(),
+  autoRotate: vi.fn(),
   create: vi.fn(),
   fail: false,
 }));
@@ -44,6 +45,7 @@ function readyMock() {
       geometries: 25,
       textures: 0,
       geometryBytes: 253836,
+      textureBytes: 23767723,
       framebufferBytes: 4096000,
       pixelWidth: 800,
       pixelHeight: 640,
@@ -82,9 +84,9 @@ describe("independent 3D explorer UI with simulated renderer", () => {
     fireEvent.click(screen.getByRole("button", { name: "放大模型" }));
     expect(fake.zoom).toHaveBeenCalledWith(0.85);
     fireEvent.change(screen.getByRole("combobox"), {
-      target: { value: "balanced" },
+      target: { value: "efficient" },
     });
-    expect(fake.quality).toHaveBeenCalledWith("balanced");
+    expect(fake.quality).toHaveBeenCalledWith("efficient");
     fireEvent.keyDown(screen.getByRole("img", { name: /可旋转/ }), {
       key: "ArrowLeft",
     });
@@ -108,6 +110,37 @@ describe("independent 3D explorer UI with simulated renderer", () => {
     fireEvent.click(screen.getByRole("button", { name: "重试3D" }));
     await waitFor(() => expect(screen.queryByRole("alert")).toBeNull());
     expect(fake.create).toHaveBeenCalledTimes(2);
+  });
+  it("switches to the actual high 747 asset, releases the old renderer and supports explicit auto rotation", async () => {
+    readyMock();
+    render(<ThreeExplorer />);
+    fireEvent.click(screen.getByRole("button", { name: /启用3D探索/ }));
+    await waitFor(() =>
+      expect(
+        screen
+          .getByRole("button", { name: "自动旋转" })
+          .hasAttribute("disabled"),
+      ).toBe(false),
+    );
+    fireEvent.click(screen.getByRole("button", { name: "自动旋转" }));
+    expect(fake.autoRotate).toHaveBeenLastCalledWith(true);
+    fireEvent.click(screen.getByRole("button", { name: "停止自动旋转" }));
+    expect(fake.autoRotate).toHaveBeenLastCalledWith(false);
+    const oldCanvas = screen.getByRole("img", { name: /可旋转/ });
+    fireEvent.change(screen.getByRole("combobox"), {
+      target: { value: "high" },
+    });
+    await waitFor(() => expect(fake.create).toHaveBeenCalledTimes(2));
+    expect(fake.dispose).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole("img", { name: /可旋转/ })).not.toBe(oldCanvas);
+    expect(fake.create.mock.calls[1][0]).toEqual(
+      expect.objectContaining({
+        initialQuality: "high",
+        url: expect.stringContaining("747-8i-high-"),
+      }),
+    );
+    fireEvent.click(screen.getByRole("button", { name: "退出3D并释放资源" }));
+    expect(fake.dispose).toHaveBeenCalledTimes(2);
   });
   it("can cancel the module activation before mounting the renderer", async () => {
     readyMock();

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState, useCallback, useMemo } from "react";
 import manifest from "@/public/models/three-explorer/debug/manifest.json";
+import boeing from "@/public/models/boeing747/manifest.json";
 import { createPerformanceExplorer } from "@/lib/three-explorer/debug/runtime";
 import {
   readResults,
@@ -20,7 +21,7 @@ import {
   type Variant,
 } from "@/lib/three-explorer/debug/types";
 import styles from "./panel.module.css";
-const variants = manifest.variants as Variant[];
+const variants = [...boeing.variants, ...manifest.variants] as Variant[];
 const number = (n: number | null | undefined) =>
   n === null || n === undefined || !Number.isFinite(n) ? "—" : n.toFixed(1);
 const preciseDpr = (n: number | null | undefined) =>
@@ -411,7 +412,7 @@ export function PerformancePanel({ onExit }: { onExit: () => void }) {
       </details>
       <div className={styles.controls}>
         <label>
-          单模型复杂度
+          单模型 / 复杂度
           <select
             disabled={busy || loading}
             value={variantId}
@@ -423,8 +424,8 @@ export function PerformancePanel({ onExit }: { onExit: () => void }) {
           >
             {variants.map((v) => (
               <option value={v.id} key={v.id}>
-                {v.triangles.toLocaleString()}面（约{v.targetTriangles / 10000}
-                万）
+                {v.label || "通用双发压力模型"} · {v.triangles.toLocaleString()}
+                面
               </option>
             ))}
           </select>
@@ -483,7 +484,7 @@ export function PerformancePanel({ onExit }: { onExit: () => void }) {
       <div className={styles.stage} ref={stage}>
         <canvas
           ref={canvas}
-          aria-label="性能测试中的单架双发客机"
+          aria-label="性能测试中的单架测试客机"
           className={styles.canvas}
         />
         <div className={styles.hud} aria-live="off">
@@ -541,7 +542,7 @@ export function PerformancePanel({ onExit }: { onExit: () => void }) {
             void runTests(true);
           }}
         >
-          当前DPR · 五档 × 三场景
+          当前DPR · 七档 × 三场景
         </button>
         <button
           disabled={!ready || busy}
@@ -557,8 +558,8 @@ export function PerformancePanel({ onExit }: { onExit: () => void }) {
         {status}
       </p>
       <p className={styles.hint}>
-        每项先预热2秒；连测项间暂停15秒。五档×三场景约需{" "}
-        {Math.ceil(((seconds + 2 + 15) * 15 - 15) / 60)}{" "}
+        每项先预热2秒；连测项间暂停15秒。七档×三场景约需{" "}
+        {Math.ceil(((seconds + 2 + 15) * variants.length * 3 - 15) / 60)}{" "}
         分钟。静止场景同样持续绘制，以便比较渲染吞吐。测试时保持画布可见；切后台、旋转屏幕、离开画布会中止并标记结果，避免污染统计。
       </p>
       <p className={styles.hint}>
@@ -676,7 +677,7 @@ export function PerformancePanel({ onExit }: { onExit: () => void }) {
           Low=1000÷最慢ceil(N×1%)帧时间均值，少于100帧至少取最慢1帧。后台、加载与2秒预热不计；暂停显示“—”。均为requestAnimationFrame与实际渲染提交计数，不是GPU硬件计时。
         </p>
         <p>
-          五档均离线重建同一架飞机的曲面网格，保持13个语义分组、24个绘制批次、6材质和零贴图；没有复制多架飞机。压缩模型与本地Meshopt解码器只在进入本调试模式后加载。它是几何精度对照，不代表含复杂贴图、透明材质或阴影的真实生产资产。
+          前两档测量当前747-8真实纹理资产；后五档是原有通用双发飞机的几何精度对照，保持24个绘制批次、6材质与零贴图，未复制多架飞机。请勿把通用模型结果当成747的性能。调试逻辑只在主动进入后加载；普通3D也使用本地Meshopt解码器。
         </p>
         <a href="/models/three-explorer/debug/manifest.json">
           模型精度与哈希清单 ↗

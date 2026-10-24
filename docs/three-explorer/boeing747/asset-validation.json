@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-24T06:41:16.960Z",
+  "tool": "gltf-validator + glTF Transform Meshopt decode round-trip",
+  "variants": [
+    {
+      "id": "boeing747-high",
+      "sourceErrors": 0,
+      "removedDegenerateTriangles": 43,
+      "sourceWarnings": 0,
+      "decodedErrors": 0,
+      "decodedWarnings": 0,
+      "messages": []
+    },
+    {
+      "id": "boeing747-balanced",
+      "sourceErrors": 0,
+      "removedDegenerateTriangles": 43,
+      "sourceWarnings": 0,
+      "decodedErrors": 0,
+      "decodedWarnings": 0,
+      "messages": []
+    }
+  ],
+  "note": "Not GPU or iPad Safari performance verification"
+}

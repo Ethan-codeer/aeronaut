@@ -57,6 +57,11 @@ export function briefReport(r: TestResult) {
     `首10秒 ${value(r.early10.fps)} FPS → 末10秒 ${value(r.late10.fps)} FPS / 变化 ${value(r.fpsChangePercent)}%`,
     `温感（人工）队列开始${r.device.heat} / 测试后${r.postRunHeat || "未记录"} · ${r.thermalConclusion}`,
     `45FPS下限：${r.target45Met ? (r.measuredMs >= 60000 ? "本次长测达标，仍需重复确认" : "短测达标，需热机复测") : "未达标或无有效完成结果"}`,
+    ...(r.variant.cameraProfile === "boeing747"
+      ? [
+          `747目标（平均≥55 / 1% Low≥45 / 末10秒≥55）：${r.target55Met ? "本次达标，仍需热机复测" : "未达标或尚无有效结果"}`,
+        ]
+      : []),
     `备注 ${r.device.notes || "无"}`,
     `统计：FPS=帧区间数/累计帧时；1% Low=1000/最慢ceil(N×1%)帧时均值；样本不足100帧至少取1帧。后台、加载、预热不计。不是GPU硬件计时或精确显存读数。`,
   ].join("\n");

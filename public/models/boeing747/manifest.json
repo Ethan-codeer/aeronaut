@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "title": "Boeing 747-8 Intercontinental",
+  "chineseTitle": "波音747-8洲际型",
+  "defaultQuality": "balanced",
+  "modelUrl": "/models/boeing747/747-8i-high-b537b23f6f3e.glb",
+  "bytes": 1574384,
+  "sha256": "b537b23f6f3e019f25ebd365c3272aacd61ece95afdab346c0d1a942d75fdc20",
+  "triangles": 148911,
+  "textures": 2,
+  "materials": 6,
+  "license": "GPL-2.0-only",
+  "licenseUrl": "/models/boeing747/LICENSE.txt",
+  "posterUrl": "/models/boeing747/poster.webp",
+  "sourceBundleUrl": "/models/boeing747/corresponding-source.zip",
+  "origin": {
+    "url": "https://github.com/JMaverick16/747-8",
+    "commit": "0ed6056990828084bd51770e3ad73d0b61a1ad61",
+    "authors": [
+      "John Williams",
+      "Grupo FGBr: Aurino das Neves, Isaias Prestes, Rick Britto, Wagner Silva",
+      "Gijs de Rooy; Ivan Ngeow, Jentron, Syd Adams, Torsten Dreyer, Markus Bulik"
+    ],
+    "readmeUrl": "https://github.com/JMaverick16/747-8/blob/0ed6056990828084bd51770e3ad73d0b61a1ad61/README"
+  },
+  "livery": "中性白色 · 无航司涂装",
+  "modifications": [
+    "AC3D外观与起落架转换为静态glTF；移除不可见客舱内饰及灯光效果",
+    "曲面细化、固定边界并对高清档作UV边界减面；保留四发动机、驼峰、后掠翼尖和五组起落架",
+    "重制发动机、起落架与轮胎纹理，移除原发动机照片和标志；保留GPL机身/机翼纹理",
+    "2048×2048与512×512两张内嵌PNG图集，六材质共享与部件批处理，Meshopt压缩"
+  ],
+  "variants": [
+    {
+      "id": "boeing747-high",
+      "label": "747-8 洲际型 · 高清",
+      "quality": "high",
+      "targetTriangles": 150000,
+      "triangles": 148911,
+      "bytes": 1574384,
+      "sha256": "b537b23f6f3e019f25ebd365c3272aacd61ece95afdab346c0d1a942d75fdc20",
+      "url": "/models/boeing747/747-8i-high-b537b23f6f3e.glb",
+      "airframes": 1,
+      "meshes": 20,
+      "materials": 6,
+      "textures": 2,
+      "textureDetails": [
+        {
+          "name": "exterior-atlas",
+          "mime": "image/png",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 399893
+        },
+        {
+          "name": "gear-atlas",
+          "mime": "image/png",
+          "width": 512,
+          "height": 512,
+          "bytes": 21033
+        }
+      ],
+      "cameraProfile": "boeing747",
+      "license": "GPL-2.0-only",
+      "parts": [
+        "Fuselage",
+        "Wings",
+        "HorizontalTail",
+        "LandingGearDoors",
+        "VerticalTail",
+        "EnginePortOuter",
+        "EnginePortInner",
+        "EngineStarboardInner",
+        "EngineStarboardOuter",
+        "LandingGear"
+      ],
+      "geometryBufferBytes": 1990702
+    },
+    {
+      "id": "boeing747-balanced",
+      "label": "747-8 洲际型 · 轻量",
+      "quality": "balanced",
+      "targetTriangles": 67000,
+      "triangles": 67095,
+      "bytes": 1019408,
+      "sha256": "a2e065e49f9ee000991dc17e0edf98869f910e5cc504b21d197cb8256d477125",
+      "url": "/models/boeing747/747-8i-balanced-a2e065e49f9e.glb",
+      "airframes": 1,
+      "meshes": 20,
+      "materials": 6,
+      "textures": 2,
+      "textureDetails": [
+        {
+          "name": "exterior-atlas",
+          "mime": "image/png",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 399893
+        },
+        {
+          "name": "gear-atlas",
+          "mime": "image/png",
+          "width": 512,
+          "height": 512,
+          "bytes": 21033
+        }
+      ],
+      "cameraProfile": "boeing747",
+      "license": "GPL-2.0-only",
+      "parts": [
+        "Fuselage",
+        "Wings",
+        "HorizontalTail",
+        "LandingGearDoors",
+        "VerticalTail",
+        "EnginePortOuter",
+        "EnginePortInner",
+        "EngineStarboardInner",
+        "EngineStarboardOuter",
+        "LandingGear"
+      ],
+      "geometryBufferBytes": 959874
+    }
+  ]
+}

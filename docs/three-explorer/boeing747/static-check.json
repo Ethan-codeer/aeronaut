@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-24T08:09:05.691Z",
+  "base": "http://localhost:4177",
+  "pageStatus": 200,
+  "initialRuntimeEager": false,
+  "modelPreload": false,
+  "assets": [
+    {
+      "path": "/models/boeing747/747-8i-high-b537b23f6f3e.glb",
+      "status": 200,
+      "bytes": 1574384,
+      "mime": "model/gltf-binary",
+      "sha256": "b537b23f6f3e019f25ebd365c3272aacd61ece95afdab346c0d1a942d75fdc20"
+    },
+    {
+      "path": "/models/boeing747/747-8i-balanced-a2e065e49f9e.glb",
+      "status": 200,
+      "bytes": 1019408,
+      "mime": "model/gltf-binary",
+      "sha256": "a2e065e49f9ee000991dc17e0edf98869f910e5cc504b21d197cb8256d477125"
+    },
+    {
+      "path": "/models/boeing747/poster.webp",
+      "status": 200,
+      "bytes": 19672,
+      "mime": "image/webp",
+      "sha256": "843d3bda33ec9d785dc830afc248045706646915faf83b2eea311e92854d178f"
+    },
+    {
+      "path": "/models/boeing747/LICENSE.txt",
+      "status": 200,
+      "bytes": 18026,
+      "mime": "text/plain; charset=utf-8",
+      "sha256": "39db8f9acf036595a2566ea3fe560bc7bd65d8749f088e0f4a4ef2f8a6cb4b34"
+    },
+    {
+      "path": "/models/boeing747/corresponding-source.zip",
+      "status": 200,
+      "bytes": 659845,
+      "mime": "application/octet-stream",
+      "sha256": "e0c80fe66b2ac4e503af343fa0fd89d03faf1176e3ecd0c1c2110f890a167d0c"
+    },
+    {
+      "path": "/models/boeing747/manifest.json",
+      "status": 200,
+      "bytes": 3894,
+      "mime": "application/json; charset=utf-8",
+      "sha256": "38b668ee930e1cc35388c5d5e23c3d7e888dce960071773fa68daad4f7d3fde0"
+    },
+    {
+      "path": "/models/boeing747/NOTICE.txt",
+      "status": 200,
+      "bytes": 1835,
+      "mime": "text/plain; charset=utf-8",
+      "sha256": "9fa4240282a790f9709991c6986ce6e5f0e1a31a3d49e41891b5fdab7ee7c00b"
+    },
+    {
+      "path": "/models/boeing747/AUTHORS.txt",
+      "status": 200,
+      "bytes": 1138,
+      "mime": "text/plain; charset=utf-8",
+      "sha256": "694c25d002aed6660b3e72a6aa98325281915842125f282d0e29419bad5ca42e"
+    }
+  ],
+  "scope": "HTML/resource validation, not a Safari device or hardware FPS test"
+}

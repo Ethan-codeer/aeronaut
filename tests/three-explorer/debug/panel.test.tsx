@@ -104,9 +104,10 @@ describe("explicitly loaded performance debug panel", () => {
     });
     expect(fake.setDpr).toHaveBeenCalledWith(2);
     const options = Array.from(
-      (screen.getByLabelText("单模型复杂度") as HTMLSelectElement).options,
+      (screen.getByLabelText("单模型 / 复杂度") as HTMLSelectElement).options,
     );
-    expect(options).toHaveLength(5);
+    expect(options).toHaveLength(7);
+    expect(options[0].textContent).toContain("747-8");
     fireEvent.change(screen.getByLabelText("测试场景"), {
       target: { value: "static" },
     });

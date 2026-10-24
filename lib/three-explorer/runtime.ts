@@ -2,6 +2,13 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { downloadModel } from "./download";
+import { frameAirframe } from "./camera";
+import { MeshoptDecoder } from "meshoptimizer";
+import {
+  releaseObject,
+  textureMemoryEstimate,
+  assertModelTextures,
+} from "./resources";
 import {
   renderingSize,
   viewPresets,
@@ -19,6 +26,7 @@ export interface ViewerMetrics {
   geometries: number;
   textures: number;
   geometryBytes: number;
+  textureBytes: number;
   framebufferBytes: number;
   pixelWidth: number;
   pixelHeight: number;
@@ -35,15 +43,19 @@ export interface ExplorerHandle {
   rotate: (angle: number) => void;
   quality: (quality: Quality) => void;
   benchmark: () => void;
+  autoRotate: (enabled: boolean) => void;
   dispose: () => void;
 }
 interface Options {
   startedAt?: number;
+  initialQuality?: Quality;
+  views?: typeof viewPresets;
   canvas: HTMLCanvasElement;
   container: HTMLElement;
   url: string;
   expectedBytes: number;
   expectedSha256: string;
+  expectedTextures?: number;
   signal: AbortSignal;
   onProgress: (bytes: number, total: number) => void;
   onPhase: (phase: string) => void;
@@ -56,8 +68,11 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
   let raf = 0;
   let visible = true;
   let ready = false;
-  let quality: Quality = "efficient";
+  let quality: Quality = o.initialQuality ?? "efficient";
+  let autoRotate = false;
+  let previousFrame: number | null = null;
   let size = 39;
+  let airframeBounds: THREE.Box3 | null = null;
   let lastEmit = 0;
   let benchmarkStart = 0;
   let benchmarkCount = 0;
@@ -65,13 +80,15 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
   let benchmarkLast = 0;
   let benchmarkCamera: THREE.Vector3 | null = null;
   let benchmarkTarget: THREE.Vector3 | null = null;
-  const context = o.canvas.getContext("webgl2", {
+  const candidateContext = o.canvas.getContext("webgl2", {
     alpha: false,
     antialias: false,
-    powerPreference: "low-power",
+    powerPreference: quality === "high" ? "high-performance" : "low-power",
     preserveDrawingBuffer: false,
   });
-  if (!context) throw Error("此设备或浏览器未提供 WebGL 2，已保留2D展示。");
+  if (!candidateContext)
+    throw Error("此设备或浏览器未提供 WebGL 2，已保留2D展示。");
+  const context: WebGL2RenderingContext = candidateContext;
   let renderer: THREE.WebGLRenderer;
   try {
     renderer = new THREE.WebGLRenderer({
@@ -79,7 +96,7 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
       context,
       alpha: false,
       antialias: false,
-      powerPreference: "low-power",
+      powerPreference: quality === "high" ? "high-performance" : "low-power",
     });
   } catch (error) {
     context.getExtension("WEBGL_lose_context")?.loseContext();
@@ -118,6 +135,7 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     geometries: 0,
     textures: 0,
     geometryBytes: 0,
+    textureBytes: 0,
     framebufferBytes: 0,
     pixelWidth: 1,
     pixelHeight: 1,
@@ -178,6 +196,18 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
         restoreBenchmark();
       }
     }
+    if (autoRotate && !benchmarkStart) {
+      const delta =
+        previousFrame === null
+          ? 0
+          : Math.min(0.1, Math.max(0, now - previousFrame) / 1000);
+      camera.position
+        .sub(controls.target)
+        .applyAxisAngle(new THREE.Vector3(0, 1, 0), delta * 0.22)
+        .add(controls.target);
+      camera.lookAt(controls.target);
+    }
+    previousFrame = now;
     const t = performance.now();
     try {
       renderer.render(scene, camera);
@@ -191,8 +221,8 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     metrics.triangles = renderer.info.render.triangles;
     metrics.geometries = renderer.info.memory.geometries;
     metrics.textures = renderer.info.memory.textures;
-    emit(!benchmarkStart);
-    if (benchmarkStart) schedule();
+    emit(!benchmarkStart && !autoRotate);
+    if (benchmarkStart || autoRotate) schedule();
   }
   function resize() {
     if (disposed) return;
@@ -203,23 +233,37 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
       window.devicePixelRatio,
       quality,
     );
+    const hardware =
+      typeof context.getParameter === "function"
+        ? context.getParameter(context.MAX_RENDERBUFFER_SIZE) || 4096
+        : 4096;
+    r.dpr = Math.min(r.dpr, hardware / r.width, hardware / r.height);
+    r.pixelWidth = Math.max(1, Math.floor(r.width * r.dpr));
+    r.pixelHeight = Math.max(1, Math.floor(r.height * r.dpr));
     renderer.setPixelRatio(r.dpr);
     renderer.setSize(r.width, r.height, false);
     camera.aspect = r.width / r.height;
     camera.updateProjectionMatrix();
+    previousFrame = null;
     metrics.dpr = r.dpr;
-    metrics.pixelWidth = r.pixelWidth;
-    metrics.pixelHeight = r.pixelHeight;
+    metrics.pixelWidth = context.drawingBufferWidth || r.pixelWidth;
+    metrics.pixelHeight = context.drawingBufferHeight || r.pixelHeight;
     metrics.framebufferBytes = r.pixelWidth * r.pixelHeight * 8;
     schedule();
   }
   function view(name: ViewName) {
     if (disposed) return;
     if (benchmarkStart) restoreBenchmark();
-    const preset = viewPresets[name];
+    const preset = (o.views ?? viewPresets)[name];
     camera.up.set(0, 1, 0);
-    camera.position.fromArray(preset.position).multiplyScalar(size);
+    const fit =
+      name === "overview" || name === "top"
+        ? Math.max(1, 1 / camera.aspect)
+        : 1;
+    camera.position.fromArray(preset.position).multiplyScalar(size * fit);
     controls.target.fromArray(preset.target).multiplyScalar(size);
+    if (o.views && airframeBounds && (name === "overview" || name === "top"))
+      frameAirframe(camera, airframeBounds, controls.target);
     camera.lookAt(controls.target);
     controls.update();
     schedule();
@@ -274,22 +318,7 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     observer?.disconnect();
     document.removeEventListener("visibilitychange", visibility);
     o.canvas.removeEventListener("webglcontextlost", lost);
-    const geometries = new Set<THREE.BufferGeometry>(),
-      materials = new Set<THREE.Material>();
-    scene.traverse((object) => {
-      if (
-        object instanceof THREE.Mesh ||
-        object instanceof THREE.LineSegments
-      ) {
-        geometries.add(object.geometry);
-        for (const material of Array.isArray(object.material)
-          ? object.material
-          : [object.material])
-          materials.add(material);
-      }
-    });
-    for (const g of geometries) g.dispose();
-    for (const m of materials) m.dispose();
+    releaseObject(scene);
     scene.clear();
     renderer.dispose();
     renderer.forceContextLoss();
@@ -318,38 +347,43 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     }
     o.onPhase("解析模型与准备图形");
     const parseStart = performance.now();
-    const gltf = await new GLTFLoader().parseAsync(result.data, "");
+    await MeshoptDecoder.ready;
+    const gltf = await new GLTFLoader()
+      .setMeshoptDecoder(MeshoptDecoder)
+      .parseAsync(result.data, "");
     metrics.parseMs = performance.now() - parseStart;
     if (o.signal.aborted || disposed) {
-      gltf.scene.traverse((object) => {
-        if (object instanceof THREE.Mesh) {
-          object.geometry.dispose();
-          for (const m of Array.isArray(object.material)
-            ? object.material
-            : [object.material])
-            m.dispose();
-        }
-      });
+      releaseObject(gltf.scene);
       throw new DOMException("Aborted", "AbortError");
     }
     scene.add(gltf.scene);
+    if (o.expectedTextures !== undefined)
+      assertModelTextures(gltf.scene, o.expectedTextures);
     const bounds = new THREE.Box3().setFromObject(gltf.scene),
       center = bounds.getCenter(new THREE.Vector3());
     gltf.scene.position.sub(center);
+    airframeBounds = new THREE.Box3().setFromObject(gltf.scene);
     const extents = bounds.getSize(new THREE.Vector3());
     size = Math.max(extents.x, extents.y, extents.z);
+    controls.minDistance = size * 0.08;
+    controls.maxDistance = size * 7;
+    camera.far = size * 12;
+    metrics.textureBytes = textureMemoryEstimate(gltf.scene);
     const seen = new Set<THREE.BufferGeometry>();
+    const buffers = new Set<object>();
     gltf.scene.traverse((object) => {
       if (object instanceof THREE.Mesh && !seen.has(object.geometry)) {
         seen.add(object.geometry);
         for (const attr of Object.values(object.geometry.attributes) as (
           THREE.BufferAttribute | THREE.InterleavedBufferAttribute
-        )[])
-          metrics.geometryBytes += (
-            attr instanceof THREE.InterleavedBufferAttribute
-              ? attr.data.array
-              : attr.array
-          ).byteLength;
+        )[]) {
+          const buffer =
+            attr instanceof THREE.InterleavedBufferAttribute ? attr.data : attr;
+          if (!buffers.has(buffer)) {
+            buffers.add(buffer);
+            metrics.geometryBytes += buffer.array.byteLength;
+          }
+        }
         metrics.geometryBytes += object.geometry.index?.array.byteLength || 0;
       }
     });
@@ -400,7 +434,15 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
         quality = value;
         resize();
       },
+      autoRotate(enabled) {
+        if (disposed) return;
+        if (benchmarkStart) restoreBenchmark();
+        autoRotate = enabled;
+        previousFrame = null;
+        schedule();
+      },
       benchmark() {
+        autoRotate = false;
         if (disposed || benchmarkStart || !visible || document.hidden) return;
         benchmarkCamera = camera.position.clone();
         benchmarkTarget = controls.target.clone();
