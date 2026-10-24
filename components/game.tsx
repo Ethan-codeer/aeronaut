@@ -54,7 +54,7 @@ export function Game({
     [kind, difficulty, spotterMode, airlineMode, logoVariant],
   );
   function start() {
-    setRound(prepareRound(available));
+    setRound(prepareRound(available, liveryOnly ? 20 : 10));
     setImageReady(false);
     setImageFailed(false);
     setIndex(0);
@@ -177,6 +177,12 @@ export function Game({
               ? "仅使用通过视觉与授权检查的照片。按照片能支持的精度识别，不凭涂装猜子型号。"
               : "从代码、地理、涂装与标志认识航司。每轮随机抽题，并打乱选项顺序。"}
         </p>
+        {liveryOnly && (
+          <p className="muted">
+            题库共 {available.length} 道已审核机尾题，每轮最多 20
+            题且不重复；题目与选项随机排列。包含历史与特别涂装，答后查看来源和辨认依据。
+          </p>
+        )}
         {kind === "spotter" && (
           <div className="mode-options" role="group" aria-label="识别模式">
             {(
@@ -274,7 +280,7 @@ export function Game({
           onClick={start}
           disabled={!ready || available.length === 0}
         >
-          开始挑战 · {Math.min(10, available.length)} 题
+          开始挑战 · {Math.min(liveryOnly ? 20 : 10, available.length)} 题
           <ArrowRight size={17} />
         </button>
       </div>
@@ -310,7 +316,21 @@ export function Game({
                 aria-label="待识别图像的局部"
                 viewBox={`${q.imageView.x} ${q.imageView.y} ${q.imageView.width} ${q.imageView.height}`}
               >
+                <defs>
+                  <clipPath
+                    id={`question-crop-${q.id}`}
+                    clipPathUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x={q.imageView.x}
+                      y={q.imageView.y}
+                      width={q.imageView.width}
+                      height={q.imageView.height}
+                    />
+                  </clipPath>
+                </defs>
                 <image
+                  clipPath={`url(#question-crop-${q.id})`}
                   href={q.image}
                   width={q.imageView.sourceWidth}
                   height={q.imageView.sourceHeight}

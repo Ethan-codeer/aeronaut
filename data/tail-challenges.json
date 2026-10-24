@@ -1,0 +1,236 @@
+[
+  {
+    "id": "tail-cb7c82783d",
+    "liverySlug": "china-eastern-standard",
+    "image": "/images/challenges/p-cb7c82783d.jpg",
+    "imageView": {
+      "x": 3243,
+      "y": 802,
+      "width": 628,
+      "height": 837,
+      "sourceWidth": 5231,
+      "sourceHeight": 3487
+    }
+  },
+  {
+    "id": "tail-8a1dee49a4",
+    "liverySlug": "japan-airlines-tsurumaru",
+    "image": "/images/challenges/p-8a1dee49a4.jpg",
+    "imageView": {
+      "x": 1459,
+      "y": 397,
+      "width": 250,
+      "height": 346,
+      "sourceWidth": 1920,
+      "sourceHeight": 1281
+    }
+  },
+  {
+    "id": "tail-cce0397499",
+    "liverySlug": "qatar-standard",
+    "image": "/images/challenges/p-cce0397499.jpg",
+    "imageView": {
+      "x": 97,
+      "y": 610,
+      "width": 580,
+      "height": 589,
+      "sourceWidth": 3868,
+      "sourceHeight": 2180
+    }
+  },
+  {
+    "id": "tail-7025b589a6",
+    "liverySlug": "lufthansa-retro",
+    "image": "/images/challenges/p-7025b589a6.jpg",
+    "imageView": {
+      "x": 28,
+      "y": 357,
+      "width": 203,
+      "height": 252,
+      "sourceWidth": 1400,
+      "sourceHeight": 1050
+    }
+  },
+  {
+    "id": "tail-41d8e46a02",
+    "liverySlug": "ba-boac",
+    "image": "/images/challenges/p-41d8e46a02.webp",
+    "imageView": {
+      "x": 48,
+      "y": 128,
+      "width": 204,
+      "height": 192,
+      "sourceWidth": 1200,
+      "sourceHeight": 800
+    }
+  },
+  {
+    "id": "tail-826167314c",
+    "liverySlug": "ba-negus",
+    "image": "/images/challenges/p-826167314c.webp",
+    "imageView": {
+      "x": 12,
+      "y": 160,
+      "width": 240,
+      "height": 208,
+      "sourceWidth": 1200,
+      "sourceHeight": 800
+    }
+  },
+  {
+    "id": "tail-e794e47580",
+    "liverySlug": "ba-landor",
+    "image": "/images/challenges/p-e794e47580.webp",
+    "imageView": {
+      "x": 12,
+      "y": 144,
+      "width": 240,
+      "height": 216,
+      "sourceWidth": 1200,
+      "sourceHeight": 800
+    }
+  },
+  {
+    "id": "tail-4d3dad6085",
+    "liverySlug": "jal-disney",
+    "image": "/images/challenges/p-4d3dad6085.webp",
+    "imageView": {
+      "x": 840,
+      "y": 270,
+      "width": 180,
+      "height": 234,
+      "sourceWidth": 1200,
+      "sourceHeight": 900
+    }
+  },
+  {
+    "id": "tail-12449f2328",
+    "liverySlug": "qatar-ow",
+    "image": "/images/challenges/p-12449f2328.webp",
+    "imageView": {
+      "x": 30,
+      "y": 169,
+      "width": 204,
+      "height": 216,
+      "sourceWidth": 1200,
+      "sourceHeight": 676
+    }
+  },
+  {
+    "id": "tail-fc6199f198",
+    "liverySlug": "qantas-wunala",
+    "image": "/images/challenges/p-fc6199f198.webp",
+    "imageView": {
+      "x": 624,
+      "y": 184,
+      "width": 192,
+      "height": 256,
+      "sourceWidth": 1200,
+      "sourceHeight": 800
+    }
+  },
+  {
+    "id": "tail-231c01b593",
+    "liverySlug": "airchina-phoenix",
+    "image": "/images/challenges/p-231c01b593.webp",
+    "imageView": {
+      "x": 340,
+      "y": 140,
+      "width": 65,
+      "height": 120,
+      "sourceWidth": 1000,
+      "sourceHeight": 667
+    }
+  },
+  {
+    "id": "tail-9342ee8f5c",
+    "liverySlug": "singapore-50",
+    "image": "/images/challenges/p-9342ee8f5c.webp",
+    "imageView": {
+      "x": 120,
+      "y": 216,
+      "width": 252,
+      "height": 252,
+      "sourceWidth": 1200,
+      "sourceHeight": 900
+    }
+  },
+  {
+    "id": "tail-eb3abc4b7d",
+    "liverySlug": "airfrance-standard",
+    "image": "/images/challenges/p-eb3abc4b7d.jpg",
+    "imageView": {
+      "x": 87,
+      "y": 150,
+      "width": 153,
+      "height": 198,
+      "sourceWidth": 1023,
+      "sourceHeight": 682
+    }
+  },
+  {
+    "id": "tail-ec1258f5d8",
+    "liverySlug": "qantas-retro-roo",
+    "image": "/images/challenges/p-ec1258f5d8.jpg",
+    "imageView": {
+      "x": 102,
+      "y": 137,
+      "width": 174,
+      "height": 219,
+      "sourceWidth": 1024,
+      "sourceHeight": 684
+    }
+  },
+  {
+    "id": "tail-548270535d",
+    "liverySlug": "qantas-retro-roo-ii",
+    "image": "/images/challenges/p-548270535d.jpg",
+    "imageView": {
+      "x": 92,
+      "y": 191,
+      "width": 174,
+      "height": 160,
+      "sourceWidth": 1024,
+      "sourceHeight": 681
+    }
+  },
+  {
+    "id": "tail-054a7d36e1",
+    "liverySlug": "lufthansa-2018",
+    "image": "/images/challenges/p-054a7d36e1.jpg",
+    "imageView": {
+      "x": 56,
+      "y": 161,
+      "width": 184,
+      "height": 173,
+      "sourceWidth": 1024,
+      "sourceHeight": 576
+    }
+  },
+  {
+    "id": "tail-06d6c3ed56",
+    "liverySlug": "cathay-hongkong-trader",
+    "image": "/images/challenges/p-06d6c3ed56.jpg",
+    "imageView": {
+      "x": 46,
+      "y": 205,
+      "width": 184,
+      "height": 191,
+      "sourceWidth": 1024,
+      "sourceHeight": 683
+    }
+  },
+  {
+    "id": "tail-0ab1671c3b",
+    "liverySlug": "china-southern-a380",
+    "image": "/images/challenges/p-0ab1671c3b.jpg",
+    "imageView": {
+      "x": 41,
+      "y": 184,
+      "width": 184,
+      "height": 205,
+      "sourceWidth": 1023,
+      "sourceHeight": 682
+    }
+  }
+]

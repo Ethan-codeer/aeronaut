@@ -1,3 +1,5 @@
+import tailChallenges from "./tail-challenges.json";
+import { getLivery } from "./liveries";
 import { airlines } from "./airlines";
 import type { ChallengeQuestion } from "@/lib/challenge";
 import type { Difficulty } from "./questions";
@@ -194,8 +196,39 @@ const liveryQuestions: AirlineQuestion[] = [
     imageAnswerLeakRisk: "low",
   },
 ];
+const additionalTailQuestions: AirlineQuestion[] = tailChallenges.map(
+  (record) => {
+    const livery = getLivery(record.liverySlug)!;
+    const airline = airlines.find((a) => a.slug === livery.airlineSlug)!;
+    const media = livery.media!;
+    return {
+      id: record.id,
+      type: "livery",
+      difficulty: "进阶",
+      airlineSlug: airline.slug,
+      verifiedAt: "2026-10-24",
+      question: "观察这个机尾的图形与配色，它属于哪家航空公司？",
+      options: choices(
+        airline.nameZh,
+        airlines.filter((a) => a.slug !== airline.slug).map((a) => a.nameZh),
+      ),
+      answer: 0,
+      explanation: `这是${airline.nameZh}的机尾，照片展示「${livery.name}」。${livery.design}${livery.story} 图片为历史摄影资料，不代表当前机队或涂装状态。`,
+      link: `/world/airlines/${airline.slug}`,
+      image: record.image,
+      imageView: record.imageView,
+      imageSource: media.source,
+      imageLicense: media.license,
+      imageLicenseUrl: media.licenseUrl || undefined,
+      imageAttribution: media.attribution,
+      imageReviewed: true,
+      imageAnswerLeakRisk: "low",
+    };
+  },
+);
 export const airlineQuestions: AirlineQuestion[] = [
   ...textQuestions,
   ...logoQuestions,
   ...liveryQuestions,
+  ...additionalTailQuestions,
 ];

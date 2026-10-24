@@ -91,7 +91,7 @@ describe("V1.1 data and migration", () => {
     )) {
       expect(existsSync(`public${q.image}`)).toBe(true);
       expect(q.image).toMatch(
-        /^\/images\/challenges\/[ap]-[a-f0-9]+\.(jpg|svg)$/,
+        /^\/images\/challenges\/[ap]-[a-f0-9]+\.(jpg|svg|webp)$/,
       );
       if (q.image!.endsWith(".jpg")) {
         const bytes = readFileSync(`public${q.image}`);
