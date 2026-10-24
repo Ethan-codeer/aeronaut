@@ -1,0 +1,376 @@
+.explorer {
+  margin: 24px 0 48px;
+}
+.stage {
+  position: relative;
+  height: 560px;
+  min-height: 360px;
+  background: #0c2030;
+  border: 1px solid #274255;
+  border-radius: 18px;
+  overflow: hidden;
+  color: #eff7fc;
+  isolation: isolate;
+}
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  outline-offset: -5px;
+}
+.poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #0c2030;
+}
+.posterLabel,
+.stageBadge {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  color: #aed5ee;
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  z-index: 2;
+  pointer-events: none;
+}
+.activate {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  padding: 22px 26px;
+  background: #0c2030e8;
+  border: 1px solid #315068;
+  border-radius: 12px;
+  max-width: 510px;
+  backdrop-filter: blur(8px);
+}
+.activate > span {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  color: #91b8d1;
+}
+.activate h2 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+.activate p {
+  font-size: 12px;
+  color: #abc0cf;
+  margin-bottom: 18px;
+}
+.activate button {
+  min-height: 46px;
+}
+.cancel {
+  margin-left: 14px;
+  background: none;
+  color: #b4d8ed;
+  text-decoration: underline;
+  padding: 8px;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 12px;
+}
+.toolbar button,
+.secondaryControls button,
+.measure,
+.download {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  padding: 11px 17px;
+  min-height: 44px;
+  border-radius: 8px;
+}
+.toolbar button[aria-pressed="true"] {
+  background: var(--text);
+  color: var(--bg);
+}
+.secondaryControls {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secondaryControls > div {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.secondaryControls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.secondaryControls select {
+  background: var(--surface);
+  color: var(--text);
+  padding: 10px;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+.hint {
+  font-size: 12px;
+  margin: 14px 0 24px;
+  line-height: 1.8;
+}
+.loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background: #0c2030;
+  gap: 16px;
+}
+.loading h2 {
+  font-size: 23px;
+}
+.loading p {
+  color: #aec6d6;
+  font-size: 12px;
+}
+.loading button {
+  background: transparent;
+  color: #96d4fa;
+  padding: 12px;
+}
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #33546d;
+  border-top-color: #8acbfa;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.progress {
+  width: min(320px, 85%);
+  height: 5px;
+  border-radius: 4px;
+  background: #274153;
+  overflow: hidden;
+}
+.progress > span {
+  display: block;
+  background: #6fbae9;
+  height: 100%;
+  transition: width 0.12s;
+}
+.error {
+  padding: 18px 24px;
+  border: 1px solid #ba835c77;
+  background: var(--surface);
+  border-radius: 12px;
+  color: var(--text);
+  margin-top: 14px;
+  position: relative;
+}
+.stage .error {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: #122b3cf0;
+  color: #fff;
+  border-color: #9c9e88;
+}
+.error p {
+  margin: 8px 0;
+  font-size: 13px;
+}
+.stage .error p {
+  color: #c2d2dd;
+}
+.error button {
+  min-height: 44px;
+  padding: 9px 16px;
+  border-radius: 7px;
+  background: #2677a4;
+  color: white;
+  margin-right: 8px;
+}
+.error button + button {
+  background: #365262;
+}
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 24px 0;
+  border-block: 1px solid var(--line);
+  margin: 22px 0;
+}
+.facts > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.facts span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.facts b {
+  font-size: 22px;
+  font-weight: 500;
+}
+.source {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.source h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.source p {
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 12px 0;
+}
+.sourceLinks {
+  display: flex;
+  gap: 14px 24px;
+  flex-wrap: wrap;
+  color: var(--blue);
+  padding: 8px 0;
+}
+.note {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.diagnostics {
+  padding: 20px 24px;
+  margin: 24px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.diagnostics summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 30px;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 22px 0;
+}
+.metrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.metrics span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.metrics b {
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.diagnostics p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 18px 0;
+}
+.measure {
+  background: var(--text);
+  color: var(--bg);
+}
+.download {
+  font-size: 12px;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 900px) {
+  .stage {
+    height: 500px;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .stage {
+    height: 540px;
+  }
+  .poster {
+    object-position: center 20%;
+    height: 75%;
+  }
+  .activate {
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding: 18px;
+  }
+  .activate h2 {
+    font-size: 23px;
+  }
+  .facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .facts b {
+    font-size: 19px;
+  }
+  .source,
+  .diagnostics {
+    padding: 20px;
+  }
+  .secondaryControls > div {
+    width: 100%;
+  }
+  .secondaryControls select {
+    font-size: 16px;
+  }
+  .toolbar button {
+    flex: 1;
+    min-width: 80px;
+  }
+  .loading h2 {
+    font-size: 20px;
+  }
+  .stageBadge {
+    font-size: 9px;
+    left: 15px;
+  }
+  .stage .error {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+  }
+  .metrics b {
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+  .progress > span {
+    transition: none;
+  }
+}

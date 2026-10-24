@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-10-24T03:34:36.753899+00:00",
+  "site": {
+    "projectId": "appgprj_6ada268b654c8191b201e4eb06f67da7",
+    "liveUrl": "https://aeronaut-v1.ycwang1110.chatgpt.site",
+    "accessMode": "public",
+    "publishedVersionUnchanged": 4,
+    "workflow": "Local prototype complete. Sync to bound default source branch blocked by automatic approval review; no new Sites version saved and no deployment invoked.",
+    "hostedPreviewUrl": null,
+    "saveStatus": "blocked",
+    "automaticApprovalRejection": {
+      "action": "Push prototype commit to Sites-bound default source branch",
+      "reason": "Default-branch source mutation may exceed the no-existing-project modification constraint",
+      "effect": "Would change the source baseline for subsequent edits",
+      "requiredApproval": "Explicit permission to write prototype source to original Sites default source branch and save draft, without deployment"
+    }
+  },
+  "source": {
+    "baseCommit": "7607f66e72779410a5dacc8922bab1a22ac91a63",
+    "branch": "prototype/3d-explorer",
+    "worktree": "/workspace/sites/aeronaut-3d-prototype",
+    "route": "/lab/3d-explorer"
+  },
+  "renderer": "Three.js 0.180.0 / GLTFLoader / OrbitControls; WebGL2 required",
+  "model": {
+    "id": "aeronaut-generic-twinjet-v1",
+    "name": "AERONAUT 通用双发民航客机",
+    "kind": "Original parametric exterior concept, not a specific certified aircraft type",
+    "author": "AERONAUT project — original geometry authored with OpenAI Codex assistance",
+    "source": "/models/three-explorer/model-source.mjs",
+    "upstream": "No third-party model, airline trademarks or image textures used",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseFile": "/models/three-explorer/LICENSE.txt",
+    "modificationRights": "Copy, modify, redistribute and use commercially under CC0; no attribution condition. Original source is included.",
+    "createdAt": "2026-10-24",
+    "modelUrl": "/models/three-explorer/generic-twinjet.glb",
+    "posterUrl": "/models/three-explorer/poster.webp",
+    "sha256": "878e9ee9ed8e3411741e5fcc8ed7cf456b178e99574f04450cfb69b065b31272",
+    "bytes": 269568,
+    "rawBytes": 972472,
+    "triangles": 13300,
+    "meshes": 24,
+    "materials": 6,
+    "textures": 0,
+    "geometryBufferBytes": 253836,
+    "textureGpuBytes": 0,
+    "dimensionsMetres": {
+      "length": 38.6,
+      "wingspan": 35.6
+    },
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z",
+      "positiveX": "aircraft left when facing the nose from the cockpit"
+    },
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearRight",
+      "MainGearLeft"
+    ],
+    "animations": 0,
+    "extensionsRequired": [],
+    "optimization": "Lossless vertex welding, resource deduplication and pruning. Geometry batched by semantic part/material. No texture maps, Draco, WASM decoder or runtime CDN.",
+    "limitations": [
+      "Conceptual exterior only; no OEM accuracy claim",
+      "No cabin or internal systems geometry",
+      "Landing gear is static, with separate nodes but no rig or animation"
+    ],
+    "budget": {
+      "maxBytes": 1048576,
+      "maxTriangles": 40000,
+      "maxDrawCalls": 32,
+      "maxDpr": 1.5,
+      "maxTextureSize": 1024
+    }
+  },
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "passed": 61,
+      "baseline": 38,
+      "new": 23,
+      "files": 10
+    },
+    "staticProductionBuild": {
+      "result": "passed",
+      "generatedPages": 189
+    },
+    "khronosValidator": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "realThreeGLTFLoaderParse": "passed without GPU",
+    "localPrototypeResources": 6,
+    "baselineRoutes": 186,
+    "baselineLinkedPagesAndAssets": 231,
+    "expectedMissingPaths": 6,
+    "eagerThreeRuntimeInInitialHomeAndPrototypeScripts": false,
+    "glbPreloadPresent": false,
+    "cpuOfflineModelViews": [
+      "overview",
+      "front",
+      "top",
+      "side"
+    ],
+    "browserWebGLRuntime": "not tested; tools unavailable",
+    "realIPadSafari": {
+      "devicesTested": 0,
+      "touch": "not tested",
+      "fps": null,
+      "loadMs": null,
+      "gpuMemoryBytes": null
+    },
+    "sitesHostedPreviewGLB": "not tested; no non-production preview operation",
+    "sitesProductionGLB": "not tested; deployment is prohibited without confirmation"
+  },
+  "scope": {
+    "existingPagesModified": false,
+    "navigationModified": false,
+    "progressStorageModified": false,
+    "modelIsOEMCad": false,
+    "runtimeCDN": false,
+    "paidAPI": false
+  },
+  "next": {
+    "clickableParts": "feasible through raycasting and semantic node groups",
+    "cutaway": "requires new sourced interior geometry; exterior alone is insufficient",
+    "landingGearAnimation": "requires hinges/pivots, motion-part separation, doors and reviewed animation; current asset has no clips"
+  }
+}

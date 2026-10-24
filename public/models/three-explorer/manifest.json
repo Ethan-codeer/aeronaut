@@ -1,0 +1,63 @@
+{
+  "id": "aeronaut-generic-twinjet-v1",
+  "name": "AERONAUT 通用双发民航客机",
+  "kind": "Original parametric exterior concept, not a specific certified aircraft type",
+  "author": "AERONAUT project — original geometry authored with OpenAI Codex assistance",
+  "source": "/models/three-explorer/model-source.mjs",
+  "upstream": "No third-party model, airline trademarks or image textures used",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenseFile": "/models/three-explorer/LICENSE.txt",
+  "modificationRights": "Copy, modify, redistribute and use commercially under CC0; no attribution condition. Original source is included.",
+  "createdAt": "2026-10-24",
+  "modelUrl": "/models/three-explorer/generic-twinjet.glb",
+  "posterUrl": "/models/three-explorer/poster.webp",
+  "sha256": "878e9ee9ed8e3411741e5fcc8ed7cf456b178e99574f04450cfb69b065b31272",
+  "bytes": 269568,
+  "rawBytes": 972472,
+  "triangles": 13300,
+  "meshes": 24,
+  "materials": 6,
+  "textures": 0,
+  "geometryBufferBytes": 253836,
+  "textureGpuBytes": 0,
+  "dimensionsMetres": {
+    "length": 38.6,
+    "wingspan": 35.6
+  },
+  "orientation": {
+    "up": "+Y",
+    "nose": "+Z",
+    "positiveX": "aircraft left when facing the nose from the cockpit"
+  },
+  "parts": [
+    "Fuselage",
+    "WingRight",
+    "HorizontalTailRight",
+    "EngineRight",
+    "CabinWindows",
+    "Cockpit",
+    "WingLeft",
+    "HorizontalTailLeft",
+    "EngineLeft",
+    "VerticalTail",
+    "NoseGear",
+    "MainGearRight",
+    "MainGearLeft"
+  ],
+  "animations": 0,
+  "extensionsRequired": [],
+  "optimization": "Lossless vertex welding, resource deduplication and pruning. Geometry batched by semantic part/material. No texture maps, Draco, WASM decoder or runtime CDN.",
+  "limitations": [
+    "Conceptual exterior only; no OEM accuracy claim",
+    "No cabin or internal systems geometry",
+    "Landing gear is static, with separate nodes but no rig or animation"
+  ],
+  "budget": {
+    "maxBytes": 1048576,
+    "maxTriangles": 40000,
+    "maxDrawCalls": 32,
+    "maxDpr": 1.5,
+    "maxTextureSize": 1024
+  }
+}

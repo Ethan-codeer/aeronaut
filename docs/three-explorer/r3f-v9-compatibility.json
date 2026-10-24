@@ -1,0 +1,21 @@
+{
+  "name": "@react-three/fiber",
+  "version": "9.4.0",
+  "description": "A React renderer for Threejs",
+  "license": "MIT",
+  "peerDependencies": {
+    "expo": ">=43.0",
+    "react": "^19.0.0",
+    "three": ">=0.156",
+    "expo-gl": ">=11.0",
+    "react-dom": "^19.0.0",
+    "expo-asset": ">=8.4",
+    "react-native": ">=0.78",
+    "expo-file-system": ">=11.0"
+  },
+  "engines": null,
+  "repository": {
+    "url": "git+https://github.com/pmndrs/react-three-fiber.git",
+    "type": "git"
+  }
+}

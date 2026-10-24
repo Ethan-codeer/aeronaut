@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-24T03:39:26.441Z",
+  "validator": {
+    "version": "2.0.0-dev.3.10",
+    "uri": "generic-twinjet.glb",
+    "mimeType": "model/gltf-binary",
+    "validatorVersion": "2.0.0-dev.3.10",
+    "validatedAt": "2026-10-24T03:39:26.423Z",
+    "issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    },
+    "info": {
+      "version": "2.0",
+      "generator": "AERONAUT original parametric twinjet generator",
+      "resources": [
+        {
+          "pointer": "/buffers/0",
+          "mimeType": "application/gltf-buffer",
+          "storage": "glb",
+          "byteLength": 253836
+        }
+      ],
+      "animationCount": 0,
+      "materialCount": 6,
+      "hasMorphTargets": false,
+      "hasSkins": false,
+      "hasTextures": false,
+      "hasDefaultScene": false,
+      "drawCallCount": 24,
+      "totalVertexCount": 9270,
+      "totalTriangleCount": 13300,
+      "maxUVs": 0,
+      "maxInfluences": 0,
+      "maxAttributes": 2
+    }
+  },
+  "checks": {
+    "hashMatches": true,
+    "sizeMatches": true,
+    "triangleCountMatches": true,
+    "withinByteBudget": true,
+    "withinTriangleBudget": true,
+    "noTextures": true,
+    "noExternalBuffers": true,
+    "noDecoderExtensions": true,
+    "validNormals": true,
+    "outwardClosedMeshes": true
+  },
+  "triangles": 13300,
+  "vertices": 9270,
+  "invalidNormals": 0,
+  "negativeVolume": [],
+  "meshSignedVolumes": {
+    "Fuselage_white": 376.47036406511455,
+    "WingRight_wing": 18.00425250399117,
+    "WingRight_blue": 0.047799876594608964,
+    "HorizontalTailRight_wing": 2.607197930907784,
+    "EngineRight_white": 5.358361254860594,
+    "EngineRight_dark": 0.08786783240319543,
+    "EngineRight_metal": 0.04218780454994206,
+    "EngineRight_wing": 0.5280005885959088,
+    "CabinWindows_glass": 0.2279903448364434,
+    "Cockpit_glass": 0.06032526208872029,
+    "WingLeft_wing": 18.00425250399117,
+    "WingLeft_blue": 0.047799876594608964,
+    "HorizontalTailLeft_wing": 2.607197930907784,
+    "EngineLeft_white": 5.35836125486057,
+    "EngineLeft_dark": 0.08786783240319876,
+    "EngineLeft_metal": 0.042187804549938465,
+    "EngineLeft_wing": 0.5280005885959105,
+    "VerticalTail_blue": 5.5536006357550525,
+    "NoseGear_metal": 0.06604959162984424,
+    "NoseGear_dark": 0.057884400112769886,
+    "MainGearRight_metal": 0.08974203054282207,
+    "MainGearRight_dark": 0.2148820940528138,
+    "MainGearLeft_metal": 0.08974203054282016,
+    "MainGearLeft_dark": 0.2148820940528131
+  },
+  "scope": "Static GLB validation; not a browser, GPU or device performance test"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@google/model-viewer",
+  "version": "4.1.0",
+  "description": "Easily display interactive 3D models on the web and in AR!",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "three": "^0.172.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "url": "git+https://github.com/google/model-viewer.git",
+    "type": "git"
+  }
+}
