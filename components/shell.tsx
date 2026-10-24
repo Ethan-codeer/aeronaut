@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTheme } from "./use-theme";
 import {
   ArrowUpRight,
@@ -13,6 +13,7 @@ import {
   X,
   Search,
   Globe2,
+  BookOpen,
 } from "lucide-react";
 const nav = [
   ["/", "探索首页"],
@@ -20,14 +21,25 @@ const nav = [
   ["/academy", "航空挑战"],
   ["/lab", "飞行实验室"],
   ["/world", "航空世界"],
-  ["/dictionary", "术语词典"],
 ];
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   const { dark, toggle: theme } = useTheme();
   return (
-    <header className="header">
+    <header
+      className="header"
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && open) {
+          setOpen(false);
+          menuButton.current?.focus();
+        }
+      }}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(false);
+      }}
+    >
       <div className="nav-wrap">
         <Link href="/" className="logo" aria-label="AERONAUT 首页">
           <span className="brand-icon">
@@ -37,6 +49,7 @@ export function Header() {
         </Link>
         <nav
           className={open ? "desktop-nav is-open" : "desktop-nav"}
+          id="primary-navigation"
           aria-label="主要导航"
         >
           {nav.map(([href, label]) => (
@@ -44,6 +57,11 @@ export function Header() {
               key={href}
               href={href}
               onClick={() => setOpen(false)}
+              aria-current={
+                (href === "/" ? pathname === "/" : pathname.startsWith(href))
+                  ? "page"
+                  : undefined
+              }
               className={
                 (href === "/" ? pathname === "/" : pathname.startsWith(href))
                   ? "active"
@@ -55,6 +73,15 @@ export function Header() {
           ))}
         </nav>
         <div className="nav-actions">
+          <Link
+            href="/dictionary"
+            className="dictionary-utility"
+            aria-label="航空术语词典"
+            onClick={() => setOpen(false)}
+          >
+            <BookOpen size={18} />
+            <span>词典</span>
+          </Link>
           <Link
             href="/atlas"
             className="icon-btn nav-search"
@@ -72,13 +99,15 @@ export function Header() {
           <span className="nav-divider" />
           <Link href="/hangar" className="hangar-link">
             <Plane size={16} />
-            我的机库
+            <span className="hangar-label">我的机库</span>
             <ArrowUpRight size={15} />
           </Link>
           <button
             className="icon-btn menu-btn"
+            ref={menuButton}
+            aria-controls="primary-navigation"
             aria-expanded={open}
-            aria-label="展开导航"
+            aria-label={open ? "收起导航" : "展开导航"}
             onClick={() => setOpen(!open)}
           >
             {open ? <X /> : <Menu />}
@@ -106,6 +135,7 @@ export function Footer() {
             3D 飞机探索
           </Link>
           <Link href="/hangar">我的机库</Link>
+          <Link href="/dictionary">航空术语词典</Link>
           <Link href="/credits">资料与署名</Link>
         </div>
       </div>
@@ -115,7 +145,7 @@ export function Footer() {
         </span>
         <span>
           <Globe2 size={13} /> 简体中文 / EN terminology{" "}
-          <span className="status-dot" /> V1.3
+          <span className="status-dot" /> V1.3.1
         </span>
       </div>
     </footer>

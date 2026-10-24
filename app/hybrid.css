@@ -1,0 +1,890 @@
+/* AERONAUT V1.3.1 — cinematic entry, Editorial reading, focused tools. */
+:root {
+  --muted: #536777;
+  --blue: #126b9f;
+  --shadow: none;
+  --reading-width: 72ch;
+}
+:root[data-theme="dark"] {
+  --muted: #b1c3d0;
+  --blue: #78c5f3;
+}
+.hybrid-ui {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.hybrid-ui :is(h1, h2, h3) {
+  text-wrap: balance;
+}
+.hybrid-ui h1 {
+  letter-spacing: -0.025em;
+}
+.hybrid-ui :is(input, select, textarea) {
+  font-size: 16px;
+  min-height: 44px;
+  max-width: 100%;
+}
+.hybrid-ui :is(button, .button, .icon-btn) {
+  min-height: 44px;
+}
+.hybrid-ui :is(.icon-btn, .favorite) {
+  min-width: 44px;
+  min-height: 44px;
+}
+.hybrid-ui :is(a, button, input, select):focus-visible {
+  outline: 3px solid #e5a94f;
+  outline-offset: 4px;
+}
+.hybrid-ui :is(section, [id]) {
+  scroll-margin-top: 100px;
+}
+.hybrid-ui .container {
+  width: min(1240px, calc(100% - 80px));
+}
+.hybrid-ui .header {
+  height: 80px;
+  background: #0d2335;
+  border-bottom: 1px solid #ffffff24;
+}
+.hybrid-ui .nav-wrap {
+  padding-inline: 32px;
+  gap: 20px;
+}
+.hybrid-ui .desktop-nav {
+  gap: 24px;
+}
+.hybrid-ui .desktop-nav a {
+  font-size: 14px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.hybrid-ui .nav-actions {
+  gap: 10px;
+}
+.hybrid-ui .dictionary-utility {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #e5eff6;
+}
+.hybrid-ui .nav-divider,
+.hybrid-ui .nav-search {
+  display: none;
+}
+.hybrid-ui .hangar-link {
+  font-size: 14px;
+  min-height: 44px;
+}
+.hybrid-ui .hero {
+  min-height: 660px;
+  height: auto;
+  background: #061b30;
+  isolation: isolate;
+}
+.hybrid-ui .hero-bg {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-position: 70% 45%;
+  filter: saturate(0.8);
+}
+.hybrid-ui .hero-shade {
+  background:
+    linear-gradient(90deg, #061b30f5 0%, #061b30d9 30%, #061b3045 78%),
+    linear-gradient(0deg, #061b30b0, transparent 45%);
+}
+.hybrid-ui .hero-grid {
+  display: none;
+}
+.hybrid-ui .hero-content {
+  padding-block: 96px 120px;
+  min-height: 660px;
+}
+.hybrid-ui .hero h1 {
+  font-size: clamp(38px, 4.7vw, 68px);
+  line-height: 1.28;
+  color: #f5f8fb;
+  font-weight: 600;
+  max-width: 12em;
+}
+.hybrid-ui .hero-kicker {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #b7d2e4;
+  margin-bottom: 26px;
+}
+.hybrid-ui .hero-english {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: clamp(17px, 1.8vw, 24px);
+  color: #dceaf3;
+  margin-top: 24px;
+}
+.hybrid-ui .hero-description {
+  font-size: 16px;
+  color: #c5d6e2;
+  line-height: 1.9;
+  margin-top: 18px;
+}
+.hybrid-ui .hero-buttons {
+  margin-top: 32px;
+  gap: 12px;
+}
+.hybrid-ui .hero .button.primary {
+  background: #f3f7fa;
+  color: #102f46;
+  border-color: #f3f7fa;
+}
+.hybrid-ui .hero .button.glass {
+  background: #102b40;
+  color: white;
+  border: 1px solid #64839b;
+  backdrop-filter: none;
+}
+.hybrid-ui .hero-coordinate {
+  display: none;
+}
+.hybrid-ui .hero-credit {
+  font-size: 11px;
+  color: #e5eff6;
+  background: #061b30b0;
+  padding: 4px 10px;
+  border-radius: 0;
+}
+.hybrid-ui .hero-bottom {
+  border-color: #ffffff29;
+}
+.hybrid-ui .hero-bottom-inner {
+  color: #c5d6e2;
+  font-size: 12px;
+}
+.hybrid-ui .discovery-strip {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.hybrid-ui .discovery-inner {
+  min-height: 112px;
+}
+.hybrid-ui .discovery-inner a b {
+  font-size: 16px;
+}
+.hybrid-ui .discovery-inner a span {
+  font-size: 12px;
+}
+.hybrid-ui .section {
+  padding-block: 64px;
+}
+.hybrid-ui .section-heading {
+  margin-bottom: 32px;
+  align-items: end;
+  gap: 24px;
+}
+.hybrid-ui .section-heading h2 {
+  font-size: clamp(25px, 2.6vw, 36px);
+  font-weight: 600;
+  line-height: 1.5;
+}
+.hybrid-ui .section-heading p {
+  font-size: 16px;
+  max-width: var(--reading-width);
+  line-height: 1.8;
+}
+.hybrid-ui .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.hybrid-ui .eyebrow.blue {
+  color: var(--blue);
+}
+.hybrid-ui .flight-cover {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 64px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+.hybrid-ui .flight-cover-image {
+  background: #0c2030;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.hybrid-ui .flight-cover-image img {
+  width: 100%;
+  aspect-ratio: 1.55;
+  object-fit: cover;
+}
+.hybrid-ui .flight-cover-image span {
+  display: block;
+  color: #b8ccdc;
+  padding: 16px 24px;
+  font-size: 12px;
+  border-top: 1px solid #ffffff1a;
+}
+.hybrid-ui .flight-cover-copy h2 {
+  font-size: clamp(28px, 3.2vw, 44px);
+  font-weight: 550;
+  margin-block: 14px 20px;
+  line-height: 1.4;
+}
+.hybrid-ui .flight-cover-copy p {
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 29em;
+}
+.hybrid-ui .flight-cover-copy .button {
+  margin-top: 24px;
+}
+.hybrid-ui .flight-cover-copy small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 16px;
+}
+.hybrid-ui .new-explorations {
+  padding-block: 56px;
+}
+.hybrid-ui .exploration-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 40px;
+}
+.hybrid-ui .exploration-links a {
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 20px 0;
+  min-height: 96px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 20px;
+  transform: none;
+}
+.hybrid-ui .exploration-links a > span:first-child {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  color: var(--blue);
+  font-size: 24px;
+}
+.hybrid-ui .exploration-links a b {
+  font-size: 20px;
+  grid-column: 1;
+}
+.hybrid-ui .exploration-links a > span:last-child {
+  font-size: 12px;
+  grid-column: 1;
+  color: var(--muted);
+}
+.hybrid-ui .page-content {
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+.hybrid-ui .page-heading {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+  gap: 24px;
+}
+.hybrid-ui .page-heading h1,
+.hybrid-ui .detail-heading h1 {
+  font-size: clamp(30px, 4vw, 52px);
+  margin-block: 14px 20px;
+  font-weight: 550;
+  line-height: 1.35;
+}
+.hybrid-ui .page-heading p,
+.hybrid-ui .detail-heading p {
+  font-size: 17px;
+  line-height: 1.85;
+  max-width: var(--reading-width);
+}
+.hybrid-ui .page-heading .eyebrow {
+  display: inline-block;
+  padding-left: 12px;
+  border-left: 2px solid var(--blue);
+}
+.hybrid-ui .button {
+  border-radius: 4px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  gap: 9px;
+}
+.hybrid-ui .button.primary {
+  background: var(--blue);
+  color: var(--surface);
+}
+:root[data-theme="dark"] .hybrid-ui .button.primary {
+  color: #091722;
+}
+.hybrid-ui .button.secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+.hybrid-ui .paper-panel,
+.hybrid-ui .spec-panel {
+  border-radius: 5px;
+  box-shadow: none;
+}
+.hybrid-ui .reading-panel {
+  padding: 32px 36px;
+}
+.hybrid-ui .reading-panel p,
+.hybrid-ui .body-copy {
+  font-size: 17px;
+  line-height: 1.95;
+  max-width: var(--reading-width);
+  color: var(--text);
+}
+.hybrid-ui .reading-panel h2 {
+  font-size: 23px;
+  line-height: 1.5;
+  margin-block: 32px 18px;
+}
+.hybrid-ui .reading-panel h2:first-child {
+  margin-top: 0;
+}
+.hybrid-ui .reading-panel h3 {
+  font-size: 20px;
+}
+.hybrid-ui .detail-layout {
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+  gap: 40px;
+}
+.hybrid-ui .spec-panel {
+  align-self: start;
+  padding: 28px;
+}
+.hybrid-ui .spec-row {
+  font-size: 14px;
+  gap: 16px;
+  padding-block: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.hybrid-ui .spec-row b {
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.hybrid-ui .detail-figure {
+  border-radius: 5px;
+  margin-block: 24px 48px;
+}
+.hybrid-ui .detail-figure figcaption {
+  color: var(--muted);
+  line-height: 1.8;
+}
+.hybrid-ui .filter-bar,
+.hybrid-ui .explore-toolbar {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  gap: 16px;
+  align-items: center;
+  box-shadow: none;
+}
+.hybrid-ui .explore-toolbar label {
+  font-size: 13px;
+  color: var(--text);
+  gap: 8px;
+}
+.hybrid-ui .filter-bar .search-field,
+.hybrid-ui .explore-toolbar .search-field {
+  min-width: 180px;
+}
+.hybrid-ui .results-label,
+.hybrid-ui .result-count {
+  font-size: 13px;
+  padding-block: 12px;
+  color: var(--muted);
+}
+.hybrid-ui .aircraft-card {
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  box-shadow: none;
+  background: var(--surface);
+  transform: none;
+}
+.hybrid-ui .aircraft-image {
+  height: auto;
+  aspect-ratio: 1.65;
+}
+.hybrid-ui .aircraft-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hybrid-ui .aircraft-body {
+  padding: 24px;
+}
+.hybrid-ui .aircraft-title h3 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.hybrid-ui .aircraft-body p {
+  font-size: 14px;
+  line-height: 1.85;
+}
+.hybrid-ui .aircraft-specs {
+  font-size: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+}
+.hybrid-ui .aircraft-specs b {
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.hybrid-ui .livery-card {
+  border-radius: 4px;
+  box-shadow: none;
+}
+.hybrid-ui .livery-card-body {
+  padding: 24px;
+}
+.hybrid-ui .livery-card-body h2 {
+  font-size: 23px;
+  line-height: 1.5;
+}
+.hybrid-ui .licensed-image {
+  background: var(--surface-2);
+}
+.hybrid-ui .licensed-image figcaption {
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 12px 16px;
+  color: var(--muted);
+}
+.hybrid-ui .airport-map {
+  border-radius: 4px;
+}
+.hybrid-ui .airport-code {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  letter-spacing: -0.03em;
+}
+.hybrid-ui .game-panel {
+  border-radius: 5px;
+  box-shadow: none;
+}
+.hybrid-ui .question-title {
+  font-size: clamp(21px, 2.5vw, 29px);
+  line-height: 1.6;
+}
+.hybrid-ui .answer-options button {
+  font-size: 16px;
+  min-height: 60px;
+  border-radius: 4px;
+}
+.hybrid-ui .image-credit {
+  font-size: 12px;
+}
+.hybrid-ui .notice {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.hybrid-ui .text-link {
+  min-height: 36px;
+  font-size: 14px;
+}
+.hybrid-ui .challenge-feature,
+.hybrid-ui .lab-feature {
+  border-radius: 5px;
+  box-shadow: none;
+}
+.hybrid-ui .radar-art,
+.hybrid-ui .radar-ring {
+  animation: none;
+}
+.hybrid-ui .footer {
+  padding-top: 52px;
+  background: #091722;
+}
+.hybrid-ui .footer-links {
+  flex-wrap: wrap;
+}
+.hybrid-ui .footer-links a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: #d5e2ec;
+}
+@media (max-width: 1199px) {
+  .hybrid-ui .nav-wrap {
+    padding-inline: 24px;
+    gap: 16px;
+  }
+  .hybrid-ui .desktop-nav {
+    display: none;
+  }
+  .hybrid-ui .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hybrid-ui .desktop-nav.is-open {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #0d2335;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 16px 24px 24px;
+    border-bottom: 1px solid #ffffff30;
+    box-shadow: 0 18px 24px #09172226;
+    max-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+  }
+  .hybrid-ui .desktop-nav.is-open a {
+    padding: 12px 16px;
+    min-height: 52px;
+    border-bottom: 1px solid #ffffff1a;
+  }
+  .hybrid-ui .desktop-nav a.active {
+    background: #ffffff0d;
+  }
+  .hybrid-ui .flight-cover {
+    gap: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .hybrid-ui .menu-btn {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .hybrid-ui .container {
+    width: calc(100% - 48px);
+  }
+  .hybrid-ui .detail-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .hybrid-ui .spec-panel {
+    position: static;
+    width: 100%;
+  }
+  .hybrid-ui .flight-cover {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .hybrid-ui .filter-bar {
+    flex-wrap: wrap;
+  }
+  .hybrid-ui .page-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .hybrid-ui .container {
+    width: calc(100% - 40px);
+  }
+  .hybrid-ui .header {
+    height: 72px;
+  }
+  .hybrid-ui .nav-wrap {
+    padding-inline: 16px;
+    gap: 8px;
+  }
+  .hybrid-ui .logo {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    gap: 5px;
+  }
+  .hybrid-ui .brand-icon {
+    display: none;
+  }
+  .hybrid-ui .nav-actions {
+    gap: 2px;
+  }
+  .hybrid-ui .dictionary-utility {
+    min-width: 44px;
+    padding: 0 10px;
+  }
+  .hybrid-ui .dictionary-utility span {
+    display: none;
+  }
+  .hybrid-ui .hangar-link {
+    display: none;
+  }
+  .hybrid-ui .desktop-nav.is-open {
+    top: 72px;
+    max-height: calc(100dvh - 72px);
+    padding-inline: 20px;
+  }
+  .hybrid-ui .hero {
+    min-height: 640px;
+  }
+  .hybrid-ui .hero-bg {
+    object-position: 66% 40%;
+    opacity: 0.65;
+  }
+  .hybrid-ui .hero-content {
+    min-height: 640px;
+    padding-block: 68px 130px;
+  }
+  .hybrid-ui .hero h1 {
+    font-size: clamp(31px, 8vw, 44px);
+    line-height: 1.4;
+  }
+  .hybrid-ui .hero-kicker {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+  .hybrid-ui .hero-english {
+    font-size: 17px;
+    max-width: 20em;
+  }
+  .hybrid-ui .hero-description {
+    font-size: 15px;
+  }
+  .hybrid-ui .hero-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .hybrid-ui .hero-buttons .button {
+    font-size: 13px;
+    padding: 11px 14px;
+  }
+  .hybrid-ui .hero-bottom-inner {
+    font-size: 11px;
+  }
+  .hybrid-ui .hero-bottom-inner > span:last-child {
+    display: none;
+  }
+  .hybrid-ui .hero-credit {
+    font-size: 10px;
+    max-width: calc(100% - 32px);
+    right: 16px;
+  }
+  .hybrid-ui .discovery-inner {
+    padding-block: 20px;
+    gap: 12px;
+  }
+  .hybrid-ui .discovery-inner > .small-label {
+    display: none;
+  }
+  .hybrid-ui .discovery-inner a {
+    min-height: 60px;
+  }
+  .hybrid-ui .section {
+    padding-block: 40px;
+  }
+  .hybrid-ui .flight-cover {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .hybrid-ui .flight-cover-copy h2 {
+    font-size: 32px;
+  }
+  .hybrid-ui .exploration-links {
+    grid-template-columns: 1fr;
+  }
+  .hybrid-ui .exploration-links a {
+    min-height: 90px;
+  }
+  .hybrid-ui .page-content {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  .hybrid-ui .page-heading {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+  .hybrid-ui .page-heading h1,
+  .hybrid-ui .detail-heading h1 {
+    font-size: 32px;
+  }
+  .hybrid-ui .page-heading p,
+  .hybrid-ui .detail-heading p {
+    font-size: 16px;
+  }
+  .hybrid-ui .reading-panel {
+    padding: 24px 20px;
+  }
+  .hybrid-ui .reading-panel p,
+  .hybrid-ui .body-copy {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .hybrid-ui .filter-bar,
+  .hybrid-ui .explore-toolbar {
+    padding: 16px;
+    gap: 12px;
+  }
+  .hybrid-ui .filter-bar > *,
+  .hybrid-ui .explore-toolbar > label {
+    max-width: 100%;
+  }
+  .hybrid-ui .filter-bar .search-field {
+    flex-basis: 100%;
+  }
+  .hybrid-ui .aircraft-body {
+    padding: 20px;
+  }
+  .hybrid-ui .section-heading {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+  .hybrid-ui .spec-panel {
+    padding: 24px 20px;
+  }
+  .hybrid-ui .button-row {
+    flex-wrap: wrap;
+  }
+  .hybrid-ui .footer-top {
+    gap: 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hybrid-ui *,
+  .hybrid-ui *::before,
+  .hybrid-ui *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .hybrid-ui .hangar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    margin: 0;
+    padding: 0;
+  }
+  .hybrid-ui .hangar-label,
+  .hybrid-ui .hangar-link > svg:last-child {
+    display: none;
+  }
+  .hybrid-ui .menu-btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 360px) {
+  .hybrid-ui .header .logo {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 600px) {
+  .hybrid-ui .discovery-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .hybrid-ui .discovery-inner > a {
+    padding: 12px 0;
+    border-left: 0;
+    border-bottom: 1px solid var(--line);
+    min-width: 0;
+    min-height: 72px;
+    gap: 16px;
+  }
+  .hybrid-ui .discovery-inner > a > svg:last-child {
+    display: block;
+    margin-right: 0;
+  }
+  .hybrid-ui .big-formula {
+    font-size: clamp(17px, 4.6vw, 24px);
+    letter-spacing: 0;
+    white-space: normal;
+  }
+  .hybrid-ui .lab-bottom > .paper-panel {
+    min-width: 0;
+  }
+}
+.hybrid-ui .module-links {
+  gap: 8px 20px;
+  flex-wrap: wrap;
+  padding-block: 12px;
+  border-block: 1px solid var(--line);
+}
+.hybrid-ui .module-links a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+}
+.hybrid-ui
+  :is(
+    .lab-feature p,
+    .world-teaser p,
+    .game-choices p,
+    .academy-banner p,
+    .term-card p,
+    .airline-card p,
+    .airport-list p
+  ) {
+  font-size: 15px;
+  line-height: 1.85;
+}
+.hybrid-ui
+  :is(
+    .filter-bar,
+    .explore-toolbar,
+    .paper-panel,
+    .spec-panel,
+    .aircraft-card,
+    .livery-card
+  ) {
+  min-width: 0;
+}
+.hybrid-ui .big-formula {
+  font-size: clamp(17px, 2.1vw, 26px);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  letter-spacing: 0;
+}
+.hybrid-ui .button {
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+.hybrid-ui .aircraft-image > .photo-credit {
+  height: auto;
+  top: auto;
+  bottom: 0;
+  font-size: 10px;
+  line-height: 1.6;
+  background: #091722c9;
+  padding: 5px 10px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.hybrid-ui .image-label {
+  backdrop-filter: none;
+  background: #edf3f7;
+}
+.hybrid-ui .detail-figure figcaption,
+.hybrid-ui .licensed-image figcaption {
+  background: var(--surface);
+  padding: 12px 16px;
+}
+.hybrid-ui .footer-links a {
+  font-size: 13px;
+}
+.hybrid-ui .footer-bottom {
+  font-size: 12px;
+}

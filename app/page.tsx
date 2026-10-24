@@ -31,13 +31,12 @@ export default function Home() {
         <div className="container hero-content">
           <Reveal>
             <div className="hero-kicker">
-              <span className="status-dot" /> YOUR JOURNEY TO THE SKY STARTS
-              HERE
+              <span className="status-dot" /> AERONAUT · THE WORLD OF AVIATION
             </div>
             <h1>
-              每一次仰望，
+              世界很大，
               <br />
-              都是<span>探索的开始。</span>
+              从天空开始探索。
             </h1>
             <p className="hero-english">
               The World of Flight, at Your Fingertips.
@@ -114,12 +113,41 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section className="container flight-cover section">
+        <Link
+          href="/atlas/747-8#aircraft-3d"
+          className="flight-cover-image"
+          aria-label="探索 Boeing 747-8I 的 3D 结构"
+        >
+          <img
+            src="/models/boeing747/poster.webp"
+            alt="747-8I 教学模型离线渲染，四发与上层客舱轮廓"
+            loading="lazy"
+          />
+          <span>3D Aircraft Atlas · Boeing 747-8I</span>
+        </Link>
+        <div className="flight-cover-copy">
+          <span className="eyebrow blue">近距离，读懂飞行</span>
+          <h2>
+            一架传奇，
+            <br />
+            不止一种视角。
+          </h2>
+          <p>
+            旋转观察四发客机，点选机翼、发动机与尾翼。沿着飞机的结构，走进飞行原理与航空术语。
+          </p>
+          <Link href="/atlas/747-8#aircraft-3d" className="button primary">
+            探索 747-8I <ArrowUpRight size={18} />
+          </Link>
+          <small>FlightGear 社区模型 · GPL 2.0 · 图片为模型渲染</small>
+        </div>
+      </section>
       <ExplorationLinks />
       <section className="container section">
         <Reveal>
           <div className="section-heading">
             <div>
-              <span className="eyebrow blue">01 / AIRCRAFT ATLAS</span>
+              <span className="eyebrow blue">AIRCRAFT ATLAS</span>
               <h2>
                 每一架飞机，都有自己的故事<span className="heading-dot">.</span>
               </h2>
@@ -150,7 +178,7 @@ export default function Home() {
         <Reveal className="challenge-feature">
           <div className="challenge-grid" />
           <div className="feature-content">
-            <span className="eyebrow">02 / FLIGHT ACADEMY</span>
+            <span className="eyebrow">FLIGHT ACADEMY</span>
             <span className="pill">
               <span className="status-dot" />
               准备好接受挑战了吗？
@@ -187,7 +215,7 @@ export default function Home() {
           </div>
         </Reveal>
         <Reveal className="lab-feature">
-          <span className="eyebrow blue">03 / FLIGHT SCIENCE LAB</span>
+          <span className="eyebrow blue">FLIGHT SCIENCE LAB</span>
           <div className="lab-icon-art">
             <svg viewBox="0 0 350 120" aria-hidden="true">
               {[20, 40, 60, 80, 100].map((y, i) => (
@@ -225,7 +253,7 @@ export default function Home() {
       </section>
       <section className="container section world-teaser">
         <div>
-          <span className="eyebrow blue">04 / THE AVIATION WORLD</span>
+          <span className="eyebrow blue">THE AVIATION WORLD</span>
           <h2>天空之下，还有更多值得探索。</h2>
           <p>走进机场，回望航空百年。让好奇心，带你去更远的地方。</p>
           <ArrowLink href="/world">发现航空世界</ArrowLink>

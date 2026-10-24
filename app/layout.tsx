@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
+import "./hybrid.css";
 import { Providers } from "@/components/providers";
 import { Header, Footer } from "@/components/shell";
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <body>
+      <body className="hybrid-ui">
         <Providers>
           <a href="#main" className="skip-link">
             跳转至主要内容

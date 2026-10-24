@@ -22,16 +22,16 @@ export function ExplorationLinks() {
       <div className="section-heading">
         <div>
           <span className="eyebrow blue">
-            V1.3 / INTERACTIVE AVIATION EXPERIENCE
+            V1.3.1 / INTERACTIVE AVIATION EXPERIENCE
           </span>
-          <h2>五个新视角，继续探索天空。</h2>
+          <h2>跟随好奇心，找到下一站。</h2>
           <p>从一个术语，到一座机场。让每次好奇，都连接下一次发现。</p>
         </div>
       </div>
       <div className="exploration-links">
         {modules.map(([href, title, sub], i) => (
           <Link href={href} key={href}>
-            <span>0{i + 1} ↗</span>
+            <span aria-hidden="true">↗</span>
             <b>{title}</b>
             <span>{sub}</span>
           </Link>

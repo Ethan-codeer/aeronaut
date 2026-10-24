@@ -5,7 +5,7 @@ description: Apply AERONAUT brand, Hybrid UI/UX, five-navigation information arc
 
 # AERONAUT design system
 
-Read this first for AERONAUT UI work. Follow the user's current brief over these defaults; apply this project context before generic recommendations. Read target source and existing tokens before editing. This document specifies the V1.3.1 target, not a claim that the existing V1.3 UI already implements it.
+Read this first for AERONAUT UI work. Follow the user's current brief over these defaults; apply this project context before generic recommendations. Read target source and existing tokens before editing. The V1.3.1 implementation uses this direction; verify actual target components before changing them.
 
 ## Product and Hybrid direction
 
@@ -36,7 +36,7 @@ Strong headline, short readable deck, generous whitespace, purposeful image, the
 4. 飞行实验室 /lab — anatomy, lift, instruments and 3D Explorer.
 5. 航空世界 /world — airports, airlines and liveries.
 
-Current components/shell.tsx has a sixth primary /dictionary link. In a future explicitly authorized navigation refactor, move the dictionary to a persistent utility/search entry and contextual links; retain /dictionary and all term URLs. 我的机库 /hangar remains a utility action. Never silently hide dictionary access or delete a route to meet the five-item target. Desktop and iPad must keep the same labels and hierarchy; use a keyboard-accessible collapsed menu when space requires it. Do not force five long labels into a crowded mobile bar.
+V1.3.1 components/shell.tsx implements these five destinations. The dictionary lives in a persistent utility entry and contextual links; retain /dictionary and all term URLs. 我的机库 /hangar remains a utility action. Never silently hide dictionary access or delete a route to meet the five-item target. Desktop and iPad must keep the same labels and hierarchy; use a keyboard-accessible collapsed menu when space requires it. Do not force five long labels into a crowded mobile bar.
 
 ## iPad Pro A12X / Safari and smaller screens
 
@@ -48,4 +48,4 @@ Keep map drag lock and list fallback; scrolling outside a map or canvas must wor
 
 Use frontend-design for a compact visual plan aligned to this brief. Use ui-ux-pro-max for focused UX/a11y/React/Next.js/Three.js lookups, not to regenerate the brand. Read existing relevant guides under node_modules/next/dist/docs before framework changes. Implement bounded changes and maintain source attribution and honest data gaps. Check reading hierarchy, filters, empty/loading/error states, focus, contrast, responsive overflow, dictionary access and quiz answer concealment. Run relevant tests and build when code changes; inspect rendered target pages if preview is available. Report checks actually run and separate simulated-browser QA from real Safari testing.
 
-This skill grants no deployment or external messaging authority. This setup task is source-only: do not save/deploy a Sites version. Future publication follows the user's task authorization and Sites workflow.
+This skill grants no deployment or external messaging authority. Publication follows the user's current task authorization and Sites workflow; do not infer publication authority from using a design skill alone.
