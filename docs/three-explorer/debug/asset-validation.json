@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-24T04:36:18.847Z",
+  "variants": [
+    {
+      "id": "twinjet-20000",
+      "sourceErrors": 0,
+      "sourceWarnings": 0,
+      "decodedRoundTripErrors": 0,
+      "decodedRoundTripWarnings": 0,
+      "compressedBytes": 136500,
+      "actualTriangles": 20644,
+      "airframes": 1
+    },
+    {
+      "id": "twinjet-50000",
+      "sourceErrors": 0,
+      "sourceWarnings": 0,
+      "decodedRoundTripErrors": 0,
+      "decodedRoundTripWarnings": 0,
+      "compressedBytes": 282400,
+      "actualTriangles": 49378,
+      "airframes": 1
+    },
+    {
+      "id": "twinjet-100000",
+      "sourceErrors": 0,
+      "sourceWarnings": 0,
+      "decodedRoundTripErrors": 0,
+      "decodedRoundTripWarnings": 0,
+      "compressedBytes": 516772,
+      "actualTriangles": 100110,
+      "airframes": 1
+    },
+    {
+      "id": "twinjet-150000",
+      "sourceErrors": 0,
+      "sourceWarnings": 0,
+      "decodedRoundTripErrors": 0,
+      "decodedRoundTripWarnings": 0,
+      "compressedBytes": 736576,
+      "actualTriangles": 150014,
+      "airframes": 1
+    },
+    {
+      "id": "twinjet-200000",
+      "sourceErrors": 0,
+      "sourceWarnings": 0,
+      "decodedRoundTripErrors": 0,
+      "decodedRoundTripWarnings": 0,
+      "compressedBytes": 964544,
+      "actualTriangles": 198904,
+      "airframes": 1
+    }
+  ],
+  "scope": "Offline generator, topology and decoded glTF validation; not a GPU or device performance result."
+}

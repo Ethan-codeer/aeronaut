@@ -1,0 +1,31 @@
+AERONAUT Generic Twinjet Exterior — CC0 1.0 Universal
+
+Original parametric exterior geometry created for the AERONAUT project with
+OpenAI Codex assistance, 2026-10-24. No third-party mesh, airline logo, image
+texture, manufacturer CAD or proprietary engineering drawing is included.
+
+To the extent copyright or related rights exist in this original geometry and its rendered 2D poster,
+the contributors dedicate those rights to the public domain under CC0 1.0.
+Copying, modification, redistribution and commercial use are permitted under
+CC0; attribution is appreciated but is not a license condition.
+Legal terms: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+The model is a conceptual generic twin-engine passenger jet exterior, not a
+certified depiction of any aircraft. No engineering, flight training or
+maintenance suitability is warranted. No trademark rights are granted.
+
+The included model-source.mjs generator is provided under the MIT License:
+Copyright (c) 2026 AERONAUT project contributors.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to
+do so, subject to inclusion of this copyright notice and permission notice.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

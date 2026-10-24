@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-24T05:06:45.002Z",
+  "base": "http://localhost:4175",
+  "initialHomeAndExplorerDebugRuntime": false,
+  "initialStressModelRequestsDeclared": false,
+  "stressAssets": [
+    {
+      "id": "twinjet-20000",
+      "url": "/models/three-explorer/debug/twinjet-20000-34b84bf4b1.glb",
+      "triangles": 20644,
+      "status": 200,
+      "bytes": 136500,
+      "mime": "model/gltf-binary",
+      "sha256": "34b84bf4b1cf34d72c67eb2135bf9a4ee82c0466165e396d09b5d9cabf5a9615"
+    },
+    {
+      "id": "twinjet-50000",
+      "url": "/models/three-explorer/debug/twinjet-50000-0fd1bfba06.glb",
+      "triangles": 49378,
+      "status": 200,
+      "bytes": 282400,
+      "mime": "model/gltf-binary",
+      "sha256": "0fd1bfba06e30e4f2f5ca864ee016be6b6039b7e6b260856fd634ee243a70aed"
+    },
+    {
+      "id": "twinjet-100000",
+      "url": "/models/three-explorer/debug/twinjet-100000-817d978434.glb",
+      "triangles": 100110,
+      "status": 200,
+      "bytes": 516772,
+      "mime": "model/gltf-binary",
+      "sha256": "817d978434fd3d34f1fc84e0bbcb349d9635125d578534f0bad3ab02fc3eccd6"
+    },
+    {
+      "id": "twinjet-150000",
+      "url": "/models/three-explorer/debug/twinjet-150000-42e70f6833.glb",
+      "triangles": 150014,
+      "status": 200,
+      "bytes": 736576,
+      "mime": "model/gltf-binary",
+      "sha256": "42e70f68335ef5adc7479d231b12d922a6b6e9f4685b7fdb27b405f984aea4ef"
+    },
+    {
+      "id": "twinjet-200000",
+      "url": "/models/three-explorer/debug/twinjet-200000-47bcc98481.glb",
+      "triangles": 198904,
+      "status": 200,
+      "bytes": 964544,
+      "mime": "model/gltf-binary",
+      "sha256": "47bcc9848129f644e9156210ec8eee12bdc21a44441e778eaef2f378c59d1999"
+    }
+  ],
+  "scope": "Exported HTML/JS and HTTP resource validation; no browser execution, WebAssembly CSP test or real iPad FPS measurement."
+}

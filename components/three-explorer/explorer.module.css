@@ -374,3 +374,25 @@
     transition: none;
   }
 }
+
+.debugEntry {
+  margin: 22px 0;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.debugEntry summary {
+  cursor: pointer;
+  min-height: 32px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.debugEntry p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 8px 0 14px;
+}
+.debugEntry button {
+  margin-right: 10px;
+}

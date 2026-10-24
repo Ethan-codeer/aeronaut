@@ -8,6 +8,10 @@ type Viewer = ComponentType<{
   startedAt: number;
 }>;
 export function ThreeExplorer() {
+  const [Debug, setDebug] = useState<ComponentType<{
+    onExit: () => void;
+  }> | null>(null);
+  const [debugBusy, setDebugBusy] = useState(false);
   const [startedAt, setStartedAt] = useState(0);
   const [Viewer, setViewer] = useState<Viewer | null>(null),
     [busy, setBusy] = useState(false),
@@ -41,8 +45,27 @@ export function ThreeExplorer() {
     generation.current++;
     setBusy(false);
     setViewer(null);
+    setDebug(null);
+    setDebugBusy(false);
     setError("");
   }
+  async function activateDebug() {
+    const request = ++generation.current;
+    setViewer(null);
+    setDebugBusy(true);
+    setError("");
+    try {
+      const loaded = await import("./debug/panel");
+      if (request === generation.current)
+        setDebug(() => loaded.PerformancePanel);
+    } catch {
+      if (request === generation.current)
+        setError("调试模块加载失败，请重试；普通查看器仍可使用。");
+    } finally {
+      if (request === generation.current) setDebugBusy(false);
+    }
+  }
+  if (Debug) return <Debug onExit={close} />;
   return (
     <div className={styles.explorer}>
       {Viewer ? (
@@ -94,7 +117,17 @@ export function ThreeExplorer() {
           {error && (
             <div className={styles.error} role="alert">
               <p>{error}</p>
-              <button onClick={activate}>重试3D组件</button>
+              <button
+                onClick={
+                  error.startsWith("调试模块")
+                    ? () => {
+                        void activateDebug();
+                      }
+                    : activate
+                }
+              >
+                {error.startsWith("调试模块") ? "重试调试模块" : "重试3D组件"}
+              </button>
             </div>
           )}
           <p className={styles.hint}>
@@ -102,6 +135,26 @@ export function ThreeExplorer() {
           </p>
         </>
       )}
+      <details className={styles.debugEntry}>
+        <summary>开发者性能调试</summary>
+        <p>
+          仅主动进入后加载测试逻辑与多精度单模型。此模式会持续绘制，并提供DPR、帧时统计和本机测试报告。
+        </p>
+        <button
+          className="button secondary"
+          disabled={debugBusy}
+          onClick={() => {
+            void activateDebug();
+          }}
+        >
+          {debugBusy ? "正在加载调试器…" : "进入性能调试模式"}
+        </button>
+        {debugBusy && (
+          <button className="button secondary" onClick={close}>
+            取消调试加载
+          </button>
+        )}
+      </details>
       <div className={styles.facts}>
         <div>
           <span>GLB</span>
