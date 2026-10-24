@@ -1,3 +1,5 @@
+import { liveries } from "@/data/liveries";
+import { airports } from "@/data/airports";
 // @vitest-environment jsdom
 import React from "react";
 import { describe, it, expect, vi, afterEach } from "vitest";
@@ -108,13 +110,19 @@ describe("V1.2 React interactions (DOM simulation, not browser layout)", () => {
     fireEvent.change(screen.getByLabelText("航空公司"), {
       target: { value: "british-airways" },
     });
-    expect(screen.getByText("3 / 20 件视觉档案")).toBeTruthy();
+    expect(
+      screen.getByText(
+        `${liveries.filter((l) => l.airlineSlug === "british-airways").length} / ${liveries.length} 件视觉档案`,
+      ),
+    ).toBeTruthy();
     fireEvent.change(screen.getByLabelText("涂装分类"), {
       target: { value: "纪念涂装" },
     });
     expect(screen.getByText(/暂无符合筛选/)).toBeTruthy();
     fireEvent.click(screen.getByRole("button", { name: "重置筛选" }));
-    expect(screen.getByText("20 / 20 件视觉档案")).toBeTruthy();
+    expect(
+      screen.getByText(`${liveries.length} / ${liveries.length} 件视觉档案`),
+    ).toBeTruthy();
   });
   it("keeps airport list search and selection usable with an unavailable map", () => {
     render(<AirportBrowser />);
@@ -122,7 +130,9 @@ describe("V1.2 React interactions (DOM simulation, not browser layout)", () => {
     fireEvent.change(screen.getByRole("searchbox"), {
       target: { value: "HKG" },
     });
-    expect(screen.getByRole("status").textContent).toContain("1 / 50");
+    expect(screen.getByRole("status").textContent).toContain(
+      `1 / ${airports.length}`,
+    );
     fireEvent.click(screen.getByRole("button", { name: "显示详情卡片" }));
     expect(
       screen.getByRole("link", { name: "查看机场档案 ↗" }).getAttribute("href"),

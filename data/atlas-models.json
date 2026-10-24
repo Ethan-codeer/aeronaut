@@ -1,0 +1,524 @@
+[
+  {
+    "aircraftSlug": "a320neo",
+    "id": "aeronaut-a320neo-schematic-v13",
+    "name": "Airbus A320neo",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/a320neo.glb",
+    "url": "/models/atlas/a320neo.glb",
+    "bytes": 353772,
+    "sha256": "436dbc05ac7330d85c8d2cc36c937dbd31b2956eba50b13e4424097975a3f4e8",
+    "textures": 0,
+    "triangles": 17512,
+    "drawCalls": 27,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight"
+    ],
+    "posterUrl": "/models/atlas/a320neo-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 37.57,
+      "wingspan": 35.8,
+      "height": 11.76
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  },
+  {
+    "aircraftSlug": "a350-900",
+    "id": "aeronaut-a350-900-schematic-v13",
+    "name": "Airbus A350-900",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/a350-900.glb",
+    "url": "/models/atlas/a350-900.glb",
+    "bytes": 514028,
+    "sha256": "b204c8ef87945ff0d9d8a134df55fd510978a38a0232d6a06287eadf3c441cc1",
+    "textures": 0,
+    "triangles": 24928,
+    "drawCalls": 27,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight"
+    ],
+    "posterUrl": "/models/atlas/a350-900-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 66.8,
+      "wingspan": 64.75,
+      "height": 17.05
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  },
+  {
+    "aircraftSlug": "a380-800",
+    "id": "aeronaut-a380-800-schematic-v13",
+    "name": "Airbus A380-800",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/a380-800.glb",
+    "url": "/models/atlas/a380-800.glb",
+    "bytes": 900812,
+    "sha256": "0d60318a1e5437ee2f6769ab995b6ec9b8b21cd7b71661e6b1f759f4b26fc73f",
+    "textures": 0,
+    "triangles": 47512,
+    "drawCalls": 41,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "EngineRightOuter",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "EngineLeftOuter",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight",
+      "BodyGearLeft",
+      "BodyGearRight"
+    ],
+    "posterUrl": "/models/atlas/a380-800-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 72.72,
+      "wingspan": 79.75,
+      "height": 24.09
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  },
+  {
+    "aircraftSlug": "737-max-8",
+    "id": "aeronaut-737-max-8-schematic-v13",
+    "name": "Boeing 737 MAX 8",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/737-max-8.glb",
+    "url": "/models/atlas/737-max-8.glb",
+    "bytes": 368892,
+    "sha256": "abb190159910bd132ff14cc86f94dff943ae937658676d2aaff4315e6f698a33",
+    "textures": 0,
+    "triangles": 18048,
+    "drawCalls": 29,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight"
+    ],
+    "posterUrl": "/models/atlas/737-max-8-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 39.52,
+      "wingspan": 35.9,
+      "height": 12.3
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  },
+  {
+    "aircraftSlug": "787-9",
+    "id": "aeronaut-787-9-schematic-v13",
+    "name": "Boeing 787-9",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/787-9.glb",
+    "url": "/models/atlas/787-9.glb",
+    "bytes": 492304,
+    "sha256": "f853a4af8b22bd6569a608f36cc5b83656809cfc9f0f942dbc6613f8e307d46a",
+    "textures": 0,
+    "triangles": 23856,
+    "drawCalls": 25,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight"
+    ],
+    "posterUrl": "/models/atlas/787-9-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 62.81,
+      "wingspan": 60.12,
+      "height": 17.02
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  },
+  {
+    "aircraftSlug": "c919",
+    "id": "aeronaut-c919-schematic-v13",
+    "name": "COMAC C919",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/c919.glb",
+    "url": "/models/atlas/c919.glb",
+    "bytes": 373408,
+    "sha256": "66cbe58f9542b05e0b4eecd2a4b3f511d3c694f5a4ec03dd009ef102c9b9a8bf",
+    "textures": 0,
+    "triangles": 18432,
+    "drawCalls": 27,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight"
+    ],
+    "posterUrl": "/models/atlas/c919-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 38.9,
+      "wingspan": 35.8,
+      "height": 11.95
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  },
+  {
+    "aircraftSlug": "e195-e2",
+    "id": "aeronaut-e195-e2-schematic-v13",
+    "name": "Embraer E195-E2",
+    "kind": "原创简化教学外形 / Original schematic exterior",
+    "modelUrl": "/models/atlas/e195-e2.glb",
+    "url": "/models/atlas/e195-e2.glb",
+    "bytes": 369984,
+    "sha256": "309ccc847db6fcce1e3e4af8edbfc31da1fd8a64a4a3d766de2cb02b24832da0",
+    "textures": 0,
+    "triangles": 18288,
+    "drawCalls": 25,
+    "parts": [
+      "Fuselage",
+      "WingRight",
+      "HorizontalTailRight",
+      "EngineRight",
+      "CabinWindows",
+      "Cockpit",
+      "WingLeft",
+      "HorizontalTailLeft",
+      "EngineLeft",
+      "VerticalTail",
+      "NoseGear",
+      "MainGearLeft",
+      "MainGearRight"
+    ],
+    "posterUrl": "/models/atlas/e195-e2-poster.webp",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "/models/atlas/model-source.mjs",
+    "author": "AERONAUT — original geometry with OpenAI Codex assistance",
+    "dimensionsMetres": {
+      "length": 41.5,
+      "wingspan": 35.12,
+      "height": 10.9
+    },
+    "dimensionSource": "Existing Aircraft Atlas manufacturer-linked dimensional records; source URLs remain on aircraft page.",
+    "orientation": {
+      "up": "+Y",
+      "nose": "+Z"
+    },
+    "capabilities": {
+      "meshHighlight": true,
+      "animations": false,
+      "liverySwitch": true
+    },
+    "limitations": [
+      "按公开总体尺寸制作的简化教学外形，非厂商工程模型；局部曲面、发动机、翼型和起落架经过简化。",
+      "Original schematic geometry; not an OEM/certification/maintenance model.",
+      "无可用运动铰链或动画；不提供舵面和起落架运动。",
+      "材质色块为原创 Concept Livery，不代表真实航司、制造商展示或历史运营涂装。"
+    ],
+    "liveries": [
+      {
+        "id": "aeronaut-ocean",
+        "name": "AERONAUT Ocean — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#032d49",
+          "accent": "#05a6b8"
+        }
+      },
+      {
+        "id": "aeronaut-sunset",
+        "name": "AERONAUT Sunset — Concept Livery",
+        "concept": true,
+        "colors": {
+          "paint": "#42344d",
+          "accent": "#ed9d46"
+        }
+      }
+    ]
+  }
+]

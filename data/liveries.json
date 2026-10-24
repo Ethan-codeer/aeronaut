@@ -31,7 +31,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=China%20Eastern%20Airlines"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "China Eastern Swallow",
+    "manufacturer": "COMAC",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "japan-airlines-tsurumaru",
@@ -66,7 +71,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Japan%20Airlines"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "JAL Tsurumaru",
+    "manufacturer": "Boeing",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "emirates-standard",
@@ -101,7 +111,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Emirates"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Emirates Flag",
+    "manufacturer": "Airbus",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "qatar-standard",
@@ -135,7 +150,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Qatar%20Airways"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Qatar Oryx",
+    "manufacturer": "Airbus",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "lufthansa-retro",
@@ -169,7 +189,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Lufthansa"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Lufthansa Retro",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "delta-widget",
@@ -204,7 +229,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Delta%20Air%20Lines"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Delta Widget",
+    "manufacturer": "Airbus",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "ba-boac",
@@ -237,7 +267,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "BOAC Retro",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2020s（影像）"
   },
   {
     "slug": "ba-negus",
@@ -270,7 +305,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Negus Retro",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2020s（影像）"
   },
   {
     "slug": "ba-landor",
@@ -303,7 +343,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=British%20Airways"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Landor Retro",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2020s（影像）"
   },
   {
     "slug": "ana-r2d2",
@@ -336,7 +381,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "R2-D2 ANA JET",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
   },
   {
     "slug": "ana-bb8",
@@ -369,7 +419,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "BB-8 ANA JET",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
   },
   {
     "slug": "ana-a380",
@@ -402,7 +457,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/ana-/37/"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "ANA Flying Honu",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
   },
   {
     "slug": "jal-disney",
@@ -435,7 +495,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Japan%20Airlines"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "JAL Disney",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "emirates-expo",
@@ -468,7 +533,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Emirates"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Emirates Expo",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2020s（影像）"
   },
   {
     "slug": "qatar-ow",
@@ -501,7 +571,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Qatar%20Airways"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Qatar oneworld",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2020s（影像）"
   },
   {
     "slug": "cathay-spirit",
@@ -534,7 +609,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Cathay%20Pacific"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Cathay Spirit of Hong Kong",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
   },
   {
     "slug": "qantas-wunala",
@@ -567,7 +647,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Qantas"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Qantas Wunala Dreaming",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
   },
   {
     "slug": "united-star",
@@ -600,7 +685,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=United%20Airlines"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "United Star Alliance",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实"
   },
   {
     "slug": "airchina-phoenix",
@@ -633,7 +723,12 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Air%20China"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Air China Phoenix",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
   },
   {
     "slug": "singapore-50",
@@ -666,6 +761,836 @@
         "url": "https://www.iata.org/en/about/members/airline-list/?search=Singapore%20Airlines"
       }
     ],
-    "verifiedAt": "2026-10-23"
+    "verifiedAt": "2026-10-23",
+    "nameEn": "Singapore SG50",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实"
+  },
+  {
+    "slug": "airbus-a350-first-flight",
+    "airlineSlug": null,
+    "organizationName": "Airbus 空中客车",
+    "country": "欧洲",
+    "name": "A350 首飞展示涂装",
+    "nameEn": "Airbus A350 First Flight",
+    "category": "原型与试飞涂装",
+    "aircraftModel": "Airbus A350-900",
+    "aircraftSlug": "a350-900",
+    "design": "白色机身、蓝色尾翼与 AIRBUS 字标强调制造商身份。",
+    "story": "照片记录第一架 A350 在图卢兹进行低空通场。它展示的是制造商的试飞飞机，不是某家航空公司的商业运营涂装；首飞影像日期也不能代表全部展示涂装的起止使用时期。",
+    "period": null,
+    "periodNote": "首飞影像：2013-06-14；不推定完整使用期。",
+    "registration": null,
+    "photoDate": "2013-06-14",
+    "media": {
+      "file": "/images/a350-900.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:A350_First_Flight_-_Low_pass_02.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Don-vip"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者与再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:A350_First_Flight_-_Low_pass_02.jpg"
+      }
+    ],
+    "verifiedAt": "2026-10-24",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
+  },
+  {
+    "slug": "airbus-a330neo-first-flight",
+    "airlineSlug": null,
+    "organizationName": "Airbus 空中客车",
+    "country": "欧洲",
+    "name": "A330neo 首飞展示涂装",
+    "nameEn": "Airbus A330neo First Flight",
+    "category": "原型与试飞涂装",
+    "aircraftModel": "Airbus A330-900",
+    "aircraftSlug": "a330-900",
+    "design": "深蓝色尾翼、白色机身与大型 A330neo 字样突出新一代机型。",
+    "story": "这张影像来自 2017 年 10 月 19 日图卢兹的 A330neo 首飞。它属于制造商试飞展示的语境，与航空公司接收飞机后使用的标准涂装有所区别。本站沿用有来源记录的裁剪照片。",
+    "period": null,
+    "periodNote": "首飞影像：2017-10-19；不推定完整使用期。",
+    "registration": null,
+    "photoDate": "2017-10-19",
+    "media": {
+      "file": "/images/a330-900.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Airbus_A330neo_first_take-off_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Alex Cheban"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者与再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Airbus_A330neo_first_take-off_(cropped).jpg"
+      }
+    ],
+    "verifiedAt": "2026-10-24",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）"
+  },
+  {
+    "slug": "embraer-e195e2-profit-hunter",
+    "airlineSlug": null,
+    "organizationName": "Embraer 巴西航空工业",
+    "country": "巴西",
+    "name": "E195-E2 Profit Hunter 展示涂装",
+    "nameEn": "Embraer E195-E2 Profit Hunter",
+    "category": "制造商展示涂装",
+    "aircraftModel": "Embraer E195-E2",
+    "aircraftSlug": "e195-e2",
+    "design": "深色机身配大型猛兽图案，机腹可见 PROFIT HUNTER 字样。",
+    "story": "收录影像展示 E195-E2 在 2019 年巴黎航展的飞行表演。制造商将整架飞机作为展示画布，区别于面向日常客运识别的航司标准涂装；本条不把航展拍摄年份当成设计首次亮相年份。",
+    "period": null,
+    "periodNote": "首次亮相与完整使用期未独立核实。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/images/e195-e2.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Embaer_195-E2,_Paris_Air_Show_2019,_Le_Bourget_(SIAE0868).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "attribution": "Matti Blume"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者与再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:Embaer_195-E2,_Paris_Air_Show_2019,_Le_Bourget_(SIAE0868).jpg"
+      }
+    ],
+    "verifiedAt": "2026-10-23",
+    "manufacturer": "Embraer",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实"
+  },
+  {
+    "slug": "comac-c919-express",
+    "airlineSlug": null,
+    "organizationName": "COMAC 中国商飞",
+    "country": "中国",
+    "name": "C919 COMAC Express 展示涂装",
+    "nameEn": "COMAC Express C919",
+    "category": "制造商展示涂装",
+    "aircraftModel": "COMAC C919",
+    "aircraftSlug": "c919",
+    "design": "绿色垂尾、蓝色后机身与红色 COMAC EXPRESS 字样组成鲜明的分区。",
+    "story": "照片记录注册号 B-658M 的 C919 在达卡机场的外观，机身可见 COMAC EXPRESS 字样。该影像只证明此架飞机在拍摄时的展示外观，不用于推定航空公司机队关系或涂装首次使用时间。",
+    "period": null,
+    "periodNote": "首次亮相与完整使用期未独立核实。",
+    "registration": "B-658M",
+    "photoDate": "2025-11-10",
+    "media": {
+      "file": "/images/c919.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:B-658M_-_COMAC_Express_-_COMAC_C919_-_MSN_00017_-_VGHS.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Md Shaifuzzaman Ayon"
+    },
+    "mediaStatus": "verified-existing",
+    "sources": [
+      {
+        "label": "照片说明、作者与再利用许可",
+        "url": "https://commons.wikimedia.org/wiki/File:B-658M_-_COMAC_Express_-_COMAC_C919_-_MSN_00017_-_VGHS.jpg"
+      }
+    ],
+    "verifiedAt": "2026-10-24",
+    "manufacturer": "COMAC",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实"
+  },
+  {
+    "slug": "airfrance-standard",
+    "airlineSlug": "air-france",
+    "name": "法航三色标准涂装",
+    "nameEn": "Air France Tricolour",
+    "manufacturer": "Boeing",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "经典涂装",
+    "aircraftModel": "Boeing 787-9",
+    "aircraftSlug": "787-9",
+    "design": "白色机身、深蓝 AIRFRANCE 字标与红蓝斜纹尾翼。",
+    "story": "照片记录法航首批 787-9 的外观。尾翼将法国国旗色转化为倾斜条纹，机身红色弧形符号与深蓝字标搭配；本条记录的是标准品牌样式在这架飞机上的实例。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "F-HRBA",
+    "photoDate": "2017-01-08",
+    "media": {
+      "file": "/images/liveries/airfrance-standard.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Air_France_Boeing_787-9_(F-HRBA)_at_Paris-Charles_de_Gaulle_Airport.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "ERIC SALARD"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:Air_France_Boeing_787-9_(F-HRBA)_at_Paris-Charles_de_Gaulle_Airport.jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/16103393@N05/32178411846/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "qantas-retro-roo",
+    "airlineSlug": "qantas",
+    "name": "Retro Roo 复古飞天袋鼠",
+    "nameEn": "Qantas Retro Roo",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2020s（影像）",
+    "category": "历史涂装",
+    "aircraftModel": "Boeing 737-800",
+    "aircraftSlug": null,
+    "design": "红色尾翼上的有翼袋鼠、赭金色舷窗线与 QANTAS 字标。",
+    "story": "VH-XZP 以复古样式把旧时代的袋鼠图案带到 737-800 上。影像中的飞天袋鼠与今日常见简化轮廓不同，适合与 Retro Roo II 对照观察；两者属于不同飞机上的复古方案，不应合并为一架飞机。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "VH-XZP",
+    "photoDate": "2022-08-07",
+    "media": {
+      "file": "/images/liveries/qantas-retro-roo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Qantas_VH-XZP_(James_Strong_Retro_Roo_Livery)_Boeing_737-838_Melbourne_International_Airport_(MEL_YMML)_(52268195987).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Mitchul Hope"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:Qantas_VH-XZP_(James_Strong_Retro_Roo_Livery)_Boeing_737-838_Melbourne_International_Airport_(MEL_YMML)_(52268195987).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/142639316@N06/52268195987/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "qantas-retro-roo-ii",
+    "airlineSlug": "qantas",
+    "name": "Retro Roo II 红线复古涂装",
+    "nameEn": "Qantas Retro Roo II",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "未核实",
+    "category": "历史涂装",
+    "aircraftModel": "Boeing 737-800",
+    "aircraftSlug": null,
+    "design": "白色尾翼、红色舷窗带与细长的 QANTAS 字样。",
+    "story": "这一方案使用与 Retro Roo 不同的白尾红线构图。来源说明将飞机识别为 VH-VXQ；影像资料中的日期文字与元数据存在差异，因此本条不填写精确拍摄日，也不以影像年份推定设计年代。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "VH-VXQ",
+    "photoDate": null,
+    "media": {
+      "file": "/images/liveries/qantas-retro-roo-ii.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Qantas_VH-VXQ_(Retro_Roo_2_Livery)_Boeing_737-838_Melbourne_International_Airport_(MEL_YMML)_(51402740625).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Mitchul Hope"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:Qantas_VH-VXQ_(Retro_Roo_2_Livery)_Boeing_737-838_Melbourne_International_Airport_(MEL_YMML)_(51402740625).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/142639316@N06/51402740625/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "ana-c3po",
+    "airlineSlug": "ana",
+    "name": "C-3PO ANA JET",
+    "nameEn": "C-3PO ANA JET",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 777-200ER",
+    "aircraftSlug": null,
+    "design": "金黄色机身配角色机械线条及 STAR WARS 字样。",
+    "story": "C-3PO 主题把角色的金色机械外观放大到 777-200ER 机身，与 R2-D2、BB-8 主题飞机形成不同的视觉方案。这里收录的是 JA743A 的特定主题涂装，不代表 ANA 的整支 777 机队。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "JA743A",
+    "photoDate": "2018-12-17",
+    "media": {
+      "file": "/images/liveries/ana-c3po.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:ANA_Boeing_777-200ER_JA743A.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Melv_L - MACASR"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:ANA_Boeing_777-200ER_JA743A.jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/54943237@N04/45910846845/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "ba-bea",
+    "airlineSlug": "british-airways",
+    "name": "BEA 红方块复古涂装",
+    "nameEn": "British Airways BEA Retro",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "历史涂装",
+    "aircraftModel": "Airbus A319-100",
+    "aircraftSlug": null,
+    "design": "黑色舷窗带、白色垂尾上的红色 BEA 方块及红色机翼。",
+    "story": "G-EUPJ 以 BEA 复古样式回顾英国航空前身的品牌历史。照片上还能看到英国航空百年标记；BEA 字样是一种历史致敬，飞机运营方仍为英国航空，不能据尾翼标识判断为另一家现役航司。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "G-EUPJ",
+    "photoDate": "2019-10-03",
+    "media": {
+      "file": "/images/liveries/ba-bea.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:British_Airways_(BEA_Retro_Livery),_G-EUPJ,_Airbus_A319-131_(49597135361).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Anna Zvereva"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:British_Airways_(BEA_Retro_Livery),_G-EUPJ,_Airbus_A319-131_(49597135361).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/130961247@N06/49597135361/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "united-friendship",
+    "airlineSlug": "united",
+    "name": "Friend Ship 85 周年复古涂装",
+    "nameEn": "United Friend Ship Retro",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "历史涂装",
+    "aircraftModel": "Airbus A320-200",
+    "aircraftSlug": null,
+    "design": "红蓝横线、星形图案与 A320 Friend Ship 字样。",
+    "story": "来源记录这架 A320 为联合航空 85 周年纪念而采用复古样式。机身把机型名称融入 Friend Ship 字标；历史设计在较新机型上重现，因此原设计年代、这架飞机制造年代和复古涂装使用期应分开理解。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "N475UA",
+    "photoDate": "2012-02-19",
+    "media": {
+      "file": "/images/liveries/united-friendship.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:United_Airlines_85th_Anniversary_Retrojet_-_N475UA_(6907158825).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "InSapphoWeTrust"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:United_Airlines_85th_Anniversary_Retrojet_-_N475UA_(6907158825).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/56619626@N05/6907158825/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "lufthansa-2018",
+    "airlineSlug": "lufthansa",
+    "name": "汉莎深蓝白鹤标准涂装",
+    "nameEn": "Lufthansa Blue Crane",
+    "manufacturer": "Airbus",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "经典涂装",
+    "aircraftModel": "Airbus A330-300",
+    "aircraftSlug": null,
+    "design": "深蓝尾翼与白色圆形鹤徽、白色机身及深蓝 Lufthansa 字标。",
+    "story": "2018 年拍摄的 D-AIKD 展示了以深蓝和白色为主的汉莎外观。与馆内复古涂装对比，可以观察品牌在不同时期对尾翼色彩和字标的处理；照片只代表拍摄时的外观。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "D-AIKD",
+    "photoDate": "2018-09-30",
+    "media": {
+      "file": "/images/liveries/lufthansa-2018.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:D-AIKD_LH_A333_New_Livery_(31157767508).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "TJDarmstadt"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:D-AIKD_LH_A333_New_Livery_(31157767508).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/152414129@N08/31157767508/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "cathay-hongkong-trader",
+    "airlineSlug": "cathay-pacific",
+    "name": "Hong Kong Trader 香港货运主题",
+    "nameEn": "Cathay Hong Kong Trader",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "特别涂装",
+    "aircraftModel": "Boeing 747-8F",
+    "aircraftSlug": null,
+    "design": "蓝绿色机身、香港城市剪影和 HONG KONG TRADER 大字。",
+    "story": "B-LJA 在 2014 年伦敦希思罗的影像展示了香港货运主题外观。机身轮廓线把城市与航空货运联系起来。照片机型为 747-8F 货机，不能链接成 747-8I 客机的真实运营涂装，本站因此保留独立机型文字。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "B-LJA",
+    "photoDate": "2014-06-20",
+    "media": {
+      "file": "/images/liveries/cathay-hongkong-trader.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Boeing_747-800_(Cathay_Pacific_Cargo)_B-LJA_at_LHR_(14283680858).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "John Taggart"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:Boeing_747-800_(Cathay_Pacific_Cargo)_B-LJA_at_LHR_(14283680858).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/26104073@N06/14283680858/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "china-southern-a380",
+    "airlineSlug": "china-southern",
+    "name": "南航木棉 A380 标准涂装",
+    "nameEn": "China Southern Kapok A380",
+    "manufacturer": "Airbus",
+    "scope": "fleet-standard",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "经典涂装",
+    "aircraftModel": "Airbus A380-800",
+    "aircraftSlug": "a380-800",
+    "design": "蓝色机腹、金色分界线及蓝尾上的红色木棉花。",
+    "story": "这张北京首都机场影像记录南方航空 A380-841 B-6136 的历史外观。双层机身保留了航司熟悉的木棉花识别系统。条目展示历史照片，不把 2012 年影像当成当前 A380 机队运营状态的证据。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "B-6136",
+    "photoDate": "2012-02-05",
+    "media": {
+      "file": "/images/liveries/china-southern-a380.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:China_Southern_A380-800(B-6136)_(6823299355).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Kentaro Iemoto"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:China_Southern_A380-800(B-6136)_(6823299355).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/28573791@N08/6823299355/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "delta-skyteam",
+    "airlineSlug": "delta",
+    "name": "达美 SkyTeam 联盟涂装",
+    "nameEn": "Delta SkyTeam",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": null,
+    "era": "2010s（影像）",
+    "category": "联盟涂装",
+    "aircraftModel": "Boeing 767-400ER",
+    "aircraftSlug": null,
+    "design": "银灰色机身、大型蓝色联盟曲线和深蓝 SKYTEAM 尾翼。",
+    "story": "N844MH 的影像说明联盟涂装如何同时保留成员航司识别：机身的大型 SkyTeam 标记旁仍有 Delta 字样与红色标志。这是特定 767-400ER 的记录，不能借用到馆内 767-300ER 机型页面作为同一子型号。",
+    "period": null,
+    "periodNote": "完整使用期与首次亮相时间未独立核实；拍摄日期不是使用起始年份。",
+    "registration": "N844MH",
+    "photoDate": "2015-01-27",
+    "media": {
+      "file": "/images/liveries/delta-skyteam.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_(SkyTeam_livery),_N844MH,_Boeing_767-432_ER_(16268868398).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Anna Zvereva"
+    },
+    "mediaStatus": "verified-commons-flickr",
+    "sources": [
+      {
+        "label": "照片、注册号、作者与许可核查",
+        "url": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_(SkyTeam_livery),_N844MH,_Boeing_767-432_ER_(16268868398).jpg"
+      },
+      {
+        "label": "原摄影来源（本地图片由此获取）",
+        "url": "https://www.flickr.com/photos/130961247@N06/16268868398/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-a320neo",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "Airbus A320neo · Ocean 概念涂装",
+    "nameEn": "Airbus A320neo AERONAUT Ocean Concept Livery",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "Airbus A320neo",
+    "aircraftSlug": "a320neo",
+    "modelId": "aeronaut-a320neo-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/a320neo-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-a350-900",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "Airbus A350-900 · Ocean 概念涂装",
+    "nameEn": "Airbus A350-900 AERONAUT Ocean Concept Livery",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "Airbus A350-900",
+    "aircraftSlug": "a350-900",
+    "modelId": "aeronaut-a350-900-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/a350-900-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-a380-800",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "Airbus A380-800 · Ocean 概念涂装",
+    "nameEn": "Airbus A380-800 AERONAUT Ocean Concept Livery",
+    "manufacturer": "Airbus",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "Airbus A380-800",
+    "aircraftSlug": "a380-800",
+    "modelId": "aeronaut-a380-800-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/a380-800-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-737-max-8",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "Boeing 737 MAX 8 · Ocean 概念涂装",
+    "nameEn": "Boeing 737 MAX 8 AERONAUT Ocean Concept Livery",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "Boeing 737 MAX 8",
+    "aircraftSlug": "737-max-8",
+    "modelId": "aeronaut-737-max-8-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/737-max-8-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-787-9",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "Boeing 787-9 · Ocean 概念涂装",
+    "nameEn": "Boeing 787-9 AERONAUT Ocean Concept Livery",
+    "manufacturer": "Boeing",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "Boeing 787-9",
+    "aircraftSlug": "787-9",
+    "modelId": "aeronaut-787-9-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/787-9-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-c919",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "COMAC C919 · Ocean 概念涂装",
+    "nameEn": "COMAC C919 AERONAUT Ocean Concept Livery",
+    "manufacturer": "COMAC",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "COMAC C919",
+    "aircraftSlug": "c919",
+    "modelId": "aeronaut-c919-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/c919-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
+  },
+  {
+    "slug": "aeronaut-ocean-e195-e2",
+    "airlineSlug": null,
+    "organizationName": "AERONAUT",
+    "country": "原创概念设计",
+    "name": "Embraer E195-E2 · Ocean 概念涂装",
+    "nameEn": "Embraer E195-E2 AERONAUT Ocean Concept Livery",
+    "manufacturer": "Embraer",
+    "scope": "individual-aircraft",
+    "introducedYear": 2026,
+    "era": "2020s",
+    "category": "概念涂装",
+    "aircraftModel": "Embraer E195-E2",
+    "aircraftSlug": "e195-e2",
+    "modelId": "aeronaut-e195-e2-schematic-v13",
+    "liveryId": "aeronaut-ocean",
+    "concept": true,
+    "design": "原创深海蓝与青绿色材质分区；展示图由对应机型的简化 3D 教学外形渲染生成。",
+    "story": "Concept Livery：这是 AERONAUT 为互动教学模型创作的概念外观，不代表真实航空公司、制造商官方展示或历史运营涂装。配色通过机体材质实现，示意模型不是厂商工程模型；在机型百科中可查看同一模型并切换可用的原创配色。",
+    "period": null,
+    "periodNote": "2026 年本站原创概念设计；无真实运营使用期。",
+    "registration": null,
+    "photoDate": null,
+    "media": {
+      "file": "/models/atlas/e195-e2-poster.webp",
+      "source": "/models/atlas/model-source.mjs",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "AERONAUT — original geometry with OpenAI Codex assistance"
+    },
+    "mediaStatus": "original-render",
+    "sources": [
+      {
+        "label": "对应模型与原创来源",
+        "url": "/models/atlas/model-source.mjs"
+      },
+      {
+        "label": "原创模型与材质许可",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "verifiedAt": "2026-10-24"
   }
 ]

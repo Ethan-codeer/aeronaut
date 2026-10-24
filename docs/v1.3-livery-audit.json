@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-24",
+  "recordCount": 41,
+  "newHistoricalPhotoRecords": 10,
+  "newManufacturerRecords": 4,
+  "newConceptRecords": 7,
+  "notes": [
+    "Original 20 records and local photographs preserved.",
+    "New photo licenses, identity and capture-date statements inspected through Wikimedia Commons. Local image bytes downloaded from the photographer Flickr CDN.",
+    "Photography licenses do not grant trademark or character rights. Assets are presented editorially with source and attribution.",
+    "Null introducedYear is intentional; image capture decade labels explicitly say 影像.",
+    "Qantas Retro Roo II exact photo day omitted due source text/metadata disagreement.",
+    "Manufacturer E195-E2 existing credit retained; original source inaccessible during this task, checked date remains 2026-10-23.",
+    "No 2D historical photograph is used as a 3D texture. Seven linked 3D variants are explicitly original Concept Livery."
+  ],
+  "downloads": [
+    {
+      "slug": "airfrance-standard",
+      "source": "https://www.flickr.com/photos/16103393@N05/32178411846/",
+      "download": "https://live.staticflickr.com/368/32178411846_24c8800d6b_b.jpg",
+      "bytes": 124284,
+      "sha256": "813d0a1489958d8191b985e605bb895c6825559faa9dd24921babc1c21a90417"
+    },
+    {
+      "slug": "qantas-retro-roo",
+      "source": "https://www.flickr.com/photos/142639316@N06/52268195987/",
+      "download": "https://live.staticflickr.com/65535/52268195987_6677e2596a_b.jpg",
+      "bytes": 71413,
+      "sha256": "d9069666b654bfdecf311c19eeec985dbb40ac3e815358c79998c5774ccdf53e"
+    },
+    {
+      "slug": "qantas-retro-roo-ii",
+      "source": "https://www.flickr.com/photos/142639316@N06/51402740625/",
+      "download": "https://live.staticflickr.com/65535/51402740625_fb04867ced_b.jpg",
+      "bytes": 99263,
+      "sha256": "c7572b26d3745ac2df1cd26a7800254d0d4385904f0a15777acd0ad1527e96c9"
+    },
+    {
+      "slug": "ana-c3po",
+      "source": "https://www.flickr.com/photos/54943237@N04/45910846845/",
+      "download": "https://live.staticflickr.com/4852/45910846845_b155b1efdf_b.jpg",
+      "bytes": 202211,
+      "sha256": "4510f751103356daf5b0010a5c90388a2e205b1dfccb788b90daf69e4d2cd71b"
+    },
+    {
+      "slug": "ba-bea",
+      "source": "https://www.flickr.com/photos/130961247@N06/49597135361/",
+      "download": "https://live.staticflickr.com/65535/49597135361_a42664b0cf_b.jpg",
+      "bytes": 88178,
+      "sha256": "f81a6e0eb73edc520e9dbe6eeae22d5dbd215bde089f305c0084053db4febe0f"
+    },
+    {
+      "slug": "united-friendship",
+      "source": "https://www.flickr.com/photos/56619626@N05/6907158825/",
+      "download": "https://live.staticflickr.com/7202/6907158825_0d269e4f0a_b.jpg",
+      "bytes": 212704,
+      "sha256": "0911d8628410a222884e5d858f005baae50a0eb60f209f12b86c9bf70e13cf2c"
+    },
+    {
+      "slug": "lufthansa-2018",
+      "source": "https://www.flickr.com/photos/152414129@N08/31157767508/",
+      "download": "https://live.staticflickr.com/1929/31157767508_a82981e1f5_b.jpg",
+      "bytes": 74545,
+      "sha256": "a5ca30f23953a9ac4734663c6d0d015d185e2cdbc758edc0909c3e2ad22be0cd"
+    },
+    {
+      "slug": "cathay-hongkong-trader",
+      "source": "https://www.flickr.com/photos/26104073@N06/14283680858/",
+      "download": "https://live.staticflickr.com/3848/14283680858_41092f27d6_b.jpg",
+      "bytes": 136299,
+      "sha256": "17ee449e521b5ddc1d7d8781acd5a00d905c3f3f66dd883330b525bbca5e891a"
+    },
+    {
+      "slug": "china-southern-a380",
+      "source": "https://www.flickr.com/photos/28573791@N08/6823299355/",
+      "download": "https://live.staticflickr.com/7160/6823299355_cb2a0fe4d6_b.jpg",
+      "bytes": 81421,
+      "sha256": "9f8a71c86453bd59863814522077bbe3c18b47aabad5e4397879e7b3a473bfdd"
+    },
+    {
+      "slug": "delta-skyteam",
+      "source": "https://www.flickr.com/photos/130961247@N06/16268868398/",
+      "download": "https://live.staticflickr.com/65535/16268868398_61f543e02e_b.jpg",
+      "bytes": 65013,
+      "sha256": "af3145d13897864d8a7d8b8d3900a43f0c535ef5ebabed3e36d6676549b45d8e"
+    }
+  ]
+}

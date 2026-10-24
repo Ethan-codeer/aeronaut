@@ -1,0 +1,1211 @@
+{
+  "checkedAt": "2026-10-24",
+  "count": 120,
+  "geographySource": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+  "geographySourceSha256": "a19e9690fc3bffa8c0af18c4de9a6c8e711e64d4647837c58c12269fe348cf17",
+  "timezoneSource": "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat",
+  "records": [
+    {
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "ourAirportsId": "27188",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "narrativeResponseSha256": "97f665be2a4531006b930e627eed0c428c6c2ee2c1488a40171e83fe3dee5f2f",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "PKX",
+      "icao": "ZBAD",
+      "ourAirportsId": "330820",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "narrativeResponseSha256": "cc9d76fc12d990442ed72ff76f1928c8eafa488ad6cfd4d18aef5bc35190c7a2",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "PVG",
+      "icao": "ZSPD",
+      "ourAirportsId": "27223",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "narrativeResponseSha256": "603f1da63c0d930bf54779477a405c3081ce08669da3d79579621c2842c0dbd3",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "ourAirportsId": "27194",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "narrativeResponseSha256": "f3b7b2253a31f5586392ac42cba712f12f8eb42da6c8433fac9b44788a36d832",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "HKG",
+      "icao": "VHHH",
+      "ourAirportsId": "26535",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "narrativeResponseSha256": "339af624509f8ecbd52dc0b76fa53e536720120ed543a9469a2264a48e68ed3d",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "TPE",
+      "icao": "RCTP",
+      "ourAirportsId": "5528",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%A1%83%E5%9C%92%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4",
+      "narrativeResponseSha256": "511b6ec73463f1a16419aeb0626b629a9da4c42a36c643b859f83c75fa8264c5",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "NRT",
+      "icao": "RJAA",
+      "ourAirportsId": "5531",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "narrativeResponseSha256": "2a0e688d6b75d44d945180a79908468ff7ee31dd6e259497103fe40a0460a879",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "HND",
+      "icao": "RJTT",
+      "ourAirportsId": "5627",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Tokyo_International_Airport",
+      "narrativeResponseSha256": "353a6aac0f81f1864f1c35a71bf1bca984fa364ae3aaf7084336f4e0c0f9f43a",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "ICN",
+      "icao": "RKSI",
+      "ourAirportsId": "5653",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "narrativeResponseSha256": "ba3750495f785966f3af9804982441aeb7e28cdaee39d43f684f12cb7b55880f",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "SIN",
+      "icao": "WSSS",
+      "ourAirportsId": "26887",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Singapore_Changi_Airport",
+      "narrativeResponseSha256": "e01cb1291441b084f5dfb81471b36d0d98b93369d13104a525b59a61455f7e0e",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "BKK",
+      "icao": "VTBS",
+      "ourAirportsId": "28118",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "narrativeResponseSha256": "049ffc002f5f34a55d717a43a2a0cc816a8fa6315d5be63524eccd535fc1394f",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "KUL",
+      "icao": "WMKK",
+      "ourAirportsId": "26874",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "narrativeResponseSha256": "0da8ee3869cb076bb596bc4bb4ec3a77696cce547a19e4c4317a057d1ca41987",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "DEL",
+      "icao": "VIDP",
+      "ourAirportsId": "26555",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "narrativeResponseSha256": "523845bedfc70ce4bc9612bd037a7187cafb1a38bc99915b19a3d20d6a9cd738",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "BOM",
+      "icao": "VABB",
+      "ourAirportsId": "26434",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
+      "narrativeResponseSha256": "78bc8106c8d5e967fd2a2d054cd4364db53c7cb8c885102bfdfb5e1a558dab24",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "CGK",
+      "icao": "WIII",
+      "ourAirportsId": "26835",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Soekarno-Hatta_International_Airport",
+      "narrativeResponseSha256": "7903bf6ed5e2c464b94678d886706e459c0c0430d19e9ba285ff71731e5a5e3c",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "LHR",
+      "icao": "EGLL",
+      "ourAirportsId": "2434",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "narrativeResponseSha256": "2f288d7a209a7f5c7997690c8450b2d30cb2047ce31c18b67123f627a853a344",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "CDG",
+      "icao": "LFPG",
+      "ourAirportsId": "4185",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "narrativeResponseSha256": "0ac1782b44873fc88011d6363db8421b516d572deb468a1e54623b135b58cee3",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "FRA",
+      "icao": "EDDF",
+      "ourAirportsId": "2212",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "narrativeResponseSha256": "36f6803b6729d079671f09ce2470412ebc264b313b74ace0e18ab3d61b45e663",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "AMS",
+      "icao": "EHAM",
+      "ourAirportsId": "2513",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "narrativeResponseSha256": "f218516e94e179ce832169f5120364ae45cd3625866883b314d748bc97e76fb1",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "MAD",
+      "icao": "LEMD",
+      "ourAirportsId": "4019",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
+      "narrativeResponseSha256": "8e50216d9fea78b3364ca3223795fded6411bdd7a4a6441e42de70d36d52105e",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "FCO",
+      "icao": "LIRF",
+      "ourAirportsId": "4372",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "narrativeResponseSha256": "7a8ad636a5e8e53402766cf48b51e6d1e0d77682121f9f24e27eebaed6df7dda",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "MUC",
+      "icao": "EDDM",
+      "ourAirportsId": "2218",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "narrativeResponseSha256": "3fcaae519d4cf7ad0def74a824408ae5cf8b1134a92c7e1c35a6181328bde529",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "ZRH",
+      "icao": "LSZH",
+      "ourAirportsId": "4505",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "IST",
+      "icao": "LTFM",
+      "ourAirportsId": "317457",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "narrativeResponseSha256": "1d402a95c4cc3859e2579598cb1777799d956e40230adc3cf29526d87b538ac4",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "CPH",
+      "icao": "EKCH",
+      "ourAirportsId": "2542",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "JFK",
+      "icao": "KJFK",
+      "ourAirportsId": "3622",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "LAX",
+      "icao": "KLAX",
+      "ourAirportsId": "3632",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SFO",
+      "icao": "KSFO",
+      "ourAirportsId": "3878",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "ORD",
+      "icao": "KORD",
+      "ourAirportsId": "3754",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "ATL",
+      "icao": "KATL",
+      "ourAirportsId": "3384",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "narrativeResponseSha256": "b6b7ed404c4b44f2b61409065682b402cab473caa1b9b839a0572b5fb71c39ab",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DFW",
+      "icao": "KDFW",
+      "ourAirportsId": "3488",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "YYZ",
+      "icao": "CYYZ",
+      "ourAirportsId": "1990",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "YVR",
+      "icao": "CYVR",
+      "ourAirportsId": "1941",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "MEX",
+      "icao": "MMMX",
+      "ourAirportsId": "4731",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "GRU",
+      "icao": "SBGR",
+      "ourAirportsId": "5910",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo-Guarulhos_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "EZE",
+      "icao": "SAEZ",
+      "ourAirportsId": "5781",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
+      "narrativeResponseSha256": "ccb68185138f23a9a3e8f9f783b6c8e7427b3bc83e060f58ddc9e1ea76ef37b8",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "SCL",
+      "icao": "SCEL",
+      "ourAirportsId": "6015",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Comodoro_Arturo_Merino_Ben%C3%ADtez_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "BOG",
+      "icao": "SKBO",
+      "ourAirportsId": "6104",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "JNB",
+      "icao": "FAOR",
+      "ourAirportsId": "31055",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CPT",
+      "icao": "FACT",
+      "ourAirportsId": "2775",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "narrativeResponseSha256": "24c1767c2697619a758d397b8aa5dcbc9869fd343e4420cb96ddc56cd1961c46",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "CAI",
+      "icao": "HECA",
+      "ourAirportsId": "3183",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "ADD",
+      "icao": "HAAB",
+      "ourAirportsId": "3157",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "DXB",
+      "icao": "OMDB",
+      "ourAirportsId": "5235",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DOH",
+      "icao": "OTHH",
+      "ourAirportsId": "44686",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "AUH",
+      "icao": "OMAA",
+      "ourAirportsId": "5226",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SYD",
+      "icao": "YSSY",
+      "ourAirportsId": "27145",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "MEL",
+      "icao": "YMML",
+      "ourAirportsId": "27066",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "AKL",
+      "icao": "NZAA",
+      "ourAirportsId": "5023",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Auckland_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "HEL",
+      "icao": "EFHK",
+      "ourAirportsId": "2307",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "narrativeResponseSha256": "eb221f7387ff6cba0286f3ceb905cfa41383fc631d7edbf5af494f2eaa4cd678",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "SEA",
+      "icao": "KSEA",
+      "ourAirportsId": "3875",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "narrativeResponseSha256": "0cd8b00f12b41bc520dadca0c3441e00d65814d5635d1dd190ab5be741123682",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SHA",
+      "icao": "ZSSS",
+      "ourAirportsId": "27225",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SZX",
+      "icao": "ZGSZ",
+      "ourAirportsId": "27198",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CTU",
+      "icao": "ZUUU",
+      "ourAirportsId": "27230",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "ourAirportsId": "342095",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "KMG",
+      "icao": "ZPPP",
+      "ourAirportsId": "27214",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "XIY",
+      "icao": "ZLXY",
+      "ourAirportsId": "27205",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "HGH",
+      "icao": "ZSHC",
+      "ourAirportsId": "27218",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CKG",
+      "icao": "ZUCK",
+      "ourAirportsId": "27228",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "WUH",
+      "icao": "ZHHH",
+      "ourAirportsId": "27200",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CSX",
+      "icao": "ZGHA",
+      "ourAirportsId": "27195",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "narrativeResponseSha256": "672f94a530b1174bfbf44eacf5399a8a3c606eafb31c839b1c60f42c2cdeae54",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "NNG",
+      "icao": "ZGNN",
+      "ourAirportsId": "27197",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "KWL",
+      "icao": "ZGKL",
+      "ourAirportsId": "27196",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Guilin_Liangjiang_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "HAK",
+      "icao": "ZJHK",
+      "ourAirportsId": "27201",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SYX",
+      "icao": "ZJSY",
+      "ourAirportsId": "27202",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Sanya_Phoenix_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "XMN",
+      "icao": "ZSAM",
+      "ourAirportsId": "27215",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
+      "narrativeResponseSha256": "fd675f89b2dfc771e3b59a7cc5a3d99d10c0d97c1e8a56971cf37f7d0f84dd03",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "FOC",
+      "icao": "ZSFZ",
+      "ourAirportsId": "27217",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "NKG",
+      "icao": "ZSNJ",
+      "ourAirportsId": "27221",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "TAO",
+      "icao": "ZSQD",
+      "ourAirportsId": "342096",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CGO",
+      "icao": "ZHCC",
+      "ourAirportsId": "27199",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "TNA",
+      "icao": "ZSJN",
+      "ourAirportsId": "27219",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Jinan_Yaoqiang_International_Airport",
+      "narrativeResponseSha256": "6d001a349f1ab36500d27582f332ebfa3f9c772857fdc64e366f5ee0163e7cf4",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "TSN",
+      "icao": "ZBTJ",
+      "ourAirportsId": "27192",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DLC",
+      "icao": "ZYTL",
+      "ourAirportsId": "27242",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SHE",
+      "icao": "ZYTX",
+      "ourAirportsId": "27243",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "HRB",
+      "icao": "ZYHB",
+      "ourAirportsId": "27238",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CGQ",
+      "icao": "ZYCC",
+      "ourAirportsId": "27237",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "URC",
+      "icao": "ZWWW",
+      "ourAirportsId": "27236",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Tianshan_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "LXA",
+      "icao": "ZULS",
+      "ourAirportsId": "31867",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Lhasa_Gonggar_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "MFM",
+      "icao": "VMMC",
+      "ourAirportsId": "26589",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Macau_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "KHH",
+      "icao": "RCKH",
+      "ourAirportsId": "5516",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
+      "narrativeResponseSha256": "4e6298858a0c8d751ceb0877ce7072c57a8c58edad5b56526549b92b179f0d58",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "KIX",
+      "icao": "RJBB",
+      "ourAirportsId": "5536",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "narrativeResponseSha256": "977dad6005e13ad7b436fc076a6403487df1af1117ac9e97e102698ee45dcfa7",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "NGO",
+      "icao": "RJGG",
+      "ourAirportsId": "5576",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Ch%C5%ABbu_Centrair_International_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CTS",
+      "icao": "RJCC",
+      "ourAirportsId": "5544",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "FUK",
+      "icao": "RJFF",
+      "ourAirportsId": "5564",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "OKA",
+      "icao": "ROAH",
+      "ourAirportsId": "5671",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "PUS",
+      "icao": "RKPK",
+      "ourAirportsId": "5642",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CJU",
+      "icao": "RKPC",
+      "ourAirportsId": "5639",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Jeju_International_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "TSA",
+      "icao": "RCSS",
+      "ourAirportsId": "5527",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Taipei_Songshan_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DMK",
+      "icao": "VTBD",
+      "ourAirportsId": "26638",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "HKT",
+      "icao": "VTSP",
+      "ourAirportsId": "26674",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "SGN",
+      "icao": "VVTS",
+      "ourAirportsId": "26708",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
+      "narrativeResponseSha256": "a6e5078d428a7176500840401c4c2e190397dfc5ddf2096ac23388f381242dac",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "HAN",
+      "icao": "VVNB",
+      "ourAirportsId": "26700",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "MNL",
+      "icao": "RPLL",
+      "ourAirportsId": "5689",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CEB",
+      "icao": "RPVM",
+      "ourAirportsId": "5742",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Mactan-Cebu_International_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DPS",
+      "icao": "WADD",
+      "ourAirportsId": "26751",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "LGW",
+      "icao": "EGKK",
+      "ourAirportsId": "2429",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "narrativeResponseSha256": "040892ba3335ed5a20b516f9606d5cde6f59d7d869dfd28dd546d7048ec2526e",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "MAN",
+      "icao": "EGCC",
+      "ourAirportsId": "2398",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DUB",
+      "icao": "EIDW",
+      "ourAirportsId": "2533",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "BCN",
+      "icao": "LEBL",
+      "ourAirportsId": "4004",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Barcelona%E2%80%93El_Prat_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "LIS",
+      "icao": "LPPT",
+      "ourAirportsId": "4461",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "VIE",
+      "icao": "LOWW",
+      "ourAirportsId": "4434",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "narrativeResponseSha256": "cc270165a92639eecfdb5467f3910ff70d848ef8ca43e2ce29beccc849f0c77c",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "OSL",
+      "icao": "ENGM",
+      "ourAirportsId": "2578",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "ARN",
+      "icao": "ESSA",
+      "ourAirportsId": "2701",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Stockholm-Arlanda_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "BRU",
+      "icao": "EBBR",
+      "ourAirportsId": "2155",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "ATH",
+      "icao": "LGAV",
+      "ourAirportsId": "4251",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "BOS",
+      "icao": "KBOS",
+      "ourAirportsId": "3422",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "IAD",
+      "icao": "KIAD",
+      "ourAirportsId": "3602",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Washington_Dulles_International_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "EWR",
+      "icao": "KEWR",
+      "ourAirportsId": "3521",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "MIA",
+      "icao": "KMIA",
+      "ourAirportsId": "3685",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "DEN",
+      "icao": "KDEN",
+      "ourAirportsId": "3486",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "narrativeResponseSha256": "5700ae6bb1c18853488c55c604c85a223461e02e03abc97ad4e3310958ff5a50",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "IAH",
+      "icao": "KIAH",
+      "ourAirportsId": "3604",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "narrativeResponseSha256": "a9d387382576665b7112678598637f9f1354823d8a836fa7ae9684395aaad3d9",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "LAS",
+      "icao": "KLAS",
+      "ourAirportsId": "3631",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "YUL",
+      "icao": "CYUL",
+      "ourAirportsId": "1928",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "YYC",
+      "icao": "CYYC",
+      "ourAirportsId": "1973",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "CUN",
+      "icao": "MMUN",
+      "ourAirportsId": "4762",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Cancun_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "PTY",
+      "icao": "MPTO",
+      "ourAirportsId": "4793",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "LIM",
+      "icao": "SPJC",
+      "ourAirportsId": "6217",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Jorge_Ch%C3%A1vez_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "UIO",
+      "icao": "SEQM",
+      "ourAirportsId": "308273",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "GIG",
+      "icao": "SBGL",
+      "ourAirportsId": "5906",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Rio_de_Janeiro-Gale%C3%A3o_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    },
+    {
+      "iata": "BSB",
+      "icao": "SBBR",
+      "ourAirportsId": "5872",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": true,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Bras%C3%ADlia_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": true
+    },
+    {
+      "iata": "SJO",
+      "icao": "MROC",
+      "ourAirportsId": "4810",
+      "geographyCheckedAt": "2026-10-24",
+      "narrativeSourceRetrieved": false,
+      "narrativeSourceUrl": "https://en.wikipedia.org/wiki/Juan_Santamar%C3%ADa_International_Airport",
+      "narrativeResponseSha256": "93c64831f9b8a10747cdad0a6969a6d376018d79a3b98b28816613e021c7346f",
+      "narrativeSectionsPublished": false
+    }
+  ],
+  "narrativeSourcesRetrieved": 39,
+  "limitations": "120座机场核心地理代码已对照开放数据；39座扩充历史建筑概览并取回来源正文；81座仍以简要或既有摘要展示，未补造百科章节。OurAirports与OpenFlights并非实时运营数据库。"
+}

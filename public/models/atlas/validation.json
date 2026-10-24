@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-24T09:15:41.110Z",
+  "method": "Khronos gltf-validator and glTF-transform direct buffer bounds inspection",
+  "hardwarePerformance": "Not tested; no FPS certification",
+  "checks": [
+    {
+      "aircraftSlug": "a320neo",
+      "bytes": 353772,
+      "sha256": "436dbc05ac7330d85c8d2cc36c937dbd31b2956eba50b13e4424097975a3f4e8",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 35.79999923706055,
+        "height": 11.760000237703323,
+        "length": 37.56999969482422
+      },
+      "triangleCount": 17512,
+      "drawCalls": 27
+    },
+    {
+      "aircraftSlug": "a350-900",
+      "bytes": 514028,
+      "sha256": "b204c8ef87945ff0d9d8a134df55fd510978a38a0232d6a06287eadf3c441cc1",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 64.75,
+        "height": 17.04999924840927,
+        "length": 66.80000305175781
+      },
+      "triangleCount": 24928,
+      "drawCalls": 27
+    },
+    {
+      "aircraftSlug": "a380-800",
+      "bytes": 900812,
+      "sha256": "0d60318a1e5437ee2f6769ab995b6ec9b8b21cd7b71661e6b1f759f4b26fc73f",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 79.75,
+        "height": 24.09000014257431,
+        "length": 72.72000122070312
+      },
+      "triangleCount": 47512,
+      "drawCalls": 41
+    },
+    {
+      "aircraftSlug": "737-max-8",
+      "bytes": 368892,
+      "sha256": "abb190159910bd132ff14cc86f94dff943ae937658676d2aaff4315e6f698a33",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 35.900001525878906,
+        "height": 12.300000195980072,
+        "length": 39.52000045776367
+      },
+      "triangleCount": 18048,
+      "drawCalls": 29
+    },
+    {
+      "aircraftSlug": "787-9",
+      "bytes": 492304,
+      "sha256": "f853a4af8b22bd6569a608f36cc5b83656809cfc9f0f942dbc6613f8e307d46a",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 60.119998931884766,
+        "height": 17.020000458049775,
+        "length": 62.810001373291016
+      },
+      "triangleCount": 23856,
+      "drawCalls": 25
+    },
+    {
+      "aircraftSlug": "c919",
+      "bytes": 373408,
+      "sha256": "66cbe58f9542b05e0b4eecd2a4b3f511d3c694f5a4ec03dd009ef102c9b9a8bf",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 35.79999923706055,
+        "height": 11.949999821805953,
+        "length": 38.900001525878906
+      },
+      "triangleCount": 18432,
+      "drawCalls": 27
+    },
+    {
+      "aircraftSlug": "e195-e2",
+      "bytes": 369984,
+      "sha256": "309ccc847db6fcce1e3e4af8edbfc31da1fd8a64a4a3d766de2cb02b24832da0",
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "boundsMetres": {
+        "wingspan": 35.119998931884766,
+        "height": 10.899999617815018,
+        "length": 41.5
+      },
+      "triangleCount": 18288,
+      "drawCalls": 25
+    }
+  ]
+}

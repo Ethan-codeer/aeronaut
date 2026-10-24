@@ -14,9 +14,16 @@ const AirportMap = dynamic(() => import("./airport-map"), {
 export function AirportBrowser() {
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState("全部");
+  const [country, setCountry] = useState("全部");
   const [view, setView] = useState("地图与列表");
   const [selected, setSelected] = useState<string | undefined>();
-  const results = useMemo(() => filterAirports(query, region), [query, region]);
+  const results = useMemo(
+    () =>
+      filterAirports(query, region).filter(
+        (a) => country === "全部" || a.country === country,
+      ),
+    [query, region, country],
+  );
   const a =
     selected && results.some((a) => a.slug === selected)
       ? getAirport(selected)
@@ -38,6 +45,14 @@ export function AirportBrowser() {
           <select value={region} onChange={(e) => setRegion(e.target.value)}>
             {["全部", ...regions].map((r) => (
               <option key={r}>{r}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          国家与地区
+          <select value={country} onChange={(e) => setCountry(e.target.value)}>
+            {["全部", ...new Set(airports.map((a) => a.country))].map((c) => (
+              <option key={c}>{c}</option>
             ))}
           </select>
         </label>
@@ -66,13 +81,15 @@ export function AirportBrowser() {
       <div aria-live="polite">
         {a && (
           <article className="paper-panel airport-selected">
-            <span className="airport-code">{a.iata}</span>
+            <span className="airport-code">
+              {a.iata} / {a.icao}
+            </span>
             <div>
               <h2>{a.nameZh}</h2>
               <p>
                 {a.nameEn} · {a.city} / {a.country}
               </p>
-              <p>{a.overview}</p>
+              <p>{a.shortDescription ?? a.overview}</p>
               <Link href={`/world/airports/${a.slug}`} className="text-link">
                 查看机场档案 ↗
               </Link>
@@ -130,6 +147,7 @@ export function AirportBrowser() {
             onClick={() => {
               setQuery("");
               setRegion("全部");
+              setCountry("全部");
             }}
           >
             清除筛选

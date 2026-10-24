@@ -115,7 +115,7 @@ export function Footer() {
         </span>
         <span>
           <Globe2 size={13} /> 简体中文 / EN terminology{" "}
-          <span className="status-dot" /> V1.2
+          <span className="status-dot" /> V1.3
         </span>
       </div>
     </footer>

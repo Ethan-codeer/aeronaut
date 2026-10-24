@@ -1,3 +1,5 @@
+import { liveries } from "@/data/liveries";
+import { Atlas3D } from "@/components/atlas-3d";
 import Link from "next/link";
 import { airlinesForAircraft } from "@/data/airlines";
 import { notFound } from "next/navigation";
@@ -89,6 +91,7 @@ export default async function AircraftDetail({
           )}
         </figcaption>
       </figure>
+      <Atlas3D slug={a.slug} name={a.model} image={a.image} />
       <div className="detail-layout">
         <article>
           <span className="eyebrow blue">THE STORY</span>
@@ -219,6 +222,21 @@ export default async function AircraftDetail({
           </div>
         )}
       </section>
+      {liveries.some((l) => l.aircraftSlug === slug) && (
+        <section className="section paper-panel">
+          <span className="eyebrow blue">LIVERY CONNECTIONS</span>
+          <h2>这架飞机的涂装档案</h2>
+          <div className="related-links">
+            {liveries
+              .filter((l) => l.aircraftSlug === slug)
+              .map((l) => (
+                <Link key={l.slug} href={`/world/liveries/${l.slug}`}>
+                  {l.name} ↗
+                </Link>
+              ))}
+          </div>
+        </section>
+      )}
       <section className="section">
         <div className="section-heading">
           <div>

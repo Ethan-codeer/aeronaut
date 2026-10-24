@@ -32,6 +32,7 @@ export interface ViewerMetrics {
   pixelHeight: number;
   dpr: number;
   benchmarkFps: number | null;
+  benchmarkOnePercentLow?: number | null;
   benchmarkFrames: number;
   benchmarkMs: number;
   renderSubmissionMs: number;
@@ -44,9 +45,12 @@ export interface ExplorerHandle {
   quality: (quality: Quality) => void;
   benchmark: () => void;
   autoRotate: (enabled: boolean) => void;
+  selectPart: (part: string | null) => void;
+  setPalette: (colors: Record<string, string>) => boolean;
   dispose: () => void;
 }
 interface Options {
+  onPart?: (part: string | null) => void;
   startedAt?: number;
   initialQuality?: Quality;
   views?: typeof viewPresets;
@@ -73,7 +77,123 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
   let previousFrame: number | null = null;
   let size = 39;
   let airframeBounds: THREE.Box3 | null = null;
+  let airframe: THREE.Object3D | null = null;
+  const baseMaterials = new Map<
+    THREE.Mesh,
+    THREE.Material | THREE.Material[]
+  >();
+  const highlights: THREE.Material[] = [];
+  let transition: {
+    start: number;
+    from: THREE.Vector3;
+    targetFrom: THREE.Vector3;
+    to: THREE.Vector3;
+    target: THREE.Vector3;
+  } | null = null;
+  const partId = (obj: THREE.Object3D): string | null => {
+    for (
+      let n: THREE.Object3D | null = obj;
+      n && n !== airframe;
+      n = n.parent
+    ) {
+      const name = n.name.toLowerCase();
+      if (name.includes("gear")) return "gear";
+      if (name.includes("engine")) return "engine";
+      if (name.includes("horizontal")) return "horizontal";
+      if (name.includes("vertical")) return "vertical";
+      if (name.includes("wing")) return "wing";
+      if (
+        name.includes("fuselage") ||
+        name.includes("cockpit") ||
+        name.includes("cabin")
+      )
+        return "body";
+    }
+    return null;
+  };
+  function clearHighlight() {
+    for (const [mesh, material] of baseMaterials) mesh.material = material;
+    baseMaterials.clear();
+    highlights.splice(0).forEach((m) => m.dispose());
+  }
+  function selectPart(part: string | null) {
+    if (!airframe || disposed) return;
+    clearHighlight();
+    const box = new THREE.Box3();
+    airframe.traverse((obj) => {
+      if (!(obj instanceof THREE.Mesh) || !part || partId(obj) !== part) return;
+      baseMaterials.set(obj, obj.material);
+      const clone = (m: THREE.Material) => {
+        const h = m.clone();
+        if (h instanceof THREE.MeshStandardMaterial) {
+          h.emissive.set("#00a9d6");
+          h.emissiveIntensity = 0.55;
+        }
+        highlights.push(h);
+        return h;
+      };
+      obj.material = Array.isArray(obj.material)
+        ? obj.material.map(clone)
+        : clone(obj.material);
+      box.expandByObject(obj);
+    });
+    if (!part) {
+      transition = null;
+      view("overview");
+    } else if (!box.isEmpty()) {
+      const target = box.getCenter(new THREE.Vector3());
+      const distance = Math.max(
+        size * 0.3,
+        box.getSize(new THREE.Vector3()).length() * 1.25,
+      );
+      const direction = camera.position
+        .clone()
+        .sub(controls.target)
+        .normalize();
+      transition = {
+        start: performance.now(),
+        from: camera.position.clone(),
+        targetFrom: controls.target.clone(),
+        to: target.clone().addScaledVector(direction, distance),
+        target,
+      };
+    }
+    o.onPart?.(part);
+    schedule();
+  }
+  let pointerStart: { x: number; y: number } | null = null;
+  const pointerDown = (e: PointerEvent) => {
+    transition = null;
+    pointerStart = { x: e.clientX, y: e.clientY };
+  };
+  const pointerUp = (e: PointerEvent) => {
+    if (
+      !o.onPart ||
+      !pointerStart ||
+      !airframe ||
+      Math.hypot(e.clientX - pointerStart.x, e.clientY - pointerStart.y) > 6
+    )
+      return;
+    pointerStart = null;
+    const r = o.canvas.getBoundingClientRect();
+    const ray = new THREE.Raycaster();
+    ray.setFromCamera(
+      new THREE.Vector2(
+        ((e.clientX - r.left) / r.width) * 2 - 1,
+        (-(e.clientY - r.top) / r.height) * 2 + 1,
+      ),
+      camera,
+    );
+    const hit = ray.intersectObject(airframe, true)[0];
+    if (hit) selectPart(partId(hit.object));
+  };
+  if (o.onPart) {
+    o.canvas.addEventListener("pointerdown", pointerDown);
+    o.canvas.addEventListener("pointerup", pointerUp);
+  }
   let lastEmit = 0;
+  const benchmarkFrameTimes: number[] = [];
+  let benchmarkPrevious = 0;
   let benchmarkStart = 0;
   let benchmarkCount = 0;
   let benchmarkFirst = 0;
@@ -181,6 +301,9 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
           .add(controls.target);
         camera.lookAt(controls.target);
         if (elapsed >= 500) {
+          if (benchmarkPrevious)
+            benchmarkFrameTimes.push(now - benchmarkPrevious);
+          benchmarkPrevious = now;
           benchmarkCount++;
           if (!benchmarkFirst) benchmarkFirst = now;
           benchmarkLast = now;
@@ -193,6 +316,20 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
           benchmarkCount >= 2
             ? ((benchmarkCount - 1) * 1000) / metrics.benchmarkMs
             : null;
+        const slowest = [...benchmarkFrameTimes]
+          .sort((a, b) => b - a)
+          .slice(0, Math.max(1, Math.ceil(benchmarkFrameTimes.length * 0.01)));
+        metrics.benchmarkOnePercentLow = slowest.length
+          ? 1000 / (slowest.reduce((a, b) => a + b, 0) / slowest.length)
+          : null;
+        if (
+          quality === "high" &&
+          metrics.benchmarkFps !== null &&
+          metrics.benchmarkFps < 50
+        ) {
+          quality = "balanced";
+          resize();
+        }
         restoreBenchmark();
       }
     }
@@ -206,6 +343,18 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
         .applyAxisAngle(new THREE.Vector3(0, 1, 0), delta * 0.22)
         .add(controls.target);
       camera.lookAt(controls.target);
+    }
+    if (transition) {
+      const t = Math.min(1, Math.max(0, (now - transition.start) / 550));
+      const ease = t * t * (3 - 2 * t);
+      camera.position.lerpVectors(transition.from, transition.to, ease);
+      controls.target.lerpVectors(
+        transition.targetFrom,
+        transition.target,
+        ease,
+      );
+      controls.update();
+      if (t === 1) transition = null;
     }
     previousFrame = now;
     const t = performance.now();
@@ -222,7 +371,7 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     metrics.geometries = renderer.info.memory.geometries;
     metrics.textures = renderer.info.memory.textures;
     emit(!benchmarkStart && !autoRotate);
-    if (benchmarkStart || autoRotate) schedule();
+    if (benchmarkStart || autoRotate || transition) schedule();
   }
   function resize() {
     if (disposed) return;
@@ -318,6 +467,9 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     observer?.disconnect();
     document.removeEventListener("visibilitychange", visibility);
     o.canvas.removeEventListener("webglcontextlost", lost);
+    clearHighlight();
+    o.canvas.removeEventListener("pointerdown", pointerDown);
+    o.canvas.removeEventListener("pointerup", pointerUp);
     releaseObject(scene);
     scene.clear();
     renderer.dispose();
@@ -357,6 +509,7 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
       throw new DOMException("Aborted", "AbortError");
     }
     scene.add(gltf.scene);
+    airframe = gltf.scene;
     if (o.expectedTextures !== undefined)
       assertModelTextures(gltf.scene, o.expectedTextures);
     const bounds = new THREE.Box3().setFromObject(gltf.scene),
@@ -404,6 +557,32 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
     o.onPhase("模型已就绪");
     return {
       view,
+      selectPart,
+      setPalette(colors) {
+        if (!airframe || disposed) return false;
+        // Validate the whole material transaction before changing any color.
+        const changes: { m: THREE.MeshStandardMaterial; color: string }[] = [];
+        const materials = new Set<THREE.Material>();
+        airframe.traverse((obj) => {
+          if (obj instanceof THREE.Mesh) {
+            const m = baseMaterials.get(obj) ?? obj.material;
+            (Array.isArray(m) ? m : [m]).forEach((v) => materials.add(v));
+          }
+        });
+        for (const [name, color] of Object.entries(colors)) {
+          if (!/^#[0-9a-f]{6}$/i.test(color)) return false;
+          const found = [...materials].filter(
+            (m) => m.name === name && m instanceof THREE.MeshStandardMaterial,
+          ) as THREE.MeshStandardMaterial[];
+          if (!found.length) return false;
+          found.forEach((m) => changes.push({ m, color }));
+        }
+        clearHighlight();
+        changes.forEach(({ m, color }) => m.color.set(color));
+        o.onPart?.(null);
+        schedule();
+        return true;
+      },
       zoom(factor) {
         if (disposed) return;
         if (benchmarkStart) restoreBenchmark();
@@ -448,6 +627,9 @@ export async function createExplorer(o: Options): Promise<ExplorerHandle> {
         benchmarkTarget = controls.target.clone();
         benchmarkStart = performance.now();
         benchmarkCount = 0;
+        benchmarkPrevious = 0;
+        benchmarkFrameTimes.length = 0;
+        metrics.benchmarkOnePercentLow = null;
         benchmarkFirst = 0;
         benchmarkLast = 0;
         metrics.benchmarkFps = null;

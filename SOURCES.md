@@ -39,3 +39,13 @@ A321XLR 使用 AERONAUT 原创示意图。其外形与其他 A321neo 相近，�
 - 新增14张涂装摄影全部来自Commons明确CC BY、CC BY-SA或CC0许可，作者、原作、条款及调整记录见docs/v1.2-livery-audit.json；另外6张沿用V1.1授权记录。全图等比缩小和WebP压缩，不删除水印。
 - Leaflet1.9.4为BSD-2-Clause；OSM标准瓦片按需加载、保留署名、遵守瓦片政策，不预取离线地图。
 - 结构图和仪表均为原创SVG教学示意，不作为工程、维修或认证训练资料。
+
+
+## V1.3
+
+- 新增七个原创简化教学 GLB 和概念配色：CC0-1.0，生成与渲染源码、范围声明位于 public/models/atlas。原747 GPL许可和对应源码保持不变。
+- 机场数据核查范围和来源：docs/v1.3-airport-audit.json。
+- 涂装图像来源、摄影许可、署名与下载哈希：docs/v1.3-livery-audit.json。
+- 概念配色不是航司真实涂装，未把摄影作品作为完整3D贴图。
+
+机场数据库时区字段参考 OpenFlights（ODbL 1.0）；本项目含该派生时区数据的机场数据库按 ODbL 1.0 提供，数据库源文件见 data/airports.json。来源及许可证：https://github.com/jpatokal/openflights/blob/master/data/airports.dat ，https://opendatacommons.org/licenses/odbl/1-0/ 。OurAirports 代码、坐标与标高本身为公有领域。ODbL 数据库许可不改变照片、3D模型等独立素材的许可。

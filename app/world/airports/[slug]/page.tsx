@@ -21,6 +21,15 @@ export default async function Airport({
 }) {
   const a = getAirport((await params).slug);
   if (!a) notFound();
+  const sections = [
+    ["overview", "Overview — 机场概览"],
+    ["history", "History — 发展历史"],
+    ["terminals", "Terminals — 航站楼"],
+    ["network", "Airlines & Network — 航司与航线"],
+    ["architecture", "Architecture & Technology — 建筑与技术"],
+    ["transport", "Transport & Facilities — 交通与设施"],
+    ["stories", "Aviation Stories — 航空故事"],
+  ] as const;
   return (
     <div className="container page-content">
       <Link className="back-link" href="/world/airports">
@@ -36,7 +45,25 @@ export default async function Airport({
           <h2>
             {a.city} · {a.country}
           </h2>
-          <p className="lead-copy">{a.overview}</p>
+          <nav className="airport-section-nav" aria-label="机场详情章节">
+            {sections
+              .filter(([id]) => a.sections[id])
+              .map(([id, title]) => (
+                <a key={id} href={`#airport-${id}`}>
+                  {title.split(" — ")[1]}
+                </a>
+              ))}
+          </nav>
+          {sections.map(([id, title]) =>
+            a.sections[id] ? (
+              <section key={id} id={`airport-${id}`}>
+                <h2>{title}</h2>
+                <p className={id === "overview" ? "lead-copy" : undefined}>
+                  {a.sections[id]}
+                </p>
+              </section>
+            ) : null,
+          )}
           <h2>机场网络</h2>
           <p>{a.hubNote}</p>
           <div className="related-links">
@@ -49,8 +76,7 @@ export default async function Airport({
               ) : null;
             })}
           </div>
-          <h2>一条值得记住的知识</h2>
-          <p>{a.fact}</p>
+
           <h2>再探索一步</h2>
           <div className="related-links">
             <Link href="/dictionary/hub">什么是枢纽机场？ ↗</Link>
@@ -63,6 +89,8 @@ export default async function Airport({
           {[
             ["IATA", a.iata],
             ["ICAO", a.icao],
+            ["时区", a.timezone],
+            ["机场类型", a.airportType],
             ["纬度", `${a.latitude.toFixed(6)}°`],
             ["经度", `${a.longitude.toFixed(6)}°`],
             [
@@ -83,7 +111,9 @@ export default async function Airport({
             target="_blank"
             rel="noreferrer"
           >
-            机场官方网站 ↗
+            {a.website.includes("ourairports.com")
+              ? "机场开放数据记录 ↗"
+              : "机场网站（参考入口） ↗"}
           </a>
         </aside>
       </div>

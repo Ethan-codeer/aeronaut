@@ -1,0 +1,137 @@
+[
+  {
+    "iata": "CEB",
+    "url": "https://mactancebuairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "https://www.mactancebuairport.com/mactancebuairport-maintenance-page.jpg/",
+    "sha256": "38227e257a22d97d98d6120c12b01e010829e9b14a5928508c59117c732395ec",
+    "title": "Mactan Cebu Airport – Under Maintenance"
+  },
+  {
+    "iata": "CTU",
+    "url": "https://www.cdairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.cdairport.com/",
+    "sha256": "f49e20c31c48954bc084775e25bd870bad4ff1c0d5afe3dc3ab67330806a98bc",
+    "title": "\r\n\t成都双流国际机场\r\n"
+  },
+  {
+    "iata": "KHH",
+    "url": "https://www.kia.gov.tw/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.kia.gov.tw/",
+    "sha256": "db5423bfba78a6d74638e966b6cbfea2093f422ef320c825c9b811364a6c1fad",
+    "title": "高雄國際航空站首頁"
+  },
+  {
+    "iata": "KIX",
+    "url": "https://www.kansai-airport.or.jp/en/",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "https://www.kansai-airport.or.jp/en/",
+    "sha256": "48a88a71f361d1bdb3bd3614c79c37532a83c6931cbcfed404695a44110f3ddb",
+    "title": "Access Denied"
+  },
+  {
+    "iata": "MFM",
+    "url": "https://www.macau-airport.com/en",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.macau-airport.com/en",
+    "sha256": "d96924618abcd2f57b899f39769d64c9922e43191972010f4cac0c2494788fc9",
+    "title": "Macau International Airport"
+  },
+  {
+    "iata": "FUK",
+    "url": "https://www.fukuoka-airport.jp/en/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.fukuoka-airport.jp/en/",
+    "sha256": "49af767f342e8c9d9083b911b9fe692515a19cd9b05b5606589ba3e1bacf7d9e",
+    "title": "Fukuoka Airport Official Website"
+  },
+  {
+    "iata": "DMK",
+    "url": "https://donmueang.airportthai.co.th/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://donmueang.airportthai.co.th/",
+    "sha256": "0bc514130f7b98610d2ea6c0ace7d21503b3bcec2eb1aab91033821a386cce56",
+    "title": "Donmueang International Airport | DMK"
+  },
+  {
+    "iata": "SGN",
+    "url": "https://www.vietnamairport.vn/tansonnhatairport/",
+    "checkedAt": "2026-10-24",
+    "status": 417,
+    "finalUrl": "https://outlook.office.com/mail/?realm=acv.vn",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": ""
+  },
+  {
+    "iata": "DPS",
+    "url": "https://bali-airport.com/en",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ngurahrai.injourneyairports.id/",
+    "sha256": "15f4734a404a4e55f8c7221923799bacb9ac7a6418987e935e79c968a6651f88",
+    "title": "Bandara Internasional I Gusti Ngurah Rai"
+  },
+  {
+    "iata": "EWR",
+    "url": "https://www.newarkairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.newarkairport.com/",
+    "sha256": "a0afa17b6ce1dbb0dd17c9f7c39f05ddd02d58a292e17edf035cc620fca406c5",
+    "title": "Newark Liberty International Airport - EWR Newark Airport"
+  },
+  {
+    "iata": "YUL",
+    "url": "https://www.admtl.com/en",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.admtl.com/en-CA/",
+    "sha256": "28c4b074ba8dfae1aebcb4a308937c553522650cd23d168655423e8b3a572e8f",
+    "title": ""
+  },
+  {
+    "iata": "BSB",
+    "url": "https://www.bsb.aero/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.bsb.aero/",
+    "sha256": "7a2cfeaef41aea2bcb81e47a1235a987e44290e191be714acd0c9019059d8aba",
+    "title": "Aeroporto de Brasília"
+  },
+  {
+    "iata": "LIM",
+    "url": "https://www.lima-airport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.lima-airport.com/",
+    "sha256": "3c01d896fb365ab2730719dd5fde0bb7140ed51d538cae41d3ccbd50354a6d59",
+    "title": "Aeropuerto Internacional Jorge Chávez"
+  },
+  {
+    "iata": "CUN",
+    "url": "https://www.asur.com.mx/en/airports/cancun/cancun-passengers.html",
+    "checkedAt": "2026-10-24",
+    "status": 404,
+    "finalUrl": "https://www.asur.com.mx/en/airports/cancun/cancun-passengers.html",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": ""
+  },
+  {
+    "iata": "HGH",
+    "url": "https://www.hzairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 0,
+    "finalUrl": "https://www.hzairport.com/",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": ""
+  }
+]

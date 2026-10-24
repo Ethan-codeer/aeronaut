@@ -19,6 +19,8 @@ export default function AirportMap({
   const itemsRef = useRef(items);
   const callbackRef = useRef(onSelect);
   const selectedRef = useRef(selected);
+  const [interactive, setInteractive] = useState(false);
+  const interactiveRef = useRef(false);
   const [attempt, setAttempt] = useState(0);
   const [status, setStatus] = useState<"loading" | "ready" | "error">(
     "loading",
@@ -33,6 +35,7 @@ export default function AirportMap({
         const L = await import("leaflet");
         if (disposed || !container.current) return;
         map = L.map(container.current, {
+          dragging: interactiveRef.current,
           worldCopyJump: true,
           scrollWheelZoom: false,
           keyboard: true,
@@ -131,6 +134,13 @@ export default function AirportMap({
     selectedRef.current = selected;
     mapRef.current?.fire("aeronaut:update");
   }, [items, selected, onSelect]);
+  function toggleInteraction() {
+    const next = !interactive;
+    interactiveRef.current = next;
+    setInteractive(next);
+    if (next) mapRef.current?.dragging.enable();
+    else mapRef.current?.dragging.disable();
+  }
   function retry() {
     setStatus("loading");
     setTileError(false);
@@ -160,6 +170,16 @@ export default function AirportMap({
         </div>
       )}
       <p className="map-help">
+        <button
+          className="button secondary"
+          aria-pressed={interactive}
+          onClick={toggleInteraction}
+        >
+          {interactive ? "锁定地图 · 恢复页面滚动" : "解锁地图拖动"}
+        </button>
+        {interactive
+          ? "地图已解锁；使用按钮恢复页面滚动。"
+          : "默认锁定拖动以便滚动页面；缩放按钮仍可用。"}
         拖动探索 · 双指或 + / − 缩放 · 数字标记为机场聚合。底图 ©
         OpenStreetMap，机场坐标 © OurAirports（公有领域）。
       </p>

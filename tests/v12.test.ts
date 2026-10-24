@@ -86,9 +86,9 @@ describe("V1.2 linked educational data", () => {
     expect(normalizeHeading(-45)).toBe(315);
   });
   it("has 50 source-backed airports in seven regions and valid relationships", () => {
-    expect(airports).toHaveLength(50);
-    expect(new Set(airports.map((a) => a.iata)).size).toBe(50);
-    expect(new Set(airports.map((a) => a.icao)).size).toBe(50);
+    expect(airports.length).toBeGreaterThanOrEqual(100);
+    expect(new Set(airports.map((a) => a.iata)).size).toBe(airports.length);
+    expect(new Set(airports.map((a) => a.icao)).size).toBe(airports.length);
     for (const r of regions)
       expect(airports.some((a) => a.region === r)).toBe(true);
     for (const a of airports) {
@@ -98,7 +98,7 @@ describe("V1.2 linked educational data", () => {
       expect(Math.abs(a.longitude)).toBeLessThanOrEqual(180);
       expect(Number.isFinite(a.elevationFt)).toBe(true);
       expect(a.sources.length).toBeGreaterThanOrEqual(2);
-      expect(a.verifiedAt).toBe("2026-10-23");
+      expect(a.verifiedAt).toMatch(/^2026-10-2[34]$/);
       for (const s of a.hubAirlineSlugs) expect(airlineSlugs.has(s)).toBe(true);
     }
     // Sentinel coordinates detect lat/lon swaps and city-centre substitutions.
@@ -128,20 +128,23 @@ describe("V1.2 linked educational data", () => {
     expect(clusterPoints([], (p) => p)).toEqual([]);
   });
   it("has 20 unique livery records using the existing airline identity and licensed files", () => {
-    expect(liveries).toHaveLength(20);
-    expect(new Set(liveries.map((l) => l.slug)).size).toBe(20);
+    expect(liveries.length).toBeGreaterThanOrEqual(24);
+    expect(new Set(liveries.map((l) => l.slug)).size).toBe(liveries.length);
     for (const l of liveries) {
-      expect(airlineSlugs.has(l.airlineSlug)).toBe(true);
+      if (l.airlineSlug) expect(airlineSlugs.has(l.airlineSlug)).toBe(true);
+      else expect(l.organizationName).toBeTruthy();
       if (l.aircraftSlug)
         expect(aircraft.some((a) => a.slug === l.aircraftSlug)).toBe(true);
       expect(l.period).toBeNull();
-      expect(l.registration).toBeNull();
+      if (l.registration) expect(l.sources.length).toBeGreaterThan(0);
       expect(l.story.length).toBeGreaterThan(20);
       if (l.media) {
         expect(existsSync(`public${l.media.file}`)).toBe(true);
-        expect(l.media.license).toMatch(/^(CC BY|CC0$)/);
+        expect(l.media.license).toMatch(/^(CC BY|CC0(?:-1\.0)?$)/);
         expect(l.media.attribution).toBeTruthy();
-        expect(l.media.source).toMatch(/^https:/);
+        if (l.media.source.startsWith("/"))
+          expect(existsSync(`public${l.media.source}`)).toBe(true);
+        else expect(l.media.source).toMatch(/^https:/);
       } else expect(l.mediaStatus).toBe("download-rate-limited");
     }
   });

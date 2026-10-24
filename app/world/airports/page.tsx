@@ -1,3 +1,4 @@
+import { airports } from "@/data/airports";
 import Link from "next/link";
 import { PageHeading } from "@/components/ui";
 import { AirportBrowser } from "@/components/airport-browser";
@@ -7,9 +8,9 @@ export default function Airports() {
   return (
     <div className="container page-content">
       <PageHeading
-        eyebrow="AIRPORT EXPLORER / V1.2"
+        eyebrow="AIRPORT EXPLORER / V1.3"
         title="世界，在这里连接。"
-        description="探索七大地区的50座国际机场。从三字代码到城市地理，认识航线背后的连接点。"
+        description={`探索七大地区的 ${airports.length} 座机场。从三字代码到机场历史，认识航线背后的连接点。`}
       />
       <AirportBrowser />
       <section className="section" id="challenge">

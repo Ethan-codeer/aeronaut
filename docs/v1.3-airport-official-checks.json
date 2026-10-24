@@ -1,0 +1,632 @@
+[
+  {
+    "iata": "SHA",
+    "url": "http://www.shairport.com/enhq/index.html",
+    "checkedAt": "2026-10-24",
+    "status": 0,
+    "finalUrl": "https://www.shairport.com/enhq/index.html",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": ""
+  },
+  {
+    "iata": "SZX",
+    "url": "https://www.szairport.com/szairporten/index.shtml",
+    "checkedAt": "2026-10-24",
+    "status": 503,
+    "finalUrl": "https://www.szairport.com/szairporten/index.shtml",
+    "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+    "title": ""
+  },
+  {
+    "iata": "CTU",
+    "url": "http://www.cdairport.com/cdairport/en_front/index.jsp",
+    "checkedAt": "2026-10-24",
+    "status": 404,
+    "finalUrl": "https://www.cdairport.com/cdairport/en_front/index.jsp",
+    "sha256": "be0d8645b8c46f3e5fc56469f31413cceb12e7ecb02d9c592bd433e7114a1c5e",
+    "title": ""
+  },
+  {
+    "iata": "TFU",
+    "url": "https://ourairports.com/airports/ZUTF/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZUTF/",
+    "sha256": "f24eee28e50ce040c6f172317b3515ebfba97463ed57af0094545f9fb083753e",
+    "title": "Chengdu Tianfu International Airport (TFU) @ OurAirports TFU, ZUTF @ OurAirports"
+  },
+  {
+    "iata": "KMG",
+    "url": "https://ourairports.com/airports/ZPPP/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZPPP/",
+    "sha256": "2752690a2e70308f88564a9523eaa084f38a581e5a1286bbbebb127c34ca8eb2",
+    "title": "Kunming Changshui International Airport (KMG) @ OurAirports KMG, ZPPP @ OurAirports"
+  },
+  {
+    "iata": "XIY",
+    "url": "https://www.xxia.com/",
+    "checkedAt": "2026-10-24",
+    "status": 503,
+    "finalUrl": "https://www.xxia.com/",
+    "sha256": "b5b660bc2bb92e97199b4b045f7e21eca39307fa087b8be85bb006cc7d83b34b",
+    "title": ""
+  },
+  {
+    "iata": "HGH",
+    "url": "https://www.hzairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.hzairport.com/",
+    "sha256": "498f642a1dacc3260451a25389183beb2c18a521c727e892b74a0d02605922b5",
+    "title": "杭州萧山机场门户网站 404"
+  },
+  {
+    "iata": "CKG",
+    "url": "https://ourairports.com/airports/ZUCK/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZUCK/",
+    "sha256": "479826e15dee6ccb47d1e1ce6c76e987ec34d29b4084a8e538d088d54d29f5b8",
+    "title": "Chongqing Jiangbei International Airport (CKG) @ OurAirports CKG, ZUCK @ OurAirports"
+  },
+  {
+    "iata": "WUH",
+    "url": "http://www.whairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "http://www.whairport.com/",
+    "sha256": "88a9afe3a09fa876a7058980f66978459b1571b5e98243669e2be1ebc3df23b4",
+    "title": "武汉天河国际机场"
+  },
+  {
+    "iata": "CSX",
+    "url": "https://ourairports.com/airports/ZGHA/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZGHA/",
+    "sha256": "6a276dcf6ebf6dbc9ca6a48a7be1eb0123d362ecf5dc4f45f40d808e20386573",
+    "title": "Changsha Huanghua International Airport (CSX) @ OurAirports CSX, ZGHA @ OurAirports"
+  },
+  {
+    "iata": "NNG",
+    "url": "http://www.nnairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://nn.airport.gx.cn/",
+    "sha256": "1264c76ea8d16d071a100569628149f8f3ed947d79251626dbc3e557704c50c8",
+    "title": "南宁吴圩国际机场"
+  },
+  {
+    "iata": "KWL",
+    "url": "https://ourairports.com/airports/ZGKL/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZGKL/",
+    "sha256": "ce81e5a89ed5e7c076e5769890d4782bf9467b64c93e440b74a4097229f0f40c",
+    "title": "Guilin Liangjiang International Airport (KWL) @ OurAirports KWL, ZGKL @ OurAirports"
+  },
+  {
+    "iata": "HAK",
+    "url": "https://ourairports.com/airports/ZJHK/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZJHK/",
+    "sha256": "3ecbf9bcf266b959dd0f7fed4fd0facf0d95c1501931d51f0f439eaa746b3990",
+    "title": "Haikou Meilan International Airport (HAK) @ OurAirports HAK, ZJHK @ OurAirports"
+  },
+  {
+    "iata": "SYX",
+    "url": "https://ourairports.com/airports/ZJSY/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZJSY/",
+    "sha256": "f45fcbc8b1d6ce3dd03373b917ceabcce6ee56c0a2a75f8d3d6e8608c59dd334",
+    "title": "Sanya Phoenix International Airport (SYX) @ OurAirports SYX, ZJSY @ OurAirports"
+  },
+  {
+    "iata": "XMN",
+    "url": "http://www.xiagc.com.cn/enweb/",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "http://www.xiagc.com.cn/enweb/",
+    "sha256": "beb861eaa39f786b701fafe0c93827f91c26b4fd7bda29668712515b031e2569",
+    "title": ""
+  },
+  {
+    "iata": "FOC",
+    "url": "https://ourairports.com/airports/ZSFZ/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZSFZ/",
+    "sha256": "d84658d3994d02b9af1a1c8a7010b2577b1f6855ed1dcecd941b945a27f9ef3d",
+    "title": "Fuzhou Changle International Airport (FOC) @ OurAirports FOC, ZSFZ @ OurAirports"
+  },
+  {
+    "iata": "NKG",
+    "url": "https://ourairports.com/airports/ZSNJ/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZSNJ/",
+    "sha256": "594dd299b1e37dc3ee7fd4870d36ed418b26e8747055fc1650401a092c0fef0e",
+    "title": "Nanjing Lukou International Airport (NKG) @ OurAirports NKG, ZSNJ @ OurAirports"
+  },
+  {
+    "iata": "TAO",
+    "url": "https://ourairports.com/airports/ZSQD/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZSQD/",
+    "sha256": "0f62f429f84238cbe5c2efe6bc46bb8f76863f0e501618f0bf43f1f9082218e0",
+    "title": "Qingdao Jiaodong International Airport (TAO) @ OurAirports TAO, ZSQD @ OurAirports"
+  },
+  {
+    "iata": "CGO",
+    "url": "https://ourairports.com/airports/ZHCC/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZHCC/",
+    "sha256": "1ed85978eb0c2dd67b80d9bd3ab122439c7255cf363918a312fb92b69dc04957",
+    "title": "Zhengzhou Xinzheng International Airport (CGO) @ OurAirports CGO, ZHCC @ OurAirports"
+  },
+  {
+    "iata": "TNA",
+    "url": "https://ourairports.com/airports/ZSJN/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZSJN/",
+    "sha256": "6e57406820630509e427ca70e2d372c5ac0115fe2e350cedb5ce70eb4e597fc9",
+    "title": "Jinan Yaoqiang International Airport (TNA) @ OurAirports TNA, ZSJN @ OurAirports"
+  },
+  {
+    "iata": "TSN",
+    "url": "https://ourairports.com/airports/ZBTJ/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZBTJ/",
+    "sha256": "2785362dd41a53ff35948b867badef3cc74beebef2f208b3674a3249ebae592e",
+    "title": "Tianjin Binhai International Airport (TSN) @ OurAirports TSN, ZBTJ @ OurAirports"
+  },
+  {
+    "iata": "DLC",
+    "url": "https://dlairport.com",
+    "checkedAt": "2026-10-24",
+    "status": 0,
+    "finalUrl": "https://dlairport.com/",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": ""
+  },
+  {
+    "iata": "SHE",
+    "url": "https://ourairports.com/airports/ZYTX/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZYTX/",
+    "sha256": "dbb7027cfd601e06d2148358898b4b5bafb448089f61b8e0d78c89592b0dd2ee",
+    "title": "Shenyang Taoxian International Airport (SHE) @ OurAirports SHE, ZYTX @ OurAirports"
+  },
+  {
+    "iata": "HRB",
+    "url": "https://ourairports.com/airports/ZYHB/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZYHB/",
+    "sha256": "f91b4dc93a2ac9034f0e443c83c021ee663a21a6fe656f434c8014153a91ccb0",
+    "title": "Harbin Taiping International Airport (HRB) @ OurAirports HRB, ZYHB @ OurAirports"
+  },
+  {
+    "iata": "CGQ",
+    "url": "https://ourairports.com/airports/ZYCC/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZYCC/",
+    "sha256": "6342b94196f0207805ca68b37f24dbb6f6992421235ab01e3a70ec95f2e96ad8",
+    "title": "Changchun Longjia International Airport (CGQ) @ OurAirports CGQ, ZYCC @ OurAirports"
+  },
+  {
+    "iata": "URC",
+    "url": "https://ourairports.com/airports/ZWWW/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZWWW/",
+    "sha256": "f534baa50a8b3234bf051e40fafe130c320bf959165e7bd0d5020c5a647b2345",
+    "title": "Ürümqi Tianshan International Airport (URC) @ OurAirports URC, ZWWW @ OurAirports"
+  },
+  {
+    "iata": "LXA",
+    "url": "https://ourairports.com/airports/ZULS/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/ZULS/",
+    "sha256": "925468a2f4669a388b496c7071b09bfae4bab960306c9d73fd59a2cbc732c57b",
+    "title": "Lhasa Gonggar International Airport (LXA) @ OurAirports LXA, ZULS @ OurAirports"
+  },
+  {
+    "iata": "MFM",
+    "url": "http://www.macau-airport.gov.mo/en/index.php",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "http://www.macau-airport.gov.mo/en/index.php",
+    "sha256": "beb861eaa39f786b701fafe0c93827f91c26b4fd7bda29668712515b031e2569",
+    "title": ""
+  },
+  {
+    "iata": "KHH",
+    "url": "http://www.kia.gov.tw/english/e_index.asp",
+    "checkedAt": "2026-10-24",
+    "status": 404,
+    "finalUrl": "https://www.kia.gov.tw/english/e_index.asp",
+    "sha256": "32ab61b4c3324b9d561adf7f835c02b9ea7f5e4e8abd5d1c4cc3af77d934662b",
+    "title": "找不到網頁 (404) - 高雄國際航空站"
+  },
+  {
+    "iata": "KIX",
+    "url": "http://www.kansai-airport.or.jp/en/index.asp",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "http://www.kansai-airport.or.jp/en/index.asp",
+    "sha256": "d5a032f37b8f4d48f4d8fd9196da1a505ca8b18f6b9fe62ac5d89514e4523e50",
+    "title": "Access Denied"
+  },
+  {
+    "iata": "NGO",
+    "url": "https://www.centrair.jp/en/index.html",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.centrair.jp/en/index.html",
+    "sha256": "91363ee71532916039e720dab8a0259248e3c8b89c0bd69aa7150fdb4a1a9bf0",
+    "title": "  Chubu Centrair International Airport, Nagoya"
+  },
+  {
+    "iata": "CTS",
+    "url": "https://www.hokkaido-airports.com/en/new-chitose/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.hokkaido-airports.com/en/new-chitose/",
+    "sha256": "37014a0deb91f3ac5280d20995e8f9dfc876288019cc406bcca218a1975d0730",
+    "title": "New Chitose Airport"
+  },
+  {
+    "iata": "FUK",
+    "url": "http://www.fuk-ab.co.jp/english/frame_index.html",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "http://www.fuk-ab.co.jp/english/frame_index.html",
+    "sha256": "beb861eaa39f786b701fafe0c93827f91c26b4fd7bda29668712515b031e2569",
+    "title": ""
+  },
+  {
+    "iata": "OKA",
+    "url": "http://www.naha-airport.co.jp/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.naha-airport.co.jp/",
+    "sha256": "565edb83f6816690f34efc0b31347124e83a01423a0f74ed04c4099cbf7e350c",
+    "title": "那覇空港旅客ターミナルビル plane-traffic plane-arrival plane-traffic plane-arrival wifi bank baggage family wheelchair Information lounge other specialtyshop service other \n                                        "
+  },
+  {
+    "iata": "PUS",
+    "url": "https://www.airport.co.kr/gimhaeeng/index.do",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.airport.co.kr/gimhaeeng/index.do",
+    "sha256": "b294d9e81919cbf65e6e29ff0d8bfacef00109204f5358f64fc09a0cc9e2ce66",
+    "title": "메인 | GIMHAE INTERNATIONAL AIRPORT(영문)"
+  },
+  {
+    "iata": "CJU",
+    "url": "https://www.airport.co.kr/jejueng/index.do",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.airport.co.kr/jejueng/index.do",
+    "sha256": "1e9b6cf700b380a67dcd632224c21ac546c12705f85a53fea2e74d1ffa9838b9",
+    "title": "메인 | JEJU INTERNATIONAL AIRPORT(영문)"
+  },
+  {
+    "iata": "TSA",
+    "url": "http://www.tsa.gov.tw/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.tsa.gov.tw/",
+    "sha256": "f37fc5da35d978471ca1cf1da50c889049e850c8c89c4b55b42a64afe39740d8",
+    "title": "台北松山機場"
+  },
+  {
+    "iata": "DMK",
+    "url": "http://www.airportthai.co.th/airportnew/bangkok/index.asp?lang=en",
+    "checkedAt": "2026-10-24",
+    "status": 503,
+    "finalUrl": "http://www.airportthai.co.th/airportnew/bangkok/index.asp?lang=en",
+    "sha256": "9deff96f9b5925fa5081257849ace321304b382d64cfb67d90a21a3c7cbf2925",
+    "title": ""
+  },
+  {
+    "iata": "HKT",
+    "url": "https://phuket.airportthai.co.th/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://phuket.airportthai.co.th/",
+    "sha256": "f9ad77b5f4794def22cc840b677899bc5fba499285c541cd55a569b88499cff6",
+    "title": "Phuket International Airport | HKT"
+  },
+  {
+    "iata": "SGN",
+    "url": "http://www.tsnairport.hochiminhcity.gov.vn/",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "http://www.tsnairport.hochiminhcity.gov.vn/",
+    "sha256": "beb861eaa39f786b701fafe0c93827f91c26b4fd7bda29668712515b031e2569",
+    "title": ""
+  },
+  {
+    "iata": "HAN",
+    "url": "https://ourairports.com/airports/VVNB/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://ourairports.com/airports/VVNB/",
+    "sha256": "a97d37d65be4cf2621e43c8e35804f884c08bc2655d9250ab43f8e1071f076bd",
+    "title": "Noi Bai International Airport (HAN) @ OurAirports HAN, VVNB @ OurAirports"
+  },
+  {
+    "iata": "MNL",
+    "url": "https://newnaia.com.ph/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://newnaia.com.ph/",
+    "sha256": "b2663ea054d6ad0105c1be331737ee48bb24b72ab10007cd01b8d22265513215",
+    "title": "New NAIA | Ninoy Aquino International Airport"
+  },
+  {
+    "iata": "CEB",
+    "url": "http://www.mactan-cebuairport.com.ph/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://cclin-est.org/",
+    "sha256": "d2ee28356956f18548fc276ceb16298d59a5d15d4c22b7ac1584b6d07f2cb6bd",
+    "title": "Jalalive - Partner Resmi Piala Dunia Terupdate &amp; Terlengkap 2026"
+  },
+  {
+    "iata": "DPS",
+    "url": "http://www.angkasapura1.co.id/eng/location/bali.htm",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "http://www.angkasapura1.co.id/eng/location/bali.htm",
+    "sha256": "beb861eaa39f786b701fafe0c93827f91c26b4fd7bda29668712515b031e2569",
+    "title": ""
+  },
+  {
+    "iata": "LGW",
+    "url": "http://www.gatwickairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.gatwickairport.com/",
+    "sha256": "41a4781a57f1286d5e05f306822ddfc1591293203ebedf0f0a3a1732e1d24f49",
+    "title": "​​Official London Gatwick ​Home | London Gatwick Airport"
+  },
+  {
+    "iata": "MAN",
+    "url": "http://www.manchesterairport.co.uk/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.manchesterairport.co.uk/",
+    "sha256": "0a1c11ac7a6aa1078ce0860f33cf3a69b6cccb2bc3f65f63ea3e0e32467d6b76",
+    "title": "Welcome to Manchester Airport (MAN) | Official Website"
+  },
+  {
+    "iata": "DUB",
+    "url": "http://www.dublinairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.dublinairport.com/",
+    "sha256": "25bd52048d0688027f45eab7a8df38c2736554d07e202cd30c8262bf74de5b5a",
+    "title": "Dublin Airport Official Website - Flight Information, Book Parking, Airport Shopping Search Shopping Cart Icon Account icon Mobile Menu Departures Icon Arrivals Icon"
+  },
+  {
+    "iata": "BCN",
+    "url": "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html",
+    "sha256": "34c84292379928e567ce116d2f955b8dcd7ed7e6bbb39114da13208380cc36c5",
+    "title": "Home page | Josep Tarradellas Barcelona-El Prat Airport | Aena"
+  },
+  {
+    "iata": "LIS",
+    "url": "https://lisbonairport.pt",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.lisbonairport.pt/",
+    "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "title": ""
+  },
+  {
+    "iata": "VIE",
+    "url": "http://www.viennaairport.com/en/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://viennaairport.com/passagiere",
+    "sha256": "c7df40b2b4f0c7387a11d340a0b785452c018ae66324b3249d93c8ba813630e9",
+    "title": "Flughafen Wien - Passagiere"
+  },
+  {
+    "iata": "OSL",
+    "url": "https://avinor.no/en/airport/oslo-airport",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.avinor.no/en/airport/oslo/",
+    "sha256": "5fae1895de5daf8b4a52a3c150551e536a7de5cea41c99b1444414a027ce0780",
+    "title": "Oslo Airport (OSL) Gardermoen | Flights, transport, food &amp; shopping"
+  },
+  {
+    "iata": "ARN",
+    "url": "http://www.swedavia.se/arlanda/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.swedavia.se/arlanda/",
+    "sha256": "85ac03b90f22dd7c43c6858c5d8a09a0b47d104542ec1395e4e145b2a6d7b4d7",
+    "title": "Stockholm Arlanda Airport Swedavia logotyp, länk till startsidan.\" Swedavia logotyp, länk till startsidan.\""
+  },
+  {
+    "iata": "BRU",
+    "url": "http://www.brusselsairport.be/en/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.brusselsairport.be/en/passengers",
+    "sha256": "c47a6205934006df0092b072181887fc82bb2f64167bd9e1eccb2ff393f1090c",
+    "title": "All information for passengers | Brussels Airport ico_chevron_list"
+  },
+  {
+    "iata": "ATH",
+    "url": "https://www.aia.gr",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.aia.gr/en",
+    "sha256": "a215a37e4160749abf8de5e257c6b7a1716be7baf80b4a0da1ac9d19cf38703b",
+    "title": "Travellers | AIA"
+  },
+  {
+    "iata": "BOS",
+    "url": "http://www.massport.com/logan/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "http://www.massport.com/logan/",
+    "sha256": "fd07ac0f81458850582631b9a4dc23a0aabcb2b76059a1e7a79a0f13acbc410a",
+    "title": ""
+  },
+  {
+    "iata": "IAD",
+    "url": "http://www.mwaa.com/dulles/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.flydulles.com/",
+    "sha256": "93cf6af62edca841869dc536b0413ca77c14bf1a627d1c46f3b398e46ed2edf6",
+    "title": "Official Website of Washington Dulles International Airport - IAD"
+  },
+  {
+    "iata": "EWR",
+    "url": "https://www.panynj.gov/CommutingTravel/airports/html/newarkliberty.html",
+    "checkedAt": "2026-10-24",
+    "status": 404,
+    "finalUrl": "https://www.panynj.gov/CommutingTravel/airports/html/newarkliberty.html",
+    "sha256": "fbfb33e468a89d89c340858d3d3e2e448c082e0c72ee3642dfe314ce7aeae4a7",
+    "title": "404 Resource at '/content/errors/404.html' not found: No resource found"
+  },
+  {
+    "iata": "MIA",
+    "url": "https://www.miami-airport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.miami-airport.com/",
+    "sha256": "d280707ab2ca1203504233f1916893ea4d0a3bdd8776030b9cc06ba86bf293e5",
+    "title": "Miami International Airport - iflyMIA - Miami International Airport\n     Open Accessibility tools"
+  },
+  {
+    "iata": "DEN",
+    "url": "http://www.flydenver.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.flydenver.com/",
+    "sha256": "68ec08c39a2ec39100a50b3f8fdbc87dc78ec5de1b9143bc84406554f277d827",
+    "title": "Denver International Airport | DEN"
+  },
+  {
+    "iata": "IAH",
+    "url": "http://www.fly2houston.com/iah",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.fly2houston.com/iah/",
+    "sha256": "97ba5b12a8f74f8facb5bb22eff1ff556c9a42c60513abc30e0ac81a4653c4cc",
+    "title": "IAH Houston Airport | George Bush Intercontinental"
+  },
+  {
+    "iata": "LAS",
+    "url": "https://www.harryreidairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.harryreidairport.com/",
+    "sha256": "8039aa2f39b86cfa3ccd5fec0d3f39e9c780009b0f6552e7ec0a1c50bb793dc0",
+    "title": "Harry Reid International Airport"
+  },
+  {
+    "iata": "YUL",
+    "url": "http://www.admtl.com/passager/Home.aspx",
+    "checkedAt": "2026-10-24",
+    "status": 404,
+    "finalUrl": "https://www.admtl.com/passager/Home.aspx",
+    "sha256": "9d7ecbb08e7056e278a75d02e7a0c50c074523d671ee0c9cc97b58684cd167bb",
+    "title": ""
+  },
+  {
+    "iata": "YYC",
+    "url": "http://www.calgaryairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.yyc.com/en-us/",
+    "sha256": "abaf69563b4601170df0ebacd47d3224fcf38264617a77f48154f78406b2dffb",
+    "title": "\r\n\tYYC Passengers Home\r\n"
+  },
+  {
+    "iata": "CUN",
+    "url": "https://cancunairport.com",
+    "checkedAt": "2026-10-24",
+    "status": 403,
+    "finalUrl": "https://cancunairport.com/",
+    "sha256": "2d02c22360cbc63d76d61ea57916f8130f045063480c931917f63c09629a2611",
+    "title": "Just a moment..."
+  },
+  {
+    "iata": "PTY",
+    "url": "https://www.tocumenpanama.aero/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.tocumenpanama.aero/",
+    "sha256": "3c368ef3625fc99d26d4279e2aaa8b14b101c89e3185db469ecd2f9ac741a695",
+    "title": "Nos mudamos · We've moved · Mudamos | Aeropuerto Internacional de Tocumen"
+  },
+  {
+    "iata": "LIM",
+    "url": "http://www.lap.com.pe/",
+    "checkedAt": "2026-10-24",
+    "status": 0,
+    "finalUrl": "http://www.lap.com.pe/",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": ""
+  },
+  {
+    "iata": "UIO",
+    "url": "https://www.aeropuertoquito.aero/?lang=en",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.aeropuertoquito.aero/?lang=en",
+    "sha256": "8f01d030991a08031e10db94b30815c6483aac50bcc4536b16d3aa89916d3a84",
+    "title": "Home - Aeropuerto Internacional de Quito"
+  },
+  {
+    "iata": "GIG",
+    "url": "https://www.riogaleao.com/passageiros",
+    "checkedAt": "2026-10-24",
+    "status": 503,
+    "finalUrl": "https://www.riogaleao.com/passageiros",
+    "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+    "title": ""
+  },
+  {
+    "iata": "BSB",
+    "url": "http://www.infraero.gov.br/usa/aero_prev_home.php?ai=146",
+    "checkedAt": "2026-10-24",
+    "status": 503,
+    "finalUrl": "http://www.infraero.gov.br/usa/aero_prev_home.php?ai=146",
+    "sha256": "9deff96f9b5925fa5081257849ace321304b382d64cfb67d90a21a3c7cbf2925",
+    "title": ""
+  },
+  {
+    "iata": "SJO",
+    "url": "https://www.sjoairport.com/",
+    "checkedAt": "2026-10-24",
+    "status": 200,
+    "finalUrl": "https://www.sjoairport.com/",
+    "sha256": "e7b4266d6afce68a5e02ebc557ed3ff9cbebda2a20c3a08987ac00879b6d01c3",
+    "title": "Aeropuerto Internacional Juan Santamaría"
+  }
+]

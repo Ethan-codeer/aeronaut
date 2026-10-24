@@ -1,3 +1,5 @@
+import { airports } from "@/data/airports";
+import { liveries } from "@/data/liveries";
 import Link from "next/link";
 import {
   ArrowUpRight,
@@ -77,8 +79,8 @@ export default function World() {
         </a>
       </div>
       <div className="module-links">
-        <Link href="/world/airports">全球机场地图 · 50座 ↗</Link>
-        <Link href="/world/liveries">航司涂装博物馆 · 20件 ↗</Link>
+        <Link href="/world/airports">全球机场地图 · {airports.length} 座 ↗</Link>
+        <Link href="/world/liveries">航司涂装博物馆 · {liveries.length} 件 ↗</Link>
         <Link href="/world/airlines">全球航司百科 ↗</Link>
       </div>
       <section className="airline-atlas-banner">

@@ -1,3 +1,4 @@
+import { liveries } from "@/data/liveries";
 import Link from "next/link";
 import { PageHeading } from "@/components/ui";
 import { LiveryGallery } from "@/components/livery-gallery";
@@ -6,9 +7,9 @@ export default function Liveries() {
   return (
     <div className="container page-content">
       <PageHeading
-        eyebrow="LIVERY GALLERY / V1.2"
+        eyebrow="LIVERY GALLERY / V1.3"
         title="让天空，有自己的色彩。"
-        description="20 件航空视觉档案，记录经典、历史与特别涂装。航空摄影保留作者、许可和来源，不推定未知的使用时期。"
+        description={`${liveries.length} 件航空视觉档案，记录经典、历史与特别涂装。航空摄影保留作者、许可和来源，不推定未知的使用时期。`}
       />
       <div className="module-links">
         <Link href="/academy/tails">看机尾猜航司 ↗</Link>

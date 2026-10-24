@@ -1,3 +1,4 @@
+import { liveries, getLiveryOrganization } from "@/data/liveries";
 import { PageHeading } from "@/components/ui";
 import photoCredits from "@/data/photo-credits.json";
 import { airlines } from "@/data/airlines";
@@ -8,6 +9,50 @@ export const metadata = { title: "资料来源与图片署名" };
 export default function Credits() {
   return (
     <div className="container page-content">
+      <section className="paper-panel reading-panel">
+        <h2>V1.3 模型与涂装授权</h2>
+        <p>
+          七个新增机型为 AERONAUT 原创简化教学模型与 Concept Livery，按 CC0-1.0
+          提供；源代码与离线渲染脚本随模型公开。模型不是厂商工程资料，也不表示航司运营历史。747-8I
+          继续采用 FlightGear 的 GPL-2.0-only
+          模型，保留原署名、许可证与对应源码。
+        </p>
+        <div className="related-links">
+          <a href="/models/atlas/LICENSE.txt">原创模型许可 ↗</a>
+          <a href="/models/atlas/model-source.mjs">模型源码 ↗</a>
+          <a href="/models/boeing747/AUTHORS.txt">747 作者 ↗</a>
+          <a href="/models/boeing747/corresponding-source.zip">
+            GPL 对应源码 ↗
+          </a>
+        </div>
+        <p>
+          机场代码与坐标来自 OurAirports 公有领域数据；IANA 时区参考 OpenFlights
+          的 ODbL 开放数据库。含该派生时区数据的数据库按 ODbL
+          提供，百科原始来源与核查范围另列于各机场页面。
+          <a href="https://opendatacommons.org/licenses/odbl/1-0/">
+            ODbL 1.0 条款
+          </a>{" "}
+          ·{" "}
+          <a href="https://raw.githubusercontent.com/Ethan-codeer/aeronaut/main/data/airports.json">
+            下载可机读机场数据库
+          </a>
+        </p>
+        <h3>涂装图像逐件署名</h3>
+        {liveries
+          .filter((l) => l.media)
+          .map((l) => (
+            <p key={l.slug}>
+              <a href={`/world/liveries/${l.slug}`}>
+                {getLiveryOrganization(l)} · {l.name}
+              </a>{" "}
+              — © {l.media!.attribution} ·{" "}
+              <a href={l.media!.licenseUrl || l.media!.source}>
+                {l.media!.license}
+              </a>{" "}
+              · <a href={l.media!.source}>原作与来源 ↗</a>
+            </p>
+          ))}
+      </section>
       <section className="paper-panel reading-panel">
         <h2>V1.2 新增资料与授权</h2>
         <p>
