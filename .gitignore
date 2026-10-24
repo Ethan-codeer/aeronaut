@@ -20,10 +20,15 @@ id_rsa*
 id_ed25519*
 
 # Workspace files are not application source
-/.agents/
+/.agents/*
+!/.agents/skills/
 /.aws/
 /.codex/
 /shared/
 /scratch/
 /library-files/
 /artifacts/
+
+# Python caches from repository skill lookups
+__pycache__/
+*.pyc

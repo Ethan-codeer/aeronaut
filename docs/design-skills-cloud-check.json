@@ -1,0 +1,27 @@
+{
+  "method": "Codex app-server skills/list forceReload; direct SKILL.md reads",
+  "cwd": "/workspace/sites/aeronaut",
+  "skills": [
+    {
+      "name": "aeronaut-design-system",
+      "path": "/workspace/sites/aeronaut/.agents/skills/aeronaut-design-system/SKILL.md",
+      "scope": "repo",
+      "enabled": true
+    },
+    {
+      "name": "frontend-design",
+      "path": "/workspace/sites/aeronaut/.agents/skills/frontend-design/SKILL.md",
+      "scope": "repo",
+      "enabled": true
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "path": "/workspace/sites/aeronaut/.agents/skills/ui-ux-pro-max/SKILL.md",
+      "scope": "repo",
+      "enabled": true
+    }
+  ],
+  "passed": true,
+  "date": "2026-10-24",
+  "limitation": "Current cloud executor discovery verified; chat catalog may require a new task/session to refresh. No model turn or UI acceptance test was run."
+}

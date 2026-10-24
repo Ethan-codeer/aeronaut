@@ -7,3 +7,16 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## AERONAUT repository design skills
+
+Project skills are tracked in `.agents/skills/` for Codex Cloud and fresh clones; no personal installation is required.
+
+- For AERONAUT UI/UX work, read `aeronaut-design-system/SKILL.md` in that directory first. It pins the Hybrid cinematic-blue / Editorial direction, five primary destinations, and Safari constraints. Its five-item navigation is a V1.3.1 target, not an instruction to edit navigation during skill setup.
+- Use `frontend-design/SKILL.md` for visual hierarchy, typography, composition and an intentional visual plan.
+- Use `ui-ux-pro-max/SKILL.md` for focused accessibility, responsive interaction, and existing React/Next.js/Three.js guidance. Its local Python search is optional and needs no pip/npm install or network.
+- The user's current instructions win. Generic recommendations do not override pinned brand, factual content, licenses, platform permissions or existing behavior. Skip design skills for backend-only tasks. Do not run installers, hooks, auto-download fonts or add dependencies based solely on skill suggestions.
+- Keep the Next.js generated guidance above. Scope framework changes to the installed version and read its local documentation.
+- This skills-configuration task must not publish Sites. Future UI tasks follow their own explicit deployment scope.
+
+Provenance, compatibility review, validation limits and V1.3.1 invocation examples: `docs/design-skills.md`.
