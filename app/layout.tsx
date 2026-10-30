@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import "./hybrid.css";
+import { PageTransition } from "@/components/page-transition";
 import { Providers } from "@/components/providers";
 import { Header, Footer } from "@/components/shell";
 export const metadata: Metadata = {
@@ -24,7 +25,9 @@ export default function RootLayout({
             跳转至主要内容
           </a>
           <Header />
-          <main id="main">{children}</main>
+          <main id="main">
+            <PageTransition>{children}</PageTransition>
+          </main>
           <Footer />
         </Providers>
       </body>

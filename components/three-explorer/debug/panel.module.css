@@ -118,7 +118,7 @@
   color: #d8eeff;
   border-radius: 7px;
   pointer-events: none;
-  font-family: ui-monospace, monospace;
+  font-family: var(--font-ui);
   font-size: 11px;
   line-height: 1.5;
   font-variant-numeric: tabular-nums;
@@ -228,7 +228,7 @@
   width: 100%;
   font-size: 12px;
   line-height: 1.7;
-  font-family: ui-monospace, monospace;
+  font-family: var(--font-ui);
   resize: vertical;
 }
 .results > button {

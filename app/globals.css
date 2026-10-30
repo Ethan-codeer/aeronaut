@@ -3,6 +3,7 @@
   --font-sans: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 :root {
+  --font-ui: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --bg: #f6f8fa;
   --surface: #fff;
   --surface-2: #edf3f7;
@@ -35,7 +36,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: var(--font-ui);
   font-size: 14px;
   line-height: 1.6;
   color: var(--text);
@@ -870,7 +871,7 @@ p {
   position: absolute;
   top: 32px;
   left: 0;
-  font-family: Georgia, serif;
+  font-family: var(--font-ui);
   font-size: 19px;
   color: #48738f;
   letter-spacing: 1px;
@@ -1817,7 +1818,7 @@ table {
   font-weight: 550;
 }
 .slider-control label > span {
-  font-family: Georgia, serif;
+  font-family: var(--font-ui);
   color: var(--muted);
 }
 .slider-control output {
@@ -1933,7 +1934,7 @@ table {
 }
 .big-formula {
   font-size: 28px;
-  font-family: Georgia, serif;
+  font-family: var(--font-ui);
   color: var(--blue);
   margin-block: 25px;
   white-space: nowrap;
